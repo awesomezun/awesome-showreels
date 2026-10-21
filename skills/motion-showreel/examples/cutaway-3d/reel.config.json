@@ -1,0 +1,79 @@
+{
+  "title": "브루큐브",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "브루큐브", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "count dur=3b"},
+      {"beat": 1.75, "from": "start", "sfx": "whoosh"}
+    ]},
+    {"id": "cutaway", "label": "속까지 보여 드릴게요", "minBars": 3, "maxBars": 4, "priority": 1, "inBeats": 11, "outBeats": 1, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "groove", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "whoosh"},
+      {"beat": 3, "from": "start", "sfx": "blip"},
+      {"beat": 4, "from": "start", "sfx": "blip"},
+      {"beat": 5, "from": "start", "sfx": "blip"},
+      {"beat": 6, "from": "start", "sfx": "blip"}
+    ]},
+    {"id": "roast", "label": "12분, 고르게", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "zoom"},
+      {"beat": 3, "from": "start", "sfx": "count dur=6b"}
+    ]},
+    {"id": "cool", "label": "바로 식혀서", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "air"}
+    ]},
+    {"id": "end", "label": "브루큐브", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "outro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "thud"},
+      {"beat": 1.75, "from": "start", "sfx": "chime"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "roast",
+        "cool"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "cutaway": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "cutaway": {
+          "bars": 4
+        },
+        "roast": {
+          "bars": 3
+        },
+        "cool": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 7.5,
+  "captions": {
+    "enabled": false
+  }
+}

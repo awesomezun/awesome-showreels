@@ -1,0 +1,163 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "people who like handmade things",
+  "title": "털뭉치 공방",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (털뭉치 공방, a felt doll workshop (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "털뭉치 공방, a felt doll workshop (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "tender",
+  "slow",
+  "handmade",
+  "warm",
+  "patient"
+ ],
+ "rationale": {
+  "palette": "A workbench: a green cutting mat #2F7D5B with a pale grid on a wooden table #8A6A4A; felt in bear brown #A8754F, cream, pink #F2A6B3, ginger #E8A15A and off-white; cream thread #FFF4E0 for stitches, red yarn #E8574F, wooden and dark buttons; paper labels #FFF8EA with rose stitching.",
+  "type": "Gamja Flower, a soft Korean handwriting, written on paper labels with a stitched border.",
+  "motion": "Stop motion at 8 frames a second: the scenes step their time, the camera shifts a few pixels and the exposure flickers from frame to frame, pieces land rather than glide, a stitch appears per beat, the bear waves in four poses.",
+  "sound": "Lofi at 96 BPM in D major (6 bars in 15 s, 12 in 30 s), e-piano and soft swing drums; organic SFX: snips and taps for each piece and stitch.",
+  "visuals": "All code: felt fills (a colour dusted with short fibres in two shades and a fuzzy edge), dashed thread stitches, buttons with thread crosses, a needle with yarn, a cutting mat with a grid and numbers, paper labels with torn edges.",
+  "narration": "Not recommended: quiet suits it."
+ },
+ "palette": {
+  "bg": "#FFF8EA",
+  "bg2": "#2F7D5B",
+  "surface": "#FFF8EA",
+  "ink": "#4A3426",
+  "ink2": "#6B5444",
+  "muted": "#6E5A4A",
+  "accent": "#C9776A",
+  "accent2": "#A8754F",
+  "accent3": "#F2A6B3",
+  "ok": "#5FA36A",
+  "warn": "#E8A15A",
+  "deny": "#E8574F",
+  "accentInk": "#A85448",
+  "onAccent": "#FFF8EA",
+  "line": "#E9D9BC"
+ },
+ "fonts": {
+  "display": "\"Gamja Flower\", sans-serif",
+  "sans": "\"Gamja Flower\", sans-serif",
+  "serif": "\"Gamja Flower\", sans-serif",
+  "mono": "\"Gamja Flower\", sans-serif",
+  "cjk": "\"Gamja Flower\", sans-serif",
+  "files": [
+   {
+    "family": "Gamja Flower",
+    "path": "source/fonts/GamjaFlower-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#4A3426",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.5,
+   "z": 0.8
+  },
+  "overshoot": 0.0,
+  "ease": "outC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.06,
+  "vignette": {
+   "a": 0.3,
+   "color": "#2A1A0A"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "D",
+  "mode": "major",
+  "preset": "lofi",
+  "instruments": [
+   "epiano",
+   "bass",
+   "kick",
+   "snare",
+   "hats",
+   "rim"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.55,
+   "breakdown": 0.4,
+   "drop": 0.7,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

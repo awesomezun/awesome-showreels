@@ -1,0 +1,164 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "people who go to live shows",
+  "title": "번개다방 〈볼륨 업〉",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (번개다방, a rock trio, and its first solo show 〈볼륨 업〉 (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "번개다방, a rock trio, and its first solo show 〈볼륨 업〉 (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "loud",
+  "hot",
+  "electric",
+  "rowdy",
+  "joyful"
+ ],
+ "rationale": {
+  "palette": "A dark stage in poster colours: black #050506 and stage red going hot with the kick, lightning yellow #FFE14D for the band's bolt, the type and the guitarist's rim light, red #FF3B30 for the bassist, white for the strobe; a red guitar and an orange bass.",
+  "type": "Black Han Sans, heavy and square: slammed in with a thick black stroke and a little overshoot, on the snare.",
+  "motion": "Music-driven, per instrument: the arranger's own drum hits and guitar and bass notes are recorded into modules/envmap.js and turned into envelopes, so the kick lifts the floor light, the frame and the crowd, the snare strikes the bolt, the strobe and (in the drop) real lightning, the guitar pumps the left amps and lights the red guitar, the bass sends rings across the floor and pumps the right amps, the hats shake the cymbals, and the players strum on their own notes.",
+  "sound": "Rock at 128 BPM in E minor (8 bars in 15 s, 16 in 30 s): the arranger's rock preset, a double-tracked overdriven guitar on power chords (palm-muted eighths between open accents, ringing chords in the intro and breakdown, muted sixteenths into the drops), bass on eighths, kick, a big snare, hats and toms.",
+  "visuals": "All code: the stage (truss, beams, amp stacks with pumping speakers, a drum kit with the band's mark on the kick, the bolt), three players in rim-lit silhouette, a crowd, a meter panel, an amp knob that goes to 11.",
+  "narration": "Not recommended: it is a gig."
+ },
+ "palette": {
+  "bg": "#050506",
+  "bg2": "#1A0606",
+  "surface": "#141416",
+  "ink": "#FFFFFF",
+  "ink2": "#D8D2C2",
+  "muted": "#9A9488",
+  "accent": "#FFE14D",
+  "accent2": "#FF3B30",
+  "accent3": "#F08A24",
+  "ok": "#5BD27A",
+  "warn": "#FFE14D",
+  "deny": "#FF3B30",
+  "accentInk": "#FFE14D",
+  "onAccent": "#050506",
+  "line": "#2C2C30"
+ },
+ "fonts": {
+  "display": "\"Black Han Sans\", sans-serif",
+  "sans": "\"Black Han Sans\", sans-serif",
+  "serif": "\"Black Han Sans\", sans-serif",
+  "mono": "\"Black Han Sans\", sans-serif",
+  "cjk": "\"Black Han Sans\", sans-serif",
+  "files": [
+   {
+    "family": "Black Han Sans",
+    "path": "source/fonts/BlackHanSans-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFFFFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.5,
+   "z": 0.45
+  },
+  "overshoot": 0.12,
+  "ease": "outBack",
+  "transitions": [
+   "cut",
+   "flash"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kinetic"
+  ]
+ },
+ "post": {
+  "grain": 0.05,
+  "vignette": {
+   "a": 0.45,
+   "color": "#000000"
+  },
+  "bloom": 0.3
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "E",
+  "mode": "minor",
+  "preset": "rock",
+  "instruments": [
+   "dist-guitar",
+   "bass",
+   "kick",
+   "snare",
+   "hats",
+   "toms"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.5,
+   "groove": 0.75,
+   "breakdown": 0.45,
+   "drop": 1.0,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

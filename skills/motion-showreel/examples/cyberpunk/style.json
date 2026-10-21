@@ -1,0 +1,174 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "trailer",
+  "audience": "players of action and open-world games",
+  "title": "네온 레인 2087",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (네온 레인 2087, an SF action game (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "네온 레인 2087, an SF action game (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "wet",
+  "dark",
+  "lurid",
+  "restless",
+  "cool"
+ ],
+ "rationale": {
+  "palette": "Night in violet and navy (#07041A to #2A0E3E, a magenta city glow at the horizon); neon in magenta #FF2E88, cyan #2EE6FF, yellow #FFD23A, green #3AFF9E and orange on Korean signs; everything doubled and smeared in the wet street.",
+  "type": "Do Hyeon for the title, the lines and the signs (tall, condensed, sign-painter Korean), Orbit for the UI, the HUD and the numbers; both in RGB-split glitch lettering.",
+  "motion": "A trailer in the rain: slow push-ins, parallax towers in three depths, signs that stutter, rain that never stops, reflections that ripple, cars that streak; glitch bursts (slices of the frame thrown sideways) on the cuts and on the hack.",
+  "sound": "Dark synth at 112 BPM in E minor (7 bars in 15 s, 14 in 30 s), saw pad, saw-pluck arps, rolling saw bass; digital SFX: glitches on the titles, whooshes for the cars, keystrokes and a lock for the hack.",
+  "visuals": "All code: seeded towers with window grids, vertical neon signs, a hologram koi billboard, rain streaks and splashes, a street that mirrors the frame above it in rippling strips, a hooded walker, flying cars, a HUD.",
+  "narration": "Not recommended: a trailer of lines on screen."
+ },
+ "palette": {
+  "bg": "#07041A",
+  "bg2": "#2A0E3E",
+  "surface": "#120A22",
+  "ink": "#F5F0FF",
+  "ink2": "#B9A9D9",
+  "muted": "#9A8CC0",
+  "accent": "#FF2E88",
+  "accent2": "#2EE6FF",
+  "accent3": "#FFD23A",
+  "ok": "#3AFF9E",
+  "warn": "#FFD23A",
+  "deny": "#FF2E88",
+  "accentInk": "#2EE6FF",
+  "onAccent": "#07041A",
+  "line": "#2A1A48"
+ },
+ "fonts": {
+  "display": "\"Do Hyeon\", sans-serif",
+  "sans": "\"Do Hyeon\", sans-serif",
+  "serif": "\"Do Hyeon\", sans-serif",
+  "mono": "\"Orbit\", sans-serif",
+  "cjk": "\"Do Hyeon\", sans-serif",
+  "files": [
+   {
+    "family": "Do Hyeon",
+    "path": "source/fonts/DoHyeon-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Orbit",
+    "path": "source/fonts/Orbit-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F5F0FF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.0,
+   "z": 0.6
+  },
+  "overshoot": 0.0,
+  "ease": "outC",
+  "transitions": [
+   "cut",
+   "glitch"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "scramble",
+   "typing"
+  ]
+ },
+ "post": {
+  "grain": 0.05,
+  "vignette": {
+   "a": 0.5,
+   "color": "#000000"
+  },
+  "bloom": 0.4
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "E",
+  "mode": "minor",
+  "preset": "dark-synth",
+  "instruments": [
+   "pad",
+   "saw-pluck",
+   "saw-bass",
+   "stab",
+   "lead",
+   "kick",
+   "clap",
+   "snare",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.4,
+   "groove": 0.7,
+   "breakdown": 0.45,
+   "drop": 1.0,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

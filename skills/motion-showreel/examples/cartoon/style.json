@@ -1,0 +1,173 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "dog owners",
+  "title": "산책왕 멍멍",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (산책왕 멍멍, a dog-walking app (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "산책왕 멍멍, a dog-walking app (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "bouncy",
+  "funny",
+  "energetic",
+  "cheerful",
+  "cocky"
+ ],
+ "rationale": {
+  "palette": "Saturday-morning flats inside thick #1B1B1B ink: sky #6EC8FF, grass #7ED957, a tan dog #F4A259 with a white muzzle, a red collar #FF5A5F, star and crown yellow #FFD23F, numbers in blue #3D7CFF.",
+  "type": "Black Han Sans for the shouted lines, in white or yellow with an ink outline and a hard drop; Jua for small lines and names.",
+  "motion": "Cartoon physics: smears and speed lines, skids with puffs, squash on every stop, rubber-hose legs on a run cycle, a tail that never stops, stars and burst balloons that pop with an overshoot, a podium the dogs drop onto.",
+  "sound": "Bright pop at 144 BPM in C major (9 bars in 15 s, 18 in 30 s), pluck, marimba and bell over a full kit; cartoon SFX: whips for the entrances, pops and boings for the balloons and landings, a confirm for the crown.",
+  "visuals": "All code: inked paths with one shadow tone, 멍멍 built from ellipses and hose legs, a scrolling park, a phone card that counts steps, a podium on sunburst rays, a map with a dotted route and paw prints.",
+  "narration": "Not recommended: the dog speaks for itself."
+ },
+ "palette": {
+  "bg": "#6EC8FF",
+  "bg2": "#FFD23F",
+  "surface": "#FFFFFF",
+  "ink": "#1B1B1B",
+  "ink2": "#333333",
+  "muted": "#444444",
+  "accent": "#FFD23F",
+  "accent2": "#FF5A5F",
+  "accent3": "#7ED957",
+  "ok": "#7ED957",
+  "warn": "#FFD23F",
+  "deny": "#FF5A5F",
+  "accentInk": "#1B1B1B",
+  "onAccent": "#1B1B1B",
+  "line": "#1B1B1B"
+ },
+ "fonts": {
+  "display": "\"Black Han Sans\", sans-serif",
+  "sans": "\"Jua\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Jua\", sans-serif",
+  "cjk": "\"Black Han Sans\", sans-serif",
+  "files": [
+   {
+    "family": "Black Han Sans",
+    "path": "source/fonts/BlackHanSans-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1B1B1B",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.5,
+   "z": 0.4
+  },
+  "overshoot": 0.2,
+  "ease": "outBack",
+  "transitions": [
+   "cut",
+   "whip"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.1,
+   "color": "#1B1B1B"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 144,
+  "key": "C",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "pluck",
+   "marimba",
+   "bell",
+   "bass",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.6,
+   "groove": 0.8,
+   "breakdown": 0.55,
+   "drop": 1.0,
+   "outro": 0.6
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

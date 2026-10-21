@@ -1,0 +1,164 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "developers and server admins",
+  "title": "글자판 termpan",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (글자판 (termpan), a terminal dashboard (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "글자판 (termpan), a terminal dashboard (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "clever",
+  "playful",
+  "plain",
+  "nerdy",
+  "tidy"
+ ],
+ "rationale": {
+  "palette": "A Tokyo Night-like terminal: background #14151F, text #C0CAF5, dim #565F89 for prompts and comments, and five accents by role: cyan #7DCFFF, blue #7AA2F7, magenta #BB9AF7, green #9ECE6A (prompt, memory, success), yellow #E0AF68 (the message), red #F7768E (shading).",
+  "type": "Nanum Gothic Coding Bold at 40 px only, on a 20 x 44 grid where Latin takes one cell and Hangul two; big letters are made of characters chosen by coverage, never of a bigger font.",
+  "motion": "Terminal motion: typing at a typist's pace with a block cursor, characters flying in from anywhere to land on their cells (scrambling until they land), the donut spinning, sparklines scrolling, process lists ticking, boxes drawing in one after another.",
+  "sound": "Chiptune at 128 BPM in G major (8 bars in 15 s, 16 in 30 s), pulse arps, triangle bass, noise drums; keystrokes for typing, blips for landings, a confirm on install.",
+  "visuals": "All code: a cell buffer rendered with one font, box outlines and block bars drawn to the grid (the font has no half-width box glyphs), text rasterised into cells by coverage, the donut from donut.c computed into the grid, live sparklines.",
+  "narration": "Not recommended: the terminal speaks in text."
+ },
+ "palette": {
+  "bg": "#14151F",
+  "bg2": "#1A1B26",
+  "surface": "#1F2233",
+  "ink": "#C0CAF5",
+  "ink2": "#A9B1D6",
+  "muted": "#8A93C0",
+  "accent": "#E0AF68",
+  "accent2": "#7DCFFF",
+  "accent3": "#BB9AF7",
+  "ok": "#9ECE6A",
+  "warn": "#E0AF68",
+  "deny": "#F7768E",
+  "accentInk": "#E0AF68",
+  "onAccent": "#14151F",
+  "line": "#565F89"
+ },
+ "fonts": {
+  "display": "\"Nanum Gothic Coding\", monospace",
+  "sans": "\"Nanum Gothic Coding\", monospace",
+  "serif": "\"Nanum Gothic Coding\", monospace",
+  "mono": "\"Nanum Gothic Coding\", monospace",
+  "cjk": "\"Nanum Gothic Coding\", monospace",
+  "files": [
+   {
+    "family": "Nanum Gothic Coding",
+    "path": "source/fonts/NanumGothicCoding-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#C0CAF5",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.8
+  },
+  "overshoot": 0.0,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": true,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "typing",
+   "scramble"
+  ]
+ },
+ "post": {
+  "grain": 0.02,
+  "vignette": {
+   "a": 0.3,
+   "color": "#000000"
+  },
+  "bloom": 0.15
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "G",
+  "mode": "major",
+  "preset": "chiptune",
+  "instruments": [
+   "pulse",
+   "tri-bass",
+   "pulse-lead",
+   "kick",
+   "snare",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.4,
+   "groove": 0.7,
+   "breakdown": 0.5,
+   "drop": 0.9,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

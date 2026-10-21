@@ -1,0 +1,177 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "home coffee lovers",
+  "title": "브루큐브",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (브루큐브, a home coffee roaster (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "브루큐브, a home coffee roaster (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "precise",
+  "warm",
+  "curious",
+  "mechanical",
+  "trustworthy"
+ ],
+ "rationale": {
+  "palette": "A machine on a dark stage: night #0E1116, a graphite casing #2C3139 with an orange trim #F28C28 (the brand, and every label pin), silver metal #A9B2BC, the heater glowing #FF7A1A, beans from green #8DA35A to roasted #5A3A22. Text is off-white #F3F1EC.",
+  "type": "Gothic A1 Black for the name and lines, set large on the left of the stage; label pins in Gothic A1 ExtraBold on dark tags with an orange rim; the display in a monospaced face.",
+  "motion": "A product cutaway: a slow turntable orbit under one spotlight, then the front and right panels slide off and the inside works (the drum turns, the fan spins, the arm sweeps, the heater breathes); pins land on the beat; the camera flies into the drum and round to the tray; the casing slides shut at the end.",
+  "sound": "Corporate at 112 BPM in A minor (7 bars in 15 s, 14 in 30 s), strings and piano with a firm kick; digital SFX for the mechanism: a whoosh for the panels, blips for the pins.",
+  "visuals": "All code: a small flat-shaded 3D renderer (tiny3d) on Canvas2D builds the roaster from boxes and cylinders; beans, steam, the glow, the gauge, the pins and the display are 2D on top.",
+  "narration": "Not recommended: the labels carry the explanation."
+ },
+ "palette": {
+  "bg": "#0E1116",
+  "bg2": "#16191F",
+  "surface": "#1C2026",
+  "ink": "#F3F1EC",
+  "ink2": "#B9BEC6",
+  "muted": "#A3A9B2",
+  "accent": "#F28C28",
+  "accent2": "#A9B2BC",
+  "accent3": "#FF7A1A",
+  "ok": "#6CC28A",
+  "warn": "#F2B84B",
+  "deny": "#E5635B",
+  "accentInk": "#F28C28",
+  "onAccent": "#0E1116",
+  "line": "#2B3038"
+ },
+ "fonts": {
+  "display": "\"Gothic A1\", sans-serif",
+  "sans": "\"Gothic A1\", sans-serif",
+  "serif": "\"Gothic A1\", sans-serif",
+  "mono": "\"Nanum Gothic Coding\", monospace",
+  "cjk": "\"Gothic A1\", sans-serif",
+  "files": [
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Black.woff2",
+    "weight": "900",
+    "style": "normal"
+   },
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Bold.woff2",
+    "weight": "700 800",
+    "style": "normal"
+   },
+   {
+    "family": "Nanum Gothic Coding",
+    "path": "source/fonts/NanumGothicCoding-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F3F1EC",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.75
+  },
+  "overshoot": 0.05,
+  "ease": "ioC",
+  "transitions": [
+   "cut",
+   "match"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.35,
+   "color": "#000000"
+  },
+  "bloom": 0.15
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "A",
+  "mode": "minor",
+  "preset": "corporate",
+  "instruments": [
+   "strings",
+   "piano",
+   "bell",
+   "bass",
+   "kick",
+   "clap",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.4,
+   "groove": 0.65,
+   "breakdown": 0.4,
+   "drop": 0.85,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

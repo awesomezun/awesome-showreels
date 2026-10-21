@@ -1,0 +1,77 @@
+{
+  "title": "오르빗 컨트롤",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "오르빗 컨트롤", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "buzz"},
+      {"beat": 1, "from": "start", "sfx": "swell"},
+      {"beat": 2, "from": "start", "sfx": "beep"}
+    ]},
+    {"id": "fleet", "label": "궤도 위 300기를 한 화면에", "minBars": 3, "maxBars": 4, "priority": 1, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "tick n=16 gap=0.04"},
+      {"beat": 5, "from": "start", "sfx": "confirm"}
+    ]},
+    {"id": "zoom", "label": "한 기씩, 자세히", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "lock"},
+      {"beat": 2, "from": "start", "sfx": "beep n=4 gap=0.33"}
+    ]},
+    {"id": "alert", "label": "충돌 위험, 3분 전에 피해요", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "buzz"},
+      {"beat": 4.5, "from": "start", "sfx": "whoosh"},
+      {"beat": 6.75, "from": "start", "sfx": "confirm"}
+    ]},
+    {"id": "end", "label": "오르빗 컨트롤", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "chime"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "zoom",
+        "alert"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "fleet": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "fleet": {
+          "bars": 4
+        },
+        "zoom": {
+          "bars": 3
+        },
+        "alert": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 7.0,
+  "captions": {
+    "enabled": false
+  }
+}

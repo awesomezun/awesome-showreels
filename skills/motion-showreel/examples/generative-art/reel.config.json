@@ -1,0 +1,75 @@
+{
+  "title": "흐름의 지도",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "흐름의 지도", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "ding"},
+      {"beat": 5, "from": "start", "sfx": "swell"},
+      {"beat": 5, "from": "start", "sfx": "chime"}
+    ]},
+    {"id": "moment", "label": "같은 순간은 두 번 오지 않아요", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "groove", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "air"}
+    ]},
+    {"id": "rooms", "label": "바람, 물, 빛", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "chime"},
+      {"beat": 4, "from": "start", "sfx": "chime"},
+      {"beat": 8, "from": "start", "sfx": "chime"}
+    ]},
+    {"id": "you", "label": "당신이 움직이면", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "whoosh"}
+    ]},
+    {"id": "end", "label": "흐름의 지도", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "dissolve", "inParams": {"preBeats": 0.5, "postBeats": 0.5}, "music": "outro", "cues": [
+      {"beat": 2, "from": "start", "sfx": "chime"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "rooms",
+        "you"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "moment": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "moment": {
+          "bars": 3
+        },
+        "rooms": {
+          "bars": 3
+        },
+        "you": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 4.6,
+  "captions": {
+    "enabled": false
+  }
+}

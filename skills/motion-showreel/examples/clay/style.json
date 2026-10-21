@@ -1,0 +1,172 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "people in the neighbourhood",
+  "title": "말랑베이커리",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (말랑베이커리, a neighbourhood bread delivery (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "말랑베이커리, a neighbourhood bread delivery (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "cosy",
+  "cute",
+  "warm",
+  "soft",
+  "handmade"
+ ],
+ "rationale": {
+  "palette": "Plasticine pastels: a cream wall #FCE9D8 on a clay table #F2C9A0, golden crusts #D9954F to #B8732F, a pastel blue oven #9FD3E6, a coral scooter #F28B82, mint and soft roofs; chocolate brown #7A4A32 for type and faces.",
+  "type": "Jua for every title, squashed letter by letter with a thick white edge and a soft drop; Dongle for small lines, set big since it runs small.",
+  "motion": "Stop motion: the scenes step their time at 12 frames a second and every outline boils a little on each new frame; things hop in arcs, squash on landing and wobble back; loaves blink and bounce on the beat.",
+  "sound": "Bright pop at 112 BPM in F major (7 bars in 15 s, 14 in 30 s), marimba, pluck and bell on a full kit; organic SFX: bloops and pops for landings, a ding for the door.",
+  "visuals": "All code: wobbly closed paths filled in clay (base, a highlight from the top left, a darker rim, speckle), soft contact shadows, loaves with faces, an oven, a scooter, houses, steam, a clay clock.",
+  "narration": "Not recommended: the pictures say it."
+ },
+ "palette": {
+  "bg": "#FCE9D8",
+  "bg2": "#F2C9A0",
+  "surface": "#FFF6E8",
+  "ink": "#5A3A2A",
+  "ink2": "#7A4A32",
+  "muted": "#7E5E48",
+  "accent": "#F28B82",
+  "accent2": "#D9954F",
+  "accent3": "#A8DDB5",
+  "ok": "#5FA36A",
+  "warn": "#F2A541",
+  "deny": "#E8686A",
+  "accentInk": "#B8483F",
+  "onAccent": "#5A3A2A",
+  "line": "#E8D2B8"
+ },
+ "fonts": {
+  "display": "\"Jua\", sans-serif",
+  "sans": "\"Dongle\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Jua\", sans-serif",
+  "cjk": "\"Jua\", sans-serif",
+  "files": [
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Dongle",
+    "path": "source/fonts/Dongle-Bold.woff2",
+    "weight": "400 700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#5A3A2A",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.5,
+   "z": 0.45
+  },
+  "overshoot": 0.2,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.15,
+   "color": "#5A3A2A"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "F",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "marimba",
+   "pluck",
+   "bell",
+   "bass",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.45,
+   "groove": 0.65,
+   "breakdown": 0.5,
+   "drop": 0.85,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

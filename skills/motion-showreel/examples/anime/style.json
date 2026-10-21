@@ -1,0 +1,164 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "teaser",
+  "audience": "webtoon readers",
+  "title": "벚꽃 정류장",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (벚꽃 정류장, a coming-of-age webtoon (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "벚꽃 정류장, a coming-of-age webtoon (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "wistful",
+  "bright",
+  "tender",
+  "luminous",
+  "nostalgic"
+ ],
+ "rationale": {
+  "palette": "An anime background painting: a deep-to-pale sky #1F5FC8 to #7FC4F2 warming to #FFE8C8 at the horizon, white cumulus shaded blue-grey #B9C7E6 underneath, cherry pinks #FFC3D7, #F49BBB and #FFE4EE, a blue bus-stop sign #2E6FD8, a green city bus; a golden-hour variant for the end.",
+  "type": "Gowun Dodum, a gentle rounded Korean face, in white with a soft blue shadow over the sky, fading up line by line.",
+  "motion": "Unhurried: a tilt down from the sky, a slow push-in, clouds drifting, petals falling and flipping, a gust when the bus arrives; the light is the event: rays and a flare from the sun.",
+  "sound": "Corporate-lite at 112 BPM in D major (7 bars in 15 s, 14 in 30 s), strings and piano, a gentle kit; glassy SFX: chimes on the title and the bus.",
+  "visuals": "All code: cumulus from shaded puffs, a sun with rays and lens ghosts, power lines on a pole, a cherry tree of pink clusters, petals, a street, a bus stop with an arrival board, two students seen from behind, a bus.",
+  "narration": "Not recommended: two lines of text carry it."
+ },
+ "palette": {
+  "bg": "#1F5FC8",
+  "bg2": "#7FC4F2",
+  "surface": "#FFFFFF",
+  "ink": "#FFFFFF",
+  "ink2": "#FFE4EE",
+  "muted": "#DDE8FF",
+  "accent": "#F49BBB",
+  "accent2": "#2E6FD8",
+  "accent3": "#3BB273",
+  "ok": "#3BB273",
+  "warn": "#FFB03A",
+  "deny": "#E8686A",
+  "accentInk": "#FFE4EE",
+  "onAccent": "#1E2A44",
+  "line": "#9AA3B8"
+ },
+ "fonts": {
+  "display": "\"Gowun Dodum\", sans-serif",
+  "sans": "\"Gowun Dodum\", sans-serif",
+  "serif": "\"Gowun Dodum\", sans-serif",
+  "mono": "\"Gowun Dodum\", sans-serif",
+  "cjk": "\"Gowun Dodum\", sans-serif",
+  "files": [
+   {
+    "family": "Gowun Dodum",
+    "path": "source/fonts/GowunDodum-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFFFFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.4,
+   "z": 0.9
+  },
+  "overshoot": 0.0,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.2,
+   "color": "#1E2A44"
+  },
+  "bloom": 0.25
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "D",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "strings",
+   "piano",
+   "bell",
+   "bass",
+   "kick",
+   "clap",
+   "hats"
+  ],
+  "drums": "light",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.55,
+   "breakdown": 0.4,
+   "drop": 0.75,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

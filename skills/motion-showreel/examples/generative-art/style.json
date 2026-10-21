@@ -1,0 +1,164 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "people who visit exhibitions",
+  "title": "흐름의 지도",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (흐름의 지도, a media art exhibition (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "흐름의 지도, a media art exhibition (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "quiet",
+  "deep",
+  "wondrous",
+  "alive",
+  "unrepeatable"
+ ],
+ "rationale": {
+  "palette": "Dark and deep: night navy #06070C with a faint centre glow; the lines in light blues and lilac (#7FA8FF, #B9A7FF, #8FE3E8) for the drift, blue for wind, teal for water (#2EC4B6), gold for light (#FFD27A); white type, grey-blue small print.",
+  "type": "Hahmlet, a Korean serif with a calm, wide stance: light for the title made of lines, regular for the lines, letter-spacing closing in as each line fades up.",
+  "motion": "Generative: thousands of particles ride a time-varying flow field, each born on its own clock and integrated from its birth to now, so every frame can be drawn on its own; they bloom from one point, gather into letters and let go, part round a visitor; the rooms change the field itself.",
+  "sound": "Ambient at 96 BPM in A major (6 bars in 15 s, 12 in 30 s), pad, bell, glass and piano with a soft kick and shaker; glassy SFX: a swell into the title, chimes on the rooms.",
+  "visuals": "All code: analytic fields (drift, wind, water, light), additive trails, text sampled into points for the particles to gather on, a visitor that pushes the flow aside, a clock counting this moment.",
+  "narration": "Not recommended: the work is silent but for the music."
+ },
+ "palette": {
+  "bg": "#06070C",
+  "bg2": "#0D1020",
+  "surface": "#141828",
+  "ink": "#F2F4F8",
+  "ink2": "#AEB6C6",
+  "muted": "#8E97A8",
+  "accent": "#7FA8FF",
+  "accent2": "#2EC4B6",
+  "accent3": "#FFD27A",
+  "ok": "#8FE3E8",
+  "warn": "#FFD27A",
+  "deny": "#FF8A5C",
+  "accentInk": "#B9D2FF",
+  "onAccent": "#06070C",
+  "line": "#1E2436"
+ },
+ "fonts": {
+  "display": "\"Hahmlet\", serif",
+  "sans": "\"Hahmlet\", serif",
+  "serif": "\"Hahmlet\", serif",
+  "mono": "\"Hahmlet\", serif",
+  "cjk": "\"Hahmlet\", serif",
+  "files": [
+   {
+    "family": "Hahmlet",
+    "path": "source/fonts/Hahmlet.woff2",
+    "weight": "100 900",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F2F4F8",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.2,
+   "z": 0.95
+  },
+  "overshoot": 0.0,
+  "ease": "outC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.4,
+   "color": "#000000"
+  },
+  "bloom": 0.35
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "A",
+  "mode": "major",
+  "preset": "ambient",
+  "instruments": [
+   "pad",
+   "bell",
+   "glass",
+   "piano",
+   "sub",
+   "kick",
+   "shaker"
+  ],
+  "drums": "light",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.5,
+   "breakdown": 0.4,
+   "drop": 0.65,
+   "outro": 0.35
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

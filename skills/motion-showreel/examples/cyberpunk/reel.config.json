@@ -1,0 +1,76 @@
+{
+  "title": "네온 레인 2087",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "네온 레인 2087", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 1, "from": "start", "sfx": "glitch"},
+      {"beat": 1.5, "from": "start", "sfx": "whoosh"}
+    ]},
+    {"id": "street", "label": "2087년, 비는 그치지 않는다", "minBars": 3, "maxBars": 4, "priority": 1, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "glitch"},
+      {"beat": 2.25, "from": "start", "sfx": "glitch"},
+      {"beat": 4, "from": "start", "sfx": "whoosh"}
+    ]},
+    {"id": "chase", "label": "빗속의 서울을 달려라", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "whip"},
+      {"beat": 2, "from": "start", "sfx": "impact"}
+    ]},
+    {"id": "hack", "label": "도시의 불빛을 해킹하라", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 2, "from": "start", "sfx": "keytap dur=4b"},
+      {"beat": 6.75, "from": "start", "sfx": "lock"}
+    ]},
+    {"id": "end", "label": "네온 레인 2087", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "glitch"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "chase",
+        "hack"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "street": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "street": {
+          "bars": 4
+        },
+        "chase": {
+          "bars": 3
+        },
+        "hack": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 6.5,
+  "captions": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,165 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "people who want fewer, steadier habits",
+  "title": "하루 세 칸",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (하루 세 칸, a three-task habit app (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "하루 세 칸, a three-task habit app (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "clean",
+  "calm",
+  "precise",
+  "light",
+  "quietly delightful"
+ ],
+ "rationale": {
+  "palette": "The brief asks for almost nothing: a near-white desk #F4F5F7, white cards, a dark blue-grey ink #1F2430 with #5A6170 and #646B78 for the quiet text, one blue #3B6EF5 for every action, and green #2BB673 only for done. The one exception is earned: an iridescent bloom when the day is complete.",
+  "type": "Pretendard Variable, as clean UIs set Korean: 800 for titles, 600 for rows, 500 for meta, tight tracking.",
+  "motion": "Real use, not decoration: springs that settle without wobble, a macOS arrow that glides between targets with a small arc and clicks (a press and a ripple), checks that fill and tick, rows that strike through, a ring that steps; confetti and the bloom only at 3/3. Scenes dissolve.",
+  "sound": "Bright pop at 128 BPM in E major (8 bars in 15 s, 16 in 30 s), soft; glassy SFX: a click for every click, a confirm at 3/3, sparkles, a tick per dot of the week.",
+  "visuals": "All code: cards with two layered shadows and a hairline, checks, a progress ring, a toggle, a week of 21 dots, the arrow cursor, the app icon, the bloom (a blurred conic gradient) and confetti.",
+  "narration": "Not recommended: a quiet product teaser that reads without sound."
+ },
+ "palette": {
+  "bg": "#F4F5F7",
+  "bg2": "#E9EBEF",
+  "surface": "#FFFFFF",
+  "ink": "#1F2430",
+  "ink2": "#5A6170",
+  "muted": "#5F6673",
+  "accent": "#3B6EF5",
+  "accent2": "#2BB673",
+  "accent3": "#8C6CF2",
+  "ok": "#2BB673",
+  "warn": "#C9881A",
+  "deny": "#D9463B",
+  "accentInk": "#2F5BD8",
+  "onAccent": "#FFFFFF",
+  "line": "#E6E8EC"
+ },
+ "fonts": {
+  "display": "\"Pretendard Variable\", sans-serif",
+  "sans": "\"Pretendard Variable\", sans-serif",
+  "serif": "\"Pretendard Variable\", sans-serif",
+  "mono": "\"Pretendard Variable\", sans-serif",
+  "cjk": "\"Pretendard Variable\", sans-serif",
+  "files": [
+   {
+    "family": "Pretendard Variable",
+    "path": "source/fonts/PretendardVariable.woff2",
+    "weight": "45 920",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1F2430",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.6,
+   "z": 0.72
+  },
+  "overshoot": 0.03,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.01,
+  "vignette": {
+   "a": 0.05,
+   "color": "#1F2430"
+  },
+  "bloom": 0.05
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "E",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "bell",
+   "glass",
+   "marimba",
+   "bass",
+   "kick",
+   "clap",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.55,
+   "breakdown": 0.35,
+   "drop": 0.75,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

@@ -1,0 +1,87 @@
+{
+  "title": "8비트 장터 2026",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "boot", "label": "8비트 장터 2026", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "thud"},
+      {"beat": 5.25, "from": "start", "sfx": "ding"},
+      {"beat": 7, "from": "start", "sfx": "shimmer"}
+    ]},
+    {"id": "run", "label": "다시, 동전 하나의 모험", "minBars": 4, "maxBars": 5, "priority": 1, "inBeats": 15, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 3, "from": "start", "sfx": "ding"},
+      {"beat": 6, "from": "start", "sfx": "ding"},
+      {"beat": 9, "from": "start", "sfx": "stamp"},
+      {"beat": 9.25, "from": "start", "sfx": "ding"},
+      {"beat": 12, "from": "start", "sfx": "ding"},
+      {"beat": 15, "from": "start", "sfx": "ding"},
+      {"beat": 1.25, "from": "start", "sfx": "tick n=3 gap=0.25"},
+      {"beat": 3, "from": "start", "sfx": "tick n=8 gap=0.2"}
+    ]},
+    {"id": "booths", "label": "세 부스", "minBars": 4, "maxBars": 4, "priority": 3, "optional": true, "inBeats": 15, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 3, "from": "start", "sfx": "swish"},
+      {"beat": 7, "from": "start", "sfx": "swish"},
+      {"beat": 8, "from": "start", "sfx": "confirm"},
+      {"beat": 11, "from": "start", "sfx": "swish"}
+    ]},
+    {"id": "score", "label": "최고 점수", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 2, "from": "start", "sfx": "beep"},
+      {"beat": 3, "from": "start", "sfx": "beep"},
+      {"beat": 4, "from": "start", "sfx": "beep"},
+      {"beat": 5, "from": "start", "sfx": "beep"}
+    ]},
+    {"id": "end", "label": "장터 입구", "minBars": 3, "maxBars": 4, "priority": 1, "inBeats": 11, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 5, "from": "start", "sfx": "shimmer"},
+      {"beat": 2, "from": "start", "sfx": "confirm"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "booths",
+        "score"
+      ],
+      "scenes": {
+        "boot": {
+          "bars": 2
+        },
+        "run": {
+          "bars": 4
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "boot": {
+          "bars": 2
+        },
+        "run": {
+          "bars": 5
+        },
+        "booths": {
+          "bars": 4
+        },
+        "score": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 4
+        }
+      }
+    }
+  },
+  "poster": 7.0,
+  "captions": {
+    "enabled": false
+  }
+}

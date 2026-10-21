@@ -1,0 +1,79 @@
+{
+  "title": "산책왕 멍멍",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "산책왕 멍멍", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "whip"},
+      {"beat": 1.75, "from": "start", "sfx": "thud"},
+      {"beat": 2.25, "from": "start", "sfx": "bloop"},
+      {"beat": 1, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "walk", "label": "오늘도 산책 1등!", "minBars": 4, "maxBars": 5, "priority": 1, "inBeats": 15, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 1, "from": "start", "sfx": "tick n=12 gap=0.25"},
+      {"beat": 8, "from": "start", "sfx": "confirm"},
+      {"beat": 8, "from": "start", "sfx": "sparkle dur=2b"}
+    ]},
+    {"id": "friends", "label": "동네 친구들과 랭킹 대결", "minBars": 4, "maxBars": 4, "priority": 3, "optional": true, "inBeats": 15, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 2.75, "from": "start", "sfx": "thud"},
+      {"beat": 4.75, "from": "start", "sfx": "thud"},
+      {"beat": 7.75, "from": "start", "sfx": "impact"}
+    ]},
+    {"id": "map", "label": "처음 가 보는 산책길 추천", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 1, "from": "start", "sfx": "pop n=8 gap=1"}
+    ]},
+    {"id": "end", "label": "산책왕 멍멍", "minBars": 3, "maxBars": 4, "priority": 1, "inBeats": 11, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "pop"},
+      {"beat": 2, "from": "start", "sfx": "chime"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "friends",
+        "map"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "walk": {
+          "bars": 4
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "walk": {
+          "bars": 5
+        },
+        "friends": {
+          "bars": 4
+        },
+        "map": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 4
+        }
+      }
+    }
+  },
+  "poster": 6.5,
+  "captions": {
+    "enabled": false
+  }
+}

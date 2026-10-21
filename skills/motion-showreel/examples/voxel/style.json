@@ -1,0 +1,167 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "parents and children aged 8 to 12",
+  "title": "블록 마을",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (블록 마을, a summer coding camp for children (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "블록 마을, a summer coding camp for children (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "playful",
+  "bright",
+  "tactile",
+  "proud",
+  "curious"
+ ],
+ "rationale": {
+  "palette": "A toy world: sky blue #7FCBFF to #DDF3FF, grass #7CCB4F over dirt #A06C3E, sand #F2D27A, water #52BDF2, orange bricks #F08A5D, a red roof #EF4B3C, wood, two greens for leaves, lamp yellow #FFD84A; the code panel deep navy #1F2347 with candy syntax colours. Night turns everything towards #1A2456 except what glows.",
+  "type": "Jua throughout, round and friendly: the name in white with a navy block extrusion, its letters dropping like blocks; the code in Jua too, coloured by token.",
+  "motion": "Everything lands: tiles pop up from the middle out, blocks fall with a shadow growing under them, bounce once, squash and throw a puff; text pops with a small overshoot; each line of code flashes when it runs, a beat before its block lands.",
+  "sound": "Bright pop at 128 BPM in G major (8 bars in 15 s, 16 in 30 s), marimba, pluck and bell on a full kit; pops on each landing, a riser into the loop, chimes for the night and the golden block.",
+  "visuals": "All code: an isometric voxel renderer on Canvas2D (three shaded faces per cube, outlines, culling against neighbours, back-to-front order), a code panel that types, block clouds, stars and fireflies.",
+  "narration": "Not recommended: the code on screen is the story."
+ },
+ "palette": {
+  "bg": "#7FCBFF",
+  "bg2": "#DDF3FF",
+  "surface": "#FFFFFF",
+  "ink": "#1E2246",
+  "ink2": "#2A3A78",
+  "muted": "#283470",
+  "accent": "#FFD84A",
+  "accent2": "#EF4B3C",
+  "accent3": "#7CCB4F",
+  "ok": "#5BD27A",
+  "warn": "#FFB86B",
+  "deny": "#FF6B6B",
+  "accentInk": "#2A3A78",
+  "onAccent": "#1E2246",
+  "line": "#2E3466"
+ },
+ "fonts": {
+  "display": "\"Jua\", sans-serif",
+  "sans": "\"Jua\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Jua\", sans-serif",
+  "cjk": "\"Jua\", sans-serif",
+  "files": [
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1E2246",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.0,
+   "z": 0.5
+  },
+  "overshoot": 0.15,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop",
+   "typing"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.12,
+   "color": "#1E2246"
+  },
+  "bloom": 0.1
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "G",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "marimba",
+   "pluck",
+   "bell",
+   "bass",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.5,
+   "groove": 0.7,
+   "breakdown": 0.55,
+   "drop": 0.85,
+   "outro": 0.6
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

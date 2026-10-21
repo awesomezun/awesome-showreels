@@ -1,0 +1,174 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "satellite operators",
+  "title": "오르빗 컨트롤",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (오르빗 컨트롤, a satellite operations platform (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "오르빗 컨트롤, a satellite operations platform (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "calm",
+  "precise",
+  "futuristic",
+  "luminous",
+  "in control"
+ ],
+ "rationale": {
+  "palette": "A dark control room (#04060E with a blue-black glow) and one hologram colour: light blue #56D8FF for lines, #A8ECFF for land and highlights, near-white #E8F8FF for satellites and type; orange #FF9A3C only for the one satellite in focus, debris and warnings.",
+  "type": "Orbit for names and lines, glowing; Nanum Gothic Coding (bold) for every figure, counter and readout.",
+  "motion": "Projected light: the projector stutters on, the globe draws itself from the bottom up, satellites switch on as a counter runs; everything turns slowly; scanlines roll and the hologram flickers now and then; orbits move at their own speeds.",
+  "sound": "Dark synth at 112 BPM in A minor (7 bars in 15 s, 14 in 30 s), soft saw pad, saw-pluck arps, rolling saw bass; digital SFX: beeps for the counter, a lock for the satellite in focus, an alarm and a whoosh for the manoeuvre.",
+  "visuals": "All code: a wireframe globe with a procedural dot-matrix land mask, 300 satellites on fourteen planes in three shells (low, medium, geostationary), rings, a projector cone, floating panels with corner brackets, a wireframe satellite, scanlines.",
+  "narration": "Not recommended: the readouts carry it."
+ },
+ "palette": {
+  "bg": "#04060E",
+  "bg2": "#0C1828",
+  "surface": "#0A1220",
+  "ink": "#E8F8FF",
+  "ink2": "#7FA9C0",
+  "muted": "#6E92A6",
+  "accent": "#56D8FF",
+  "accent2": "#FF9A3C",
+  "accent3": "#A8ECFF",
+  "ok": "#56D8FF",
+  "warn": "#FF9A3C",
+  "deny": "#FF5A5A",
+  "accentInk": "#56D8FF",
+  "onAccent": "#04060E",
+  "line": "#16304A"
+ },
+ "fonts": {
+  "display": "\"Orbit\", sans-serif",
+  "sans": "\"Orbit\", sans-serif",
+  "serif": "\"Orbit\", sans-serif",
+  "mono": "\"Nanum Gothic Coding\", monospace",
+  "cjk": "\"Orbit\", sans-serif",
+  "files": [
+   {
+    "family": "Orbit",
+    "path": "source/fonts/Orbit-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Nanum Gothic Coding",
+    "path": "source/fonts/NanumGothicCoding-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#E8F8FF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.8
+  },
+  "overshoot": 0.0,
+  "ease": "ioC",
+  "transitions": [
+   "cut",
+   "glitch"
+  ],
+  "characters": false,
+  "dataViz": true,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine",
+   "typing"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.45,
+   "color": "#000000"
+  },
+  "bloom": 0.4
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "A",
+  "mode": "minor",
+  "preset": "dark-synth",
+  "instruments": [
+   "pad",
+   "saw-pluck",
+   "saw-bass",
+   "stab",
+   "lead",
+   "kick",
+   "clap",
+   "snare",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.65,
+   "breakdown": 0.45,
+   "drop": 0.9,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

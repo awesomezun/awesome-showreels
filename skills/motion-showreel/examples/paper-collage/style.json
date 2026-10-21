@@ -1,0 +1,183 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "indie music fans",
+  "title": "종이비행 페스티벌 2026",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (종이비행 페스티벌 2026, an indie music festival (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "종이비행 페스티벌 2026, an indie music festival (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "loud",
+  "handmade",
+  "playful",
+  "summery",
+  "scrappy"
+ ],
+ "rationale": {
+  "palette": "The brief: newsprint board #EFE9DC and black ink #1E1B1A, with red #E8402E, cobalt #2F55D4, yellow #F7C531, pink #F49AC1, green #37A169 and kraft #C9A57B paper. Every piece keeps a white cut border so the colours never touch.",
+  "type": "Ransom letters: each Korean letter on its own torn chip in one of four faces (Black Han Sans, Do Hyeon, Song Myung, Jua) and its own colour pair, as if cut from four magazines; plain lines sit on torn strips in Do Hyeon.",
+  "motion": "Paper moved by hand and photographed: every move is held on twos (12 fps), pieces slap down on the beat (scale 1.35 to 1 with a small back-out settle, the shadow lands), a paper plane crosses the board; new posters push in from the side.",
+  "sound": "Bright pop at 128 BPM in G major (8 bars in 15 s, 16 in 30 s) with guitar, claps and bells; organic SFX: a pop for every slapped piece, a swish for each push, a thud for the stamp.",
+  "visuals": "All code: torn outlines, white borders, drop shadows, halftone, stripe and printed-text fills, tape, ransom letters, a skyline of paper strips, a halftone crowd, a ticket stub. No images.",
+  "narration": "Not recommended: a loud, music-led poster reel."
+ },
+ "palette": {
+  "bg": "#EFE9DC",
+  "bg2": "#E2D8C3",
+  "surface": "#FBF8F1",
+  "ink": "#1E1B1A",
+  "ink2": "#3B3634",
+  "muted": "#5E5650",
+  "accent": "#E8402E",
+  "accent2": "#2F55D4",
+  "accent3": "#F7C531",
+  "ok": "#37A169",
+  "warn": "#B9860F",
+  "deny": "#C9321F",
+  "accentInk": "#C9321F",
+  "onAccent": "#FFFFFF",
+  "line": "#CFC4AD"
+ },
+ "fonts": {
+  "display": "\"Black Han Sans\", sans-serif",
+  "sans": "\"Do Hyeon\", sans-serif",
+  "serif": "\"Song Myung\", serif",
+  "mono": "\"Do Hyeon\", sans-serif",
+  "cjk": "\"Do Hyeon\", sans-serif",
+  "files": [
+   {
+    "family": "Black Han Sans",
+    "path": "source/fonts/BlackHanSans-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Do Hyeon",
+    "path": "source/fonts/DoHyeon-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Song Myung",
+    "path": "source/fonts/SongMyung-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1E1B1A",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 2.6,
+   "z": 0.5
+  },
+  "overshoot": 0.2,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.05,
+  "vignette": {
+   "a": 0.2,
+   "color": "#3B2A1A"
+  },
+  "bloom": 0
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "G",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "guitar",
+   "marimba",
+   "bell",
+   "bass",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.45,
+   "groove": 0.7,
+   "breakdown": 0.4,
+   "drop": 0.95,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

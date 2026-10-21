@@ -1,0 +1,165 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "parents of young children",
+  "title": "꼬마 화가",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (꼬마 화가, a picture-book app (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "꼬마 화가, a picture-book app (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "warm",
+  "clumsy",
+  "unhurried",
+  "cheerful",
+  "handmade"
+ ],
+ "rationale": {
+  "palette": "The brief asks for the basic crayon box on yellowed drawing paper: paper #F7EFDC, a soft charcoal ink #34323C, and the box itself (red #E2483A, orange #F2952B, yellow #F6C33B, green #58A846, sky #68B6E8, blue #3E7FD0, purple #8B5CC4, pink #EF7BA5, brown #8A5A2E). Each sentence takes one crayon.",
+  "type": "Gaegu, a handwritten Korean face, at 60-250 px: letters pop on one at a time with a slight tilt that settles, and they sit in the crayon layer, so the paper tooth breaks them like everything else.",
+  "motion": "Hand speed: every mark is drawn on along its own path (three thin offset passes per line, zig-zag scribbles for fills), the lines boil at 8 fps like hand-drawn animation, a crayon stick rides the line being drawn; pages slide up like a sketchbook and the drawing shrinks into a book.",
+  "sound": "Bright pop at 112 BPM in F major (7 bars in 15 s, 14 in 30 s) on ukulele, marimba and bells with a light kit; organic SFX: a crayon drawon for every mark, pops for the letters, a page flip.",
+  "visuals": "Everything is code: the paper (fibres, a fixed tooth), the crayon marks, the drawing (hills, a house, a tree, a child with a kite, the sun, clouds, flowers), the book and its turning pages. No images.",
+  "narration": "Not recommended: a short, music-led launch reel; every sentence is on screen."
+ },
+ "palette": {
+  "bg": "#F7EFDC",
+  "bg2": "#EFE2C4",
+  "surface": "#FFFDF6",
+  "ink": "#34323C",
+  "ink2": "#5A5560",
+  "muted": "#6B6258",
+  "accent": "#E2483A",
+  "accent2": "#3E7FD0",
+  "accent3": "#58A846",
+  "ok": "#58A846",
+  "warn": "#C9881A",
+  "deny": "#C23A2C",
+  "accentInk": "#C23A2C",
+  "onAccent": "#FFFFFF",
+  "line": "#D8C9A6"
+ },
+ "fonts": {
+  "display": "\"Gaegu\", sans-serif",
+  "sans": "\"Gaegu\", sans-serif",
+  "serif": "\"Gaegu\", sans-serif",
+  "mono": "\"Gaegu\", sans-serif",
+  "cjk": "\"Gaegu\", sans-serif",
+  "files": [
+   {
+    "family": "Gaegu",
+    "path": "source/fonts/Gaegu-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#34323C",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.55
+  },
+  "overshoot": 0.1,
+  "ease": "outBack",
+  "transitions": [
+   "cut",
+   "match"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.04,
+  "vignette": {
+   "a": 0.18,
+   "color": "#8A5A2E"
+  },
+  "bloom": 0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "F",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "ukulele",
+   "marimba",
+   "bell",
+   "tri-bass",
+   "kick",
+   "clap",
+   "shaker"
+  ],
+  "drums": "light",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.6,
+   "breakdown": 0.35,
+   "drop": 0.8,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

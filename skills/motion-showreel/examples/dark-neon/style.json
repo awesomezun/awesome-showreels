@@ -1,0 +1,167 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "security teams and IT leads",
+  "title": "센티넬 X",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (센티넬 X, an AI security platform (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "센티넬 X, an AI security platform (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "sharp",
+  "cold",
+  "vigilant",
+  "precise",
+  "trustworthy"
+ ],
+ "rationale": {
+  "palette": "Neon on black: #030407 for the night, cyan #2EF2FF for everything that is normal (the network, the radar, the shield), magenta #FF2E9A only for attacks and the X, white cores in every tube, grey-blue #8FA6B2 for small print.",
+  "type": "Orbit, a squared sci-fi Korean face, drawn as neon: a wide glow, a coloured outline and a white core; small print plain.",
+  "motion": "Neon behaviour: tubes switch on with the stutter of a real sign and hum; the network draws itself edge by edge and carries packets; the radar turns once a bar; attacks are invisible until the sweep crosses them, then burn and are stopped with a shield pulse on the node.",
+  "sound": "Dark synth at 128 BPM in D minor (8 bars in 15 s, 16 in 30 s), saw pad, saw-pluck arps, rolling saw bass and stabs on a full kit; digital SFX: a lock-on beep for each attack seen, a hit for each one stopped.",
+  "visuals": "All code: additive three-pass neon strokes and lettering, a fixed network of fourteen nodes and twenty edges, a radar wedge, attacks with deterministic reveal times, a hexagon dome, a faint grid.",
+  "narration": "Not recommended: the cards carry it."
+ },
+ "palette": {
+  "bg": "#030407",
+  "bg2": "#081014",
+  "surface": "#0C171C",
+  "ink": "#F4FBFF",
+  "ink2": "#8FA6B2",
+  "muted": "#7A92A0",
+  "accent": "#2EF2FF",
+  "accent2": "#FF2E9A",
+  "accent3": "#F4FBFF",
+  "ok": "#2EF2FF",
+  "warn": "#FFD24A",
+  "deny": "#FF2E9A",
+  "accentInk": "#2EF2FF",
+  "onAccent": "#030407",
+  "line": "#0E3A44"
+ },
+ "fonts": {
+  "display": "\"Orbit\", sans-serif",
+  "sans": "\"Orbit\", sans-serif",
+  "serif": "\"Orbit\", sans-serif",
+  "mono": "\"Orbit\", sans-serif",
+  "cjk": "\"Orbit\", sans-serif",
+  "files": [
+   {
+    "family": "Orbit",
+    "path": "source/fonts/Orbit-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F4FBFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.0,
+   "z": 0.6
+  },
+  "overshoot": 0.0,
+  "ease": "outC",
+  "transitions": [
+   "cut",
+   "glitch"
+  ],
+  "characters": false,
+  "dataViz": true,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.035,
+  "vignette": {
+   "a": 0.45,
+   "color": "#000000"
+  },
+  "bloom": 0.45
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "D",
+  "mode": "minor",
+  "preset": "dark-synth",
+  "instruments": [
+   "pad",
+   "saw-pluck",
+   "saw-bass",
+   "stab",
+   "lead",
+   "kick",
+   "clap",
+   "snare",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.75,
+   "breakdown": 0.45,
+   "drop": 1.0,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

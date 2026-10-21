@@ -1,0 +1,78 @@
+{
+  "title": "말랑베이커리",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "말랑베이커리", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 1.25, "from": "start", "sfx": "bloop"},
+      {"beat": 2.75, "from": "start", "sfx": "thud"},
+      {"beat": 3, "from": "start", "sfx": "pop n=6 gap=0.25"}
+    ]},
+    {"id": "delivery", "label": "갓 구운 빵, 말랑하게 문 앞까지", "minBars": 3, "maxBars": 4, "priority": 1, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "pop n=6 gap=0.25"},
+      {"beat": 2.25, "from": "start", "sfx": "pop n=8 gap=0.2"}
+    ]},
+    {"id": "menu", "label": "우유식빵, 소금빵, 단팥빵", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "bloop"},
+      {"beat": 4, "from": "start", "sfx": "bloop"},
+      {"beat": 7.75, "from": "start", "sfx": "bloop"}
+    ]},
+    {"id": "time", "label": "주문하면 30분", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "tick n=8 gap=0.25"},
+      {"beat": 4.5, "from": "start", "sfx": "ding"}
+    ]},
+    {"id": "end", "label": "말랑베이커리", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "pop n=6 gap=0.25"},
+      {"beat": 2, "from": "start", "sfx": "chime"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "menu",
+        "time"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "delivery": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "delivery": {
+          "bars": 4
+        },
+        "menu": {
+          "bars": 3
+        },
+        "time": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 7.0,
+  "captions": {
+    "enabled": false
+  }
+}

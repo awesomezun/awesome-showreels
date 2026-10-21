@@ -1,0 +1,91 @@
+{
+  "title": "한빛시 자전거 리포트 2026",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "한빛시 자전거 리포트", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "count dur=2b"},
+      {"beat": 2, "from": "start", "sfx": "pop x4 gap=0.5b"}
+    ]},
+    {"id": "bars", "label": "자전거 출근 인구", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "push", "inParams": {"dir": "left"}, "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 0.75, "from": "start", "sfx": "pop x4 gap=1b"},
+      {"beat": 1, "from": "start", "sfx": "count dur=3b"},
+      {"beat": 5.75, "from": "start", "sfx": "ding"}
+    ]},
+    {"id": "map", "label": "자전거 도로 112km", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "push", "inParams": {"dir": "left"}, "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 0.75, "from": "start", "sfx": "drawon dur=4b"},
+      {"beat": 1, "from": "start", "sfx": "count dur=3b"},
+      {"beat": 3.5, "from": "start", "sfx": "pop x6 gap=0.25b"}
+    ]},
+    {"id": "donut", "label": "출근 수단 비율", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "push", "inParams": {"dir": "left"}, "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 0.75, "from": "start", "sfx": "drawon dur=4b"},
+      {"beat": 5, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "timeline", "label": "지난 3년", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "push", "inParams": {"dir": "left"}, "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 0.5, "from": "start", "sfx": "pop x4 gap=1.25b"}
+    ]},
+    {"id": "message", "label": "자전거 출근, 3년 새 두 배", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 6, "outBeats": 0, "in": "push", "inParams": {"dir": "left"}, "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 0.75, "from": "start", "sfx": "chime"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "donut",
+        "timeline"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "bars": {
+          "bars": 2
+        },
+        "map": {
+          "bars": 2
+        },
+        "message": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "bars": {
+          "bars": 3
+        },
+        "map": {
+          "bars": 3
+        },
+        "donut": {
+          "bars": 3
+        },
+        "timeline": {
+          "bars": 2
+        },
+        "message": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 5.6,
+  "captions": {
+    "enabled": false
+  }
+}

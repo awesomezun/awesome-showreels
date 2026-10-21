@@ -1,0 +1,164 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "the neighbourhood and film lovers",
+  "title": "동명극장 재개관",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (동명극장, a single-screen cinema reopening (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "동명극장, a single-screen cinema reopening (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "nostalgic",
+  "warm",
+  "giddy",
+  "grainy",
+  "proud"
+ ],
+ "rationale": {
+  "palette": "Sepia film: everything is drawn in browns from #1E1812 to cream #F4EAD2 and multiplied by a warm tint; only the bulbs glow warm yellow #FFE6A0 and #F2C46A; intertitles are cream on near-black #100C08.",
+  "type": "Nanum Myeongjo ExtraBold, the serif of old Korean cinema posters and intertitles, centred on the cards and set as subtitles under the pictures.",
+  "motion": "The projector, not the camera: the frame weaves every film frame (18 a second), the exposure flickers, grain crawls, scratches and dust pass; the leader counts down on the beats; bulbs light one at a time, then chase; cards cut on the bar.",
+  "sound": "Swing at 128 BPM in Bb major (8 bars in 15 s, 16 in 30 s): piano comping, walking upright bass, clarinet, ride and brushes; a beep on each countdown number, a soft thud for the cards.",
+  "visuals": "All code: a countdown leader with a clock wipe and crosshair, intertitle cards with double borders and corner flourishes, a brick front with a bulb sign and a marquee, a projector with turning reels and a dusty beam, a film pass (tint, flicker, grain, scratches, dust, a hair, an iris vignette).",
+  "narration": "Not recommended: it is a silent-film look."
+ },
+ "palette": {
+  "bg": "#100C08",
+  "bg2": "#2A221A",
+  "surface": "#1E1812",
+  "ink": "#F4EAD2",
+  "ink2": "#E9DCC2",
+  "muted": "#BFAF90",
+  "accent": "#F2C46A",
+  "accent2": "#FFE6A0",
+  "accent3": "#8A6A3A",
+  "ok": "#B8C890",
+  "warn": "#F2C46A",
+  "deny": "#C86A50",
+  "accentInk": "#F2C46A",
+  "onAccent": "#100C08",
+  "line": "#6E5E4A"
+ },
+ "fonts": {
+  "display": "\"Nanum Myeongjo\", serif",
+  "sans": "\"Nanum Myeongjo\", serif",
+  "serif": "\"Nanum Myeongjo\", serif",
+  "mono": "\"Nanum Myeongjo\", serif",
+  "cjk": "\"Nanum Myeongjo\", serif",
+  "files": [
+   {
+    "family": "Nanum Myeongjo",
+    "path": "source/fonts/NanumMyeongjo-ExtraBold.woff2",
+    "weight": "800 900",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F4EAD2",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.8
+  },
+  "overshoot": 0.0,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.02,
+  "vignette": {
+   "a": 0.2,
+   "color": "#000000"
+  },
+  "bloom": 0.1
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "Bb",
+  "mode": "major",
+  "preset": "swing",
+  "instruments": [
+   "piano",
+   "upright",
+   "clarinet",
+   "ride",
+   "brush",
+   "kick",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.4,
+   "groove": 0.65,
+   "breakdown": 0.4,
+   "drop": 0.85,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

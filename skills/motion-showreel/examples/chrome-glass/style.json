@@ -1,0 +1,170 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "people choosing a fragrance",
+  "title": "글래스 노트 No.3",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (글래스 노트 No.3, an eau de parfum (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "글래스 노트 No.3, an eau de parfum (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "quiet",
+  "precious",
+  "cool",
+  "glossy",
+  "weighty"
+ ],
+ "rationale": {
+  "palette": "A dark studio: near-black navy #090B11 to #121620 so glass and chrome have something to shine against; silver #C9D1DC and white light; a faint iridescence (lilac #B9A7FF, aqua #8FE3E8) in the reflections only; the liquid a pale champagne #F2E3C6. The notes scene adds one soft field of colour per note.",
+  "type": "Nanum Myeongjo ExtraBold, a Korean serif with fine contrast, set in chrome (an extruded steel edge, a horizon gradient, a passing sheen) for the name and the solid half of the line, and in plain white where the glass has to bend it.",
+  "motion": "Slow and expensive: the camera drifts and orbits, the bottle turns, a long strip of light sweeps across the glass; the text behind the bottle drifts so the glass bends it as it passes; the chrome cap comes down and lands with weight. Soft blur-in for the small lines.",
+  "sound": "Ambient at 96 BPM in F lydian (6 bars in 15 s, 12 in 30 s), pad, bell, glass and piano with light drums; glassy SFX: a chime for the name, swells into the notes, a thud when the cap lands.",
+  "visuals": "All code: one WebGL2 raymarcher (signed distance fields) draws the thick bevelled glass, the champagne liquid with its surface, the octagonal chrome cap and a soft floor reflection; the glass reads the 2D layer behind it through refracted rays, one index of refraction per colour. Lettering and the studio are 2D.",
+  "narration": "Not recommended: a fragrance film is music and light."
+ },
+ "palette": {
+  "bg": "#090B11",
+  "bg2": "#121620",
+  "surface": "#171B26",
+  "ink": "#F4F6FA",
+  "ink2": "#C3CAD6",
+  "muted": "#A3ABBA",
+  "accent": "#C9D1DC",
+  "accent2": "#B9A7FF",
+  "accent3": "#8FE3E8",
+  "ok": "#9FE0B8",
+  "warn": "#F2E3C6",
+  "deny": "#F0A0A0",
+  "accentInk": "#E3E8F0",
+  "onAccent": "#090B11",
+  "line": "#2A3040"
+ },
+ "fonts": {
+  "display": "\"Nanum Myeongjo\", serif",
+  "sans": "\"Nanum Myeongjo\", serif",
+  "serif": "\"Nanum Myeongjo\", serif",
+  "mono": "\"Nanum Myeongjo\", serif",
+  "cjk": "\"Nanum Myeongjo\", serif",
+  "files": [
+   {
+    "family": "Nanum Myeongjo",
+    "path": "source/fonts/NanumMyeongjo-ExtraBold.woff2",
+    "weight": "800 900",
+    "style": "normal"
+   },
+   {
+    "family": "Nanum Myeongjo",
+    "path": "source/fonts/NanumMyeongjo-Bold.woff2",
+    "weight": "400 700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F4F6FA",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.4,
+   "z": 0.9
+  },
+  "overshoot": 0.0,
+  "ease": "outC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.02,
+  "vignette": {
+   "a": 0.4,
+   "color": "#000000"
+  },
+  "bloom": 0.25
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "F",
+  "mode": "lydian",
+  "preset": "ambient",
+  "instruments": [
+   "pad",
+   "bell",
+   "glass",
+   "piano",
+   "sub",
+   "kick",
+   "hats"
+  ],
+  "drums": "light",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.5,
+   "breakdown": 0.45,
+   "drop": 0.6,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

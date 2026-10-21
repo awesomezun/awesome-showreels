@@ -1,0 +1,164 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "explainer",
+  "audience": "every employee of a (fictional) company",
+  "title": "피싱 메일 3초 판별법",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (피싱 메일 3초 판별법, a security training video for a fictional company). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "피싱 메일 3초 판별법, a security training video for a fictional company"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "calm",
+  "clear",
+  "friendly",
+  "instructive",
+  "handmade"
+ ],
+ "rationale": {
+  "palette": "A whiteboard and four markers, as the brief says: board #FBFBF8, black #1E1F22 for most lines and words, red #D9392B for danger (the hook, the @, the circled tricks, 3초만), blue #2563C9 for checking, green #2E9E5B for safe (the shield, 보안팀으로 전달).",
+  "type": "Nanum Pen Script, a Korean marker hand, 46-240 px, revealed left to right as if written, with the marker tip riding the edge.",
+  "motion": "A whiteboard animation: one long board, a camera that travels between panels (dipping out a little as it goes), a hand holding a marker that draws every line at hand speed, moves to the next stroke, enters and leaves the frame; on the checks panel the camera follows each column and pulls back to show all three.",
+  "sound": "Corporate at 112 BPM in C major (7 bars in 15 s, 14 in 30 s): strings and a broken piano figure, a light kit; minimal SFX: a drawon for each drawing, a swish for each camera move, a tick for each second of the stopwatch.",
+  "visuals": "All code: the board with ghosts of erased marker, marker strokes and hatching, an envelope, a fishing hook, a chain link and magnifier, a clock, a phishing mail window, a shield, a stopwatch, and the hand (palm, fingers, thumb, cuff) holding the marker.",
+  "narration": "Not recommended here: the reel is muted-first; a training version could add a voice."
+ },
+ "palette": {
+  "bg": "#FBFBF8",
+  "bg2": "#E9EAEC",
+  "surface": "#FFFFFF",
+  "ink": "#1E1F22",
+  "ink2": "#3C3F44",
+  "muted": "#5F6368",
+  "accent": "#D9392B",
+  "accent2": "#2563C9",
+  "accent3": "#2E9E5B",
+  "ok": "#2E9E5B",
+  "warn": "#B7791F",
+  "deny": "#D9392B",
+  "accentInk": "#C2322A",
+  "onAccent": "#FFFFFF",
+  "line": "#D5D7DB"
+ },
+ "fonts": {
+  "display": "\"Nanum Pen Script\", sans-serif",
+  "sans": "\"Nanum Pen Script\", sans-serif",
+  "serif": "\"Nanum Pen Script\", sans-serif",
+  "mono": "\"Nanum Pen Script\", sans-serif",
+  "cjk": "\"Nanum Pen Script\", sans-serif",
+  "files": [
+   {
+    "family": "Nanum Pen Script",
+    "path": "source/fonts/NanumPenScript-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1E1F22",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 1.8,
+   "z": 0.8
+  },
+  "overshoot": 0.03,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.015,
+  "vignette": {
+   "a": 0.12,
+   "color": "#3C3F44"
+  },
+  "bloom": 0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "C",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "strings",
+   "piano",
+   "glass",
+   "bass",
+   "kick",
+   "clap",
+   "shaker"
+  ],
+  "drums": "light",
+  "sfx": "minimal",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.55,
+   "breakdown": 0.35,
+   "drop": 0.75,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

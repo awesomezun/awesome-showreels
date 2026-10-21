@@ -1,0 +1,169 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "trailer",
+  "audience": "documentary audiences",
+  "title": "궤도 일곱",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (궤도 일곱, a documentary trailer (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "궤도 일곱, a documentary trailer (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "epic",
+  "quiet",
+  "weighty",
+  "awed",
+  "hopeful"
+ ],
+ "rationale": {
+  "palette": "Space and light only: black #03050A, the atmosphere blue #6FA8FF and its dawn orange #FF9A4D (in the shader), city gold #E8B964 for the orbit and the one line about the sun, off-white #EEF2F8 for cards, grey-blue #AAB4C4 for the small print.",
+  "type": "Trailer cards in Noto Serif KR SemiBold, letter-spaced and centred or set on the left; the title in Black Han Sans, huge and tracked in from wide, with a sweep of light across it.",
+  "motion": "A trailer: long, slow camera moves with nothing hurried; cards fade in and out; the sun breaking the limb is the event of the opening, the boom on the title the event of the end. Scope bars (2.39:1) throughout.",
+  "sound": "Cinematic-lite at 96 BPM in C minor (6 bars in 15 s, 12 in 30 s): low strings and pad, sparse; a swell into the sunrise, a boom and a shimmer on the title.",
+  "visuals": "All code: the Earth is a WebGL2 shader (an analytic sphere with fbm continents and clouds, sun glint, city lights on the night side, a 12-sample scattering shell); the station is flat-shaded 3D (tiny3d) lit by the same sun; the flare (starburst, anamorphic streak, ghosts), the orbit line and the cards are 2D.",
+  "narration": "Not recommended: the cards are the voice of a trailer."
+ },
+ "palette": {
+  "bg": "#03050A",
+  "bg2": "#0A0F1A",
+  "surface": "#101828",
+  "ink": "#EEF2F8",
+  "ink2": "#AAB4C4",
+  "muted": "#8A94A6",
+  "accent": "#E8B964",
+  "accent2": "#6FA8FF",
+  "accent3": "#FF9A4D",
+  "ok": "#8FD6A8",
+  "warn": "#E8B964",
+  "deny": "#F08A8A",
+  "accentInk": "#E8B964",
+  "onAccent": "#03050A",
+  "line": "#22304A"
+ },
+ "fonts": {
+  "display": "\"Black Han Sans\", sans-serif",
+  "sans": "\"Noto Serif KR\", serif",
+  "serif": "\"Noto Serif KR\", serif",
+  "mono": "\"Noto Serif KR\", serif",
+  "cjk": "\"Noto Serif KR\", serif",
+  "files": [
+   {
+    "family": "Black Han Sans",
+    "path": "source/fonts/BlackHanSans-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Noto Serif KR",
+    "path": "source/fonts/NotoSerifKR.woff2",
+    "weight": "200 900",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#EEF2F8",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.2,
+   "z": 0.95
+  },
+  "overshoot": 0.0,
+  "ease": "ioQ",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.045,
+  "vignette": {
+   "a": 0.45,
+   "color": "#000000"
+  },
+  "bloom": 0.3
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "C",
+  "mode": "minor",
+  "preset": "cinematic-lite",
+  "instruments": [
+   "strings",
+   "pad",
+   "piano",
+   "sub",
+   "kick",
+   "toms"
+  ],
+  "drums": "light",
+  "sfx": "minimal",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.5,
+   "breakdown": 0.45,
+   "drop": 0.9,
+   "outro": 0.35
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

@@ -1,0 +1,181 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "city commuters",
+  "title": "폴드원 E1",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (폴드원 E1, a folding e-bike (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "폴드원 E1, a folding e-bike (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "precise",
+  "trustworthy",
+  "clean",
+  "technical",
+  "quietly proud"
+ ],
+ "rationale": {
+  "palette": "A blueprint, as the brief says: deep blue #0F3A78 to #0A2C5E with a minor (24 px) and a major (120 px) grid, white #EAF2FF line work, sky #8FD8FF for every annotation (dimensions, callouts, notes), and one yellow #FFD45E for the hinge and the payoff.",
+  "type": "IBM Plex Sans KR for names and lines (700 for the name), Nanum Gothic Coding for every number, as a drawing office would set dimensions.",
+  "motion": "Drawn, not animated: every line draws itself along its length; the sheet starts at an angle and turns flat; dimensions grow from their middle to the arrowheads; callouts dot, elbow and label; then the bike folds as a real one does (the front half round the hinge, the stem down, the seat post down) while a counter runs to 3.0.",
+  "sound": "Cinematic-lite at 112 BPM in D minor (7 bars in 15 s, 14 in 30 s): strings and a low pulse, sparse; minimal SFX: drawon for the line work, a tick for each dimension, a lock for the hinge.",
+  "visuals": "All code: the sheet, the grid, the frame and the title block, the bike in two halves of strokes with a hinge, dimensions with arrowheads and extension lines, leader callouts, a counter.",
+  "narration": "Not recommended: a muted-first product reveal; the numbers are on the drawing."
+ },
+ "palette": {
+  "bg": "#0F3A78",
+  "bg2": "#0A2C5E",
+  "surface": "#134486",
+  "ink": "#EAF2FF",
+  "ink2": "#C9DCF5",
+  "muted": "#A9C4E8",
+  "accent": "#FFD45E",
+  "accent2": "#8FD8FF",
+  "accent3": "#EAF2FF",
+  "ok": "#7CE0A0",
+  "warn": "#FFD45E",
+  "deny": "#FF8A80",
+  "accentInk": "#FFD45E",
+  "onAccent": "#0F3A78",
+  "line": "#3B64A8"
+ },
+ "fonts": {
+  "display": "\"IBM Plex Sans KR\", sans-serif",
+  "sans": "\"IBM Plex Sans KR\", sans-serif",
+  "serif": "\"IBM Plex Sans KR\", sans-serif",
+  "mono": "\"Nanum Gothic Coding\", monospace",
+  "cjk": "\"IBM Plex Sans KR\", sans-serif",
+  "files": [
+   {
+    "family": "IBM Plex Sans KR",
+    "path": "source/fonts/IBMPlexSansKR-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   },
+   {
+    "family": "IBM Plex Sans KR",
+    "path": "source/fonts/IBMPlexSansKR-Medium.woff2",
+    "weight": "500 600",
+    "style": "normal"
+   },
+   {
+    "family": "Nanum Gothic Coding",
+    "path": "source/fonts/NanumGothicCoding-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   },
+   {
+    "family": "Nanum Gothic Coding",
+    "path": "source/fonts/NanumGothicCoding-Regular.woff2",
+    "weight": "400 600",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#EAF2FF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.8
+  },
+  "overshoot": 0.05,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.025,
+  "vignette": {
+   "a": 0.3,
+   "color": "#04152E"
+  },
+  "bloom": 0.08
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "D",
+  "mode": "minor",
+  "preset": "cinematic-lite",
+  "instruments": [
+   "strings",
+   "piano",
+   "sub",
+   "toms",
+   "kick",
+   "shaker"
+  ],
+  "drums": "light",
+  "sfx": "minimal",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.6,
+   "breakdown": 0.4,
+   "drop": 0.85,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

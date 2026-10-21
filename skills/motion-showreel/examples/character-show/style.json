@@ -1,0 +1,166 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "fans of the mascot and families",
+  "title": "콩이 첫 팬미팅",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (콩이, a convenience-store mascot, and its first fan meeting (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "콩이, a convenience-store mascot, and its first fan meeting (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "adorable",
+  "sparkly",
+  "joyful",
+  "showy",
+  "warm"
+ ],
+ "rationale": {
+  "palette": "A show stage in violet and pink (#3A2470 to #B04A9A), red velvet curtains #C8283C, gold bulbs and confetti #FFD15C; 콩이 in a soft green gradient from #B8EC93 to #4E9A3A with pink blush; white type with a pink glow and a violet edge.",
+  "type": "Jua for everything: big titles with a soft glow, captions in white or gold pills that pop.",
+  "motion": "A one-character show: the curtains part, the spotlight lands, 콩이 pops up and settles with a squash; every two beats a new face and prop with a hop; dancing on every beat with the arms in turn; light sticks sway on the beat; confetti tumbles.",
+  "sound": "Bright pop at 128 BPM in E major (8 bars in 15 s, 16 in 30 s), pluck, bell and marimba over a full kit; glassy SFX: sparkles on each pose, a shimmer when the curtains open, pops for the goods.",
+  "visuals": "All code: 콩이 drawn with gradients and highlights, no outlines (a character-IP finish, unlike the inked cartoon), five faces and four props, a stage with a bulb frame, a spotlight, curtains, light sticks, confetti, pedestals.",
+  "narration": "Not recommended: 콩이 does not talk; it performs."
+ },
+ "palette": {
+  "bg": "#3A2470",
+  "bg2": "#B04A9A",
+  "surface": "#FFFFFF",
+  "ink": "#FFFFFF",
+  "ink2": "#FFE6F4",
+  "muted": "#E8D6F0",
+  "accent": "#FFD15C",
+  "accent2": "#FF8FC7",
+  "accent3": "#7CC95A",
+  "ok": "#7CC95A",
+  "warn": "#FFD15C",
+  "deny": "#C8283C",
+  "accentInk": "#FFD15C",
+  "onAccent": "#3A2470",
+  "line": "#5A2A8A"
+ },
+ "fonts": {
+  "display": "\"Jua\", sans-serif",
+  "sans": "\"Jua\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Jua\", sans-serif",
+  "cjk": "\"Jua\", sans-serif",
+  "files": [
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFFFFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.0,
+   "z": 0.45
+  },
+  "overshoot": 0.2,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.3,
+   "color": "#1A0A30"
+  },
+  "bloom": 0.2
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "E",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pluck",
+   "bell",
+   "marimba",
+   "pad",
+   "bass",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.5,
+   "groove": 0.75,
+   "breakdown": 0.55,
+   "drop": 1.0,
+   "outro": 0.55
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

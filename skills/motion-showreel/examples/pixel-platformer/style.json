@@ -1,0 +1,163 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "retro game fans and families",
+  "title": "8비트 장터 2026",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (8비트 장터 2026, a retro game fair (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "8비트 장터 2026, a retro game fair (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "nostalgic",
+  "playful",
+  "bright",
+  "cheeky",
+  "warm"
+ ],
+ "rationale": {
+  "palette": "A dusk market in a small palette: sky bands from #2B1B4A through #8A2F6B and #F2784B to #FFB37A, dithered where they meet; lantern orange #FF8A3D, coin gold #FFD84A, awnings red #E8475F or blue #3B7DD8 against cream #FFF3E0, cobbles #7A5A50; outlines #1A1423.",
+  "type": "Galmuri11 only, always at its 12 px grid or a whole multiple (24, 36) in a 480 x 270 buffer shown at 4x, through an alpha threshold so every letter pixel is a crisp 4 x 4 block; a 1-pixel shadow under HUD and labels.",
+  "motion": "Game motion: the hero runs on two frames and jumps on the beat in parabolas, coins spin in four widths, the ? block bumps, scores float up; text types a character at a time; the boot screen flashes in stepped tones; fireworks burst in pixels.",
+  "sound": "Chiptune at 144 BPM in C major (9 bars in 15 s, 18 in 30 s): square leads, a triangle bass and noise drums; coin pings on every pickup, a stamp for the block.",
+  "visuals": "All code: string sprites (the hero, the ? glyph, a heart), coins and blocks from rectangles, a dithered sky, a parallax skyline and hills, stalls with striped awnings and signs, lantern strings, a gate, fireworks, a HUD.",
+  "narration": "Not recommended: a game speaks in pings."
+ },
+ "palette": {
+  "bg": "#2B1B4A",
+  "bg2": "#1A1423",
+  "surface": "#3A2552",
+  "ink": "#FFFFFF",
+  "ink2": "#FFF3D6",
+  "muted": "#C9B8E8",
+  "accent": "#FFD84A",
+  "accent2": "#E8475F",
+  "accent3": "#5BD27A",
+  "ok": "#5BD27A",
+  "warn": "#FF8A3D",
+  "deny": "#E8475F",
+  "accentInk": "#FFD84A",
+  "onAccent": "#1A1423",
+  "line": "#4A3A6A"
+ },
+ "fonts": {
+  "display": "\"Galmuri11\", monospace",
+  "sans": "\"Galmuri11\", monospace",
+  "serif": "\"Galmuri11\", monospace",
+  "mono": "\"Galmuri11\", monospace",
+  "cjk": "\"Galmuri11\", monospace",
+  "files": [
+   {
+    "family": "Galmuri11",
+    "path": "source/fonts/Galmuri11.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFFFFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.0,
+   "z": 0.6
+  },
+  "overshoot": 0.0,
+  "ease": "lin",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "typing"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.1,
+   "color": "#000000"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 144,
+  "key": "C",
+  "mode": "major",
+  "preset": "chiptune",
+  "instruments": [
+   "pulse-lead",
+   "pulse",
+   "tri-bass",
+   "kick",
+   "snare",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.55,
+   "groove": 0.75,
+   "breakdown": 0.6,
+   "drop": 0.85,
+   "outro": 0.65
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}
