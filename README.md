@@ -28,7 +28,7 @@ An agent skill for Claude Code, Codex CLI, Gemini CLI or any coding agent. Deliv
 
 ## Examples
 
-Forty example projects, each made from a different kind of source. Sixteen of them are real web apps live at toyz.kr, captured from their own production builds. The style of every reel (palette, type, motion, music) comes from its source, not from a theme list.
+Sixty-four example projects. Sixteen are real web apps live at toyz.kr, captured from their own production builds. Twenty-four take one drawing style each from the video [*모션그래픽 20가지 톤*](https://www.youtube.com/watch?v=oCRQP5S-900) (Ai-Con Lab) and make up a project to suit it, in Korean. The rest are each made from a different kind of source, and there the style of the reel (palette, type, motion, music) comes from the source, not from a theme list.
 
 <table>
 <tr>
@@ -229,6 +229,174 @@ Forty example projects, each made from a different kind of source. Sixteen of th
 </tr>
 <tr>
 <td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/crayon/dist/crayon-v1.0.0.html"><img src="assets/readme/moment-crayon.webp" width="100%" alt="꼬마 화가: a child's crayon drawing of a house, a tree and a girl with a kite draws itself on drawing paper"/></a>
+<br/><b>꼬마 화가</b> · <code>crayon</code>
+<br/><sub>a picture-book app → crayon on drawing paper, drawn as you watch · bright pop 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/crayon/dist/crayon-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/crayon/dist/crayon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/crayon">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-collage/dist/paper-collage-v1.0.0.html"><img src="assets/readme/moment-paper-collage.webp" width="100%" alt="종이비행 페스티벌 2026: torn paper scraps and ransom letters slap down on newsprint"/></a>
+<br/><b>종이비행 페스티벌 2026</b> · <code>paper-collage</code>
+<br/><sub>a music festival → torn paper slapped down on the beat · bright pop 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-collage/dist/paper-collage-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-collage/dist/paper-collage-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-collage">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/whiteboard/dist/whiteboard-v1.0.0.html"><img src="assets/readme/moment-whiteboard.webp" width="100%" alt="A hand with a black marker draws the three checks to make before clicking a link in a phishing mail"/></a>
+<br/><b>피싱 메일 3초 판별법</b> · <code>whiteboard</code>
+<br/><sub>a security training → a hand draws it in marker on one long board · corporate 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/whiteboard/dist/whiteboard-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/whiteboard/dist/whiteboard-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/whiteboard">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/infographic/dist/infographic-v1.0.0.html"><img src="assets/readme/moment-infographic.webp" width="100%" alt="Isometric bars grow a beat apart over a paper map while their numbers count up to ×2"/></a>
+<br/><b>한빛시 자전거 리포트 2026</b> · <code>infographic</code>
+<br/><sub>a city report → isometric charts that grow and count · corporate 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/infographic/dist/infographic-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/infographic/dist/infographic-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/infographic">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/minimal-ui/dist/minimal-ui-v1.0.0.html"><img src="assets/readme/moment-minimal-ui.webp" width="100%" alt="하루 세 칸: a cursor checks three tasks on a white card and the ring steps to 3/3"/></a>
+<br/><b>하루 세 칸</b> · <code>minimal-ui</code>
+<br/><sub>a habit app → white cards, one blue, a cursor that really uses it · bright pop 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/minimal-ui/dist/minimal-ui-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/minimal-ui/dist/minimal-ui-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/minimal-ui">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/blueprint/dist/blueprint-v1.0.0.html"><img src="assets/readme/moment-blueprint.webp" width="100%" alt="폴드원 E1: a bicycle draws itself in white line work on a blueprint, dimensions growing to their arrowheads"/></a>
+<br/><b>폴드원 E1</b> · <code>blueprint</code>
+<br/><sub>a folding e-bike → white line work on blue, then it folds · cinematic 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/blueprint/dist/blueprint-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/blueprint/dist/blueprint-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/blueprint">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cutaway-3d/dist/cutaway-3d-v1.0.0.html"><img src="assets/readme/moment-cutaway-3d.webp" width="100%" alt="브루큐브: the roaster's panels slide away and its labelled parts work inside"/></a>
+<br/><b>브루큐브</b> · <code>cutaway-3d</code>
+<br/><sub>a home coffee roaster → a 3D cutaway that opens and works · corporate 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cutaway-3d/dist/cutaway-3d-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cutaway-3d/dist/cutaway-3d-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cutaway-3d">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chrome-glass/dist/chrome-glass-v1.0.0.html"><img src="assets/readme/moment-chrome-glass.webp" width="100%" alt="글래스 노트 No.3: a thick glass bottle with a chrome cap bends the line behind it like a lens"/></a>
+<br/><b>글래스 노트 No.3</b> · <code>chrome-glass</code>
+<br/><sub>a perfume → raymarched glass that bends the words behind it · ambient 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chrome-glass/dist/chrome-glass-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/chrome-glass/dist/chrome-glass-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/chrome-glass">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cinematic-3d/dist/cinematic-3d-v1.0.0.html"><img src="assets/readme/moment-cinematic-3d.webp" width="100%" alt="궤도 일곱: the sun breaks over the Earth's limb into a lens flare under the title"/></a>
+<br/><b>궤도 일곱</b> · <code>cinematic-3d</code>
+<br/><sub>a documentary → the sun breaking over the Earth, in scope · cinematic 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cinematic-3d/dist/cinematic-3d-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cinematic-3d/dist/cinematic-3d-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cinematic-3d">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/voxel/dist/voxel-v1.0.0.html"><img src="assets/readme/moment-voxel.webp" width="100%" alt="블록 마을: a code panel types and bricks drop onto an isometric voxel village"/></a>
+<br/><b>블록 마을</b> · <code>voxel</code>
+<br/><sub>a kids' coding camp → one line of code, one block on the beat · bright pop 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/voxel/dist/voxel-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/voxel/dist/voxel-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/voxel">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-platformer/dist/pixel-platformer-v1.0.0.html"><img src="assets/readme/moment-pixel-platformer.webp" width="100%" alt="8비트 장터 2026: a pixel hero runs down a dusk market street collecting coins"/></a>
+<br/><b>8비트 장터 2026</b> · <code>pixel-platformer</code>
+<br/><sub>a retro game fair → a side-scroller at 4x, jumps on the beat · chiptune 144 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-platformer/dist/pixel-platformer-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/pixel-platformer/dist/pixel-platformer-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/pixel-platformer">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/rock-stage/dist/rock-stage-v1.0.0.html"><img src="assets/readme/moment-rock-stage.webp" width="100%" alt="번개다방: a rock trio on stage, amps pumping and the bolt flashing as each instrument plays"/></a>
+<br/><b>번개다방 〈볼륨 업〉</b> · <code>rock-stage</code>
+<br/><sub>a rock gig → each instrument moves its own part of the stage · rock 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/rock-stage/dist/rock-stage-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/rock-stage/dist/rock-stage-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/rock-stage">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/generative-art/dist/generative-art-v1.0.0.html"><img src="assets/readme/moment-generative-art.webp" width="100%" alt="흐름의 지도: flowing lines gather into the letters of the title and let go"/></a>
+<br/><b>흐름의 지도</b> · <code>generative-art</code>
+<br/><sub>a media-art show → lines in a flow field gather into the title · ambient 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/generative-art/dist/generative-art-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/generative-art/dist/generative-art-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/generative-art">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/dark-neon/dist/dark-neon-v1.0.0.html"><img src="assets/readme/moment-dark-neon.webp" width="100%" alt="센티넬 X: a neon network under a radar sweep; a hidden attack burns magenta as it is found"/></a>
+<br/><b>센티넬 X</b> · <code>dark-neon</code>
+<br/><sub>AI security → neon tubes, attacks unseen until the radar crosses them · dark synth 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/dark-neon/dist/dark-neon-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/dark-neon/dist/dark-neon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/dark-neon">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cyberpunk/dist/cyberpunk-v1.0.0.html"><img src="assets/readme/moment-cyberpunk.webp" width="100%" alt="네온 레인 2087: a hooded walker under Korean neon signs, the wet street mirroring them"/></a>
+<br/><b>네온 레인 2087</b> · <code>cyberpunk</code>
+<br/><sub>an SF game → Seoul in the rain, Korean neon, glitches · dark synth 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cyberpunk/dist/cyberpunk-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cyberpunk/dist/cyberpunk-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cyberpunk">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/hologram/dist/hologram-v1.0.0.html"><img src="assets/readme/moment-hologram.webp" width="100%" alt="오르빗 컨트롤: a wireframe globe over a projector, satellites switching on across three shells"/></a>
+<br/><b>오르빗 컨트롤</b> · <code>hologram</code>
+<br/><sub>satellite operations → a projected globe and 300 satellites · dark synth 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/hologram/dist/hologram-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/hologram/dist/hologram-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/hologram">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ascii/dist/ascii-v1.0.0.html"><img src="assets/readme/moment-ascii.webp" width="100%" alt="termpan: characters fly in from everywhere and land as a shaded, spinning ASCII donut"/></a>
+<br/><b>글자판 termpan</b> · <code>ascii</code>
+<br/><sub>a terminal dashboard → characters fly in and become a spinning donut · chiptune 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ascii/dist/ascii-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/ascii/dist/ascii-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/ascii">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/clay/dist/clay-v1.0.0.html"><img src="assets/readme/moment-clay.webp" width="100%" alt="말랑베이커리: a clay loaf with a face rides a coral scooter down a clay street"/></a>
+<br/><b>말랑베이커리</b> · <code>clay</code>
+<br/><sub>a bread delivery → plasticine at 12 frames a second · bright pop 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/clay/dist/clay-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/clay/dist/clay-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/clay">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stop-motion/dist/stop-motion-v1.0.0.html"><img src="assets/readme/moment-stop-motion.webp" width="100%" alt="털뭉치 공방: a needle stitches round a felt bear's head on a cutting mat, a stitch a beat"/></a>
+<br/><b>털뭉치 공방</b> · <code>stop-motion</code>
+<br/><sub>a felt doll workshop → felt and stitches, shot frame by frame · lo-fi 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stop-motion/dist/stop-motion-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/stop-motion/dist/stop-motion-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/stop-motion">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cartoon/dist/cartoon-v1.0.0.html"><img src="assets/readme/moment-cartoon.webp" width="100%" alt="산책왕 멍멍: a cartoon dog runs through the park and a crown drops onto its head"/></a>
+<br/><b>산책왕 멍멍</b> · <code>cartoon</code>
+<br/><sub>a dog-walking app → ink lines, smears, a crown for the winner · bright pop 144 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cartoon/dist/cartoon-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cartoon/dist/cartoon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cartoon">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/character-show/dist/character-show-v1.0.0.html"><img src="assets/readme/moment-character-show.webp" width="100%" alt="콩이: a glossy green bean mascot changes faces and props under a spotlight"/></a>
+<br/><b>콩이 첫 팬미팅</b> · <code>character-show</code>
+<br/><sub>a mascot's fan meeting → one glossy character, a new pose every two beats · bright pop 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/character-show/dist/character-show-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/character-show/dist/character-show-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/character-show">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/anime/dist/anime-v1.0.0.html"><img src="assets/readme/moment-anime.webp" width="100%" alt="벚꽃 정류장: two students on a bench under a cherry tree, cumulus and power lines overhead"/></a>
+<br/><b>벚꽃 정류장</b> · <code>anime</code>
+<br/><sub>a webtoon → an anime background painting, petals and a late bus · corporate 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/anime/dist/anime-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/anime/dist/anime-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/anime">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ink-wash/dist/ink-wash-v1.0.0.html"><img src="assets/readme/moment-ink-wash.webp" width="100%" alt="도성 한 바퀴: ink-wash ranges bleed onto rice paper and the city wall paints itself along the ridge"/></a>
+<br/><b>도성 한 바퀴</b> · <code>ink-wash</code>
+<br/><sub>a city-wall walking tour → a Korean ink landscape that unrolls like a scroll · koto 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ink-wash/dist/ink-wash-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/ink-wash/dist/ink-wash-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/ink-wash">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/old-film/dist/old-film-v1.0.0.html"><img src="assets/readme/moment-old-film.webp" width="100%" alt="동명극장: the cinema's name lights up bulb by bulb on a weaving, scratched sepia print"/></a>
+<br/><b>동명극장 재개관</b> · <code>old-film</code>
+<br/><sub>a cinema reopening → a worn sepia print, a countdown, intertitles · swing 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/old-film/dist/old-film-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/old-film/dist/old-film-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/old-film">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/neo-brutal/dist/kablok-v1.0.0.html"><img src="assets/readme/moment-neo-brutal.webp" width="100%" alt="kablok: neo-brutalist slabs with hard shadows, a cursor picks and stacks blocks"/></a>
 <br/><b>kablok</b> · <code>neo-brutal</code>
 <br/><sub>a landing page → hard shadows, slabs · funk 112 BPM</sub>
@@ -313,7 +481,7 @@ Forty example projects, each made from a different kind of source. Sixteen of th
 </tr>
 </table>
 
-<sub>Each loop is one moment of the reel at real speed, without sound. <b>▶ Play</b> opens the full reel in your browser with music, where you can switch between its lengths (the same file is in each folder's <code>dist/</code>: 1–5 MB, opens offline, number keys switch lengths). Projects and data are fictional and labelled as such on screen (the sixteen toyz.kr apps are real; the data they show is their own fictional sample data); the two explainers and the Transformer explainer cover real ideas, with toy models or rounded textbook values, and say so.</sub>
+<sub>Each loop is one moment of the reel at real speed, without sound. <b>▶ Play</b> opens the full reel in your browser with music, where you can switch between its lengths (the same file is in each folder's <code>dist/</code>: 1–5 MB, opens offline, number keys switch lengths). Projects and data are fictional and labelled as such on screen (the sixteen toyz.kr apps are real; the data they show is their own fictional sample data); the two explainers and the Transformer explainer cover real ideas, with toy models or rounded textbook values, and say so. The twenty-four style examples are fictional projects too (the city wall and gates in <code>ink-wash</code> are real); only the drawing styles come from the video, not its characters or frames.</sub>
 
 <details>
 <summary><b>Style decisions per example</b></summary>
@@ -321,8 +489,20 @@ Forty example projects, each made from a different kind of source. Sixteen of th
 | Example | Source | Mood | Palette | Type | Motion | Music (BPM) |
 |---|---|---|---|---|---|---|
 | `academic-paper` | single-cell paper | airy, precise | blush · coral | Source Serif 4 | 3D nuclei, tissue ↔ atlas | corporate 96 |
+| `anime` | coming-of-age webtoon | wistful, luminous | sky blue · cherry pink | Gowun Dodum | tilt, drifting clouds, petals | corporate 112 |
 | `art-deco` | invitation | opulent, nocturnal | black · gold | Limelight | symmetrical | swing 112 |
+| `ascii` | terminal dashboard | clever, playful | Tokyo Night | Nanum Gothic Coding | typing, characters landing | chiptune 128 |
+| `blueprint` | folding e-bike | precise, clean | blueprint blue · white · one yellow | IBM Plex Sans KR | lines drawn, a mechanical fold | cinematic 112 |
 | `botanical-organic` | tea brand story | calm, earthy | oat · leaf green | Fraunces | slow | guitar 96 |
+| `cartoon` | dog-walking app | bouncy, funny | sky · grass · ink | Black Han Sans · Jua | squash, stretch, smears | bright pop 144 |
+| `character-show` | mascot fan meeting | adorable, showy | stage violet · bean green · gold | Jua | a pose every two beats | bright pop 128 |
+| `chrome-glass` | perfume | quiet, precious | night · silver · champagne | Nanum Myeongjo | raymarched glass, chrome sheen | ambient 96 (lydian) |
+| `cinematic-3d` | documentary trailer | epic, quiet | space black · air blue · dawn orange | Noto Serif KR · Black Han Sans | slow camera, a shader Earth | cinematic 96 |
+| `clay` | bread delivery | cosy, cute | cream · crust gold · coral | Jua · Dongle | stop motion, boiling clay | bright pop 112 |
+| `crayon` | picture-book app | warm, clumsy | drawing paper · crayon colours | Gaegu | lines that boil, drawn at hand speed | bright pop 112 |
+| `cutaway-3d` | home coffee roaster | precise, warm | graphite · orange trim | Gothic A1 | casing slides open, parts turn | corporate 112 |
+| `cyberpunk` | SF game trailer | wet, lurid | violet night · magenta · cyan | Do Hyeon · Orbit | rain, reflections, glitch | dark synth 112 |
+| `dark-neon` | AI security platform | sharp, vigilant | black · cyan · magenta | Orbit | neon stutter, radar reveal | dark synth 128 |
 | `deploy-kit` | launch kit | brisk, technical | paper · cobalt | Pretendard | file streams | drum and bass 176 |
 | `editorial-luxe` | press release | elegant, quiet | ivory · champagne | Bodoni Moda | slow | piano 80 |
 | `explainer-llm` | LLM explainer notes | curious, lucid | navy · yellow | KaTeX Main | maths animation | ambient 96 |
@@ -330,15 +510,22 @@ Forty example projects, each made from a different kind of source. Sixteen of th
 | `focus-space` | focus timer | quiet, deep | deep green · chrome | Pretendard | time-lapse | ambient 96 |
 | `form-01` | feedback board | precise, editorial | ink · metal · pin colours | Pretendard | pins, versions | cinematic 112 |
 | `frame` | portfolio builder | clean, quick | paper · orange | Pretendard | live typing | corporate 112 |
+| `generative-art` | media-art exhibition | quiet, wondrous | night navy · blues · gold | Hahmlet | particles integrated from birth | ambient 96 |
+| `hologram` | satellite operations | calm, futuristic | dark room · holo blue · orange | Orbit · Nanum Gothic Coding | projected light, flicker | dark synth 112 |
+| `infographic` | city cycling report | clear, smart | paper map · data colours | Gothic A1 | bars grow, numbers count | corporate 128 |
+| `ink-wash` | city-wall walking tour | calm, dignified | rice paper · ink · one red seal | Nanum Brush Script · Song Myung | washes bleed, strokes paint | koto ambient 96 |
 | `layr` | notes workspace | calm, structured | near-black · steel · lime | Pretendard | glass layers | dark synth 112 |
 | `loop` | habit app | steady, friendly | periwinkle · navy | Pretendard | a ring that fills | corporate 128 |
+| `minimal-ui` | habit app | clean, calm | near-white · one blue | Pretendard | cursor-driven UI | bright pop 128 |
 | `mood-fm` | mood radio | warm, chromatic | the mood's own colour | Pretendard | dial sweeps | lo-fi 96 |
 | `motion-kit` | interaction kit | playful, exact | electric blue · orange | Pretendard | app animations replayed | bright pop 128 |
 | `neo-brutal` | landing page | loud, blunt | cream · lemon | Archivo | hard snaps | funk 112 |
 | `newsprint` | newspaper | factual, civic | newsprint · red | Newsreader | steady | piano 96 |
 | `offgrid` | local map app | nocturnal, local | night map · lime | Pretendard | one camera push | swing 96 |
+| `old-film` | cinema reopening | nostalgic, warm | sepia · bulb yellow | Nanum Myeongjo | film weave, flicker, scratches | swing 128 |
 | `orbit-note` | linked-notes app | luminous, connected | electric blue · holo | Pretendard | drawn links | cinematic 96 |
 | `paper-behaviour` | mouse-behaviour paper | clean, precise | white · blue | Instrument Sans | tracked from above | corporate 104 |
+| `paper-collage` | music festival | loud, handmade | newsprint · cut-paper brights | Black Han Sans · Do Hyeon · Song Myung · Jua | scraps slap down on the beat | bright pop 128 |
 | `paper-imaging` | light-sheet paper | luminous, patient | black · green | Manrope | GPU nuclei | ambient 92 |
 | `paper-organoid` | organoid paper | warm, hands-on | paper · magenta | Literata | handwritten notebook | corporate 100 |
 | `paper-perturbseq` | CRISPR-screen paper | precise, nocturnal | night · orchid | IBM Plex Sans | illustration ↔ data | dark synth 116 |
@@ -347,19 +534,24 @@ Forty example projects, each made from a different kind of source. Sixteen of th
 | `pixel-isometric` | café opening | cosy, warm | cream · latte | Jersey 10 | isometric pixel | lo-fi 86 |
 | `pixel-jrpg` | engine release | heroic, nostalgic | night · lantern gold | Pixelify Sans | HD-2D light | cinematic 120 |
 | `pixel-kit` | brand-image tool | crafty, consistent | near-black · orchid | Pretendard | a wall that turns over | swing 128 |
+| `pixel-platformer` | retro game fair | nostalgic, cheeky | dusk bands · coin gold | Galmuri11 | game physics on the beat | chiptune 144 |
 | `pixel-pocket` | hiking app | calm, outdoorsy | four greens | 5×7 bitmap | dithered tone steps | chiptune 108 |
 | `playful-app` | app README | playful, bouncy | light · pink | Nunito | springy | bright pop 120 |
 | `pulse` | maker dashboard | crisp, instrumental | aluminium · orange | Pretendard | meters, snaps | bright pop 112 |
 | `read-room` | reading room | quiet, literary | paper · marker orange | Pretendard | pen-speed highlights | ambient 96 |
 | `research-cli` | research CLI | technical, cool | dark · cyan | Space Grotesk | damped | dark synth 128 |
 | `riso-zine` | zine | loud, scrappy | newsprint · fluo pink | Anton | jumpy | lo-fi 160 |
+| `rock-stage` | rock gig | loud, electric | black · bolt yellow · stage red | Black Han Sans | per-instrument reactions | rock 128 |
 | `sketchnote` | workshop handout | hand-drawn, friendly | whiteboard · orange | Shantell Sans | handwritten | bright 104 |
 | `sports-kinetic` | race-timing app | energetic, exact | track black · orange | Barlow Condensed | fast | drum and bass 176 |
+| `stop-motion` | felt doll workshop | tender, handmade | cutting-mat green · felt browns | Gamja Flower | 8 fps, a hand-held camera | lo-fi 96 |
 | `sumi-wabi` | ryokan site | quiet, restrained | washi · one vermilion | Shippori Mincho | very slow | koto 72 |
 | `swiss-grid` | architecture brief | precise, ordered | paper · one red | Schibsted Grotesk | on the grid | synth 124 |
 | `tiny-beat` | beat maker | warm, rhythmic | black · lime | Pretendard | on the step grid | lo-fi 80 |
 | `tiny-tools` | developer toolbox | crisp, nimble | night · violet | Pretendard | paste and answer | chiptune 128 |
 | `trove` | bookmark app | sleek, nocturnal | black · lime | Pretendard | orbit, chrome | dark synth 128 |
+| `voxel` | kids' coding camp | playful, tactile | sky · grass · brick | Jua | blocks land on the beat | bright pop 128 |
+| `whiteboard` | security training | calm, clear | whiteboard · marker black · red | Nanum Pen Script | a drawing hand, a camera along the board | corporate 112 |
 
 Each folder's <code>style.json</code> records every decision and the evidence from the source behind it.
 
