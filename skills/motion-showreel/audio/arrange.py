@@ -268,6 +268,28 @@ PRESETS = {
         "levels": {"bed": 1.0, "bass": 1.0, "motion": 0.9, "top": 0.8, "motif": 0.9, "drums": 1.0},
         "lowcut": 0.25, "tape": False, "riser": "organic",
     },
+    "rock": {   # a four-piece band: overdriven rhythm guitar (double-tracked), bass on eighths, kit with a big snare
+        "bpm": 128, "key": "E", "mode": "minor", "drums": "full", "sfx": "organic",
+        "energy": {"intro": 0.5, "groove": 0.75, "breakdown": 0.45, "drop": 1.0, "outro": 0.5},
+        "instruments": ["dist-guitar", "bass", "kick", "snare", "hats", "toms"],
+        "roles": {"bed": None, "motion": "dist-guitar", "bass": "bass", "top": None, "motif": None},
+        "keepNone": ["bed", "top", "motif"],
+        "chordBars": 1,
+        "prog": {"minor": {"intro": ["i", "VI"], "groove": ["i", "VI", "III", "VII"], "breakdown": ["VI", "VII", "i", "i"],
+                           "drop": ["i", "VII", "VI", "VII"], "outro": ["i"]},
+                 "major": {"intro": ["I", "IV"], "groove": ["I", "V", "vi", "IV"], "breakdown": ["IV", "V", "vi", "V"],
+                           "drop": ["I", "IV", "V", "IV"], "outro": ["I"]}},
+        "cadence": {"minor": "VII", "major": "V"}, "final": {"minor": "i", "major": "I"},
+        "pad": {"cut": (500, 2600), "gain": 0.0, "atk": 0.05, "introAtk": 0.05},
+        "pluck": "saw", "bassPattern": "eighths", "motionPattern": "chug8", "topPattern": None,
+        "arp": [0, 1, 2, 1],
+        "kit": {"kick": "punch", "clap": None, "snare": "big", "hats": "bright", "rim": False, "shaker": False, "toms": True},
+        "grooves": "rock", "swing": 0.0, "dropGap": True, "fill": "toms",
+        "sidechain": {"bed": 0.0, "bass": 0.0, "motion": 0.0, "top": 0.0},
+        "delay": {"beats": 0.75, "fb": 0.15, "taps": 2}, "reverb": {"size": 1.4, "damp": 1.5, "ret": 0.25},
+        "levels": {"bed": 0.0, "bass": 0.9, "motion": 1.0, "top": 0.0, "motif": 0.0, "drums": 1.0},
+        "lowcut": 0.2, "tape": False, "riser": "organic",
+    },
 }
 
 # Drum grooves: 16 steps per bar; '.' rest, '1'-'9' velocity 0.1-0.9, 'x' 1.0. Keys: groove/drop x light/full.
@@ -306,6 +328,11 @@ GROOVES = {
         "full": {"ride": "8...8.6.8...8.6.", "hats": "....6.......6...", "brush": "....7.......7...", "kick": "4...3...4...3..."},
         "drop": {"ride": "9...9.7.9...9.7.", "hats": "....7.......7...", "brush": "..3.8..3..3.8..4", "kick": "5...4...5...4.6."},
     },
+    "rock": {   # backbeat: kick 1, the 'and' of 2 and 3, snare 2+4, eighth hats; drops ride open hats and push the kick
+        "light": {"kick": "x.......x.......", "snare": "....8.......8...", "hats": "6.4.6.4.6.4.6.4."},
+        "full": {"kick": "x.....x.x.......", "snare": "....x.......x...", "hats": "7.5.7.5.7.5.7.5.", "ohats": "..............6."},
+        "drop": {"kick": "x.....x.x.x.....", "snare": "....x.......x...", "ohats": "7.5.7.5.7.5.7.5."},
+    },
     "cine": {
         "light": {"toms": "x.......6.......", "kick": "x..............."},
         "full": {"toms": "x..6..6.x..6.6..", "kick": "x.......x.......", "snare": "........8.......", "hats": "..3...3...3...3."},
@@ -315,7 +342,7 @@ GROOVES = {
 KIT_PIECES = ("kick", "clap", "snare", "rim", "hats", "ohats", "shaker", "toms", "ride", "brush")
 ROLE_CHOICES = {
     "bed": ("pad", "strings", "epiano", "piano", "guitar", "ukulele", "koto"),
-    "motion": ("pulse", "pluck", "arp", "saw-pluck", "marimba", "guitar", "ukulele", "koto", "piano", "epiano", "strings", "bell", "glass"),
+    "motion": ("dist-guitar", "pulse", "pluck", "arp", "saw-pluck", "marimba", "guitar", "ukulele", "koto", "piano", "epiano", "strings", "bell", "glass"),
     "bass": ("tri-bass", "upright", "reese", "saw-bass", "bass", "sub"),
     "top": ("stab", "bell", "glass", "strings"),
     "motif": ("pulse-lead", "clarinet", "bell", "lead", "piano", "epiano", "marimba", "pluck", "glass"),
@@ -961,6 +988,8 @@ class Arranger:
 
     def motion_voice(self, inst, m, vel, step_dur, bright=1.0):
         m = self.snap(m)
+        if inst == "dist-guitar":
+            return S.dist_guitar([m, m + 7], step_dur, vel, mute=step_dur < 0.3, seed=int(m))
         if inst in ("guitar", "ukulele", "koto"):
             return getattr(S, inst)(m, max(0.5, step_dur * 3), 0.45 + 0.45 * vel, seed=int(m))
         if inst == "pulse":
@@ -1204,6 +1233,9 @@ class Arranger:
         gl = self.lv["motion"]
         for b in self.bars:
             part, e = b.part, b.energy
+            if kind == "chug8":
+                self.chug_bar(inst, b, gl)
+                continue
             if part in ("intro", "outro"):
                 if kind == "arp16dark" and part == "intro" and b.k % 2 == 1:
                     tones = self.arp_tones(b)
@@ -1307,6 +1339,42 @@ class Arranger:
                     v = (1.0 if i % 2 == 0 else 0.75) * (0.75 + 0.35 * e)
                     self.add("motion", self.motion_voice(inst, seq[i % 8], v, b.beat / 2), b.t0 + i * b.beat / 2,
                              pan=0.2 * (-1) ** i, gain=0.15 * v * gl, rev=0.3)
+
+    def chug_bar(self, inst, b, gl):
+        """Rock rhythm guitar, double-tracked (two takes panned hard left and right, a few ms apart): power chords
+        (root, fifth, octave) on eighths, palm-muted between open accents. Intros and breakdowns let one chord ring per
+        bar; the bar before a groove or drop builds in muted sixteenths; the outro rings out once."""
+        part, e, bt = b.part, b.energy, b.beat
+        r = b.bass
+        while r < 40:
+            r += 12
+        while r > 51:
+            r -= 12
+        chord = [r, r + 7, r + 12]
+
+        def hit(t, dur, vel, mute):
+            for k, pan in enumerate((-0.7, 0.7)):
+                sig = S.dist_guitar(chord, dur, vel, mute=mute, seed=S.seed_of(b.i, int(t * 1000), k) % 97)
+                self.add("motion", sig, t + 0.007 * k, pan=pan, gain=(0.26 if mute else 0.32) * gl, rev=0.12)
+
+        build = b.last and b.next_part in ("groove", "drop") and part in ("intro", "breakdown")
+        if part == "outro":
+            if b.first:
+                hit(b.t0, b.dur * 1.6, 0.9, False)
+            return
+        if part in ("intro", "breakdown"):
+            if build:
+                hit(b.t0, b.dur * 0.5, 0.8 if part == "intro" else 0.6, False)
+                steps = b.beats * 4
+                for i in range(steps // 2, steps):
+                    hit(b.t0 + i * bt / 4, bt / 4, 0.35 + 0.6 * (i - steps // 2) / max(1, steps // 2 - 1), True)
+            else:
+                hit(b.t0, b.dur * 0.95, 0.8 if part == "intro" else 0.55, False)
+            return
+        acc = [1, 0, 0, 1, 0, 0, 1, 0] if part == "groove" else [1, 0, 1, 0, 1, 1, 0, 1]
+        for i in range(b.beats * 2):
+            o = acc[i % 8]
+            hit(b.t0 + i * bt / 2, bt * (0.75 if o else 0.4), (0.85 if o else 0.6) * (0.85 + 0.2 * e), not o)
 
     # top layer ---------------------------------------------------------------
     def render_top(self):

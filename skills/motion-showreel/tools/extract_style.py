@@ -4480,10 +4480,10 @@ PALETTE_KEYS = ["bg", "bg2", "surface", "ink", "ink2", "muted", "accent", "accen
 ENUMS = {
     ("layout", "theme"): ("light", "dark"),
     ("motion", "pace"): ("calm", "medium", "energetic"),
-    ("sound", "preset"): ("bright-pop", "dark-synth", "ambient", "corporate", "lofi", "cinematic-lite", "chiptune", "swing", "dnb"),
+    ("sound", "preset"): ("bright-pop", "dark-synth", "ambient", "corporate", "lofi", "cinematic-lite", "chiptune", "swing", "dnb", "rock"),
     ("sound", "drums"): ("none", "light", "full"),
     ("sound", "sfx"): ("glassy", "digital", "organic", "minimal"),
-    ("sound", "mode"): ("major", "minor"),
+    ("sound", "mode"): ("major", "minor", "dorian", "mixolydian", "lydian", "phrygian", "aeolian", "ionian", "locrian"),   # as the schema; arrange.py plays them all
 }
 TRANSITION_NAMES = ("cut", "blobWipe", "zoomInto", "whip", "glitch", "flash", "strobe", "match", "impact", "portalFlash")
 VISUAL_SOURCES = ("vector", "mascot-cutouts", "app-ui", "terminal", "cli", "pdf-figures", "web-shots", "photos")

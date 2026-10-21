@@ -29,7 +29,7 @@ unknown SFX or has a bad parameter (everything else is still rendered; the sidec
 
 | Key | Values | Effect |
 |---|---|---|
-| `preset` | `bright-pop` `dark-synth` `ambient` `corporate` `lofi` `cinematic-lite` `chiptune` `swing` `dnb` | parameter bundle (section 2); a starting point, not a look |
+| `preset` | `bright-pop` `dark-synth` `ambient` `corporate` `lofi` `cinematic-lite` `chiptune` `swing` `dnb` `rock` | parameter bundle (section 2); a starting point, not a look |
 | `bpm` | number | used by the planner; the cut's `bpm` is the authority (the arranger warns on a mismatch) |
 | `key` | `F`, `Bb`, `F#`, `D minor` | tonic; pitched SFX (pops, dings, chimes, beeps, blips, sparkles, stings) are in this key |
 | `mode` | `major` `minor` `dorian` `mixolydian` `lydian` `phrygian` | harmony tables; church modes are stacked inside their own scale (locrian -> phrygian) |
@@ -77,6 +77,7 @@ with `--tables`; `tone-and-manner.md` section 4 quotes them); those tables are t
 | retro game, pixel art, arcade | chiptune | 132-150 | major / mixolydian | full (chip noise) | digital | .4 .75 .4 1 .5 |
 | 1920s-30s, jazz age, art deco, speakeasy, vintage invitation | swing | 108-132 | Bb, F, Eb major | full (ride, brushes) | glassy / organic | .35 .6 .35 .85 .4 |
 | sport, race, speed, broadcast graphics, energetic numbers | dnb | 170-178 | G, F, A minor | full (two-step, half-time drops) | digital | .5 .8 .45 1 .55 |
+| a band, a gig, guitars, festivals, anything loud (chosen by hand; the extractor never drafts it) | rock | 120-140 | E, A, D minor | full (backbeat) | organic | .5 .75 .45 1 .5 |
 | terminal tool with a playful theme (Catppuccin-like) | bright-pop or dark-synth by theme | 120-128 | major / mixolydian | full | digital | default |
 
 - **Tempo** sets length arithmetic (`timing-and-length.md`); pick one the material can carry, then let bars decide
@@ -100,6 +101,7 @@ with `--tables`; `tone-and-manner.md` section 4 quotes them); those tables are t
 | chiptune | I V vi IV | - / pulse arps / triangle bass / - / pulse lead | chip noise kick, snare, hats | no reverb, no sidechain |
 | swing | I6 vi7 ii7 V7 (rhythm changes in drops) | - / piano comping on the Charleston rhythm (rootless) / walking upright bass with chromatic approach notes / - / clarinet | ride "ding ding-a", hat chick on 2+4, brushes, feathered kick | swung eighths (triplet), tape |
 | dnb | i9 VI7 iv9 v7, 2 bars per chord | pad only outside drops / - / reese + sub (long notes, half-time in drops) / offbeat stabs / - | two-step (kick 1 and the 'and' of 3, snare 2+4, ghosts), half-time drops | light swing, pre-drop gap |
+| rock | i VI III VII / i VII VI VII (power chords) | - / double-tracked overdriven guitar (`dist-guitar`): palm-muted eighths between open accents, one ringing chord a bar in intros and breakdowns, muted sixteenths into drops / round bass on eighths / - / - | backbeat (kick 1, the 'and' of 2 and 3, snare 2+4, eighth hats; drops ride open hats) | toms fill, pre-drop gap, short room |
 
 Case studies (where the material led, not presets to copy): K-BeautyGate (Korean consumer pitch, pastel app and
 plush mascots) -> bright-pop, F major, 120 BPM, glassy, music-led. FDDD / FlyGate (research repos, dark neon

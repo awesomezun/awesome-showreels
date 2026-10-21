@@ -619,7 +619,8 @@ INSTRUMENTS = {
     "upright": "upright (double) bass, plucked: Karplus-Strong with a thumpy finger attack (walking bass)",
     "clarinet": "clarinet-like reed lead: odd harmonics, breath, delayed vibrato (swing / trad motif)",
     "ride": "ride cymbal: ringing inharmonic partials + stick tick (swing pattern)", "brush": "brushed snare: a swish of filtered noise (swing backbeat)",
-    "guitar": "nylon guitar, Karplus-Strong (strummed bed / fingerpicked motion)", "ukulele": "ukulele, Karplus-Strong", "koto": "koto-like pluck with pitch press",
+    "guitar": "nylon guitar, Karplus-Strong (strummed bed / fingerpicked motion)",
+    "dist-guitar": "overdriven electric guitar: power chords on eighths, palm mutes, ringing opens (rock motion)", "ukulele": "ukulele, Karplus-Strong", "koto": "koto-like pluck with pitch press",
     "pulse": "chiptune pulse channel (arps, chords)", "pulse-lead": "chiptune pulse lead (motif)", "tri-bass": "chiptune 4-bit triangle bass",
     "pad": "detuned saw pad (bed)", "strings": "strings-lite ensemble (bed / spiccato ostinato)",
     "piano": "additive piano-ish (bed chords / broken-chord motion / motif)", "epiano": "FM electric piano (lofi keys)",
@@ -633,6 +634,7 @@ INSTRUMENT_ALIASES = {
     "reese-bass": "reese", "dnb-bass": "reese", "neuro-bass": "reese",
     "double-bass": "upright", "upright-bass": "upright", "walking-bass": "upright", "contrabass": "upright",
     "reed": "clarinet", "sax": "clarinet", "saxophone": "clarinet", "ride-cymbal": "ride", "brushes": "brush", "brush-snare": "brush",
+    "electric-guitar": "dist-guitar", "rock-guitar": "dist-guitar", "distortion-guitar": "dist-guitar", "power-chords": "dist-guitar",
     "acoustic-guitar": "guitar", "nylon-guitar": "guitar", "classical-guitar": "guitar", "uke": "ukulele", "koto-pluck": "koto", "shamisen": "koto",
     "square": "pulse", "chip-pulse": "pulse", "chiptune": "pulse", "chip-lead": "pulse-lead", "square-lead": "pulse-lead", "triangle": "tri-bass", "tri": "tri-bass", "chip-bass": "tri-bass",
     "pads": "pad", "synth-pad": "pad", "saw-pad": "pad", "strings-lite": "strings", "string": "strings",
@@ -846,6 +848,26 @@ def strum(ms, d, inst="guitar", vel=0.8, down=True, gap=0.014, seed=0):
         o = ns(gap * i)
         out[o:o + len(y)] += y[:len(out) - o]
     return out / max(1.0, len(order) ** 0.5)
+
+
+def dist_guitar(ms, d, vel=0.8, mute=False, seed=0):
+    """Overdriven electric guitar: Karplus-Strong strings (a power chord when ms is a list), a preamp into asymmetric
+    soft clipping, then a 4x12-ish cabinet (high-pass, a mid bump, a low-pass). mute = palm mute: short and darker."""
+    ms = list(ms) if isinstance(ms, (list, tuple)) else [ms]
+    dd = 0.16 if mute else max(d, 0.25)
+    out = np.zeros(ns(dd + 0.02 + 0.004 * len(ms)))
+    for i, m in enumerate(ms):
+        y = ks(m, dd, bright=0.75, decay=0.982 if mute else 0.9988, pick=0.13, seed=seed + i)
+        o = ns(0.004 * i)
+        out[o:o + len(y)] += y[:len(out) - o]
+    x = out * ((3.5 if mute else 7.0) * (0.55 + 0.6 * vel))
+    x = np.tanh(x + 0.18 * x * x)                                   # asymmetric drive: even harmonics, more grit
+    x = hp(x, 95)
+    x = lp(x, 2100 if mute else 4300) + 0.45 * bp(x, 550, 1500)
+    x = x / (np.max(np.abs(x)) + 1e-9)
+    t = tt(len(x))
+    env = np.exp(-t / (0.09 if mute else max(0.35, d * 0.9)))
+    return _frozen(fades(x * env * (0.55 + 0.45 * vel), 0.002, 0.02))
 
 
 # ───────────────────────────── SFX context, grammar, registry ─────────────────────────────
