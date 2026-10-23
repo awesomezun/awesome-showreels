@@ -67,522 +67,550 @@ Eighty-eight example projects. Sixteen are real web apps live at toyz.kr, captur
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-imaging/dist/zebrafish-light-sheet-v2.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-imaging/dist/zebrafish-light-sheet-v2.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-imaging">Source</a></sub>
 </td>
 <td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-behaviour/dist/gut-metabolite-anxiety-v1.0.0.html"><img src="assets/readme/moment-paper-behaviour.webp" width="100%" alt="Two open-field arenas side by side, vehicle and treated mice running their tracks while centre time counts up"/></a>
+<br/><b>Gut metabolite and anxiety</b> · <code>paper-behaviour</code>
+<br/><sub>a mouse-behaviour paper → tracks seen from above · 104 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-behaviour/dist/gut-metabolite-anxiety-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-behaviour/dist/gut-metabolite-anxiety-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-behaviour">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/research-cli/dist/spark-bench-v1.1.0.html"><img src="assets/readme/moment-spark-matrix.webp" width="100%" alt="spark-bench: 4,096 attention blocks sink to 674, a real terminal capture, the 4.1x row, blocks swirl into the logo"/></a>
+<br/><b>spark-bench</b> · <code>research-cli</code>
+<br/><sub>a research CLI → GPU points, real terminal · dark synth 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/research-cli/dist/spark-bench-v1.1.0.html">▶ Play</a> · <a href="assets/demo-research-cli-v1.1.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/research-cli/dist/spark-bench-v1.1.0.html">HTML</a> · <a href="skills/motion-showreel/examples/research-cli">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/academic-paper/dist/alveolar-repair-atlas-v2.0.0.html"><img src="assets/readme/moment-academic-paper-v2.webp" width="100%" alt="Alveolar repair atlas v2: 4,900 nuclei as shaded spheres lift off a tissue section and fly into a three-dimensional UMAP the camera orbits"/></a>
+<br/><b>Alveolar repair atlas v2</b> · <code>academic-paper</code>
+<br/><sub>a single-cell paper → one nucleus, tissue to 3D atlas and back · 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/academic-paper/dist/alveolar-repair-atlas-v2.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/academic-paper/dist/alveolar-repair-atlas-v2.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/academic-paper">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-transformer/dist/attention-explainer-v1.0.0.html"><img src="assets/readme/moment-paper-transformer.webp" width="100%" alt="Eight attention heads draw their arcs over one sentence, typeset on cream paper like the original article"/></a>
+<br/><b>Attention Is All You Need, explained</b> · <code>paper-transformer</code>
+<br/><sub>a landmark paper → typeset like the paper, attention computed · 110 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-transformer/dist/attention-explainer-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-transformer/dist/attention-explainer-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-transformer">Source</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-organoid/dist/wnt-pulse-organoids-v2.0.0.html"><img src="assets/readme/moment-paper-organoid.webp" width="100%" alt="A lab notebook: a brightfield photo of a growing organoid taped in, a pen writes the notes, a growth curve draws itself"/></a>
+<br/><b>WNT-pulse organoids</b> · <code>paper-organoid</code>
+<br/><sub>an organoid paper → a lab notebook that keeps itself · 100 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-organoid/dist/wnt-pulse-organoids-v2.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-organoid/dist/wnt-pulse-organoids-v2.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-organoid">Source</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/swiss-grid/dist/haus-fur-musik-v1.0.0.html"><img src="assets/readme/moment-swiss-grid.webp" width="100%" alt="House of Music: a strict Swiss grid, one red, numbers set at poster size"/></a>
 <br/><b>House of Music</b> · <code>swiss-grid</code>
 <br/><sub>an architecture brief → 12-column grid, one red · 124 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/swiss-grid/dist/haus-fur-musik-v1.0.0.html">▶ Play</a> · <a href="assets/demo-swiss-grid-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/swiss-grid/dist/haus-fur-musik-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/swiss-grid">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/explainer-llm/dist/next-word-explainer-v1.0.0.html"><img src="assets/readme/moment-explainer-llm.webp" width="100%" alt="The plane turns and squashes onto the context arrow: every word lands at its score, rises as a bar and settles into softmax"/></a>
 <br/><b>How a language model picks the next word</b> · <code>explainer-llm</code>
 <br/><sub>an LLM explainer → words as arrows, maths animation · 15/30/60 s · 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/explainer-llm/dist/next-word-explainer-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/explainer-llm/dist/next-word-explainer-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/explainer-llm">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/explainer-sunlight/dist/sunlight-for-breakfast-v1.0.0.html"><img src="assets/readme/moment-explainer-sunlight.webp" width="100%" alt="Sunlight crosses space as a clock runs toward 8:20, Venus sliding by, a progress line from the Sun to the Earth"/></a>
 <br/><b>Sunlight for Breakfast</b> · <code>explainer-sunlight</code>
 <br/><sub>a science explainer → flat vector, from the Sun to toast · 15/30/60 s · 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/explainer-sunlight/dist/sunlight-for-breakfast-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/explainer-sunlight/dist/sunlight-for-breakfast-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/explainer-sunlight">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/riso-zine/dist/paper-jam-07-v1.0.0.html"><img src="assets/readme/moment-riso-zine.webp" width="100%" alt="PAPER JAM #07: misregistered risograph inks, stamps and jumpy cuts"/></a>
 <br/><b>PAPER JAM #07</b> · <code>riso-zine</code>
 <br/><sub>a zine → riso inks off register · 160 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/riso-zine/dist/paper-jam-07-v1.0.0.html">▶ Play</a> · <a href="assets/demo-riso-zine-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/riso-zine/dist/paper-jam-07-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/riso-zine">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sketchnote/dist/visual-notes-lab-v1.0.0.html"><img src="assets/readme/moment-sketchnote.webp" width="100%" alt="Visual Notes Lab: a whiteboard wall of text is boxed, arrowed and starred in marker, one camera take"/></a>
 <br/><b>Visual Notes Lab</b> · <code>sketchnote</code>
 <br/><sub>a workshop handout → markers that write themselves · 104 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sketchnote/dist/visual-notes-lab-v1.0.0.html">▶ Play</a> · <a href="assets/demo-sketchnote-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/sketchnote/dist/visual-notes-lab-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/sketchnote">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sumi-wabi/dist/yohakuan-v1.0.0.html"><img src="assets/readme/moment-sumi-wabi.webp" width="100%" alt="Yohakuan: a drop of sumi blooms on washi, a raku bowl in three strokes, an ensō and one vermilion seal"/></a>
 <br/><b>Yohakuan</b> · <code>sumi-wabi</code>
 <br/><sub>a ryokan website → sumi ink, vertical type · koto 72 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sumi-wabi/dist/yohakuan-v1.0.0.html">▶ Play</a> · <a href="assets/demo-sumi-wabi-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/sumi-wabi/dist/yohakuan-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/sumi-wabi">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-perturbseq/dist/perturb-seq-exhaustion-v2.0.0.html"><img src="assets/readme/moment-paper-perturbseq.webp" width="100%" alt="A dive into the tumour microenvironment: exhausted T cells and tumour cells as 3D illustration under the paper title"/></a>
 <br/><b>Perturb-seq: T-cell exhaustion</b> · <code>paper-perturbseq</code>
 <br/><sub>a CRISPR-screen paper → illustration, data, illustration · 116 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-perturbseq/dist/perturb-seq-exhaustion-v2.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-perturbseq/dist/perturb-seq-exhaustion-v2.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-perturbseq">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-pocket/dist/ridgeline-pocket-v2.0.0.html"><img src="assets/readme/moment-pixel-pocket.webp" width="100%" alt="A four-green handheld screen: the hiker reaches the summit, SUMMIT! Pika Point 1,847 m"/></a>
 <br/><b>Ridgeline Pocket</b> · <code>pixel-pocket</code>
 <br/><sub>a hiking app → a four-green handheld game · chiptune 108 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-pocket/dist/ridgeline-pocket-v2.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/pixel-pocket/dist/ridgeline-pocket-v2.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/pixel-pocket">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/newsprint/dist/tamsin-valley-courier-v1.0.0.html"><img src="assets/readme/moment-newsprint.webp" width="100%" alt="The Tamsin Valley Courier: page A1 rolls off the press, a halftone photo, numbers set as cast slugs"/></a>
 <br/><b>The Tamsin Valley Courier</b> · <code>newsprint</code>
 <br/><sub>a local newspaper → printing press, halftone · 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/newsprint/dist/tamsin-valley-courier-v1.0.0.html">▶ Play</a> · <a href="assets/demo-newsprint-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/newsprint/dist/tamsin-valley-courier-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/newsprint">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/trove/dist/trove-v1.0.1.html"><img src="assets/readme/moment-trove.webp" width="100%" alt="Trove: scattered links are pulled into a spinning chrome torus as the name lands in chrome type"/></a>
 <br/><b>Trove</b> · <code>trove</code>
 <br/><sub>a bookmark app → chrome torus, links pulled into orbit · dark synth 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/trove/dist/trove-v1.0.1.html">▶ Play</a> · <a href="skills/motion-showreel/examples/trove/dist/trove-v1.0.1.html">HTML</a> · <a href="skills/motion-showreel/examples/trove">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pulse/dist/pulse-v1.0.1.html"><img src="assets/readme/moment-pulse.webp" width="100%" alt="Pulse: tasks and releases on one brushed-aluminium dashboard, counters and level meters ticking"/></a>
 <br/><b>Pulse</b> · <code>pulse</code>
 <br/><sub>a maker dashboard → brushed aluminium, live meters · bright pop 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pulse/dist/pulse-v1.0.1.html">▶ Play</a> · <a href="skills/motion-showreel/examples/pulse/dist/pulse-v1.0.1.html">HTML</a> · <a href="skills/motion-showreel/examples/pulse">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/frame/dist/frame-v1.0.1.html"><img src="assets/readme/moment-frame.webp" width="100%" alt="Frame: a name typed into the form appears in the live portfolio preview at once"/></a>
 <br/><b>Frame</b> · <code>frame</code>
 <br/><sub>a portfolio builder → live preview as you type · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/frame/dist/frame-v1.0.1.html">▶ Play</a> · <a href="skills/motion-showreel/examples/frame/dist/frame-v1.0.1.html">HTML</a> · <a href="skills/motion-showreel/examples/frame">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/tiny-beat/dist/tiny-beat-v1.0.1.html"><img src="assets/readme/moment-tiny-beat.webp" width="100%" alt="Tiny Beat: lime pads light up on a step sequencer as the playhead sweeps the bar"/></a>
 <br/><b>Tiny Beat</b> · <code>tiny-beat</code>
 <br/><sub>a daily beat maker → a glowing step sequencer · lo-fi 80 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/tiny-beat/dist/tiny-beat-v1.0.1.html">▶ Play</a> · <a href="skills/motion-showreel/examples/tiny-beat/dist/tiny-beat-v1.0.1.html">HTML</a> · <a href="skills/motion-showreel/examples/tiny-beat">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/deploy-kit/dist/deploy-kit-v1.0.1.html"><img src="assets/readme/moment-deploy-kit.webp" width="100%" alt="Deploy Kit: the kit's real files stream into one ZIP, its count ticking up"/></a>
 <br/><b>Deploy Kit</b> · <code>deploy-kit</code>
 <br/><sub>a launch kit → the files fly into one ZIP · drum and bass 176 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/deploy-kit/dist/deploy-kit-v1.0.1.html">▶ Play</a> · <a href="skills/motion-showreel/examples/deploy-kit/dist/deploy-kit-v1.0.1.html">HTML</a> · <a href="skills/motion-showreel/examples/deploy-kit">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/read-room/dist/read-room-v1.0.1.html"><img src="assets/readme/moment-read-room.webp" width="100%" alt="Read Room: an essay page where highlights are drawn in and margin notes appear"/></a>
 <br/><b>Read Room</b> · <code>read-room</code>
 <br/><sub>a shared reading room → highlights drawn at pen speed · ambient 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/read-room/dist/read-room-v1.0.1.html">▶ Play</a> · <a href="skills/motion-showreel/examples/read-room/dist/read-room-v1.0.1.html">HTML</a> · <a href="skills/motion-showreel/examples/read-room">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/motion-kit/dist/motion-kit-v1.0.0.html"><img src="assets/readme/moment-motion-kit.webp" width="100%" alt="Motion Kit: a cursor taps the real confetti demo and the burst plays out"/></a>
 <br/><b>Motion Kit</b> · <code>motion-kit</code>
 <br/><sub>a micro-interaction kit → its own animations, frame by frame · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/motion-kit/dist/motion-kit-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/motion-kit/dist/motion-kit-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/motion-kit">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/layr/dist/layr-v1.0.0.html"><img src="assets/readme/moment-layr.webp" width="100%" alt="LAYR: notes fly onto five exploded glass layers and each layer's count ticks up"/></a>
 <br/><b>LAYR</b> · <code>layr</code>
 <br/><sub>a notes workspace → notes falling onto five glass layers · dark synth 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/layr/dist/layr-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/layr/dist/layr-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/layr">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/tiny-tools/dist/tiny-tools-v1.0.0.html"><img src="assets/readme/moment-tiny-tools.webp" width="100%" alt="tiny.tools: clippings land in the smart paste pad and it names the right tool each time"/></a>
 <br/><b>tiny.tools</b> · <code>tiny-tools</code>
 <br/><sub>a developer toolbox → smart paste picks the tool · chiptune 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/tiny-tools/dist/tiny-tools-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/tiny-tools/dist/tiny-tools-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/tiny-tools">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/mood-fm/dist/mood-fm-v1.0.0.html"><img src="assets/readme/moment-mood-fm.webp" width="100%" alt="MOOD FM: the dial turns from 몽글 to 들뜸 and the whole frame changes colour with it"/></a>
 <br/><b>MOOD FM</b> · <code>mood-fm</code>
 <br/><sub>a mood radio → the frame takes the colour of the mood · lo-fi 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/mood-fm/dist/mood-fm-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/mood-fm/dist/mood-fm-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/mood-fm">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/form-01/dist/form-01-v1.0.0.html"><img src="assets/readme/moment-form-01.webp" width="100%" alt="FORM / 01: reviewers' pins and a region land on a landing page as their comment cards slide in"/></a>
 <br/><b>FORM / 01</b> · <code>form-01</code>
 <br/><sub>a design feedback board → pins and versions on the work · cinematic 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/form-01/dist/form-01-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/form-01/dist/form-01-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/form-01">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/loop/dist/loop-v1.0.0.html"><img src="assets/readme/moment-loop.webp" width="100%" alt="LOOP: a tap checks off a routine and the chrome ring fills to 2/3"/></a>
 <br/><b>LOOP</b> · <code>loop</code>
 <br/><sub>a habit app → taps fill a chrome ring · corporate 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/loop/dist/loop-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/loop/dist/loop-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/loop">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/focus-space/dist/focus-space-v1.0.0.html"><img src="assets/readme/moment-focus-space.webp" width="100%" alt="FOCUS SPACE: the clock runs down in time-lapse as the chrome ring closes round one task"/></a>
 <br/><b>FOCUS SPACE</b> · <code>focus-space</code>
 <br/><sub>a focus timer → a session in time-lapse inside an arched door · ambient 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/focus-space/dist/focus-space-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/focus-space/dist/focus-space-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/focus-space">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-kit/dist/pixel-kit-v1.0.0.html"><img src="assets/readme/moment-pixel-kit.webp" width="100%" alt="PIXEL KIT: six sizes of one design turn over together to the next brand kit"/></a>
 <br/><b>PIXEL KIT</b> · <code>pixel-kit</code>
 <br/><sub>a brand-image tool → one design in six sizes, three kits · swing 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-kit/dist/pixel-kit-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/pixel-kit/dist/pixel-kit-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/pixel-kit">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/crayon/dist/crayon-v1.0.0.html"><img src="assets/readme/moment-crayon.webp" width="100%" alt="꼬마 화가: a child's crayon drawing of a house, a tree and a girl with a kite draws itself on drawing paper"/></a>
 <br/><b>꼬마 화가</b> · <code>crayon</code>
 <br/><sub>a picture-book app → crayon on drawing paper, drawn as you watch · bright pop 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/crayon/dist/crayon-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/crayon/dist/crayon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/crayon">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-collage/dist/paper-collage-v1.0.0.html"><img src="assets/readme/moment-paper-collage.webp" width="100%" alt="종이비행 페스티벌 2026: torn paper scraps and ransom letters slap down on newsprint"/></a>
 <br/><b>종이비행 페스티벌 2026</b> · <code>paper-collage</code>
 <br/><sub>a music festival → torn paper slapped down on the beat · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-collage/dist/paper-collage-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-collage/dist/paper-collage-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-collage">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/whiteboard/dist/whiteboard-v1.0.0.html"><img src="assets/readme/moment-whiteboard.webp" width="100%" alt="A hand with a black marker draws the three checks to make before clicking a link in a phishing mail"/></a>
 <br/><b>피싱 메일 3초 판별법</b> · <code>whiteboard</code>
 <br/><sub>a security training → a hand draws it in marker on one long board · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/whiteboard/dist/whiteboard-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/whiteboard/dist/whiteboard-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/whiteboard">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/infographic/dist/infographic-v1.0.0.html"><img src="assets/readme/moment-infographic.webp" width="100%" alt="Isometric bars grow a beat apart over a paper map while their numbers count up to ×2"/></a>
 <br/><b>한빛시 자전거 리포트 2026</b> · <code>infographic</code>
 <br/><sub>a city report → isometric charts that grow and count · corporate 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/infographic/dist/infographic-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/infographic/dist/infographic-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/infographic">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/minimal-ui/dist/minimal-ui-v1.0.0.html"><img src="assets/readme/moment-minimal-ui.webp" width="100%" alt="하루 세 칸: a cursor checks three tasks on a white card and the ring steps to 3/3"/></a>
 <br/><b>하루 세 칸</b> · <code>minimal-ui</code>
 <br/><sub>a habit app → white cards, one blue, a cursor that really uses it · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/minimal-ui/dist/minimal-ui-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/minimal-ui/dist/minimal-ui-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/minimal-ui">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/blueprint/dist/blueprint-v1.0.0.html"><img src="assets/readme/moment-blueprint.webp" width="100%" alt="폴드원 E1: a bicycle draws itself in white line work on a blueprint, dimensions growing to their arrowheads"/></a>
 <br/><b>폴드원 E1</b> · <code>blueprint</code>
 <br/><sub>a folding e-bike → white line work on blue, then it folds · cinematic 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/blueprint/dist/blueprint-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/blueprint/dist/blueprint-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/blueprint">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cutaway-3d/dist/cutaway-3d-v1.0.0.html"><img src="assets/readme/moment-cutaway-3d.webp" width="100%" alt="브루큐브: the roaster's panels slide away and its labelled parts work inside"/></a>
 <br/><b>브루큐브</b> · <code>cutaway-3d</code>
 <br/><sub>a home coffee roaster → a 3D cutaway that opens and works · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cutaway-3d/dist/cutaway-3d-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cutaway-3d/dist/cutaway-3d-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cutaway-3d">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chrome-glass/dist/chrome-glass-v1.0.0.html"><img src="assets/readme/moment-chrome-glass.webp" width="100%" alt="글래스 노트 No.3: a thick glass bottle with a chrome cap bends the line behind it like a lens"/></a>
 <br/><b>글래스 노트 No.3</b> · <code>chrome-glass</code>
 <br/><sub>a perfume → raymarched glass that bends the words behind it · ambient 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chrome-glass/dist/chrome-glass-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/chrome-glass/dist/chrome-glass-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/chrome-glass">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cinematic-3d/dist/cinematic-3d-v1.0.0.html"><img src="assets/readme/moment-cinematic-3d.webp" width="100%" alt="궤도 일곱: the sun breaks over the Earth's limb into a lens flare under the title"/></a>
 <br/><b>궤도 일곱</b> · <code>cinematic-3d</code>
 <br/><sub>a documentary → the sun breaking over the Earth, in scope · cinematic 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cinematic-3d/dist/cinematic-3d-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cinematic-3d/dist/cinematic-3d-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cinematic-3d">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/voxel/dist/voxel-v1.0.0.html"><img src="assets/readme/moment-voxel.webp" width="100%" alt="블록 마을: a code panel types and bricks drop onto an isometric voxel village"/></a>
 <br/><b>블록 마을</b> · <code>voxel</code>
 <br/><sub>a kids' coding camp → one line of code, one block on the beat · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/voxel/dist/voxel-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/voxel/dist/voxel-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/voxel">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-platformer/dist/pixel-platformer-v1.0.0.html"><img src="assets/readme/moment-pixel-platformer.webp" width="100%" alt="8비트 장터 2026: a pixel hero runs down a dusk market street collecting coins"/></a>
 <br/><b>8비트 장터 2026</b> · <code>pixel-platformer</code>
 <br/><sub>a retro game fair → a side-scroller at 4x, jumps on the beat · chiptune 144 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-platformer/dist/pixel-platformer-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/pixel-platformer/dist/pixel-platformer-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/pixel-platformer">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/rock-stage/dist/rock-stage-v1.0.0.html"><img src="assets/readme/moment-rock-stage.webp" width="100%" alt="번개다방: a rock trio on stage, amps pumping and the bolt flashing as each instrument plays"/></a>
 <br/><b>번개다방 〈볼륨 업〉</b> · <code>rock-stage</code>
 <br/><sub>a rock gig → each instrument moves its own part of the stage · rock 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/rock-stage/dist/rock-stage-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/rock-stage/dist/rock-stage-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/rock-stage">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/generative-art/dist/generative-art-v1.0.0.html"><img src="assets/readme/moment-generative-art.webp" width="100%" alt="흐름의 지도: flowing lines gather into the letters of the title and let go"/></a>
 <br/><b>흐름의 지도</b> · <code>generative-art</code>
 <br/><sub>a media-art show → lines in a flow field gather into the title · ambient 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/generative-art/dist/generative-art-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/generative-art/dist/generative-art-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/generative-art">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/dark-neon/dist/dark-neon-v1.0.0.html"><img src="assets/readme/moment-dark-neon.webp" width="100%" alt="센티넬 X: a neon network under a radar sweep; a hidden attack burns magenta as it is found"/></a>
 <br/><b>센티넬 X</b> · <code>dark-neon</code>
 <br/><sub>AI security → neon tubes, attacks unseen until the radar crosses them · dark synth 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/dark-neon/dist/dark-neon-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/dark-neon/dist/dark-neon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/dark-neon">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cyberpunk/dist/cyberpunk-v1.0.0.html"><img src="assets/readme/moment-cyberpunk.webp" width="100%" alt="네온 레인 2087: a hooded walker under Korean neon signs, the wet street mirroring them"/></a>
 <br/><b>네온 레인 2087</b> · <code>cyberpunk</code>
 <br/><sub>an SF game → Seoul in the rain, Korean neon, glitches · dark synth 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cyberpunk/dist/cyberpunk-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cyberpunk/dist/cyberpunk-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cyberpunk">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/hologram/dist/hologram-v1.0.0.html"><img src="assets/readme/moment-hologram.webp" width="100%" alt="오르빗 컨트롤: a wireframe globe over a projector, satellites switching on across three shells"/></a>
 <br/><b>오르빗 컨트롤</b> · <code>hologram</code>
 <br/><sub>satellite operations → a projected globe and 300 satellites · dark synth 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/hologram/dist/hologram-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/hologram/dist/hologram-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/hologram">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ascii/dist/ascii-v1.0.0.html"><img src="assets/readme/moment-ascii.webp" width="100%" alt="termpan: characters fly in from everywhere and land as a shaded, spinning ASCII donut"/></a>
 <br/><b>글자판 termpan</b> · <code>ascii</code>
 <br/><sub>a terminal dashboard → characters fly in and become a spinning donut · chiptune 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ascii/dist/ascii-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/ascii/dist/ascii-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/ascii">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/clay/dist/clay-v1.0.0.html"><img src="assets/readme/moment-clay.webp" width="100%" alt="말랑베이커리: a clay loaf with a face rides a coral scooter down a clay street"/></a>
 <br/><b>말랑베이커리</b> · <code>clay</code>
 <br/><sub>a bread delivery → plasticine at 12 frames a second · bright pop 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/clay/dist/clay-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/clay/dist/clay-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/clay">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stop-motion/dist/stop-motion-v1.0.0.html"><img src="assets/readme/moment-stop-motion.webp" width="100%" alt="털뭉치 공방: a needle stitches round a felt bear's head on a cutting mat, a stitch a beat"/></a>
 <br/><b>털뭉치 공방</b> · <code>stop-motion</code>
 <br/><sub>a felt doll workshop → felt and stitches, shot frame by frame · lo-fi 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stop-motion/dist/stop-motion-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/stop-motion/dist/stop-motion-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/stop-motion">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cartoon/dist/cartoon-v1.0.0.html"><img src="assets/readme/moment-cartoon.webp" width="100%" alt="산책왕 멍멍: a cartoon dog runs through the park and a crown drops onto its head"/></a>
 <br/><b>산책왕 멍멍</b> · <code>cartoon</code>
 <br/><sub>a dog-walking app → ink lines, smears, a crown for the winner · bright pop 144 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cartoon/dist/cartoon-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cartoon/dist/cartoon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cartoon">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/character-show/dist/character-show-v1.0.0.html"><img src="assets/readme/moment-character-show.webp" width="100%" alt="콩이: a glossy green bean mascot changes faces and props under a spotlight"/></a>
 <br/><b>콩이 첫 팬미팅</b> · <code>character-show</code>
 <br/><sub>a mascot's fan meeting → one glossy character, a new pose every two beats · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/character-show/dist/character-show-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/character-show/dist/character-show-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/character-show">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/anime/dist/anime-v1.0.0.html"><img src="assets/readme/moment-anime.webp" width="100%" alt="벚꽃 정류장: two students on a bench under a cherry tree, cumulus and power lines overhead"/></a>
 <br/><b>벚꽃 정류장</b> · <code>anime</code>
 <br/><sub>a webtoon → an anime background painting, petals and a late bus · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/anime/dist/anime-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/anime/dist/anime-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/anime">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ink-wash/dist/ink-wash-v1.0.0.html"><img src="assets/readme/moment-ink-wash.webp" width="100%" alt="도성 한 바퀴: ink-wash ranges bleed onto rice paper and the city wall paints itself along the ridge"/></a>
 <br/><b>도성 한 바퀴</b> · <code>ink-wash</code>
 <br/><sub>a city-wall walking tour → a Korean ink landscape that unrolls like a scroll · koto 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/ink-wash/dist/ink-wash-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/ink-wash/dist/ink-wash-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/ink-wash">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/old-film/dist/old-film-v1.0.0.html"><img src="assets/readme/moment-old-film.webp" width="100%" alt="동명극장: the cinema's name lights up bulb by bulb on a weaving, scratched sepia print"/></a>
 <br/><b>동명극장 재개관</b> · <code>old-film</code>
 <br/><sub>a cinema reopening → a worn sepia print, a countdown, intertitles · swing 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/old-film/dist/old-film-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/old-film/dist/old-film-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/old-film">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/woodcut/dist/woodcut-v1.0.0.html"><img src="assets/readme/moment-woodcut.webp" width="100%" alt="솔뫼 양조장: a V-gouge carves a sun, two ranges and the brewery’s name out of a black block, the vermilion plate showing through"/></a>
 <br/><b>솔뫼 양조장</b> · <code>woodcut</code>
 <br/><sub>a makgeolli brewery → a relief print that carves itself · corporate 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/woodcut/dist/woodcut-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/woodcut/dist/woodcut-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/woodcut">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/engraving/dist/engraving-v1.0.0.html"><img src="assets/readme/moment-engraving.webp" width="100%" alt="한반도 곤충 도감: a stag beetle engraved on copper in the order an engraver cuts, the hatching thinning toward the light"/></a>
 <br/><b>한반도 곤충 도감</b> · <code>engraving</code>
 <br/><sub>a field guide → copperplates that engrave themselves · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/engraving/dist/engraving-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/engraving/dist/engraving-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/engraving">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/silkscreen-poster/dist/silkscreen-poster-v1.0.0.html"><img src="assets/readme/moment-silkscreen-poster.webp" width="100%" alt="바람섬 다섯 길: a poster pulled one ink per beat with a squeegee, yellow sky, orange sun, sea, island, then the key ink"/></a>
 <br/><b>바람섬 다섯 길</b> · <code>silkscreen-poster</code>
 <br/><sub>an island walking map → posters pulled one ink at a time · folk 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/silkscreen-poster/dist/silkscreen-poster-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/silkscreen-poster/dist/silkscreen-poster-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/silkscreen-poster">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/halftone-dossier/dist/halftone-dossier-v1.0.0.html"><img src="assets/readme/moment-halftone-dossier.webp" width="100%" alt="어디쯤 택배: a manila case file, a halftone mugshot of a parcel against a height chart, a corkboard with red string"/></a>
 <br/><b>어디쯤 택배</b> · <code>halftone-dossier</code>
 <br/><sub>a parcel tracker → a deadpan case file in halftone · swing 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/halftone-dossier/dist/halftone-dossier-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/halftone-dossier/dist/halftone-dossier-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/halftone-dossier">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stained-glass/dist/stained-glass-v1.0.0.html"><img src="assets/readme/moment-stained-glass.webp" width="100%" alt="빛뜰 미술관: an arched window’s lead drawn out from its sun, the glass lighting piece by piece, its colours lying on the floor"/></a>
 <br/><b>빛뜰 미술관</b> · <code>stained-glass</code>
 <br/><sub>a glass-art museum → a window that lights piece by piece · ambient 80 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stained-glass/dist/stained-glass-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/stained-glass/dist/stained-glass-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/stained-glass">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shadow-puppet/dist/shadow-puppet-v1.0.0.html"><img src="assets/readme/moment-shadow-puppet.webp" width="100%" alt="그림자 토끼전: rod puppets of a rabbit and a turtle on a lamp-lit cloth, title boards dropping in on strings"/></a>
 <br/><b>그림자 토끼전</b> · <code>shadow-puppet</code>
 <br/><sub>a children’s shadow play → rod puppets behind a lamp-lit cloth · folk 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shadow-puppet/dist/shadow-puppet-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/shadow-puppet/dist/shadow-puppet-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/shadow-puppet">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-cut/dist/paper-cut-v1.0.0.html"><img src="assets/readme/moment-paper-cut.webp" width="100%" alt="오림 공방: red hanji folded three times, scissors cut along each outline, the paper unfolds into one symmetric pattern"/></a>
 <br/><b>오림 공방</b> · <code>paper-cut</code>
 <br/><sub>a paper-cutting class → folded hanji cut and unfolded · bright pop 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-cut/dist/paper-cut-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-cut/dist/paper-cut-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-cut">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/one-line/dist/one-line-v1.0.0.html"><img src="assets/readme/moment-one-line.webp" width="100%" alt="이음 만년필: one gold line draws a nib, cursive loops and a heart while the camera rides behind the pen"/></a>
 <br/><b>이음 만년필</b> · <code>one-line</code>
 <br/><sub>a fountain pen → one gold line that never breaks · ambient 80 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/one-line/dist/one-line-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/one-line/dist/one-line-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/one-line">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shape-morph/dist/shape-morph-v1.0.0.html"><img src="assets/readme/moment-shape-morph.webp" width="100%" alt="한 점 플래너: an ink dot springs into a button, a checkbox, a calendar card and back into the dot"/></a>
 <br/><b>한 점 플래너</b> · <code>shape-morph</code>
 <br/><sub>a day planner → one shape that never cuts · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shape-morph/dist/shape-morph-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/shape-morph/dist/shape-morph-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/shape-morph">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/liquid/dist/liquid-v1.0.0.html"><img src="assets/readme/moment-liquid.webp" width="100%" alt="톡톡 스파클링: pink drops fall into a glossy pool that swells into the word, candy blobs merging"/></a>
 <br/><b>톡톡 스파클링</b> · <code>liquid</code>
 <br/><sub>a sparkling drink → glossy WebGL metaballs · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/liquid/dist/liquid-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/liquid/dist/liquid-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/liquid">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/synthwave/dist/synthwave-v1.0.0.html"><img src="assets/readme/moment-synthwave.webp" width="100%" alt="네온 하이웨이 1986: a striped sun over wireframe mountains, a magenta grid rushing in, chrome type"/></a>
 <br/><b>네온 하이웨이 1986</b> · <code>synthwave</code>
 <br/><sub>an arcade racer → outrun grid and chrome on a videotape · synthwave 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/synthwave/dist/synthwave-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/synthwave/dist/synthwave-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/synthwave">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/spy-titles/dist/spy-titles-v1.0.0.html"><img src="assets/readme/moment-spy-titles.webp" width="100%" alt="작전명 비단: diagonal black bars and a red silk ribbon on orange, an agent in a trench coat in cut paper"/></a>
 <br/><b>작전명 비단</b> · <code>spy-titles</code>
 <br/><sub>a 1960s spy drama → a cut-paper title sequence · swing 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/spy-titles/dist/spy-titles-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/spy-titles/dist/spy-titles-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/spy-titles">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/bauhaus/dist/bauhaus-v1.0.0.html"><img src="assets/readme/moment-bauhaus.webp" width="100%" alt="조형 연구소: a red circle, a blue square and a yellow triangle land on a module grid, one action per beat"/></a>
 <br/><b>조형 연구소 여름 학교</b> · <code>bauhaus</code>
 <br/><sub>a design summer school → shapes on a module grid, one move a beat · dark synth 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/bauhaus/dist/bauhaus-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/bauhaus/dist/bauhaus-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/bauhaus">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/variety-captions/dist/variety-captions-v1.0.0.html"><img src="assets/readme/moment-variety-captions.webp" width="100%" alt="냥이네 하숙집: a vertical variety clip, a cheese cat swipes a cup, triple-outlined captions pop over a freeze frame"/></a>
 <br/><b>냥이네 하숙집</b> · <code>variety-captions</code>
 <br/><sub>a variety show → 9:16 captions that pop, punch-ins and freezes · bright pop 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/variety-captions/dist/variety-captions-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/variety-captions/dist/variety-captions-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/variety-captions">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sticker-explainer/dist/sticker-explainer-v1.0.0.html"><img src="assets/readme/moment-sticker-explainer.webp" width="100%" alt="궁금상자: stickers with white borders slap onto one big board as the camera glides from the bin to a T-shirt"/></a>
 <br/><b>궁금상자</b> · <code>sticker-explainer</code>
 <br/><sub>a science channel → stickers on one big board, a gliding camera · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sticker-explainer/dist/sticker-explainer-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/sticker-explainer/dist/sticker-explainer-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/sticker-explainer">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/assembly-manual/dist/assembly-manual-v1.0.0.html"><img src="assets/readme/moment-assembly-manual.webp" width="100%" alt="반듯 선반: an isometric shelf assembles itself in black line on white, a faceless helper with a screwdriver"/></a>
 <br/><b>반듯 선반</b> · <code>assembly-manual</code>
 <br/><sub>a flat-pack shelf → a wordless assembly manual · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/assembly-manual/dist/assembly-manual-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/assembly-manual/dist/assembly-manual-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/assembly-manual">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/watercolour-toon/dist/watercolour-toon-v1.0.0.html"><img src="assets/readme/moment-watercolour-toon.webp" width="100%" alt="비 오는 날의 밤톨이: a watercolour hedgehog holds a big leaf over a shivering bunny in the rain and her ears spring up"/></a>
 <br/><b>비 오는 날의 밤톨이</b> · <code>watercolour-toon</code>
 <br/><sub>a picture book → watercolour washes, characters that act · corporate 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/watercolour-toon/dist/watercolour-toon-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/watercolour-toon/dist/watercolour-toon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/watercolour-toon">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/lyric-video/dist/lyric-video-v1.0.0.html"><img src="assets/readme/moment-lyric-video.webp" width="100%" alt="파란 버스: a blue bus on a summer coast, each sung syllable popping yellow on its note"/></a>
 <br/><b>파란 버스</b> · <code>lyric-video</code>
 <br/><sub>a band’s single → a lyric video the engine sings · bright pop 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/lyric-video/dist/lyric-video-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/lyric-video/dist/lyric-video-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/lyric-video">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/collision-music/dist/collision-music-v1.0.0.html"><img src="assets/readme/moment-collision-music.webp" width="100%" alt="통통 악기 놀이: marbles bounce down rainbow mallet bars, every hit a note on the staff"/></a>
 <br/><b>통통 악기 놀이</b> · <code>collision-music</code>
 <br/><sub>a music-play app → marbles that play the bars they hit · ambient 128 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/collision-music/dist/collision-music-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/collision-music/dist/collision-music-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/collision-music">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chronicle/dist/chronicle-v1.0.0.html"><img src="assets/readme/moment-chronicle.webp" width="100%" alt="소리상회: the same music shop in 1925, 1955, 1975, 1995 and 2025, each in its era’s sign and picture surface"/></a>
 <br/><b>소리상회 100년</b> · <code>chronicle</code>
 <br/><sub>a music shop’s centenary → one shopfront in five eras · corporate 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chronicle/dist/chronicle-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/chronicle/dist/chronicle-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/chronicle">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/microgame/dist/microgame-v1.0.0.html"><img src="assets/readme/moment-microgame.webp" width="100%" alt="5초 미션: one-word missions on bold stripes, 성공! stamps, a burning fuse and 속도 UP!"/></a>
 <br/><b>5초 미션</b> · <code>microgame</code>
 <br/><sub>a party game → microgames that get shorter · chiptune 144 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/microgame/dist/microgame-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/microgame/dist/microgame-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/microgame">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/zoom-dive/dist/zoom-dive-v1.0.0.html"><img src="assets/readme/moment-zoom-dive.webp" width="100%" alt="끝없는 확대: from a ginkgo leaf through cells and chloroplasts to a chlorophyll molecule and its magnesium atom"/></a>
 <br/><b>끝없는 확대</b> · <code>zoom-dive</code>
 <br/><sub>a science exhibition → powers of ten, 1 m to 0.1 nm · ambient 96 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/zoom-dive/dist/zoom-dive-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/zoom-dive/dist/zoom-dive-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/zoom-dive">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/mosaic/dist/mosaic-v1.0.0.html"><img src="assets/readme/moment-mosaic.webp" width="100%" alt="유리 타일 정원: 14,400 glass tiles flip in a wave and a white subway wall becomes a spring garden"/></a>
 <br/><b>유리 타일 정원</b> · <code>mosaic</code>
 <br/><sub>subway public art → 14,400 glass tiles that flip · ambient 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/mosaic/dist/mosaic-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/mosaic/dist/mosaic-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/mosaic">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cel-anime-80s/dist/cel-anime-80s-v1.0.0.html"><img src="assets/readme/moment-cel-anime-80s.webp" width="100%" alt="한강 시티 라이트 1988: a cel-painted heroine on a bridge, hair streaming, a skyline mirrored in the river, on VHS"/></a>
 <br/><b>한강 시티 라이트 1988</b> · <code>cel-anime-80s</code>
 <br/><sub>a TV anime → 1980s cel paint on twos, VHS · city pop 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cel-anime-80s/dist/cel-anime-80s-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/cel-anime-80s/dist/cel-anime-80s-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cel-anime-80s">Source</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/neo-brutal/dist/kablok-v1.0.0.html"><img src="assets/readme/moment-neo-brutal.webp" width="100%" alt="kablok: neo-brutalist slabs with hard shadows, a cursor picks and stacks blocks"/></a>
 <br/><b>kablok</b> · <code>neo-brutal</code>
 <br/><sub>a landing page → hard shadows, slabs · funk 112 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/neo-brutal/dist/kablok-v1.0.0.html">▶ Play</a> · <a href="assets/demo-neo-brutal-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/neo-brutal/dist/kablok-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/neo-brutal">Source</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/editorial-luxe/dist/maison-veyrande-v1.0.0.html"><img src="assets/readme/moment-editorial-luxe.webp" width="100%" alt="Maison Veyrande: hairline Bodoni type, ivory and black, slow editorial reveals"/></a>
 <br/><b>Maison Veyrande</b> · <code>editorial-luxe</code>
 <br/><sub>a fashion press release → Bodoni, ivory and black · piano 80 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/editorial-luxe/dist/maison-veyrande-v1.0.0.html">▶ Play</a> · <a href="assets/demo-editorial-luxe-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/editorial-luxe/dist/maison-veyrande-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/editorial-luxe">Source</a></sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="50%">
-<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-behaviour/dist/gut-metabolite-anxiety-v1.0.0.html"><img src="assets/readme/moment-paper-behaviour.webp" width="100%" alt="Two open-field arenas side by side, vehicle and treated mice running their tracks while centre time counts up"/></a>
-<br/><b>Gut metabolite and anxiety</b> · <code>paper-behaviour</code>
-<br/><sub>a mouse-behaviour paper → tracks seen from above · 104 BPM</sub>
-<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-behaviour/dist/gut-metabolite-anxiety-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-behaviour/dist/gut-metabolite-anxiety-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-behaviour">Source</a></sub>
 </td>
 <td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/botanical-organic/dist/mistfold-v1.0.0.html"><img src="assets/readme/moment-botanical-organic.webp" width="100%" alt="Mistfold: watercolour tea garden, a tea flush grows in time-lapse, a balm tin at dusk, a flat-lay end card"/></a>
@@ -613,38 +641,10 @@ Eighty-eight example projects. Sixteen are real web apps live at toyz.kr, captur
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/art-deco/dist/the-emerald-fan-v1.0.0.html">▶ Play</a> · <a href="assets/demo-art-deco-v1.0.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/art-deco/dist/the-emerald-fan-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/art-deco">Source</a></sub>
 </td>
 <td align="center" valign="top" width="50%">
-<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/research-cli/dist/spark-bench-v1.1.0.html"><img src="assets/readme/moment-spark-matrix.webp" width="100%" alt="spark-bench: 4,096 attention blocks sink to 674, a real terminal capture, the 4.1x row, blocks swirl into the logo"/></a>
-<br/><b>spark-bench</b> · <code>research-cli</code>
-<br/><sub>a research CLI → GPU points, real terminal · dark synth 128 BPM</sub>
-<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/research-cli/dist/spark-bench-v1.1.0.html">▶ Play</a> · <a href="assets/demo-research-cli-v1.1.0.mp4">MP4</a> · <a href="skills/motion-showreel/examples/research-cli/dist/spark-bench-v1.1.0.html">HTML</a> · <a href="skills/motion-showreel/examples/research-cli">Source</a></sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="50%">
-<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/academic-paper/dist/alveolar-repair-atlas-v2.0.0.html"><img src="assets/readme/moment-academic-paper-v2.webp" width="100%" alt="Alveolar repair atlas v2: 4,900 nuclei as shaded spheres lift off a tissue section and fly into a three-dimensional UMAP the camera orbits"/></a>
-<br/><b>Alveolar repair atlas v2</b> · <code>academic-paper</code>
-<br/><sub>a single-cell paper → one nucleus, tissue to 3D atlas and back · 96 BPM</sub>
-<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/academic-paper/dist/alveolar-repair-atlas-v2.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/academic-paper/dist/alveolar-repair-atlas-v2.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/academic-paper">Source</a></sub>
-</td>
-<td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-jrpg/dist/lanternforge-v2.1.0.html"><img src="assets/readme/moment-pixel-jrpg-v2.1.webp" width="100%" alt="A pixel-art party fights the Bug Boss under a full moon, a damage number pops and a JRPG menu lists the engine features"/></a>
 <br/><b>Lanternforge 2.0</b> · <code>pixel-jrpg</code>
 <br/><sub>a game-engine release → HD-2D JRPG trailer, real light on pixel art · 120 BPM</sub>
 <br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/pixel-jrpg/dist/lanternforge-v2.1.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/pixel-jrpg/dist/lanternforge-v2.1.0.html">HTML</a> · <a href="skills/motion-showreel/examples/pixel-jrpg">Source</a></sub>
-</td>
-</tr>
-<tr>
-<td align="center" valign="top" width="50%">
-<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-transformer/dist/attention-explainer-v1.0.0.html"><img src="assets/readme/moment-paper-transformer.webp" width="100%" alt="Eight attention heads draw their arcs over one sentence, typeset on cream paper like the original article"/></a>
-<br/><b>Attention Is All You Need, explained</b> · <code>paper-transformer</code>
-<br/><sub>a landmark paper → typeset like the paper, attention computed · 110 BPM</sub>
-<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-transformer/dist/attention-explainer-v1.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-transformer/dist/attention-explainer-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-transformer">Source</a></sub>
-</td>
-<td align="center" valign="top" width="50%">
-<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-organoid/dist/wnt-pulse-organoids-v2.0.0.html"><img src="assets/readme/moment-paper-organoid.webp" width="100%" alt="A lab notebook: a brightfield photo of a growing organoid taped in, a pen writes the notes, a growth curve draws itself"/></a>
-<br/><b>WNT-pulse organoids</b> · <code>paper-organoid</code>
-<br/><sub>an organoid paper → a lab notebook that keeps itself · 100 BPM</sub>
-<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-organoid/dist/wnt-pulse-organoids-v2.0.0.html">▶ Play</a> · <a href="skills/motion-showreel/examples/paper-organoid/dist/wnt-pulse-organoids-v2.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-organoid">Source</a></sub>
 </td>
 </tr>
 </table>
