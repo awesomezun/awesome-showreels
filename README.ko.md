@@ -23,7 +23,7 @@ Claude Code, Codex CLI, Gemini CLI 등 어떤 코딩 에이전트에서도 쓰�
 
 ## 예제
 
-예제는 64개입니다. 그중 16개는 toyz.kr에 실제로 배포된 웹앱을 각자의 프로덕션 빌드에서 캡처해 만들었습니다. 24개는 영상 [〈모션그래픽 20가지 톤〉](https://www.youtube.com/watch?v=oCRQP5S-900)(Ai-Con Lab)에 나오는 그림체를 하나씩 골라, 그 그림체에 어울리는 가상의 프로젝트를 한국어로 만든 것입니다. 나머지 예제는 서로 다른 원본에서 만들었고, 쇼릴마다 팔레트, 서체, 모션, 음악을 테마 목록이 아니라 원본에서 가져왔습니다.
+예제는 88개입니다. 그중 16개는 toyz.kr에 실제로 배포된 웹앱을 각자의 프로덕션 빌드에서 캡처해 만들었습니다. 24개는 영상 [〈모션그래픽 20가지 톤〉](https://www.youtube.com/watch?v=oCRQP5S-900)(Ai-Con Lab)에 나오는 그림체를 하나씩 골라, 그 그림체에 어울리는 가상의 프로젝트를 한국어로 만든 것입니다. 또 24개는 코드로 영상을 만드는 공개 저장소 8곳에서 그림체를 하나씩 골라 같은 방식으로 만들었습니다(출처는 예제 아래에 적었습니다). 나머지 예제는 서로 다른 원본에서 만들었고, 쇼릴마다 팔레트, 서체, 모션, 음악을 테마 목록이 아니라 원본에서 가져왔습니다.
 
 <table>
 <tr>
@@ -392,6 +392,174 @@ Claude Code, Codex CLI, Gemini CLI 등 어떤 코딩 에이전트에서도 쓰�
 </tr>
 <tr>
 <td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/woodcut/dist/woodcut-v1.0.0.html"><img src="assets/readme/moment-woodcut.webp" width="100%" alt="솔뫼 양조장: a V-gouge carves a sun, two ranges and the brewery’s name out of a black block, the vermilion plate showing through"/></a>
+<br/><b>솔뫼 양조장</b> · <code>woodcut</code>
+<br/><sub>막걸리 양조장 → 스스로 새겨지는 목판화 · 코퍼레이트 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/woodcut/dist/woodcut-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/woodcut/dist/woodcut-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/woodcut">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/engraving/dist/engraving-v1.0.0.html"><img src="assets/readme/moment-engraving.webp" width="100%" alt="한반도 곤충 도감: a stag beetle engraved on copper in the order an engraver cuts, the hatching thinning toward the light"/></a>
+<br/><b>한반도 곤충 도감</b> · <code>engraving</code>
+<br/><sub>곤충 도감 → 스스로 새겨지는 동판화 도판 · 코퍼레이트 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/engraving/dist/engraving-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/engraving/dist/engraving-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/engraving">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/silkscreen-poster/dist/silkscreen-poster-v1.0.0.html"><img src="assets/readme/moment-silkscreen-poster.webp" width="100%" alt="바람섬 다섯 길: a poster pulled one ink per beat with a squeegee, yellow sky, orange sun, sea, island, then the key ink"/></a>
+<br/><b>바람섬 다섯 길</b> · <code>silkscreen-poster</code>
+<br/><sub>섬 걷기 길 → 잉크 한 색씩 찍는 실크스크린 포스터 · 포크 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/silkscreen-poster/dist/silkscreen-poster-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/silkscreen-poster/dist/silkscreen-poster-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/silkscreen-poster">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/halftone-dossier/dist/halftone-dossier-v1.0.0.html"><img src="assets/readme/moment-halftone-dossier.webp" width="100%" alt="어디쯤 택배: a manila case file, a halftone mugshot of a parcel against a height chart, a corkboard with red string"/></a>
+<br/><b>어디쯤 택배</b> · <code>halftone-dossier</code>
+<br/><sub>택배 조회 앱 → 망점으로 찍힌 무표정한 사건 파일 · 스윙 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/halftone-dossier/dist/halftone-dossier-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/halftone-dossier/dist/halftone-dossier-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/halftone-dossier">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stained-glass/dist/stained-glass-v1.0.0.html"><img src="assets/readme/moment-stained-glass.webp" width="100%" alt="빛뜰 미술관: an arched window’s lead drawn out from its sun, the glass lighting piece by piece, its colours lying on the floor"/></a>
+<br/><b>빛뜰 미술관</b> · <code>stained-glass</code>
+<br/><sub>유리 미술관 → 조각마다 불이 켜지는 스테인드글라스 · 앰비언트 80 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/stained-glass/dist/stained-glass-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/stained-glass/dist/stained-glass-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/stained-glass">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shadow-puppet/dist/shadow-puppet-v1.0.0.html"><img src="assets/readme/moment-shadow-puppet.webp" width="100%" alt="그림자 토끼전: rod puppets of a rabbit and a turtle on a lamp-lit cloth, title boards dropping in on strings"/></a>
+<br/><b>그림자 토끼전</b> · <code>shadow-puppet</code>
+<br/><sub>어린이 그림자극 → 등불 뒤 막대 인형 · 포크 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shadow-puppet/dist/shadow-puppet-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/shadow-puppet/dist/shadow-puppet-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/shadow-puppet">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-cut/dist/paper-cut-v1.0.0.html"><img src="assets/readme/moment-paper-cut.webp" width="100%" alt="오림 공방: red hanji folded three times, scissors cut along each outline, the paper unfolds into one symmetric pattern"/></a>
+<br/><b>오림 공방</b> · <code>paper-cut</code>
+<br/><sub>전지 공예 수업 → 접고 오리고 펼치는 한지 · 브라이트 팝 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/paper-cut/dist/paper-cut-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/paper-cut/dist/paper-cut-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/paper-cut">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/one-line/dist/one-line-v1.0.0.html"><img src="assets/readme/moment-one-line.webp" width="100%" alt="이음 만년필: one gold line draws a nib, cursive loops and a heart while the camera rides behind the pen"/></a>
+<br/><b>이음 만년필</b> · <code>one-line</code>
+<br/><sub>만년필 → 끊어지지 않는 금색 선 하나 · 앰비언트 80 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/one-line/dist/one-line-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/one-line/dist/one-line-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/one-line">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shape-morph/dist/shape-morph-v1.0.0.html"><img src="assets/readme/moment-shape-morph.webp" width="100%" alt="한 점 플래너: an ink dot springs into a button, a checkbox, a calendar card and back into the dot"/></a>
+<br/><b>한 점 플래너</b> · <code>shape-morph</code>
+<br/><sub>일정 앱 → 한 번도 끊기지 않는 모양 하나 · 브라이트 팝 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/shape-morph/dist/shape-morph-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/shape-morph/dist/shape-morph-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/shape-morph">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/liquid/dist/liquid-v1.0.0.html"><img src="assets/readme/moment-liquid.webp" width="100%" alt="톡톡 스파클링: pink drops fall into a glossy pool that swells into the word, candy blobs merging"/></a>
+<br/><b>톡톡 스파클링</b> · <code>liquid</code>
+<br/><sub>탄산수 → 웹GL로 그린 반짝이는 액체 덩어리 · 브라이트 팝 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/liquid/dist/liquid-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/liquid/dist/liquid-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/liquid">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/synthwave/dist/synthwave-v1.0.0.html"><img src="assets/readme/moment-synthwave.webp" width="100%" alt="네온 하이웨이 1986: a striped sun over wireframe mountains, a magenta grid rushing in, chrome type"/></a>
+<br/><b>네온 하이웨이 1986</b> · <code>synthwave</code>
+<br/><sub>아케이드 레이싱 → 아웃런 격자와 크롬 글자, 비디오테이프 · 신스웨이브 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/synthwave/dist/synthwave-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/synthwave/dist/synthwave-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/synthwave">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/spy-titles/dist/spy-titles-v1.0.0.html"><img src="assets/readme/moment-spy-titles.webp" width="100%" alt="작전명 비단: diagonal black bars and a red silk ribbon on orange, an agent in a trench coat in cut paper"/></a>
+<br/><b>작전명 비단</b> · <code>spy-titles</code>
+<br/><sub>1960년대 첩보 드라마 → 오린 종이 타이틀 시퀀스 · 스윙 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/spy-titles/dist/spy-titles-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/spy-titles/dist/spy-titles-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/spy-titles">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/bauhaus/dist/bauhaus-v1.0.0.html"><img src="assets/readme/moment-bauhaus.webp" width="100%" alt="조형 연구소: a red circle, a blue square and a yellow triangle land on a module grid, one action per beat"/></a>
+<br/><b>조형 연구소 여름 학교</b> · <code>bauhaus</code>
+<br/><sub>조형 여름 학교 → 모듈 격자 위 도형, 한 박에 한 동작 · 다크 신스 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/bauhaus/dist/bauhaus-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/bauhaus/dist/bauhaus-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/bauhaus">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/variety-captions/dist/variety-captions-v1.0.0.html"><img src="assets/readme/moment-variety-captions.webp" width="100%" alt="냥이네 하숙집: a vertical variety clip, a cheese cat swipes a cup, triple-outlined captions pop over a freeze frame"/></a>
+<br/><b>냥이네 하숙집</b> · <code>variety-captions</code>
+<br/><sub>예능 프로그램 → 세로 화면, 튀는 자막과 확대·정지 · 브라이트 팝 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/variety-captions/dist/variety-captions-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/variety-captions/dist/variety-captions-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/variety-captions">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sticker-explainer/dist/sticker-explainer-v1.0.0.html"><img src="assets/readme/moment-sticker-explainer.webp" width="100%" alt="궁금상자: stickers with white borders slap onto one big board as the camera glides from the bin to a T-shirt"/></a>
+<br/><b>궁금상자</b> · <code>sticker-explainer</code>
+<br/><sub>과학 채널 → 큰 보드 위 스티커, 미끄러지는 카메라 · 코퍼레이트 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/sticker-explainer/dist/sticker-explainer-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/sticker-explainer/dist/sticker-explainer-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/sticker-explainer">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/assembly-manual/dist/assembly-manual-v1.0.0.html"><img src="assets/readme/moment-assembly-manual.webp" width="100%" alt="반듯 선반: an isometric shelf assembles itself in black line on white, a faceless helper with a screwdriver"/></a>
+<br/><b>반듯 선반</b> · <code>assembly-manual</code>
+<br/><sub>조립식 선반 → 글 없는 조립 설명서 · 코퍼레이트 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/assembly-manual/dist/assembly-manual-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/assembly-manual/dist/assembly-manual-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/assembly-manual">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/watercolour-toon/dist/watercolour-toon-v1.0.0.html"><img src="assets/readme/moment-watercolour-toon.webp" width="100%" alt="비 오는 날의 밤톨이: a watercolour hedgehog holds a big leaf over a shivering bunny in the rain and her ears spring up"/></a>
+<br/><b>비 오는 날의 밤톨이</b> · <code>watercolour-toon</code>
+<br/><sub>그림책 → 수채 물감, 표정과 몸짓으로 연기하는 인물 · 코퍼레이트 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/watercolour-toon/dist/watercolour-toon-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/watercolour-toon/dist/watercolour-toon-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/watercolour-toon">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/lyric-video/dist/lyric-video-v1.0.0.html"><img src="assets/readme/moment-lyric-video.webp" width="100%" alt="파란 버스: a blue bus on a summer coast, each sung syllable popping yellow on its note"/></a>
+<br/><b>파란 버스</b> · <code>lyric-video</code>
+<br/><sub>밴드 신곡 → 엔진이 직접 부르는 가사 영상 · 브라이트 팝 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/lyric-video/dist/lyric-video-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/lyric-video/dist/lyric-video-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/lyric-video">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/collision-music/dist/collision-music-v1.0.0.html"><img src="assets/readme/moment-collision-music.webp" width="100%" alt="통통 악기 놀이: marbles bounce down rainbow mallet bars, every hit a note on the staff"/></a>
+<br/><b>통통 악기 놀이</b> · <code>collision-music</code>
+<br/><sub>음악 놀이 앱 → 부딪히는 건반을 연주하는 구슬 · 앰비언트 128 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/collision-music/dist/collision-music-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/collision-music/dist/collision-music-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/collision-music">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chronicle/dist/chronicle-v1.0.0.html"><img src="assets/readme/moment-chronicle.webp" width="100%" alt="소리상회: the same music shop in 1925, 1955, 1975, 1995 and 2025, each in its era’s sign and picture surface"/></a>
+<br/><b>소리상회 100년</b> · <code>chronicle</code>
+<br/><sub>악기점 100년 → 다섯 시대의 같은 가게 · 코퍼레이트 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/chronicle/dist/chronicle-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/chronicle/dist/chronicle-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/chronicle">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/microgame/dist/microgame-v1.0.0.html"><img src="assets/readme/moment-microgame.webp" width="100%" alt="5초 미션: one-word missions on bold stripes, 성공! stamps, a burning fuse and 속도 UP!"/></a>
+<br/><b>5초 미션</b> · <code>microgame</code>
+<br/><sub>파티 게임 → 점점 짧아지는 미니 게임 · 칩튠 144 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/microgame/dist/microgame-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/microgame/dist/microgame-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/microgame">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/zoom-dive/dist/zoom-dive-v1.0.0.html"><img src="assets/readme/moment-zoom-dive.webp" width="100%" alt="끝없는 확대: from a ginkgo leaf through cells and chloroplasts to a chlorophyll molecule and its magnesium atom"/></a>
+<br/><b>끝없는 확대</b> · <code>zoom-dive</code>
+<br/><sub>과학관 특별전 → 열 배씩, 1 m에서 0.1 nm까지 · 앰비언트 96 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/zoom-dive/dist/zoom-dive-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/zoom-dive/dist/zoom-dive-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/zoom-dive">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/mosaic/dist/mosaic-v1.0.0.html"><img src="assets/readme/moment-mosaic.webp" width="100%" alt="유리 타일 정원: 14,400 glass tiles flip in a wave and a white subway wall becomes a spring garden"/></a>
+<br/><b>유리 타일 정원</b> · <code>mosaic</code>
+<br/><sub>지하철역 공공미술 → 뒤집히는 유리 타일 14,400장 · 앰비언트 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/mosaic/dist/mosaic-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/mosaic/dist/mosaic-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/mosaic">원본·코드</a></sub>
+</td>
+<td align="center" valign="top" width="50%">
+<a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cel-anime-80s/dist/cel-anime-80s-v1.0.0.html"><img src="assets/readme/moment-cel-anime-80s.webp" width="100%" alt="한강 시티 라이트 1988: a cel-painted heroine on a bridge, hair streaming, a skyline mirrored in the river, on VHS"/></a>
+<br/><b>한강 시티 라이트 1988</b> · <code>cel-anime-80s</code>
+<br/><sub>TV 애니메이션 → 2코마 셀 채색과 VHS · 시티팝 112 BPM</sub>
+<br/><sub><a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/cel-anime-80s/dist/cel-anime-80s-v1.0.0.html">▶ 재생</a> · <a href="skills/motion-showreel/examples/cel-anime-80s/dist/cel-anime-80s-v1.0.0.html">HTML</a> · <a href="skills/motion-showreel/examples/cel-anime-80s">원본·코드</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="50%">
 <a href="https://raw.githack.com/AwesomeZun/Awesome-Showreels/main/skills/motion-showreel/examples/neo-brutal/dist/kablok-v1.0.0.html"><img src="assets/readme/moment-neo-brutal.webp" width="100%" alt="kablok: neo-brutalist slabs with hard shadows, a cursor picks and stacks blocks"/></a>
 <br/><b>kablok</b> · <code>neo-brutal</code>
 <br/><sub>랜딩 페이지 → 하드 섀도, 슬래브 · 펑크 112 BPM</sub>
@@ -476,7 +644,7 @@ Claude Code, Codex CLI, Gemini CLI 등 어떤 코딩 에이전트에서도 쓰�
 </tr>
 </table>
 
-<sub>미리보기는 쇼릴의 한 장면을 실제 속도, 무음으로 보여 줍니다. <b>▶ 재생</b>을 누르면 브라우저에서 음악과 함께 전체 쇼릴이 열리고, 길이를 바꿔 볼 수 있습니다(같은 파일이 각 폴더의 <code>dist/</code>에 있습니다. 1–5MB이고 인터넷 없이 열리며 숫자 키로 길이를 바꿉니다). 프로젝트와 데이터는 가상이며 화면에도 그렇게 표시됩니다. toyz.kr의 앱 16개는 실제 앱이고, 화면 속 데이터는 앱에 들어 있는 가상의 예시 데이터입니다. 해설 두 편과 Transformer 해설은 실제 개념을 다루며, 토이 모델이나 반올림한 교과서 값을 쓴다고 화면에 밝힙니다. 그림체 예제 24개도 가상의 프로젝트이며(<code>ink-wash</code>의 한양도성과 성문은 실제입니다), 영상에서는 그림체만 참고했고 캐릭터나 화면은 가져오지 않았습니다.</sub>
+<sub>미리보기는 쇼릴의 한 장면을 실제 속도, 무음으로 보여 줍니다. <b>▶ 재생</b>을 누르면 브라우저에서 음악과 함께 전체 쇼릴이 열리고, 길이를 바꿔 볼 수 있습니다(같은 파일이 각 폴더의 <code>dist/</code>에 있습니다. 1–5MB이고 인터넷 없이 열리며 숫자 키로 길이를 바꿉니다). 프로젝트와 데이터는 가상이며 화면에도 그렇게 표시됩니다. toyz.kr의 앱 16개는 실제 앱이고, 화면 속 데이터는 앱에 들어 있는 가상의 예시 데이터입니다. 해설 두 편과 Transformer 해설은 실제 개념을 다루며, 토이 모델이나 반올림한 교과서 값을 쓴다고 화면에 밝힙니다. 그림체 예제 24개도 가상의 프로젝트이며(<code>ink-wash</code>의 한양도성과 성문은 실제입니다), 영상에서는 그림체만 참고했고 캐릭터나 화면은 가져오지 않았습니다. 그 뒤의 24개는 저장소 8곳(<a href="https://github.com/lemomo-ai/lemo-opuscar">lemo-opuscar</a>, <a href="https://github.com/Vincentwei1021/mg-styles-15">mg-styles-15</a>, <a href="https://github.com/mexicat/pdoom-video">pdoom-video</a>, <a href="https://github.com/JohnHeibel/PDoomVideo">PDoomVideo</a>, <a href="https://github.com/JohnHeibel/ClaudeAnimationBase">ClaudeAnimationBase</a>, <a href="https://github.com/yihui-dev/awesome-opus5-5-videos">awesome-opus5-5-videos</a>, <a href="https://github.com/athemeroy/awesome-claude-5-5-videos">awesome-claude-5-5-videos</a>, <a href="https://github.com/joeseesun/opus-video-prompts">opus-video-prompts</a>)에서 그림체만 참고했습니다. 모두 가상의 프로젝트이고, 녹음 악기는 CC0 음원(VCSL, VSCO 2 Community Edition)이며, 「파란 버스」의 가사와 목소리는 이 저장소에서 새로 만들었습니다.</sub>
 
 <details>
 <summary><b>예제별 스타일 결정</b></summary>
@@ -487,40 +655,53 @@ Claude Code, Codex CLI, Gemini CLI 등 어떤 코딩 에이전트에서도 쓰�
 | `anime` | coming-of-age webtoon | wistful, luminous | sky blue · cherry pink | Gowun Dodum | tilt, drifting clouds, petals | corporate 112 |
 | `art-deco` | invitation | opulent, nocturnal | black · gold | Limelight | symmetrical | swing 112 |
 | `ascii` | terminal dashboard | clever, playful | Tokyo Night | Nanum Gothic Coding | typing, characters landing | chiptune 128 |
+| `assembly-manual` | flat-pack shelf | calm, clear | black line on white · one blue | Gothic A1 | isometric parts slide in, screws turn | corporate 112 |
+| `bauhaus` | design workshop | geometric, ordered | red · blue · yellow · black on cream | Gothic A1 · Do Hyeon | one move per beat, quarter turns, overprint | dark synth 128 (dorian) |
 | `blueprint` | folding e-bike | precise, clean | blueprint blue · white · one yellow | IBM Plex Sans KR | lines drawn, a mechanical fold | cinematic 112 |
 | `botanical-organic` | tea brand story | calm, earthy | oat · leaf green | Fraunces | slow | guitar 96 |
 | `cartoon` | dog-walking app | bouncy, funny | sky · grass · ink | Black Han Sans · Jua | squash, stretch, smears | bright pop 144 |
+| `cel-anime-80s` | anime opening | romantic, nostalgic | dusk violet · rose · neon cyan | Black Han Sans · Nanum Myeongjo | characters on twos, pans, a title slam | city pop 112 (slap bass, sax) |
 | `character-show` | mascot fan meeting | adorable, showy | stage violet · bean green · gold | Jua | a pose every two beats | bright pop 128 |
 | `chrome-glass` | perfume | quiet, precious | night · silver · champagne | Nanum Myeongjo | raymarched glass, chrome sheen | ambient 96 (lydian) |
+| `chronicle` | shop centenary | warm, proud | one palette per era on dark wood | Song Myung · Yeon Sung · Do Hyeon · Black Han Sans · Pretendard | odometer years, era surfaces | corporate 112 + era riffs |
 | `cinematic-3d` | documentary trailer | epic, quiet | space black · air blue · dawn orange | Noto Serif KR · Black Han Sans | slow camera, a shader Earth | cinematic 96 |
 | `clay` | bread delivery | cosy, cute | cream · crust gold · coral | Jua · Dongle | stop motion, boiling clay | bright pop 112 |
+| `collision-music` | music-play app | playful, precise | mint · rainbow bars | Jua | parabolas solved from the notes | ambient 128 (marimba) |
 | `crayon` | picture-book app | warm, clumsy | drawing paper · crayon colours | Gaegu | lines that boil, drawn at hand speed | bright pop 112 |
 | `cutaway-3d` | home coffee roaster | precise, warm | graphite · orange trim | Gothic A1 | casing slides open, parts turn | corporate 112 |
 | `cyberpunk` | SF game trailer | wet, lurid | violet night · magenta · cyan | Do Hyeon · Orbit | rain, reflections, glitch | dark synth 112 |
 | `dark-neon` | AI security platform | sharp, vigilant | black · cyan · magenta | Orbit | neon stutter, radar reveal | dark synth 128 |
 | `deploy-kit` | launch kit | brisk, technical | paper · cobalt | Pretendard | file streams | drum and bass 176 |
 | `editorial-luxe` | press release | elegant, quiet | ivory · champagne | Bodoni Moda | slow | piano 80 |
+| `engraving` | insect field guide | precise, scholarly | copper · cream · one red wash | Nanum Myeongjo · Diphylleia | burin cuts, hatching | corporate 112 |
 | `explainer-llm` | LLM explainer notes | curious, lucid | navy · yellow | KaTeX Main | maths animation | ambient 96 |
 | `explainer-sunlight` | science notes | wondrous, bright | violet · sun gold | Nunito | flat-vector dives | bright pop 128 |
 | `focus-space` | focus timer | quiet, deep | deep green · chrome | Pretendard | time-lapse | ambient 96 |
 | `form-01` | feedback board | precise, editorial | ink · metal · pin colours | Pretendard | pins, versions | cinematic 112 |
 | `frame` | portfolio builder | clean, quick | paper · orange | Pretendard | live typing | corporate 112 |
 | `generative-art` | media-art exhibition | quiet, wondrous | night navy · blues · gold | Hahmlet | particles integrated from birth | ambient 96 |
+| `halftone-dossier` | parcel-tracking app | deadpan, funny | manila · newsprint · red | Black Han Sans · Nanum Gothic Coding | stamps, flashes, typed reports | swing 128 (minor) |
 | `hologram` | satellite operations | calm, futuristic | dark room · holo blue · orange | Orbit · Nanum Gothic Coding | projected light, flicker | dark synth 112 |
 | `infographic` | city cycling report | clear, smart | paper map · data colours | Gothic A1 | bars grow, numbers count | corporate 128 |
 | `ink-wash` | city-wall walking tour | calm, dignified | rice paper · ink · one red seal | Nanum Brush Script · Song Myung | washes bleed, strokes paint | koto ambient 96 |
 | `layr` | notes workspace | calm, structured | near-black · steel · lime | Pretendard | glass layers | dark synth 112 |
+| `liquid` | sparkling water | fizzy, glossy | candy pink · lime · grape | Bagel Fat One · Jua | metaballs merge, drops splash | bright pop 128 |
 | `loop` | habit app | steady, friendly | periwinkle · navy | Pretendard | a ring that fills | corporate 128 |
+| `lyric-video` | summer single | bright, breezy | sky · sea blue · bus blue · yellow | Jua · Gowun Dodum | syllables pop on their notes | bright pop 112 + formant voice |
+| `microgame` | party game | frantic, funny | a primary per mission · black outlines | Bagel Fat One · Galmuri11 | missions of 4, 2, 1 beats | chiptune 144 |
 | `minimal-ui` | habit app | clean, calm | near-white · one blue | Pretendard | cursor-driven UI | bright pop 128 |
 | `mood-fm` | mood radio | warm, chromatic | the mood's own colour | Pretendard | dial sweeps | lo-fi 96 |
+| `mosaic` | public artwork | sparkling, fresh | subway white · glass palette | Grandiflora One · Gowun Dodum | flip waves in a shader | ambient 112 |
 | `motion-kit` | interaction kit | playful, exact | electric blue · orange | Pretendard | app animations replayed | bright pop 128 |
 | `neo-brutal` | landing page | loud, blunt | cream · lemon | Archivo | hard snaps | funk 112 |
 | `newsprint` | newspaper | factual, civic | newsprint · red | Newsreader | steady | piano 96 |
 | `offgrid` | local map app | nocturnal, local | night map · lime | Pretendard | one camera push | swing 96 |
 | `old-film` | cinema reopening | nostalgic, warm | sepia · bulb yellow | Nanum Myeongjo | film weave, flicker, scratches | swing 128 |
+| `one-line` | fountain pen | elegant, calm | navy paper · gold | Nanum Myeongjo · Gowun Batang | one continuous stroke, the camera behind the pen | ambient 80 |
 | `orbit-note` | linked-notes app | luminous, connected | electric blue · holo | Pretendard | drawn links | cinematic 96 |
 | `paper-behaviour` | mouse-behaviour paper | clean, precise | white · blue | Instrument Sans | tracked from above | corporate 104 |
 | `paper-collage` | music festival | loud, handmade | newsprint · cut-paper brights | Black Han Sans · Do Hyeon · Song Myung · Jua | scraps slap down on the beat | bright pop 128 |
+| `paper-cut` | New Year class | festive, handmade | hanji red · cream | Song Myung · Gowun Dodum | folds on the beat, cuts, the unfold | bright pop 112 |
 | `paper-imaging` | light-sheet paper | luminous, patient | black · green | Manrope | GPU nuclei | ambient 92 |
 | `paper-organoid` | organoid paper | warm, hands-on | paper · magenta | Literata | handwritten notebook | corporate 100 |
 | `paper-perturbseq` | CRISPR-screen paper | precise, nocturnal | night · orchid | IBM Plex Sans | illustration ↔ data | dark synth 116 |
@@ -537,16 +718,27 @@ Claude Code, Codex CLI, Gemini CLI 등 어떤 코딩 에이전트에서도 쓰�
 | `research-cli` | research CLI | technical, cool | dark · cyan | Space Grotesk | damped | dark synth 128 |
 | `riso-zine` | zine | loud, scrappy | newsprint · fluo pink | Anton | jumpy | lo-fi 160 |
 | `rock-stage` | rock gig | loud, electric | black · bolt yellow · stage red | Black Han Sans | per-instrument reactions | rock 128 |
+| `shadow-puppet` | shadow play | warm, playful | lamp amber · black silhouettes | Song Myung · Gowun Batang | puppets on rods, boards on strings | folk 96 (pentatonic) |
+| `shape-morph` | planner app | clean, playful | warm paper · ink · coral | Pretendard | one shape morphs on springs, a seamless loop | bright pop 128 |
+| `silkscreen-poster` | island walking courses | sunny, handmade | five spot inks on paper | Gasoek One · Gothic A1 | a squeegee pull per beat, misregistration | folk 112 |
 | `sketchnote` | workshop handout | hand-drawn, friendly | whiteboard · orange | Shantell Sans | handwritten | bright 104 |
 | `sports-kinetic` | race-timing app | energetic, exact | track black · orange | Barlow Condensed | fast | drum and bass 176 |
+| `spy-titles` | spy drama | cool, tense | orange · teal · black · cream | Black Han Sans · Gothic A1 | bars on the diagonal, match cuts, a stop | swing 128 (minor) |
+| `stained-glass` | museum opening | luminous, serene | jewel glass on dark stone | Grandiflora One · Gowun Batang | lead drawn, pieces light, floor light drifts | ambient 80 (lydian, organ) |
+| `sticker-explainer` | science explainer | friendly, smart | board grey · sticker brights | Jua · Gothic A1 | stickers slap down, a dotted path grows | corporate 112 |
 | `stop-motion` | felt doll workshop | tender, handmade | cutting-mat green · felt browns | Gamja Flower | 8 fps, a hand-held camera | lo-fi 96 |
 | `sumi-wabi` | ryokan site | quiet, restrained | washi · one vermilion | Shippori Mincho | very slow | koto 72 |
 | `swiss-grid` | architecture brief | precise, ordered | paper · one red | Schibsted Grotesk | on the grid | synth 124 |
+| `synthwave` | arcade racer | nostalgic, fast | violet · magenta · cyan | Gugi · Orbit | grid rush, chrome slam, palms | synthwave 96 (gated snare) |
 | `tiny-beat` | beat maker | warm, rhythmic | black · lime | Pretendard | on the step grid | lo-fi 80 |
 | `tiny-tools` | developer toolbox | crisp, nimble | night · violet | Pretendard | paste and answer | chiptune 128 |
 | `trove` | bookmark app | sleek, nocturnal | black · lime | Pretendard | orbit, chrome | dark synth 128 |
+| `variety-captions` | vertical variety show | noisy, cute | sunburst yellow · candy captions | Bagel Fat One · Jua · Black Han Sans | captions pop letter by letter, punch-in, freeze | bright pop 128 (vertical) |
 | `voxel` | kids' coding camp | playful, tactile | sky · grass · brick | Jua | blocks land on the beat | bright pop 128 |
+| `watercolour-toon` | picture book | warm, gentle | cream paper · rain blue · chestnut | Hi Melody · Gowun Dodum | keyframed acting, washes that boil on twos | corporate 96 (harp, pizzicato) |
 | `whiteboard` | security training | calm, clear | whiteboard · marker black · red | Nanum Pen Script | a drawing hand, a camera along the board | corporate 112 |
+| `woodcut` | brewery centenary | earthy, proud | ink black · paper · vermilion | Black And White Picture · Song Myung | gouges carve, prints lift | corporate 96 |
+| `zoom-dive` | science exhibition | wondrous, calm | walnut · leaf greens · navy · black | Hahmlet · IBM Plex Sans KR | one logarithmic zoom | ambient 96 (lydian) |
 
 폴더마다 <code>style.json</code>에 모든 결정과 그 근거가 된 원본 내용을 적어 두었습니다.
 
@@ -774,6 +966,7 @@ python3 -m pip install numpy scipy pillow opencv-python pymupdf fonttools brotli
 | ffmpeg | MP4와 오디오 인코딩 |
 | Python 3.9+ with numpy, scipy, Pillow, opencv-python | 스타일 분석, 계획, 음악, 컷아웃 |
 | *선택:* pymupdf, fonttools + brotli | PDF, 폰트 서브셋 |
+| *선택:* soundfile, soxr, curl | 녹음 악기(CC0 음원 두 곳, 처음 한 번 받아 캐시에 둠) |
 | *선택:* macOS 14+ with `swiftc` | Vision 컷아웃(다른 OS는 OpenCV) |
 | *선택:* your Gemini API key | 내레이션 |
 
