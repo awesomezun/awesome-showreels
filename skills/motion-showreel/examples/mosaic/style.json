@@ -1,0 +1,174 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "commuters and neighbours",
+  "title": "유리 타일 정원",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (유리 타일 정원, a glass-tile mosaic for the passage of a subway station exit (fictional public art)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "유리 타일 정원, a glass-tile mosaic for the passage of a subway station exit (fictional public art)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "sparkling",
+  "fresh",
+  "gentle",
+  "crafted",
+  "joyful"
+ ],
+ "rationale": {
+  "palette": "Subway white tile #F4F1EA with warm grout #C9C4BA and the line blue #2F6FD0 and navy #1E3D7A; the garden in a glass palette of twenty-three colours: sky blues, blossom pinks, tulip red, yellow and violet, three greens, bark browns.",
+  "type": "Grandiflora One, a display face with a floral swing, for the name and the lines; Gowun Dodum for the label plate, the station sign and the counter.",
+  "motion": "Tiles turn: every picture change is a wave of flips (a radial ripple from a point or a straight gust) where each tile narrows, shows its dark edge and opens on the other colour; a gust every beat in the wind scene; only the changed tiles flip as the seed grows; a glint band crosses the glass and a few tiles twinkle in place; the camera pulls back to show the wall in its corridor.",
+  "sound": "Ambient at 112 BPM in E major with a soft pluck, pad, sub, kick, hats and shaker; a recorded glockenspiel note for every gust and a marimba note for every growth stage (VSCO 2 CE and VCSL, CC0), a wine glass and sparkle for the big flips, a tubular bell under the last line.",
+  "visuals": "All code: one WebGL2 fragment shader draws 160 × 90 tiles (14,400) from two pictures of 160 × 90 pixels (before and after), with the flip angle per tile from the wave front and a hashed delay; the pictures are drawn by code at tile resolution and quantised to the glass palette; the corridor, the sign and the commuters are 2D.",
+  "narration": "Not recommended: the wall speaks in flips."
+ },
+ "palette": {
+  "bg": "#F4F1EA",
+  "bg2": "#ECE9E2",
+  "surface": "#FFFFFF",
+  "ink": "#1E3D7A",
+  "ink2": "#33507F",
+  "muted": "#56647F",
+  "accent": "#EE6F9A",
+  "accent2": "#2F6FD0",
+  "accent3": "#FFD45C",
+  "ok": "#4E9A43",
+  "warn": "#F28C3A",
+  "deny": "#E8434F",
+  "accentInk": "#C2416F",
+  "onAccent": "#1E3D7A",
+  "line": "#C9C4BA"
+ },
+ "fonts": {
+  "display": "\"Grandiflora One\", serif",
+  "sans": "\"Gowun Dodum\", sans-serif",
+  "serif": "\"Grandiflora One\", serif",
+  "mono": "\"Gowun Dodum\", sans-serif",
+  "cjk": "\"Grandiflora One\", serif",
+  "files": [
+   {
+    "family": "Grandiflora One",
+    "path": "source/fonts/GrandifloraOne-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Gowun Dodum",
+    "path": "source/fonts/GowunDodum-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1E3D7A",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.7
+  },
+  "overshoot": 0.05,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.012,
+  "vignette": {
+   "a": 0.12,
+   "color": "#1E2A40"
+  },
+  "bloom": 0.08
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "E",
+  "mode": "major",
+  "preset": "ambient",
+  "instruments": [
+   "pad",
+   "pluck",
+   "sub",
+   "kick",
+   "hats",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "pluck",
+   "bass": "sub"
+  },
+  "drums": "light",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.5,
+   "breakdown": 0.4,
+   "drop": 0.6,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

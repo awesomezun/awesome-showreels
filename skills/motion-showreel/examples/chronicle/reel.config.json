@@ -1,0 +1,105 @@
+{
+  "title": "소리상회 100년",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "소리상회 100년", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:upright-piano deg=0 oct=4 chord dur=2b"}
+    ]},
+    {"id": "e1925", "label": "1925", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:upright-piano deg=0 oct=3 dur=0.5b"},
+      {"beat": 1, "from": "start", "sfx": "note:upright-piano deg=2 oct=4 chord dur=0.5b"},
+      {"beat": 2, "from": "start", "sfx": "note:upright-piano deg=4 oct=2 dur=0.5b"},
+      {"beat": 3, "from": "start", "sfx": "note:upright-piano deg=2 oct=4 chord dur=0.5b"}
+    ]},
+    {"id": "e1955", "label": "1955", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:trumpet-stac deg=4 oct=4 chord dur=0.5b"},
+      {"beat": 1.5, "from": "start", "sfx": "note:trumpet-stac deg=5 oct=4 chord dur=0.5b"},
+      {"beat": 3, "from": "start", "sfx": "note:trumpet-stac deg=4 oct=4 chord dur=0.5b"}
+    ]},
+    {"id": "e1975", "label": "1975", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:guitar deg=0 oct=3 chord dur=1b"},
+      {"beat": 1, "from": "start", "sfx": "note:guitar deg=0 oct=3 chord dur=1b"},
+      {"beat": 2, "from": "start", "sfx": "note:guitar deg=3 oct=3 chord dur=1b"},
+      {"beat": 3, "from": "start", "sfx": "note:guitar deg=4 oct=3 chord dur=1b"}
+    ]},
+    {"id": "e1995", "label": "1995", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:glass deg=0 oct=5 dur=0.5b"},
+      {"beat": 1, "from": "start", "sfx": "note:glass deg=2 oct=5 dur=0.5b"},
+      {"beat": 2, "from": "start", "sfx": "note:glass deg=4 oct=5 dur=0.5b"},
+      {"beat": 3, "from": "start", "sfx": "note:glass deg=7 oct=5 dur=0.5b"}
+    ]},
+    {"id": "e2025", "label": "2025", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:kalimba deg=4 oct=5 dur=1b"},
+      {"beat": 1, "from": "start", "sfx": "note:kalimba deg=2 oct=5 dur=1b"},
+      {"beat": 2, "from": "start", "sfx": "note:kalimba deg=0 oct=5 dur=1b"},
+      {"beat": 3, "from": "start", "sfx": "note:kalimba deg=4 oct=5 dur=1b"}
+    ]},
+    {"id": "end", "label": "백 년 동안, 음악을 팔았습니다", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=0 oct=5 chord dur=2b"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "scenes": {
+        "hook": {
+          "bars": 1
+        },
+        "e1925": {
+          "bars": 1
+        },
+        "e1955": {
+          "bars": 1
+        },
+        "e1975": {
+          "bars": 1
+        },
+        "e1995": {
+          "bars": 1
+        },
+        "e2025": {
+          "bars": 1
+        },
+        "end": {
+          "bars": 1
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "e1925": {
+          "bars": 2
+        },
+        "e1955": {
+          "bars": 2
+        },
+        "e1975": {
+          "bars": 2
+        },
+        "e1995": {
+          "bars": 2
+        },
+        "e2025": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 9.0,
+  "captions": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "title": "궁금상자",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "페트병 한 개의 여행", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "pop"},
+      {"beat": 0.75, "from": "start", "sfx": "pop"},
+      {"beat": 1.5, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 2.75, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 3.75, "from": "start", "sfx": "ding"}
+    ]},
+    {"id": "bin", "label": "분리배출", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 4, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 1.75, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "truck", "label": "수거", "minBars": 1, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 1.75, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "sort", "label": "선별", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 1.75, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "flakes", "label": "플레이크", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 1.75, "from": "start", "sfx": "pop"},
+      {"beat": 2.75, "from": "start", "sfx": "count dur=1b"}
+    ]},
+    {"id": "thread", "label": "실", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 4, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 1.75, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "shirt", "label": "옷", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "pop+thud soft"},
+      {"beat": 1.75, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "end", "label": "옷이 돼요", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "zoom"},
+      {"beat": 2.5, "from": "start", "sfx": "chime"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "bin",
+        "truck",
+        "thread"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "sort": {
+          "bars": 1
+        },
+        "flakes": {
+          "bars": 1
+        },
+        "shirt": {
+          "bars": 1
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "bin": {
+          "bars": 2
+        },
+        "truck": {
+          "bars": 1
+        },
+        "sort": {
+          "bars": 2
+        },
+        "flakes": {
+          "bars": 2
+        },
+        "thread": {
+          "bars": 2
+        },
+        "shirt": {
+          "bars": 1
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 3.4,
+  "captions": {
+    "enabled": false
+  }
+}

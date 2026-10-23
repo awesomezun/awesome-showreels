@@ -1,0 +1,179 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "people who drink sparkling water",
+  "title": "톡톡 스파클링",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (톡톡 스파클링, a fruit-flavoured sparkling water in three flavours (fictional drink)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "톡톡 스파클링, a fruit-flavoured sparkling water in three flavours (fictional drink)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "fizzy",
+  "glossy",
+  "playful",
+  "fresh",
+  "bouncy"
+ ],
+ "rationale": {
+  "palette": "Candy liquid on cream #FFF4E8 with faint pink dots: candy pink #FF7A93 for the brand, grapefruit #FF5C7A, lime #6ED04E and grape #9B5DE5 for the flavours, a plum ink #3B2440 for type; highlights are pure white.",
+  "type": "Bagel Fat One, a round heavy display face that reads as liquid when it becomes the liquid itself; Jua for the small lines.",
+  "motion": "Liquid behaviour: drops fall accelerating and stretch, land in a pool with a crown of droplets, blobs wobble with orbiting satellites that merge and split, the three flavours drift together and their colours mix, the name swells out of the pool; words pop with an overshoot.",
+  "sound": "Bright pop at 128 BPM in D major with a recorded kalimba (VCSL, CC0) for the plucked arpeggios; each landing is a plink, each 톡! a pop, wine-glass taps for the flavours, a swell as the name forms.",
+  "visuals": "All code: a WebGL2 fragment shader sums up to 40 metaballs (r² / d², each with its colour, mixed by contribution) plus a blurred text field, takes the normal from the analytic gradient and lights it with a soft diffuse, a sharp specular, a darker rim, a brighter core and a soft offset shadow; bubbles are drawn in 2D only where the CPU copy of the field says it is liquid.",
+  "narration": "Not recommended: the fizz is enough."
+ },
+ "palette": {
+  "bg": "#FFF4E8",
+  "bg2": "#FFE6EC",
+  "surface": "#FFFFFF",
+  "ink": "#3B2440",
+  "ink2": "#5A3E60",
+  "muted": "#6E5872",
+  "accent": "#FF7A93",
+  "accent2": "#6ED04E",
+  "accent3": "#9B5DE5",
+  "ok": "#6ED04E",
+  "warn": "#FFB443",
+  "deny": "#FF5C7A",
+  "accentInk": "#D9435F",
+  "onAccent": "#3B2440",
+  "line": "#F2D9DE"
+ },
+ "fonts": {
+  "display": "\"Bagel Fat One\", sans-serif",
+  "sans": "\"Jua\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Jua\", sans-serif",
+  "cjk": "\"Bagel Fat One\", sans-serif",
+  "files": [
+   {
+    "family": "Bagel Fat One",
+    "path": "source/fonts/BagelFatOne-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#3B2440",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 2.6,
+   "z": 0.45
+  },
+  "overshoot": 0.2,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.015,
+  "vignette": {
+   "a": 0.08,
+   "color": "#C9A0A8"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "D",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "kalimba",
+   "bass",
+   "real-glock",
+   "bell",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "kalimba",
+   "bass": "bass",
+   "top": "real-glock",
+   "motif": "bell"
+  },
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.7,
+   "breakdown": 0.4,
+   "drop": 1.0,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

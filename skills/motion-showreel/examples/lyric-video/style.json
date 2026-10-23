@@ -1,0 +1,175 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "pop listeners",
+  "title": "파란 버스",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (「파란 버스」, a summer single by the band 여름잠, as a lyric video (fictional band, song and lyrics)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "「파란 버스」, a summer single by the band 여름잠, as a lyric video (fictional band, song and lyrics)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "bright",
+  "breezy",
+  "summery",
+  "joyful",
+  "catchy"
+ ],
+ "rationale": {
+  "palette": "Sky blue #6EC3F0 to a pale #D3F0FF, the sea #2F8FD8, a blue bus #2E6BE6 with a white band, a yellow sun #FFD84D, pines #2F7D4A, sand and a grey road; lyrics white with a navy outline #173A7A, filled yellow #FFE15C as they are sung.",
+  "type": "Jua, round and friendly, for the lyrics and the title; Gowun Dodum for the band name and the small print.",
+  "motion": "The words are the motion: every syllable pops (a springy scale and lift) and turns yellow on the note that sings it, the next line waits small below; the bus bounces on every beat with the band bobbing in its windows, jumps every second beat in the chorus under confetti; a window slides open and the curtain catches the wind; the route map runs the bus to the last stop.",
+  "sound": "Bright pop at 112 BPM in A major (pad, pluck, bass, kick, clap, hats, shaker) with no lead, because the lead is the voice: the engine sings every syllable from its own cue with a formant voice (a Hangul syllable split into consonant, vowel and final; the vowel lands on the beat, the consonant leads in); a bell for the bus stop.",
+  "visuals": "All code: flat summer illustration with parallax (clouds, sea sparkles, pines, road marks), a bus drawn from rounded rectangles, a window view clipped to the frame, a dotted route on a top-down coast; the lyric layout reads the sing cues, so the letters and the voice share one list.",
+  "narration": "Not applicable: the reel is sung."
+ },
+ "palette": {
+  "bg": "#6EC3F0",
+  "bg2": "#D3F0FF",
+  "surface": "#FFFFFF",
+  "ink": "#173A7A",
+  "ink2": "#132F66",
+  "muted": "#1C3560",
+  "accent": "#FFE15C",
+  "accent2": "#2E6BE6",
+  "accent3": "#FF7A9A",
+  "ok": "#2F7D4A",
+  "warn": "#FF9A2E",
+  "deny": "#FF5A5A",
+  "accentInk": "#173A7A",
+  "onAccent": "#173A7A",
+  "line": "#BFE6FF"
+ },
+ "fonts": {
+  "display": "\"Jua\", sans-serif",
+  "sans": "\"Gowun Dodum\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Gowun Dodum\", sans-serif",
+  "cjk": "\"Jua\", sans-serif",
+  "files": [
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Gowun Dodum",
+    "path": "source/fonts/GowunDodum-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#173A7A",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 2.6,
+   "z": 0.45
+  },
+  "overshoot": 0.2,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.08,
+   "color": "#173A7A"
+  },
+  "bloom": 0.05
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "A",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "pluck",
+   "bass",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "pluck",
+   "bass": "bass"
+  },
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.6,
+   "breakdown": 0.35,
+   "drop": 0.85,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

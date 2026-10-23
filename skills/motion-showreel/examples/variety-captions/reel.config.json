@@ -1,0 +1,102 @@
+{
+  "title": "냥이네 하숙집",
+  "style": "style.json",
+  "size": [1080, 1920],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "냥이네 하숙집", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 1, "from": "start", "sfx": "pop:3 gap=0.07s"},
+      {"beat": 2, "from": "start", "sfx": "pop:3 gap=0.07s"},
+      {"beat": 2.5, "from": "start", "sfx": "sparkle dur=2b"},
+      {"beat": 5, "from": "start", "sfx": "cowbell"}
+    ]},
+    {"id": "intro", "label": "낮잠 대장", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "pop:3 gap=0.05s"},
+      {"beat": 2, "from": "start", "sfx": "flexatone"},
+      {"beat": 3, "from": "start", "sfx": "cowbell"}
+    ]},
+    {"id": "incident", "label": "와장창", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 2, "from": "start", "sfx": "swish"},
+      {"beat": 3, "from": "start", "sfx": "shatter+slapstick"},
+      {"beat": 4, "from": "start", "sfx": "pop:2"},
+      {"beat": 5, "from": "start", "sfx": "drawon dur=1b"}
+    ]},
+    {"id": "reaction", "label": "모르는 척", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "flexatone"},
+      {"beat": 2, "from": "start", "sfx": "pop"},
+      {"beat": 3, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "snack", "label": "1초 출석", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "pop:3 gap=0.05s"},
+      {"beat": 1.25, "from": "start", "sfx": "sparkle dur=1b"},
+      {"beat": 2, "from": "start", "sfx": "whip"},
+      {"beat": 2.25, "from": "start", "sfx": "ding"}
+    ]},
+    {"id": "rank", "label": "낮잠 1위", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 2, "from": "start", "sfx": "thud"},
+      {"beat": 2.5, "from": "start", "sfx": "chime"}
+    ]},
+    {"id": "end", "label": "냥이네 하숙집", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "pop:3 gap=0.06s"},
+      {"beat": 2, "from": "start", "sfx": "cowbell"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "reaction",
+        "snack",
+        "rank"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "intro": {
+          "bars": 2
+        },
+        "incident": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "intro": {
+          "bars": 3
+        },
+        "incident": {
+          "bars": 2
+        },
+        "reaction": {
+          "bars": 2
+        },
+        "snack": {
+          "bars": 3
+        },
+        "rank": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 6.5,
+  "captions": {
+    "enabled": false
+  }
+}

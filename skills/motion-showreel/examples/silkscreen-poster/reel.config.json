@@ -1,0 +1,112 @@
+{
+  "title": "바람섬 다섯 길",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "바람섬", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.5, "from": "start", "sfx": "squeegee"},
+      {"beat": 2.5, "from": "start", "sfx": "squeegee"},
+      {"beat": 3.5, "from": "start", "sfx": "squeegee"},
+      {"beat": 4.5, "from": "start", "sfx": "squeegee"},
+      {"beat": 5.5, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "coast", "label": "1길 해안길", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.0, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.75, "from": "start", "sfx": "squeegee"},
+      {"beat": 2.5, "from": "start", "sfx": "squeegee"},
+      {"beat": 3.25, "from": "start", "sfx": "squeegee"}
+    ]},
+    {"id": "oreum", "label": "2길 오름길", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.0, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.75, "from": "start", "sfx": "squeegee"},
+      {"beat": 2.5, "from": "start", "sfx": "squeegee"}
+    ]},
+    {"id": "wall", "label": "3길 돌담길", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.0, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.75, "from": "start", "sfx": "squeegee"},
+      {"beat": 2.5, "from": "start", "sfx": "squeegee"}
+    ]},
+    {"id": "forest", "label": "4길 숲길", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.0, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.75, "from": "start", "sfx": "squeegee"},
+      {"beat": 2.5, "from": "start", "sfx": "squeegee"}
+    ]},
+    {"id": "sunset", "label": "5길 노을길", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.0, "from": "start", "sfx": "squeegee"},
+      {"beat": 1.75, "from": "start", "sfx": "squeegee"},
+      {"beat": 2.5, "from": "start", "sfx": "squeegee"}
+    ]},
+    {"id": "end", "label": "다섯 길, 한 장씩", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "flip soft"},
+      {"beat": 0.75, "from": "start", "sfx": "flip soft"},
+      {"beat": 1.25, "from": "start", "sfx": "flip soft"},
+      {"beat": 1.75, "from": "start", "sfx": "flip soft"},
+      {"beat": 2.25, "from": "start", "sfx": "flip soft"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "wall",
+        "forest",
+        "sunset"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "coast": {
+          "bars": 2
+        },
+        "oreum": {
+          "bars": 1
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "coast": {
+          "bars": 2
+        },
+        "oreum": {
+          "bars": 2
+        },
+        "wall": {
+          "bars": 2
+        },
+        "forest": {
+          "bars": 2
+        },
+        "sunset": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 3.6,
+  "captions": {
+    "enabled": false
+  }
+}

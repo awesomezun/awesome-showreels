@@ -1,0 +1,182 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "readers of natural-history books",
+  "title": "한반도 곤충 도감",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (한반도 곤충 도감 개정판, a field guide to Korean insects re-engraved on copper (fictional book)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "한반도 곤충 도감 개정판, a field guide to Korean insects re-engraved on copper (fictional book)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "precise",
+  "scholarly",
+  "quiet",
+  "meticulous",
+  "elegant"
+ ],
+ "rationale": {
+  "palette": "Copperplate printing: plate paper #F3EEE2 with a plate mark and the faint plate tone left by wiping, ink #1C1A17 in lines only (no fills), and hand colouring last in a few watercolour washes: brown #7A4524 and amber for the beetle, yellow #E2B53A, blue #3D6FA8 and red #B5372B for the butterfly and the ladybird.",
+  "type": "Nanum Myeongjo ExtraBold for the engraved titles and names, revealed behind the burin; Diphylleia, a light serif, for plate numbers and small captions, like the italic legends of old plates.",
+  "motion": "Engraving order is the motion: outlines, then limbs, then hatching layer by layer, each line cut along its length with a glint at the burin; magnification roundels spring open on a detail; washes bloom from a point with a ragged, darker edge. Slow pushes and a light sliding across the lens keep finished plates alive.",
+  "sound": "Corporate at 112 BPM in G major on recorded instruments (VCSL and VSCO 2 CE, CC0): a violin section bed, a harpsichord playing broken eighths, cello pizzicato bass, a solo violin hook and glockenspiel in the drop, no kit but a shaker; burin scrapes (engrave) on the lines, ticks for labels, a soft swell for each wash.",
+  "visuals": "All code: every line is a filled strip whose width swells along it and scales with the tone it carries; domes are hatched along meridians or parallels with the width taken from a lit ellipsoid, so highlights appear where the lines thin, and a crossing family is added in deep shade; dark wing bands are dense crossing hatch clipped to the band; the insects are built from these parts in their own coordinates.",
+  "narration": "Not recommended: the plates speak for themselves."
+ },
+ "palette": {
+  "bg": "#F3EEE2",
+  "bg2": "#ECE5D5",
+  "surface": "#FFFFFF",
+  "ink": "#1C1A17",
+  "ink2": "#3A352E",
+  "muted": "#6C6458",
+  "accent": "#7A4524",
+  "accent2": "#3D6FA8",
+  "accent3": "#E2B53A",
+  "ok": "#5E7B3A",
+  "warn": "#B8742F",
+  "deny": "#B5372B",
+  "accentInk": "#5E3418",
+  "onAccent": "#F3EEE2",
+  "line": "#D3CAB6"
+ },
+ "fonts": {
+  "display": "\"Nanum Myeongjo\", serif",
+  "sans": "\"Diphylleia\", serif",
+  "serif": "\"Nanum Myeongjo\", serif",
+  "mono": "\"Diphylleia\", serif",
+  "cjk": "\"Nanum Myeongjo\", serif",
+  "files": [
+   {
+    "family": "Nanum Myeongjo",
+    "path": "source/fonts/NanumMyeongjo-ExtraBold.woff2",
+    "weight": "800",
+    "style": "normal"
+   },
+   {
+    "family": "Nanum Myeongjo",
+    "path": "source/fonts/NanumMyeongjo-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   },
+   {
+    "family": "Diphylleia",
+    "path": "source/fonts/Diphylleia-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1C1A17",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.8,
+   "z": 0.8
+  },
+  "overshoot": 0.05,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.02,
+  "vignette": {
+   "a": 0.14,
+   "color": "#5A4A30"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "G",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "violins",
+   "harpsichord",
+   "cello-pizz",
+   "real-glock",
+   "solo-violin",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "violins",
+   "motion": "harpsichord",
+   "bass": "cello-pizz",
+   "top": "real-glock",
+   "motif": "solo-violin"
+  },
+  "drums": "light",
+  "sfx": "minimal",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.6,
+   "breakdown": 0.4,
+   "drop": 0.85,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

@@ -1,0 +1,182 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "families with children",
+  "title": "그림자 토끼전",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (그림자 토끼전, a children's shadow play of the old tale of the rabbit and the turtle (fictional company)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "그림자 토끼전, a children's shadow play of the old tale of the rabbit and the turtle (fictional company)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "warm",
+  "playful",
+  "folkloric",
+  "flickering",
+  "cosy"
+ ],
+ "rationale": {
+  "palette": "Lamplight through cloth: a screen that glows from cream #FFE2A8 at the lamp to burnt orange and deep brown at its edges, flickering; shadows a warm dark brown #24150E, never black; dyed holes in the leather in red #D9503A, green #5FA35A, blue #3F7FC4, gold #F2B640 and pink; a dark wooden proscenium with red curtains.",
+  "type": "Song Myung, a brushed serif, cut through the hanging boards so the lamp shows through the letters; Gowun Batang for the subtitles under the stage.",
+  "motion": "Puppet motion: jointed parts turning on pivots (ears, flippers, a sleeve), hops on the beat in arcs, a turtle that swims and stretches its neck, boards that drop in on strings and sway, the moon lowered on its rod; a puppet lifted off the screen is soft and large until it is pressed to the cloth; the lamp flickers all the time.",
+  "sound": "Folk at 96 BPM in D major on a pentatonic scale (0 2 4 7 9) with recorded instruments (VCSL and VSCO 2 CE, CC0): a bowed psaltery bed like a haegeum, a plucked zither (dan tranh) like a gayageum, a flute hook like a daegeum, an upright bass, kick and shaker; a gong (jing) opens and closes the play, a frame drum (buk) marks the hops.",
+  "visuals": "All code: each puppet is drawn into its own buffer as a silhouette, its carved holes cut out (destination-out) so the screen shows through, translucent dye laid into some; rods run down past the stage edge; the screen is a radial lamp gradient with a woven texture multiplied in.",
+  "narration": "Not recommended: the subtitles tell the tale."
+ },
+ "palette": {
+  "bg": "#0D0806",
+  "bg2": "#2A1710",
+  "surface": "#3A2216",
+  "ink": "#F4E6CC",
+  "ink2": "#E0CDAA",
+  "muted": "#B39C82",
+  "accent": "#F2B640",
+  "accent2": "#D9503A",
+  "accent3": "#5FA35A",
+  "ok": "#5FA35A",
+  "warn": "#F2B640",
+  "deny": "#D9503A",
+  "accentInk": "#C48F2A",
+  "onAccent": "#24150E",
+  "line": "#4A2E20"
+ },
+ "fonts": {
+  "display": "\"Song Myung\", serif",
+  "sans": "\"Gowun Batang\", serif",
+  "serif": "\"Gowun Batang\", serif",
+  "mono": "\"Gowun Batang\", serif",
+  "cjk": "\"Song Myung\", serif",
+  "files": [
+   {
+    "family": "Song Myung",
+    "path": "source/fonts/SongMyung-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Gowun Batang",
+    "path": "source/fonts/GowunBatang-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F4E6CC",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.2,
+   "z": 0.5
+  },
+  "overshoot": 0.12,
+  "ease": "ioQ",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.035,
+  "vignette": {
+   "a": 0.3,
+   "color": "#0A0503"
+  },
+  "bloom": 0.15
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "D",
+  "mode": "major",
+  "scale": [
+   0,
+   2,
+   4,
+   7,
+   9
+  ],
+  "preset": "folk",
+  "instruments": [
+   "bowed-psaltery",
+   "dan-tranh",
+   "flute",
+   "upright",
+   "kick",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "bowed-psaltery",
+   "motion": "dan-tranh",
+   "bass": "upright",
+   "motif": "flute"
+  },
+  "drums": "light",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.6,
+   "breakdown": 0.4,
+   "drop": 0.85,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

@@ -1,0 +1,139 @@
+{
+  "title": "파란 버스",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "여름잠, 파란 버스", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "whoosh"},
+      {"beat": 4.5, "from": "start", "sfx": "note:real-glock deg=4 oct=5 chord dur=1b"}
+    ]},
+    {"id": "verse1", "label": "파란 버스를 타고", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.0, "from": "start", "sfx": "sing:파 deg=4 oct=4 dur=0.460b"},
+      {"beat": 0.5, "from": "start", "sfx": "sing:란 deg=4 oct=4 dur=0.460b"},
+      {"beat": 1.0, "from": "start", "sfx": "sing:버 deg=5 oct=4 dur=0.460b"},
+      {"beat": 1.5, "from": "start", "sfx": "sing:스 deg=4 oct=4 dur=0.460b"},
+      {"beat": 2.0, "from": "start", "sfx": "sing:를 deg=2 oct=4 dur=0.460b"},
+      {"beat": 2.5, "from": "start", "sfx": "sing:타 deg=1 oct=4 dur=0.460b"},
+      {"beat": 3.0, "from": "start", "sfx": "sing:고 deg=2 oct=4 dur=0.920b"},
+      {"beat": 4.0, "from": "start", "sfx": "sing:여 deg=1 oct=4 dur=0.460b"},
+      {"beat": 4.5, "from": "start", "sfx": "sing:름 deg=2 oct=4 dur=0.460b"},
+      {"beat": 5.0, "from": "start", "sfx": "sing:으 deg=4 oct=4 dur=0.460b"},
+      {"beat": 5.5, "from": "start", "sfx": "sing:로 deg=5 oct=4 dur=0.460b"},
+      {"beat": 6.0, "from": "start", "sfx": "sing:가 deg=4 oct=4 dur=0.920b"},
+      {"beat": 7.0, "from": "start", "sfx": "sing:요 deg=2 oct=4 dur=0.920b"}
+    ]},
+    {"id": "verse2", "label": "창문을 열면", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.0, "from": "start", "sfx": "sing:창 deg=4 oct=4 dur=0.460b"},
+      {"beat": 0.5, "from": "start", "sfx": "sing:문 deg=5 oct=4 dur=0.460b"},
+      {"beat": 1.0, "from": "start", "sfx": "sing:을 deg=7 oct=4 dur=0.920b"},
+      {"beat": 2.0, "from": "start", "sfx": "sing:열 deg=5 oct=4 dur=0.460b"},
+      {"beat": 2.5, "from": "start", "sfx": "sing:면 deg=4 oct=4 dur=1.380b"},
+      {"beat": 4.0, "from": "start", "sfx": "sing:바 deg=2 oct=4 dur=0.460b"},
+      {"beat": 4.5, "from": "start", "sfx": "sing:다 deg=4 oct=4 dur=0.460b"},
+      {"beat": 5.0, "from": "start", "sfx": "sing:냄 deg=4 oct=4 dur=0.460b"},
+      {"beat": 5.5, "from": "start", "sfx": "sing:새 deg=2 oct=4 dur=0.460b"},
+      {"beat": 6.0, "from": "start", "sfx": "sing:가 deg=1 oct=4 dur=0.920b"},
+      {"beat": 7.0, "from": "start", "sfx": "sing:나 deg=0 oct=4 dur=0.920b"}
+    ]},
+    {"id": "bridge", "label": "다음 정류장은 여름", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "ding"}
+    ]},
+    {"id": "chorus", "label": "파란 버스, 파란 하늘", "minBars": 4, "maxBars": 4, "priority": 3, "optional": true, "inBeats": 15, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0.0, "from": "start", "sfx": "sing:파 deg=7 oct=4 dur=0.460b"},
+      {"beat": 0.5, "from": "start", "sfx": "sing:란 deg=7 oct=4 dur=0.460b"},
+      {"beat": 1.0, "from": "start", "sfx": "sing:버 deg=5 oct=4 dur=0.460b"},
+      {"beat": 1.5, "from": "start", "sfx": "sing:스 deg=4 oct=4 dur=0.460b"},
+      {"beat": 2.0, "from": "start", "sfx": "sing:파 deg=7 oct=4 dur=0.460b"},
+      {"beat": 2.5, "from": "start", "sfx": "sing:란 deg=7 oct=4 dur=0.460b"},
+      {"beat": 3.0, "from": "start", "sfx": "sing:하 deg=8 oct=4 dur=0.460b"},
+      {"beat": 3.5, "from": "start", "sfx": "sing:늘 deg=7 oct=4 dur=0.460b"},
+      {"beat": 4.0, "from": "start", "sfx": "sing:우 deg=5 oct=4 dur=0.460b"},
+      {"beat": 4.5, "from": "start", "sfx": "sing:리 deg=4 oct=4 dur=0.460b"},
+      {"beat": 5.0, "from": "start", "sfx": "sing:노 deg=5 oct=4 dur=0.460b"},
+      {"beat": 5.5, "from": "start", "sfx": "sing:래 deg=7 oct=4 dur=0.460b"},
+      {"beat": 6.0, "from": "start", "sfx": "sing:싣 deg=5 oct=4 dur=0.460b"},
+      {"beat": 6.5, "from": "start", "sfx": "sing:고 deg=4 oct=4 dur=0.460b"},
+      {"beat": 7.0, "from": "start", "sfx": "sing:가 deg=2 oct=4 dur=0.460b"},
+      {"beat": 7.5, "from": "start", "sfx": "sing:요 deg=4 oct=4 dur=0.460b"},
+      {"beat": 8.0, "from": "start", "sfx": "sing:파 deg=7 oct=4 dur=0.460b"},
+      {"beat": 8.5, "from": "start", "sfx": "sing:란 deg=7 oct=4 dur=0.460b"},
+      {"beat": 9.0, "from": "start", "sfx": "sing:버 deg=5 oct=4 dur=0.460b"},
+      {"beat": 9.5, "from": "start", "sfx": "sing:스 deg=4 oct=4 dur=0.460b"},
+      {"beat": 10.0, "from": "start", "sfx": "sing:파 deg=7 oct=4 dur=0.460b"},
+      {"beat": 10.5, "from": "start", "sfx": "sing:란 deg=7 oct=4 dur=0.460b"},
+      {"beat": 11.0, "from": "start", "sfx": "sing:하 deg=8 oct=4 dur=0.460b"},
+      {"beat": 11.5, "from": "start", "sfx": "sing:늘 deg=7 oct=4 dur=0.460b"},
+      {"beat": 12.0, "from": "start", "sfx": "sing:여 deg=4 oct=4 dur=0.460b"},
+      {"beat": 12.5, "from": "start", "sfx": "sing:름 deg=5 oct=4 dur=0.460b"},
+      {"beat": 13.0, "from": "start", "sfx": "sing:잠 deg=7 oct=4 dur=0.460b"},
+      {"beat": 13.5, "from": "start", "sfx": "sing:에 deg=5 oct=4 dur=0.460b"},
+      {"beat": 14.0, "from": "start", "sfx": "sing:서 deg=4 oct=4 dur=0.460b"},
+      {"beat": 14.5, "from": "start", "sfx": "sing:깨 deg=5 oct=4 dur=0.460b"},
+      {"beat": 15.0, "from": "start", "sfx": "sing:어 deg=4 oct=4 dur=0.460b"},
+      {"beat": 15.5, "from": "start", "sfx": "sing:나 deg=2 oct=4 dur=0.460b"}
+    ]},
+    {"id": "end", "label": "파란 버스, 여름으로", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.0, "from": "start", "sfx": "sing:파 deg=7 oct=4 dur=0.460b"},
+      {"beat": 0.5, "from": "start", "sfx": "sing:란 deg=7 oct=4 dur=0.460b"},
+      {"beat": 1.0, "from": "start", "sfx": "sing:버 deg=5 oct=4 dur=0.460b"},
+      {"beat": 1.5, "from": "start", "sfx": "sing:스 deg=4 oct=4 dur=0.460b"},
+      {"beat": 2.0, "from": "start", "sfx": "sing:여 deg=2 oct=4 dur=0.460b"},
+      {"beat": 2.5, "from": "start", "sfx": "sing:름 deg=4 oct=4 dur=0.460b"},
+      {"beat": 3.0, "from": "start", "sfx": "sing:으 deg=1 oct=4 dur=0.460b"},
+      {"beat": 3.5, "from": "start", "sfx": "sing:로 deg=0 oct=4 dur=1.840b"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "verse2",
+        "bridge",
+        "chorus"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "verse1": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "verse1": {
+          "bars": 2
+        },
+        "verse2": {
+          "bars": 2
+        },
+        "bridge": {
+          "bars": 2
+        },
+        "chorus": {
+          "bars": 4
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 6.5,
+  "captions": {
+    "enabled": false
+  }
+}

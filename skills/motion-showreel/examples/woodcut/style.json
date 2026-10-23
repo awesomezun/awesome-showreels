@@ -1,0 +1,177 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "people who drink makgeolli and visitors to the village",
+  "title": "솔뫼 양조장",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (솔뫼 양조장, a rice-wine brewery under a pine mountain turning 100 (fictional)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "솔뫼 양조장, a rice-wine brewery under a pine mountain turning 100 (fictional)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "earthy",
+  "proud",
+  "handmade",
+  "warm",
+  "bold"
+ ],
+ "rationale": {
+  "palette": "A relief print and nothing else: rice paper #EFE6D2 with fibres, one key block of ink #191512 that carries wood grain and specks where it did not take, and one vermilion plate #B4432A printed under it (the sun, the sign, the seal), slightly out of register.",
+  "type": "Black And White Picture for the display lines, rough like letters cut in wood; Song Myung for the small carved and printed labels.",
+  "motion": "Carving is the motion: every white line is cut along its length by a V-gouge with a chip curling off the tip, the light appearing where wood is taken away; the colour plate settles into register when it is pressed; the end is the pull, the sheet peeling off the block with a curl. Slow pushes keep finished prints alive.",
+  "sound": "Corporate at 96 BPM in D major on recorded instruments (VCSL and VSCO 2 CE, CC0): a cello section bed, harp in broken eighths, pizzicato double bass, a French horn hook, tubular bells in the drop; the cuts scrape (carve), woodblock and timpani mark the panels and the title, the pull crackles (peel) and the seal is stamped.",
+  "visuals": "All code: the ink is a buffer the gouges are taken out of (destination-out), so paper shows through every cut; sky lines widen toward the sun and break around it, sun rings, contour cuts under the ridges that thin as they go down, pine silhouettes, an onggi jar with ring bands and a lit side of short cuts, a hanok roof with scalloped tile rows, smoke, carved and printed type.",
+  "narration": "Not recommended: the cuts carry it."
+ },
+ "palette": {
+  "bg": "#EFE6D2",
+  "bg2": "#E2D5BB",
+  "surface": "#FFFFFF",
+  "ink": "#191512",
+  "ink2": "#3B332B",
+  "muted": "#6E6253",
+  "accent": "#B4432A",
+  "accent2": "#191512",
+  "accent3": "#8A7A5E",
+  "ok": "#4A6A4A",
+  "warn": "#B8822A",
+  "deny": "#B4432A",
+  "accentInk": "#8E3320",
+  "onAccent": "#EFE6D2",
+  "line": "#CDBFA2"
+ },
+ "fonts": {
+  "display": "\"Black And White Picture\", serif",
+  "sans": "\"Song Myung\", serif",
+  "serif": "\"Song Myung\", serif",
+  "mono": "\"Song Myung\", serif",
+  "cjk": "\"Black And White Picture\", serif",
+  "files": [
+   {
+    "family": "Black And White Picture",
+    "path": "source/fonts/BlackAndWhitePicture-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Song Myung",
+    "path": "source/fonts/SongMyung-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#191512",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.7
+  },
+  "overshoot": 0.05,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.035,
+  "vignette": {
+   "a": 0.18,
+   "color": "#5A4630"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "D",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "cellos",
+   "concert-harp",
+   "bass-pizz",
+   "tubular-bells",
+   "french-horn",
+   "kick",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "cellos",
+   "motion": "concert-harp",
+   "bass": "bass-pizz",
+   "top": "tubular-bells",
+   "motif": "french-horn"
+  },
+  "drums": "light",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.6,
+   "breakdown": 0.4,
+   "drop": 0.85,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

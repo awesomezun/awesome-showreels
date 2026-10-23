@@ -1,0 +1,113 @@
+{
+  "title": "반듯 선반",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "반듯 선반", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 1, "from": "start", "sfx": "woodblock"},
+      {"beat": 2, "from": "start", "sfx": "woodblock"},
+      {"beat": 2.5, "from": "start", "sfx": "woodblock"},
+      {"beat": 3, "from": "start", "sfx": "woodblock"},
+      {"beat": 4, "from": "start", "sfx": "woodblock"}
+    ]},
+    {"id": "parts", "label": "부품", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.0, "from": "start", "sfx": "pop"},
+      {"beat": 0.5, "from": "start", "sfx": "pop"},
+      {"beat": 1.0, "from": "start", "sfx": "pop"},
+      {"beat": 1.5, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "build", "label": "조립", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "swish"},
+      {"beat": 1, "from": "start", "sfx": "ding"},
+      {"beat": 2.25, "from": "start", "sfx": "woodblock"},
+      {"beat": 3, "from": "start", "sfx": "woodblock"},
+      {"beat": 3.75, "from": "start", "sfx": "woodblock"},
+      {"beat": 4.25, "from": "start", "sfx": "click:6 gap=0.2s"}
+    ]},
+    {"id": "step1", "label": "옆판 세우기", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "swish"},
+      {"beat": 1.5, "from": "start", "sfx": "woodblock"},
+      {"beat": 2, "from": "start", "sfx": "ding"}
+    ]},
+    {"id": "step2", "label": "선반 끼우기", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 1.25, "from": "start", "sfx": "woodblock"},
+      {"beat": 2.25, "from": "start", "sfx": "woodblock"},
+      {"beat": 3.25, "from": "start", "sfx": "woodblock"},
+      {"beat": 3.5, "from": "start", "sfx": "buzz soft"}
+    ]},
+    {"id": "step3", "label": "나사 조이기", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "click:6 gap=0.5b"}
+    ]},
+    {"id": "stand", "label": "세워서 완성", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "pop:3"},
+      {"beat": 2, "from": "start", "sfx": "confirm"}
+    ]},
+    {"id": "end", "label": "공구 하나, 4단계, 10분", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "ding"},
+      {"beat": 1.5, "from": "start", "sfx": "count dur=1b"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "step1",
+        "step2",
+        "step3",
+        "stand"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "parts": {
+          "bars": 1
+        },
+        "build": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "exclude": [
+        "build"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "parts": {
+          "bars": 2
+        },
+        "step1": {
+          "bars": 2
+        },
+        "step2": {
+          "bars": 2
+        },
+        "step3": {
+          "bars": 2
+        },
+        "stand": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 3.6,
+  "captions": {
+    "enabled": false
+  }
+}

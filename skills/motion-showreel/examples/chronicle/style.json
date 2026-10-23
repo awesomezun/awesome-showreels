@@ -1,0 +1,192 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "neighbours, customers and musicians",
+  "title": "소리상회 100년",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (소리상회, a music shop on the same corner for a hundred years, 1925 to 2025 (fictional shop)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "소리상회, a music shop on the same corner for a hundred years, 1925 to 2025 (fictional shop)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "warm",
+  "proud",
+  "nostalgic",
+  "varied",
+  "continuous"
+ ],
+ "rationale": {
+  "palette": "One palette per era on one dark-wood frame #1E160E: 1925 sepia browns, 1955 hand-tinted teal and tomato on cream, 1975 burnt orange and brown with bulb yellow, 1995 night violet with a pink neon #FF4FC3, 2025 off-white with ink #1E2A36 and green #2E7D6A.",
+  "type": "One face per era through the five font roles: Song Myung (1925, and the frame), Yeon Sung (1955), Do Hyeon (1975), Black Han Sans (1995), Pretendard (2025 and the small print).",
+  "motion": "The same shopfront in the same place five times: the camera eases in, the year rolls up from the last era like an odometer, the window comes alive in its own way (a record turning under a horn, a radio needle and waves, marquee bulbs chasing and LPs spinning, a neon sign flickering on and a CD sheen, a waveform on a tablet); the tree beside the shop grows from era to era.",
+  "sound": "One tempo, 112 BPM in C major, under a quiet bed (pad, pluck, bass, light drums); each era brings its own recorded riff on the beat (VCSL and VSCO 2 CE, CC0): ragtime upright piano, trumpet stabs, strummed guitar, a glassy synth, a kalimba.",
+  "visuals": "All code: the shop is one drawing with per-era parameters (sign shape and face, awning, wall courses, window display) and per-era surfaces drawn over the frame (film grain, scratches, flicker and an iris; halftone; a light leak; scanlines and a neon street).",
+  "narration": "Possible: a line per era, but the years carry it."
+ },
+ "palette": {
+  "bg": "#1E160E",
+  "bg2": "#2A1E14",
+  "surface": "#F2DCB0",
+  "ink": "#F2DCB0",
+  "ink2": "#E6CFA0",
+  "muted": "#C9A87A",
+  "accent": "#E8574C",
+  "accent2": "#2E7D6A",
+  "accent3": "#FFC94D",
+  "ok": "#2E7D6A",
+  "warn": "#E8A23A",
+  "deny": "#E8574C",
+  "accentInk": "#FFC94D",
+  "onAccent": "#1E160E",
+  "line": "#5A4630"
+ },
+ "fonts": {
+  "display": "\"Black Han Sans\", sans-serif",
+  "sans": "\"Pretendard\", sans-serif",
+  "serif": "\"Song Myung\", serif",
+  "mono": "\"Do Hyeon\", sans-serif",
+  "cjk": "\"Yeon Sung\", cursive",
+  "files": [
+   {
+    "family": "Song Myung",
+    "path": "source/fonts/SongMyung-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Yeon Sung",
+    "path": "source/fonts/YeonSung-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Do Hyeon",
+    "path": "source/fonts/DoHyeon-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Black Han Sans",
+    "path": "source/fonts/BlackHanSans-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Pretendard",
+    "path": "source/fonts/PretendardVariable.woff2",
+    "weight": "45 920",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F2DCB0",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.7
+  },
+  "overshoot": 0.1,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.015,
+  "vignette": {
+   "a": 0.18,
+   "color": "#0E0A06"
+  },
+  "bloom": 0.05
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "C",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "pad",
+   "pluck",
+   "bass",
+   "kick",
+   "hats",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "pluck",
+   "bass": "bass"
+  },
+  "drums": "light",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.5,
+   "breakdown": 0.4,
+   "drop": 0.6,
+   "outro": 0.4
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

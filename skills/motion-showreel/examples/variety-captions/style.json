@@ -1,0 +1,184 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "people who watch short-form variety clips",
+  "title": "냥이네 하숙집",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (냥이네 하숙집, a vertical variety show about cat lodgers (fictional show)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "냥이네 하숙집, a vertical variety show about cat lodgers (fictional show)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "noisy",
+  "cute",
+  "cheeky",
+  "bouncy",
+  "warm"
+ ],
+ "rationale": {
+  "palette": "Variety captions over warm footage: a peach room #FCE3C8 with a wood floor and a cheese cat #F2A04E; captions in yellow #FFC400, pink #FF5C93, sky #3FB6FF, white and red #FF3B3B, each with a two-tone gradient, a white inner stroke and a thick plum #3B1E54 outer stroke; sunbursts for the title cards.",
+  "type": "Bagel Fat One for the captions, fat and round so they survive three strokes; Jua for tags; Black Han Sans for sound words.",
+  "motion": "Every character of a caption pops on its own spring (0 to 1.15 to 1 in eight frames) one after another; the camera creeps in, punches and shakes; one freeze frame with white concentration lines; captions bob, a ring is drawn round the culprit, confetti falls; vertical 9:16 throughout.",
+  "sound": "Bright pop at 128 BPM in G major with a recorded xylophone (VCSL, CC0) on the arpeggios; variety sound words: a flexatone boing, a slapstick and a glass shatter for the crash, pops for the captions, a cowbell for the tag, sparkles for the logo.",
+  "visuals": "All code, no footage: the room and the cat (a loaf or sitting, sleeping, open, shocked, looking away or star-eyed, a paw that swipes) are drawn and filmed by a camera transform; captions are three passes per character (outer stroke, white stroke, gradient fill) scaled by a per-character spring.",
+  "narration": "Not recommended: the captions are the voice."
+ },
+ "palette": {
+  "bg": "#FCE3C8",
+  "bg2": "#F7D2AE",
+  "surface": "#FFFFFF",
+  "ink": "#3B1E54",
+  "ink2": "#4E2E6A",
+  "muted": "#6A4A7A",
+  "accent": "#FF5C93",
+  "accent2": "#3FB6FF",
+  "accent3": "#FFC400",
+  "ok": "#5BAE5A",
+  "warn": "#FFC400",
+  "deny": "#FF3B3B",
+  "accentInk": "#D9336E",
+  "onAccent": "#3B1E54",
+  "line": "#E9C8A6"
+ },
+ "fonts": {
+  "display": "\"Bagel Fat One\", sans-serif",
+  "sans": "\"Jua\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Black Han Sans\", sans-serif",
+  "cjk": "\"Bagel Fat One\", sans-serif",
+  "files": [
+   {
+    "family": "Bagel Fat One",
+    "path": "source/fonts/BagelFatOne-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Black Han Sans",
+    "path": "source/fonts/BlackHanSans-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#3B1E54",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.2,
+   "z": 0.4
+  },
+  "overshoot": 0.15,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.12,
+   "color": "#5A3A20"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "G",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "xylophone",
+   "bass",
+   "bell",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "xylophone",
+   "bass": "bass",
+   "top": "bell",
+   "motif": "bell"
+  },
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.45,
+   "groove": 0.75,
+   "breakdown": 0.45,
+   "drop": 1.0,
+   "outro": 0.55
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

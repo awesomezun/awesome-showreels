@@ -1,0 +1,139 @@
+{
+  "title": "5초 미션",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "5초 미션", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "blip"},
+      {"beat": 4, "from": "start", "sfx": "beep"},
+      {"beat": 5, "from": "start", "sfx": "beep"},
+      {"beat": 6, "from": "start", "sfx": "beep"},
+      {"beat": 7, "from": "start", "sfx": "confirm"}
+    ]},
+    {"id": "rules", "label": "규칙은 하나", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 1, "from": "start", "sfx": "blip"},
+      {"beat": 2, "from": "start", "sfx": "blip"},
+      {"beat": 4, "from": "start", "sfx": "blip"},
+      {"beat": 5, "from": "start", "sfx": "blip"}
+    ]},
+    {"id": "level1", "label": "레벨 1", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "blip"},
+      {"beat": 4, "from": "start", "sfx": "blip"},
+      {"beat": 3, "from": "start", "sfx": "coin"},
+      {"beat": 7, "from": "start", "sfx": "coin"}
+    ]},
+    {"id": "speed", "label": "속도 UP!", "minBars": 1, "maxBars": 1, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "zoom"},
+      {"beat": 2, "from": "start", "sfx": "confirm"}
+    ]},
+    {"id": "level2", "label": "레벨 2", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "blip"},
+      {"beat": 2, "from": "start", "sfx": "blip"},
+      {"beat": 4, "from": "start", "sfx": "blip"},
+      {"beat": 6, "from": "start", "sfx": "blip"},
+      {"beat": 1.5, "from": "start", "sfx": "coin"},
+      {"beat": 3.5, "from": "start", "sfx": "coin"},
+      {"beat": 5.5, "from": "start", "sfx": "coin"},
+      {"beat": 7.5, "from": "start", "sfx": "coin"}
+    ]},
+    {"id": "speed2", "label": "속도 UP!", "minBars": 1, "maxBars": 1, "priority": 3, "optional": true, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "zoom"},
+      {"beat": 2, "from": "start", "sfx": "confirm"}
+    ]},
+    {"id": "level3", "label": "레벨 3", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "blip"},
+      {"beat": 1, "from": "start", "sfx": "blip"},
+      {"beat": 2, "from": "start", "sfx": "blip"},
+      {"beat": 3, "from": "start", "sfx": "blip"},
+      {"beat": 4, "from": "start", "sfx": "blip"},
+      {"beat": 5, "from": "start", "sfx": "blip"},
+      {"beat": 6, "from": "start", "sfx": "blip"},
+      {"beat": 7, "from": "start", "sfx": "blip"}
+    ]},
+    {"id": "boss", "label": "모두 터뜨려!", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 2, "from": "start", "sfx": "pop"},
+      {"beat": 3, "from": "start", "sfx": "pop"},
+      {"beat": 4, "from": "start", "sfx": "pop"},
+      {"beat": 5, "from": "start", "sfx": "pop"},
+      {"beat": 6, "from": "start", "sfx": "pop"},
+      {"beat": 7, "from": "start", "sfx": "pop"},
+      {"beat": 8, "from": "start", "sfx": "pop"},
+      {"beat": 9, "from": "start", "sfx": "pop"},
+      {"beat": 10, "from": "start", "sfx": "pop"},
+      {"beat": 11, "from": "start", "sfx": "coin"}
+    ]},
+    {"id": "end", "label": "5초면 충분해!", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "sparkle dur=2b"},
+      {"beat": 2, "from": "start", "sfx": "coin"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "rules",
+        "speed2",
+        "level3",
+        "boss"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "level1": {
+          "bars": 2
+        },
+        "speed": {
+          "bars": 1
+        },
+        "level2": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "rules": {
+          "bars": 2
+        },
+        "level1": {
+          "bars": 2
+        },
+        "speed": {
+          "bars": 1
+        },
+        "level2": {
+          "bars": 2
+        },
+        "speed2": {
+          "bars": 1
+        },
+        "level3": {
+          "bars": 2
+        },
+        "boss": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 4.5,
+  "captions": {
+    "enabled": false
+  }
+}

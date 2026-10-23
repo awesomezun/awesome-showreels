@@ -1,0 +1,83 @@
+{
+  "title": "오림 공방",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "오림 공방", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 1.5, "from": "start", "sfx": "flip"},
+      {"beat": 3.5, "from": "start", "sfx": "flip"},
+      {"beat": 5.5, "from": "start", "sfx": "flip"}
+    ]},
+    {"id": "cut", "label": "오리고 펼치기", "minBars": 3, "maxBars": 3, "priority": 1, "inBeats": 10, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.375, "from": "start", "sfx": "snip:12 gap=0.19s"},
+      {"beat": 5.25, "from": "start", "sfx": "flip"},
+      {"beat": 6.25, "from": "start", "sfx": "flip"},
+      {"beat": 7.25, "from": "start", "sfx": "flip"},
+      {"beat": 8.25, "from": "start", "sfx": "sparkle dur=2b"}
+    ]},
+    {"id": "more", "label": "무늬는 오리는 대로", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 8, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "swish"},
+      {"beat": 2.75, "from": "start", "sfx": "swish"},
+      {"beat": 4.75, "from": "start", "sfx": "swish"},
+      {"beat": 2.25, "from": "start", "sfx": "ding"},
+      {"beat": 4.25, "from": "start", "sfx": "ding"},
+      {"beat": 6.25, "from": "start", "sfx": "ding"}
+    ]},
+    {"id": "window", "label": "빛이 들어와요", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "swell"},
+      {"beat": 1, "from": "start", "sfx": "chime"}
+    ]},
+    {"id": "end", "label": "펼치면 복이 피어요", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "note:dan-tranh deg=0 oct=5 n=4 rise=2 gap=0.25b"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "more",
+        "window"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "cut": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "cut": {
+          "bars": 3
+        },
+        "more": {
+          "bars": 3
+        },
+        "window": {
+          "bars": 3
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 8.5,
+  "captions": {
+    "enabled": false
+  }
+}

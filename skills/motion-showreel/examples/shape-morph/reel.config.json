@@ -1,0 +1,108 @@
+{
+  "title": "한 점 플래너",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "한 점 플래너", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "button", "label": "오늘 할 일", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 1, "in": "cut", "motionBlur": {"samples": 4, "shutter": 0.5}, "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-marimba deg=0 oct=5 dur=1b"},
+      {"beat": 0, "from": "start", "sfx": "swish soft"},
+      {"beat": 4, "from": "start", "sfx": "click"}
+    ]},
+    {"id": "check", "label": "체크하면 끝", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 1, "in": "cut", "motionBlur": {"samples": 4, "shutter": 0.5}, "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-marimba deg=1 oct=5 dur=1b"},
+      {"beat": 0, "from": "start", "sfx": "swish soft"},
+      {"beat": 1.25, "from": "start", "sfx": "confirm"}
+    ]},
+    {"id": "loader", "label": "자동 동기화", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 6, "outBeats": 1, "in": "cut", "motionBlur": {"samples": 4, "shutter": 0.5}, "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-marimba deg=2 oct=5 dur=1b"},
+      {"beat": 0, "from": "start", "sfx": "swish soft"}
+    ]},
+    {"id": "toggle", "label": "알림 켜기", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 6, "outBeats": 1, "in": "cut", "motionBlur": {"samples": 4, "shutter": 0.5}, "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-marimba deg=3 oct=5 dur=1b"},
+      {"beat": 0, "from": "start", "sfx": "swish soft"},
+      {"beat": 2, "from": "start", "sfx": "click"}
+    ]},
+    {"id": "calendar", "label": "한 주가 한눈에", "minBars": 1, "maxBars": 2, "priority": 1, "inBeats": 3, "outBeats": 1, "in": "cut", "motionBlur": {"samples": 4, "shutter": 0.5}, "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-marimba deg=4 oct=5 dur=1b"},
+      {"beat": 0, "from": "start", "sfx": "swish soft"},
+      {"beat": 1.5, "from": "start", "sfx": "pop"}
+    ]},
+    {"id": "chart", "label": "이번 주 달성률", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 6, "outBeats": 1, "in": "cut", "motionBlur": {"samples": 4, "shutter": 0.5}, "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-marimba deg=5 oct=5 dur=1b"},
+      {"beat": 0, "from": "start", "sfx": "swish soft"},
+      {"beat": 0.75, "from": "start", "sfx": "count dur=2b"}
+    ]},
+    {"id": "end", "label": "하나의 모양, 모든 순간", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 6, "outBeats": 0, "in": "cut", "motionBlur": {"samples": 4, "shutter": 0.5}, "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-marimba deg=7 oct=5 dur=1b"},
+      {"beat": 0, "from": "start", "sfx": "swish soft"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "loader",
+        "toggle",
+        "chart"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 1
+        },
+        "button": {
+          "bars": 2
+        },
+        "check": {
+          "bars": 2
+        },
+        "calendar": {
+          "bars": 1
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "button": {
+          "bars": 2
+        },
+        "check": {
+          "bars": 2
+        },
+        "loader": {
+          "bars": 2
+        },
+        "toggle": {
+          "bars": 2
+        },
+        "calendar": {
+          "bars": 2
+        },
+        "chart": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 4.6,
+  "captions": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,182 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "people who assemble their own furniture",
+  "title": "반듯 선반",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (반듯 선반, a three-tier shelf you put together alone in ten minutes (fictional furniture)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "반듯 선반, a three-tier shelf you put together alone in ten minutes (fictional furniture)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "calm",
+  "clear",
+  "friendly",
+  "wordless",
+  "tidy"
+ ],
+ "rationale": {
+  "palette": "An instruction sheet: white paper, black line #1A1A1A at an even weight, two pale greys for the shaded faces of each box; nothing else, so the steps read at a glance.",
+  "type": "Gothic A1 in heavy weights for step names, part letters and counts, and the line; the pictures carry most of it.",
+  "motion": "Manual logic: parts drop in or slide along dotted arrows into exact places, step discs pop, screws turn in one after another under the screwdriver, OK and wrong-way panels appear, the faceless helper bobs, works and steps back with a heart.",
+  "sound": "Corporate at 112 BPM in C major with a recorded xylophone (VCSL, CC0) for the motion, a light kit; a woodblock for every part that lands, clicks for the screws, a ding for each step and a confirm at the end.",
+  "visuals": "All code: every part is a box in isometric projection drawn face by face (top, front, side in white and two greys) with black edges in painter's order, so hidden edges are covered; the shelf is assembled from offsets per part.",
+  "narration": "Not recommended: an assembly manual has no words to say."
+ },
+ "palette": {
+  "bg": "#FFFFFF",
+  "bg2": "#EFEFEF",
+  "surface": "#FFFFFF",
+  "ink": "#1A1A1A",
+  "ink2": "#333333",
+  "muted": "#555555",
+  "accent": "#1A1A1A",
+  "accent2": "#2F6FED",
+  "accent3": "#D9D9D9",
+  "ok": "#1A1A1A",
+  "warn": "#1A1A1A",
+  "deny": "#1A1A1A",
+  "accentInk": "#1A1A1A",
+  "onAccent": "#FFFFFF",
+  "line": "#D9D9D9"
+ },
+ "fonts": {
+  "display": "\"Gothic A1\", sans-serif",
+  "sans": "\"Gothic A1\", sans-serif",
+  "serif": "\"Gothic A1\", sans-serif",
+  "mono": "\"Gothic A1\", sans-serif",
+  "cjk": "\"Gothic A1\", sans-serif",
+  "files": [
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Black.woff2",
+    "weight": "900",
+    "style": "normal"
+   },
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Bold.woff2",
+    "weight": "700 800",
+    "style": "normal"
+   },
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Medium.woff2",
+    "weight": "400 600",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#1A1A1A",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.4,
+   "z": 0.6
+  },
+  "overshoot": 0.1,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.0,
+   "color": "#FFFFFF"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "C",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "strings",
+   "xylophone",
+   "bass",
+   "bell",
+   "kick",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "strings",
+   "motion": "xylophone",
+   "bass": "bass",
+   "top": "bell",
+   "motif": "xylophone"
+  },
+  "drums": "light",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.6,
+   "breakdown": 0.4,
+   "drop": 0.85,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

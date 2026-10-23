@@ -1,0 +1,172 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "people who plan their day on a phone",
+  "title": "한 점 플래너",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (한 점 플래너, a day planner that starts from a single dot (fictional app)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "한 점 플래너, a day planner that starts from a single dot (fictional app)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "clean",
+  "playful",
+  "precise",
+  "continuous",
+  "crisp"
+ ],
+ "rationale": {
+  "palette": "One shape on warm paper #F5F3EE: ink #16161A and one coral #FF5A3C, swapped as the shape changes role; warm grey #8A867E for small text.",
+  "type": "Pretendard ExtraBold for labels and the line, set under the shape so it stays the hero; white inside the shape where it is a button.",
+  "motion": "One shape that never cuts: each scene springs it from the previous state (a dot, a pill button, a checkbox, a loader ring, a switch, a calendar card, a bar chart) with overshoot, so it stretches past its target and settles; secondary details (a press, a check drawing on, a knob, dates, a counter) land on the beat; the last frame is the first, so the reel loops.",
+  "sound": "Bright pop at 128 BPM in C major with a recorded marimba (VCSL, CC0) on the arpeggios and as Mickey-mousing: every change of shape lands a marimba note one scale step higher than the last.",
+  "visuals": "All code: every state is an outline resampled to 240 points with one winding; the next outline is cyclically shifted to the alignment that moves points least, then interpolated with a damped spring; motion blur samples the fast springs.",
+  "narration": "Not recommended: the shape carries it."
+ },
+ "palette": {
+  "bg": "#F5F3EE",
+  "bg2": "#E7E3DA",
+  "surface": "#FFFFFF",
+  "ink": "#16161A",
+  "ink2": "#3A3A40",
+  "muted": "#6E6A62",
+  "accent": "#FF5A3C",
+  "accent2": "#16161A",
+  "accent3": "#E7E3DA",
+  "ok": "#3E9A6A",
+  "warn": "#FF5A3C",
+  "deny": "#D9432A",
+  "accentInk": "#D9432A",
+  "onAccent": "#FFFFFF",
+  "line": "#DAD5CA"
+ },
+ "fonts": {
+  "display": "\"Pretendard Variable\", sans-serif",
+  "sans": "\"Pretendard Variable\", sans-serif",
+  "serif": "\"Pretendard Variable\", sans-serif",
+  "mono": "\"Pretendard Variable\", sans-serif",
+  "cjk": "\"Pretendard Variable\", sans-serif",
+  "files": [
+   {
+    "family": "Pretendard Variable",
+    "path": "source/fonts/PretendardVariable.woff2",
+    "weight": "45 920",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#16161A",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 2.3,
+   "z": 0.42
+  },
+  "overshoot": 0.2,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": true,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kinetic"
+  ]
+ },
+ "post": {
+  "grain": 0.015,
+  "vignette": {
+   "a": 0.06,
+   "color": "#6E6A62"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "C",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "real-marimba",
+   "bass",
+   "bell",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "real-marimba",
+   "bass": "bass",
+   "top": "bell",
+   "motif": "bell"
+  },
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.7,
+   "breakdown": 0.4,
+   "drop": 1.0,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

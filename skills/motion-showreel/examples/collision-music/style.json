@@ -1,0 +1,161 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "children and parents",
+  "title": "통통 악기 놀이",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (통통 악기 놀이, a music-play app where dropped balls play the bars they hit (fictional app)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "통통 악기 놀이, a music-play app where dropped balls play the bars they hit (fictional app)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "playful",
+  "precise",
+  "bright",
+  "musical",
+  "gentle"
+ ],
+ "rationale": {
+  "palette": "A toy on mint: a pale mint ground #E6F4EE with a dot grid, eight rainbow mallet bars (red to violet), glossy marbles in pink, blue and yellow, ink #264653 for type; metal bars go silver for the vibraphone and the glockenspiel.",
+  "type": "Jua, round and friendly, for the name and the lines.",
+  "motion": "Every motion is a note: marbles fall and bounce from bar to bar on parabolas solved backwards so each one lands exactly on its beat; a hit lights the bar, dips it with a ring and sends a note mark up; two marbles half a beat apart make eighth notes; three landing together make a chord.",
+  "sound": "The melody is the picture: every hit is a note cue on a recorded marimba, vibraphone or glockenspiel (VCSL, CC0) in C major, written first; under it a soft ambient bed at 128 BPM (pad, sub, a soft kick and shaker).",
+  "visuals": "All code: the scenes read their hits from the same cue list the arranger renders (note:<instrument> deg= bar= ball=), and solve each flight as a parabola under fixed gravity between two hit times; bars are rounded keys with a highlight and pins.",
+  "narration": "Not recommended: the marbles play the tune."
+ },
+ "palette": {
+  "bg": "#E6F4EE",
+  "bg2": "#D2EBE1",
+  "surface": "#FFFFFF",
+  "ink": "#264653",
+  "ink2": "#33586A",
+  "muted": "#4E6A75",
+  "accent": "#FF6B9F",
+  "accent2": "#54A0FF",
+  "accent3": "#FECA57",
+  "ok": "#1DD1A1",
+  "warn": "#FF9F43",
+  "deny": "#FF6B6B",
+  "accentInk": "#D9467B",
+  "onAccent": "#264653",
+  "line": "#BFDCCF"
+ },
+ "fonts": {
+  "display": "\"Jua\", sans-serif",
+  "sans": "\"Jua\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Jua\", sans-serif",
+  "cjk": "\"Jua\", sans-serif",
+  "files": [
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#264653",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.4,
+   "z": 0.5
+  },
+  "overshoot": 0.1,
+  "ease": "ioQ",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.01,
+  "vignette": {
+   "a": 0.08,
+   "color": "#3A6A5A"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "C",
+  "mode": "major",
+  "preset": "ambient",
+  "instruments": [
+   "pad",
+   "sub",
+   "kick",
+   "shaker"
+  ],
+  "drums": "light",
+  "sfx": "minimal",
+  "energy": {
+   "intro": 0.25,
+   "groove": 0.45,
+   "breakdown": 0.35,
+   "drop": 0.6,
+   "outro": 0.35
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

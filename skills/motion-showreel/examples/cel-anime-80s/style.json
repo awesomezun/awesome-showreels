@@ -1,0 +1,178 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "anime fans and city-pop listeners",
+  "title": "한강 시티 라이트 1988",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (한강 시티 라이트 1988, a TV anime set by the Han river in the summer of 1988 (fictional anime)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "한강 시티 라이트 1988, a TV anime set by the Han river in the summer of 1988 (fictional anime)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "romantic",
+  "nostalgic",
+  "glittering",
+  "urban",
+  "summery"
+ ],
+ "rationale": {
+  "palette": "An airbrushed dusk from night violet #140A33 through dusk #3A1E6B and rose #E8566C to a peach glow #FFB07A; navy buildings with warm #FFD27A and cyan #7FE8FF windows; a red convertible #E8364F; cyan and pink rim light; cel shadows in cool violet.",
+  "type": "Black Han Sans, heavy and square, for the chrome title and the VHS display; Nanum Myeongjo Bold, a classic serif, for the lines, outlined like subtitles on tape.",
+  "motion": "Characters on twos (12 drawings a second) against smooth camera moves, as cel animation was shot: hair streams in ribbons, the car bobs, the eye blinks in four drawings; the background pans past the car with a streetlight every beat; fireworks open every two beats; the title slams in with a flash and a flare sweep.",
+  "sound": "City pop at 112 BPM in F major: an FM electric piano on major sevenths (IVmaj7, V7, iii7, vi7), a slap bass of thumbed roots, popped octaves and ghost notes, a muted cutting guitar on sixteenths, recorded trumpet stabs and a tenor sax hook (VSCO 2 CE, CC0); booms for the fireworks, brass hits for the cards.",
+  "visuals": "All code: two-tone cel paint with dark ink outlines, airbrush gradients for sky and glows, a skyline of lit windows cached once and mirrored into the river in rippling strips, ribbon hair from wavy centrelines, an anime eye from four Bezier lids with an iris gradient and reflections; a VHS pass shifts the red channel, adds scanlines, a tracking band and specks.",
+  "narration": "Not recommended: the sax sings."
+ },
+ "palette": {
+  "bg": "#140A33",
+  "bg2": "#0B0524",
+  "surface": "#3A1E6B",
+  "ink": "#FFFFFF",
+  "ink2": "#F1E8FF",
+  "muted": "#D8CCF0",
+  "accent": "#FF4F9A",
+  "accent2": "#7FE8FF",
+  "accent3": "#FFD27A",
+  "ok": "#7BE38B",
+  "warn": "#FFB07A",
+  "deny": "#E8364F",
+  "accentInk": "#FF8AC0",
+  "onAccent": "#140A33",
+  "line": "#5B2A8A"
+ },
+ "fonts": {
+  "display": "\"Black Han Sans\", sans-serif",
+  "sans": "\"Black Han Sans\", sans-serif",
+  "serif": "\"Nanum Myeongjo\", serif",
+  "mono": "\"Black Han Sans\", sans-serif",
+  "cjk": "\"Black Han Sans\", sans-serif",
+  "files": [
+   {
+    "family": "Black Han Sans",
+    "path": "source/fonts/BlackHanSans-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Nanum Myeongjo",
+    "path": "source/fonts/NanumMyeongjo-Bold.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFFFFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.0,
+   "z": 0.6
+  },
+  "overshoot": 0.08,
+  "ease": "outQ",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.3,
+   "color": "#05020F"
+  },
+  "bloom": 0.18
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "F",
+  "mode": "major",
+  "preset": "citypop",
+  "instruments": [
+   "epiano",
+   "guitar",
+   "slap",
+   "trumpet-stac",
+   "tenor-sax",
+   "kick",
+   "snare",
+   "hats"
+  ],
+  "roles": {
+   "bed": "epiano",
+   "motion": "guitar",
+   "bass": "slap",
+   "top": "trumpet-stac",
+   "motif": "tenor-sax"
+  },
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.7,
+   "breakdown": 0.4,
+   "drop": 1.0,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

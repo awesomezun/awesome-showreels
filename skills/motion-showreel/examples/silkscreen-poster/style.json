@@ -1,0 +1,176 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "walkers and island travellers",
+  "title": "바람섬 다섯 길",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (바람섬 다섯 길, five walking courses round a windy island (fictional trails)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "바람섬 다섯 길, five walking courses round a windy island (fictional trails)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "sunny",
+  "handmade",
+  "adventurous",
+  "warm",
+  "graphic"
+ ],
+ "rationale": {
+  "palette": "Five opaque inks on cream paper #F3EAD7, the limit of a silkscreen run: yellow #F2B84B, orange #E8743B, sea blue #2F7F93, grass green #7FA36B and a deep teal #1E3E48 for the key line and type; posters hang on a dark studio wall #2B3A3F so the inks glow.",
+  "type": "Gasoek One, a heavy poster face, for titles and the course names; Gothic A1 for numbers and the run sheet.",
+  "motion": "Printing is the motion: each ink arrives behind a squeegee blade that crosses the sheet with its ink bead, landing a few pixels out of register and snapping in on the hit; one ink every beat in the hook, every three quarters of a beat for the courses; finished posters sway on the wall and drop onto their pegs at the end.",
+  "sound": "A new folk preset at 112 BPM in G major: strummed guitar, fingerpicked ukulele in broken eighths, a two-feel upright bass, kick, brushes and shaker, and a recorded harmonica hook (VCSL, CC0); every pull is a squeegee drag with a squeak.",
+  "visuals": "All code: each poster is a list of layers, one ink each, drawn as flat shapes (bands of sky, sun discs, the sea, hills, cedars, stone walls, a lighthouse, a crater) and printed behind a ragged moving clip; paper grain is multiplied over the sheet; the run sheet shows a swatch per ink.",
+  "narration": "Not recommended: the posters say it."
+ },
+ "palette": {
+  "bg": "#2B3A3F",
+  "bg2": "#22302F",
+  "surface": "#F3EAD7",
+  "ink": "#F3EAD7",
+  "ink2": "#D9CDB4",
+  "muted": "#9FA9A6",
+  "accent": "#F2B84B",
+  "accent2": "#E8743B",
+  "accent3": "#2F7F93",
+  "ok": "#7FA36B",
+  "warn": "#E8743B",
+  "deny": "#C4462E",
+  "accentInk": "#C48F2A",
+  "onAccent": "#1E3E48",
+  "line": "#3E4E52"
+ },
+ "fonts": {
+  "display": "\"Gasoek One\", sans-serif",
+  "sans": "\"Gothic A1\", sans-serif",
+  "serif": "\"Gothic A1\", sans-serif",
+  "mono": "\"Gothic A1\", sans-serif",
+  "cjk": "\"Gasoek One\", sans-serif",
+  "files": [
+   {
+    "family": "Gasoek One",
+    "path": "source/fonts/GasoekOne-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Bold.woff2",
+    "weight": "700 800",
+    "style": "normal"
+   },
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Medium.woff2",
+    "weight": "400 600",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F3EAD7",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 3.0,
+   "z": 0.45
+  },
+  "overshoot": 0.12,
+  "ease": "ioQ",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.03,
+  "vignette": {
+   "a": 0.25,
+   "color": "#101A1C"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "G",
+  "mode": "major",
+  "preset": "folk",
+  "instruments": [
+   "guitar",
+   "ukulele",
+   "harmonica",
+   "upright",
+   "kick",
+   "brush",
+   "shaker"
+  ],
+  "drums": "light",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.65,
+   "breakdown": 0.4,
+   "drop": 0.9,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

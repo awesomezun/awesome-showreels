@@ -1,0 +1,181 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "people who write by hand",
+  "title": "이음 만년필",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (이음 만년필, a fountain pen whose line never breaks (fictional brand)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "이음 만년필, a fountain pen whose line never breaks (fictional brand)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "elegant",
+  "calm",
+  "continuous",
+  "warm",
+  "crafted"
+ ],
+ "rationale": {
+  "palette": "Two colours only: deep navy paper #13203A darkening to #0D1729 at the edges, and one gold line #E3B657 with a soft glow; a pale gold #F6DA94 for the glint that runs along it at the end, cream #F2E8D2 for type.",
+  "type": "Nanum Myeongjo ExtraBold for the name and the line, a calligraphic serif that suits ink; Gowun Batang for the small labels.",
+  "motion": "One line drawn over the whole reel: the pen slows at every turn (corners cost more time than straights), the camera rides a little behind the nib so the line leads the eye, and the reveal pulls far back to show that everything was one picture; a glint then runs along the finished line.",
+  "sound": "Ambient at 80 BPM in E major on recorded instruments (VCSL and VSCO 2 CE, CC0): a soft pad, a softly played upright piano for the motion, a cello hook, a sine sub, a soft kick and shaker; a pen-on-paper whisper (pen) under every stretch of drawing, a chime as the heart closes.",
+  "visuals": "All code: the drawing is one polyline in world coordinates built from parametric parts (a nib, a trochoid of loops, a cup, an open notebook with zigzag writing, a plant, a sweep and a heart) joined by cubic connectors that keep the direction; it is drawn to a cost along its length, through a camera given by the mean of points behind the tip.",
+  "narration": "Not recommended: the line speaks."
+ },
+ "palette": {
+  "bg": "#13203A",
+  "bg2": "#0D1729",
+  "surface": "#1A2B4C",
+  "ink": "#F2E8D2",
+  "ink2": "#D9CDB0",
+  "muted": "#A9A08C",
+  "accent": "#E3B657",
+  "accent2": "#F6DA94",
+  "accent3": "#8FA3C8",
+  "ok": "#7FB58A",
+  "warn": "#E3B657",
+  "deny": "#D7735E",
+  "accentInk": "#C4983E",
+  "onAccent": "#13203A",
+  "line": "#2A3A5A"
+ },
+ "fonts": {
+  "display": "\"Nanum Myeongjo\", serif",
+  "sans": "\"Gowun Batang\", serif",
+  "serif": "\"Nanum Myeongjo\", serif",
+  "mono": "\"Gowun Batang\", serif",
+  "cjk": "\"Nanum Myeongjo\", serif",
+  "files": [
+   {
+    "family": "Nanum Myeongjo",
+    "path": "source/fonts/NanumMyeongjo-ExtraBold.woff2",
+    "weight": "800",
+    "style": "normal"
+   },
+   {
+    "family": "Gowun Batang",
+    "path": "source/fonts/GowunBatang-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   },
+   {
+    "family": "Gowun Batang",
+    "path": "source/fonts/GowunBatang-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#F2E8D2",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.4,
+   "z": 0.9
+  },
+  "overshoot": 0.0,
+  "ease": "ioQ",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.025,
+  "vignette": {
+   "a": 0.3,
+   "color": "#050A14"
+  },
+  "bloom": 0.18
+ },
+ "sound": {
+  "bpm": 80,
+  "key": "E",
+  "mode": "major",
+  "preset": "ambient",
+  "instruments": [
+   "pad",
+   "upright-piano",
+   "solo-cello",
+   "sub",
+   "kick",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "upright-piano",
+   "bass": "sub",
+   "motif": "solo-cello"
+  },
+  "drums": "light",
+  "sfx": "minimal",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.5,
+   "breakdown": 0.35,
+   "drop": 0.7,
+   "outro": 0.35
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

@@ -1,0 +1,169 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "friends and families who play party games",
+  "title": "5초 미션",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (5초 미션, a party game of one-word missions against a burning fuse (fictional game)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "5초 미션, a party game of one-word missions against a burning fuse (fictional game)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "frantic",
+  "funny",
+  "loud",
+  "colourful",
+  "playful"
+ ],
+ "rationale": {
+  "palette": "A new primary for every mission (red #FF5A5F, blue #3DA5FF, yellow #FFC531, violet #7B61FF, green #2ECC71, orange, pink, teal) under moving white diagonal stripes; heavy black outlines #141018; a dark status bar #1B1B2F; yellow #FFE14D for the logo and the level.",
+  "type": "Bagel Fat One, fat and bouncy, for the one-word instructions and the logo, outlined in black; Galmuri11, a Korean pixel font, for the status bar and the small print, always at a whole multiple of its 12-pixel grid.",
+  "motion": "Every mission is one progress value from instruction to success: the word pops in with a spring, the action plays (catch, dodge, press, pop, feed, wipe, wake, score), a 성공! stamp slams in, the fuse burns down; the missions shrink from four beats to two to one with 속도 UP! cards between, and the stripes run faster.",
+  "sound": "Chiptune at 144 BPM in D major (pulse arps, triangle bass, a pulse lead, kick, snare and hats); the tempo never changes: the sections get denser (sixteenth hats in the drops) as the missions get shorter; a blip for every instruction, a coin for every success, beeps for the count, pops for the boss balloons.",
+  "visuals": "All code: eight missions drawn from simple shapes with thick outlines, each a function of its progress; striped backgrounds; a star-burst for success; the fuse is a line with a sparking star.",
+  "narration": "Not recommended: the words are the commands."
+ },
+ "palette": {
+  "bg": "#1B1B2F",
+  "bg2": "#2B2D42",
+  "surface": "#FFFFFF",
+  "ink": "#FFFFFF",
+  "ink2": "#F0F0F8",
+  "muted": "#C9C9D9",
+  "accent": "#FFE14D",
+  "accent2": "#FF2E4D",
+  "accent3": "#3DA5FF",
+  "ok": "#2ECC71",
+  "warn": "#FFB020",
+  "deny": "#FF5A5F",
+  "accentInk": "#FFE14D",
+  "onAccent": "#141018",
+  "line": "#3A3A55"
+ },
+ "fonts": {
+  "display": "\"Bagel Fat One\", sans-serif",
+  "sans": "\"Galmuri11\", monospace",
+  "serif": "\"Bagel Fat One\", sans-serif",
+  "mono": "\"Galmuri11\", monospace",
+  "cjk": "\"Bagel Fat One\", sans-serif",
+  "files": [
+   {
+    "family": "Bagel Fat One",
+    "path": "source/fonts/BagelFatOne-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Galmuri11",
+    "path": "source/fonts/Galmuri11-Bold.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFFFFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.2,
+   "z": 0.4
+  },
+  "overshoot": 0.3,
+  "ease": "outBack",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.1,
+   "color": "#141018"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 144,
+  "key": "D",
+  "mode": "major",
+  "preset": "chiptune",
+  "instruments": [
+   "pulse",
+   "tri-bass",
+   "pulse-lead",
+   "kick",
+   "snare",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.4,
+   "groove": 0.75,
+   "breakdown": 0.45,
+   "drop": 1.0,
+   "outro": 0.55
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

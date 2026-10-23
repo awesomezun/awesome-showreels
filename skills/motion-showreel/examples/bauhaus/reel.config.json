@@ -1,0 +1,102 @@
+{
+  "title": "조형 연구소 여름 학교",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "조형 연구소", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "woodblock"},
+      {"beat": 1, "from": "start", "sfx": "woodblock"},
+      {"beat": 2, "from": "start", "sfx": "woodblock"},
+      {"beat": 3, "from": "start", "sfx": "woodblock"},
+      {"beat": 4, "from": "start", "sfx": "woodblock"},
+      {"beat": 3, "from": "start", "sfx": "claves"},
+      {"beat": 5, "from": "start", "sfx": "claves"}
+    ]},
+    {"id": "shapes", "label": "원, 사각, 삼각", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "claves"},
+      {"beat": 2, "from": "start", "sfx": "claves"},
+      {"beat": 4, "from": "start", "sfx": "claves"},
+      {"beat": 1, "from": "start", "sfx": "woodblock"},
+      {"beat": 3, "from": "start", "sfx": "woodblock"},
+      {"beat": 5, "from": "start", "sfx": "woodblock"}
+    ]},
+    {"id": "you", "label": "그리고 당신", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "woodblock"},
+      {"beat": 1, "from": "start", "sfx": "woodblock"},
+      {"beat": 2, "from": "start", "sfx": "woodblock"},
+      {"beat": 3, "from": "start", "sfx": "woodblock"},
+      {"beat": 4, "from": "start", "sfx": "impact"}
+    ]},
+    {"id": "cascade", "label": "포스터 한 장까지", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 8, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "flip:6 gap=0.5b"}
+    ]},
+    {"id": "schedule", "label": "7월 20일", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "woodblock"},
+      {"beat": 0.5, "from": "start", "sfx": "woodblock"},
+      {"beat": 1, "from": "start", "sfx": "woodblock"},
+      {"beat": 1.5, "from": "start", "sfx": "woodblock"},
+      {"beat": 2, "from": "start", "sfx": "woodblock"},
+      {"beat": 2.5, "from": "start", "sfx": "claves"}
+    ]},
+    {"id": "end", "label": "그리고 당신", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "concert-bd"},
+      {"beat": 1.5, "from": "start", "sfx": "claves"},
+      {"beat": 2.5, "from": "start", "sfx": "claves"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "cascade",
+        "schedule"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "shapes": {
+          "bars": 2
+        },
+        "you": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "shapes": {
+          "bars": 3
+        },
+        "you": {
+          "bars": 3
+        },
+        "cascade": {
+          "bars": 3
+        },
+        "schedule": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 3.6,
+  "captions": {
+    "enabled": false
+  }
+}

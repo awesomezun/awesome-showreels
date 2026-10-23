@@ -1,0 +1,99 @@
+{
+  "title": "끝없는 확대",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "끝없는 확대", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=0 oct=5 dur=2b"},
+      {"beat": 4, "from": "start", "sfx": "note:real-glock deg=1 oct=5 dur=2b"}
+    ]},
+    {"id": "dive", "label": "열 배씩, 더 가까이", "minBars": 2, "maxBars": 2, "priority": 2, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=2 oct=5 dur=2b"},
+      {"beat": 1, "from": "start", "sfx": "note:real-glock deg=3 oct=5 dur=2b"},
+      {"beat": 2, "from": "start", "sfx": "note:real-glock deg=4 oct=5 dur=2b"},
+      {"beat": 3, "from": "start", "sfx": "note:real-glock deg=5 oct=5 dur=2b"},
+      {"beat": 4, "from": "start", "sfx": "note:real-glock deg=6 oct=5 dur=2b"},
+      {"beat": 5, "from": "start", "sfx": "note:real-glock deg=7 oct=5 dur=2b"},
+      {"beat": 6, "from": "start", "sfx": "note:real-glock deg=8 oct=5 dur=2b"},
+      {"beat": 7, "from": "start", "sfx": "note:real-glock deg=9 oct=5 dur=2b"}
+    ]},
+    {"id": "leaf", "label": "잎맥을 지나 세포로", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=2 oct=5 dur=2b"},
+      {"beat": 4, "from": "start", "sfx": "note:real-glock deg=3 oct=5 dur=2b"}
+    ]},
+    {"id": "cell", "label": "세포 속의 작은 공장", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=4 oct=5 dur=2b"},
+      {"beat": 4, "from": "start", "sfx": "note:real-glock deg=5 oct=5 dur=2b"}
+    ]},
+    {"id": "molecule", "label": "햇빛을 붙잡는 분자들", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=6 oct=5 dur=2b"},
+      {"beat": 4, "from": "start", "sfx": "note:real-glock deg=7 oct=5 dur=2b"}
+    ]},
+    {"id": "atom", "label": "그리고, 원자 하나", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=8 oct=5 dur=2b"},
+      {"beat": 4, "from": "start", "sfx": "note:real-glock deg=9 oct=5 dur=2b"}
+    ]},
+    {"id": "end", "label": "또 하나의 세계", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "note:real-glock deg=10 oct=5 dur=2b"},
+      {"beat": 3.5, "from": "start", "sfx": "zoom"},
+      {"beat": 5.5, "from": "start", "sfx": "note:tubular-bells deg=0 oct=4 dur=4b"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "leaf",
+        "cell",
+        "molecule",
+        "atom"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "dive": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "exclude": [
+        "dive"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "leaf": {
+          "bars": 2
+        },
+        "cell": {
+          "bars": 2
+        },
+        "molecule": {
+          "bars": 2
+        },
+        "atom": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    }
+  },
+  "poster": 3.0,
+  "captions": {
+    "enabled": false
+  }
+}

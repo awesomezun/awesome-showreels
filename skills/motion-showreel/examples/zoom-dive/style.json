@@ -1,0 +1,173 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "museum visitors and families",
+  "title": "끝없는 확대",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (끝없는 확대, a science-museum exhibition that dives from a ginkgo leaf down to one magnesium atom (fictional exhibition)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "끝없는 확대, a science-museum exhibition that dives from a ginkgo leaf down to one magnesium atom (fictional exhibition)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "wondrous",
+  "calm",
+  "precise",
+  "scientific",
+  "deep"
+ ],
+ "rationale": {
+  "palette": "Each step brings its own world: walnut and leaf green, the pale greens of cells and chloroplasts, the pink and gold of lipid membranes, navy for the molecule and black for the atom with a blue and violet electron cloud; type and HUD in white over a dark band.",
+  "type": "Hahmlet, a modern serif with sharp contrast, for names and lines; IBM Plex Sans KR for the readout and the scale.",
+  "motion": "One continuous logarithmic zoom into the centre of the screen: ten times closer every four beats in the 30-second cut and every beat in the 15-second dive; the next world first shows as a small framed picture labelled with its size and grows until it covers the screen; at the end the camera rushes back out through all ten steps in a beat and a half.",
+  "sound": "Ambient at 96 BPM in D lydian: a soft pad, sub and shaker, and a recorded glockenspiel (VSCO 2 CE, CC0) that climbs the lydian scale one note per tenfold step; a whoosh for the rush back out and a tubular bell when the table returns.",
+  "visuals": "All code: eleven layers drawn in their own units, each one ten times smaller than the last, nested so the camera target is always the centre; the leaf and its veins are the same drawing at both 10 cm and 1 cm; cells, a stoma, chloroplasts, grana, a membrane with proteins, a light-harvesting trimer, a ball-and-stick chlorophyll and a stippled electron cloud.",
+  "narration": "Not recommended: the readout says where we are."
+ },
+ "palette": {
+  "bg": "#04050D",
+  "bg2": "#1E2A5E",
+  "surface": "#F4EEDF",
+  "ink": "#FFFFFF",
+  "ink2": "#E6ECF6",
+  "muted": "#C9D4E8",
+  "accent": "#86BF45",
+  "accent2": "#8CDCFF",
+  "accent3": "#E9C878",
+  "ok": "#7BE38B",
+  "warn": "#F08A24",
+  "deny": "#E5484D",
+  "accentInk": "#BFE3FF",
+  "onAccent": "#04050D",
+  "line": "#3A4470"
+ },
+ "fonts": {
+  "display": "\"Hahmlet\", serif",
+  "sans": "\"IBM Plex Sans KR\", sans-serif",
+  "serif": "\"Hahmlet\", serif",
+  "mono": "\"IBM Plex Sans KR\", sans-serif",
+  "cjk": "\"Hahmlet\", serif",
+  "files": [
+   {
+    "family": "Hahmlet",
+    "path": "source/fonts/Hahmlet.woff2",
+    "weight": "100 900",
+    "style": "normal"
+   },
+   {
+    "family": "IBM Plex Sans KR",
+    "path": "source/fonts/IBMPlexSansKR-Medium.woff2",
+    "weight": "500",
+    "style": "normal"
+   },
+   {
+    "family": "IBM Plex Sans KR",
+    "path": "source/fonts/IBMPlexSansKR-Bold.woff2",
+    "weight": "700",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFFFFF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 1.4,
+   "z": 0.9
+  },
+  "overshoot": 0.0,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.015,
+  "vignette": {
+   "a": 0.25,
+   "color": "#02030A"
+  },
+  "bloom": 0.1
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "D",
+  "mode": "lydian",
+  "preset": "ambient",
+  "instruments": [
+   "pad",
+   "sub",
+   "kick",
+   "shaker"
+  ],
+  "drums": "light",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.25,
+   "groove": 0.4,
+   "breakdown": 0.35,
+   "drop": 0.5,
+   "outro": 0.35
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

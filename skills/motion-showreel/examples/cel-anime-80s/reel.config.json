@@ -1,0 +1,86 @@
+{
+  "title": "한강 시티 라이트 1988",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "제1화 · 여름의 시작", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 4, "from": "start", "sfx": "note:trumpet-stac deg=0 oct=5 chord dur=0.5b"}
+    ]},
+    {"id": "girl", "label": "그해 여름", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "whoosh"},
+      {"beat": 4, "from": "start", "sfx": "sparkle dur=2b"}
+    ]},
+    {"id": "drive", "label": "강변북로, 밤 열한 시", "minBars": 3, "maxBars": 3, "priority": 3, "optional": true, "inBeats": 11, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "whoosh"},
+      {"beat": 8, "from": "start", "sfx": "note:trumpet-stac deg=4 oct=5 chord dur=0.5b"}
+    ]},
+    {"id": "eye", "label": "너를 처음 만난", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 1, "from": "start", "sfx": "sparkle dur=2b"},
+      {"beat": 6, "from": "start", "sfx": "note:real-glock deg=4 oct=6 dur=1b"}
+    ]},
+    {"id": "fireworks", "label": "불꽃놀이", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 1, "from": "start", "sfx": "boom"},
+      {"beat": 3, "from": "start", "sfx": "boom"},
+      {"beat": 5, "from": "start", "sfx": "boom"},
+      {"beat": 7, "from": "start", "sfx": "boom"}
+    ]},
+    {"id": "end", "label": "한강 시티 라이트 1988", "minBars": 3, "maxBars": 3, "priority": 1, "inBeats": 11, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "note:trumpet-stac deg=0 oct=5 chord dur=0.5b"},
+      {"beat": 0.5, "from": "start", "sfx": "shimmer"},
+      {"beat": 2, "from": "start", "sfx": "sparkle dur=2b"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "drive",
+        "eye",
+        "fireworks"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "girl": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "girl": {
+          "bars": 2
+        },
+        "drive": {
+          "bars": 3
+        },
+        "eye": {
+          "bars": 2
+        },
+        "fireworks": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 6.0,
+  "captions": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,177 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "explainer",
+  "audience": "curious viewers of science channels",
+  "title": "궁금상자",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (궁금상자, a science channel; this episode follows one plastic bottle from the bin to a T-shirt (fictional channel, fictional data)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "궁금상자, a science channel; this episode follows one plastic bottle from the bin to a T-shirt (fictional channel, fictional data)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "friendly",
+  "smart",
+  "tidy",
+  "bouncy",
+  "clear"
+ ],
+ "rationale": {
+  "palette": "A sticker board: blue-grey #DCE5EC with a dot grid, every picture cut out with a thick white border and a soft shadow; one colour per station (blue #3B82F6, green #3FAE6A, purple #8B5CF6, red #EF5B4C, amber, blue again), ink #22303F for labels, a yellow badge for the channel.",
+  "type": "Jua, round and friendly, for every label and caption; Gothic A1 for the chart numbers.",
+  "motion": "Explainer travel: the camera glides across one big board from station to station, each sticker slaps down from 1.5x with an overshoot and a tilt, the step label follows, the dotted path grows to it; the end pulls back until the whole journey is on screen.",
+  "sound": "Corporate at 112 BPM in C major on recorded instruments (VCSL and VSCO 2 CE, CC0): a recorded marimba for the motion, pizzicato strings, glockenspiel on top, a light kit; every sticker lands with a pop and a soft thud, every glide is a swish, the chart counts.",
+  "visuals": "All code: each object (a bottle, a recycling bin, a truck, a sorting belt, flakes, a spool of thread, a T-shirt, the badge, a bar chart of fictional data) is drawn once into its own canvas, given a white border by stamping its silhouette round a circle, cached, and slapped onto the board in world coordinates.",
+  "narration": "Optional: a short voice-over would fit, but the captions carry it without one."
+ },
+ "palette": {
+  "bg": "#DCE5EC",
+  "bg2": "#CBD6E0",
+  "surface": "#FFFFFF",
+  "ink": "#22303F",
+  "ink2": "#33465A",
+  "muted": "#4E5F72",
+  "accent": "#3B82F6",
+  "accent2": "#3FAE6A",
+  "accent3": "#F6C343",
+  "ok": "#3FAE6A",
+  "warn": "#F6C343",
+  "deny": "#EF5B4C",
+  "accentInk": "#2563EB",
+  "onAccent": "#FFFFFF",
+  "line": "#B8C6D3"
+ },
+ "fonts": {
+  "display": "\"Jua\", sans-serif",
+  "sans": "\"Jua\", sans-serif",
+  "serif": "\"Jua\", sans-serif",
+  "mono": "\"Gothic A1\", sans-serif",
+  "cjk": "\"Jua\", sans-serif",
+  "files": [
+   {
+    "family": "Jua",
+    "path": "source/fonts/Jua-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Bold.woff2",
+    "weight": "400 900",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#22303F",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.6,
+   "z": 0.5
+  },
+  "overshoot": 0.15,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": true,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kineticPop"
+  ]
+ },
+ "post": {
+  "grain": 0.015,
+  "vignette": {
+   "a": 0.1,
+   "color": "#5A6A7A"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "C",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "strings",
+   "real-marimba",
+   "violin-pizz",
+   "real-glock",
+   "bass",
+   "kick",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "strings",
+   "motion": "real-marimba",
+   "bass": "bass",
+   "top": "real-glock",
+   "motif": "violin-pizz"
+  },
+  "drums": "light",
+  "sfx": "glassy",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.65,
+   "breakdown": 0.4,
+   "drop": 0.9,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

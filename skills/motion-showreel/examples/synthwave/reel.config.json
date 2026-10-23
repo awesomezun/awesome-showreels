@@ -1,0 +1,80 @@
+{
+  "title": "네온 하이웨이 1986",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "네온 하이웨이", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "zap"},
+      {"beat": 3.25, "from": "start", "sfx": "blip"},
+      {"beat": 5, "from": "start", "sfx": "impact"},
+      {"beat": 6, "from": "start", "sfx": "zap"}
+    ]},
+    {"id": "drive", "label": "밤은 길고", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0, "from": "start", "sfx": "whoosh"},
+      {"beat": 0.75, "from": "start", "sfx": "blip"},
+      {"beat": 1.75, "from": "start", "sfx": "blip"},
+      {"beat": 0.5, "from": "start", "sfx": "count dur=3b"}
+    ]},
+    {"id": "city", "label": "네온 시티", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "blip"},
+      {"beat": 1.25, "from": "start", "sfx": "blip"}
+    ]},
+    {"id": "rival", "label": "라이벌 12대", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 2.5, "from": "start", "sfx": "whoosh"},
+      {"beat": 2.25, "from": "start", "sfx": "glitch:1b"}
+    ]},
+    {"id": "end", "label": "네온 하이웨이 1986", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0, "from": "start", "sfx": "impact"},
+      {"beat": -0.75, "from": "end", "sfx": "downlifter"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "city",
+        "rival"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "drive": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "drive": {
+          "bars": 3
+        },
+        "city": {
+          "bars": 2
+        },
+        "rival": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 4.0,
+  "captions": {
+    "enabled": false
+  }
+}

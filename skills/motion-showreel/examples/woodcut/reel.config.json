@@ -1,0 +1,87 @@
+{
+  "title": "솔뫼 양조장",
+  "style": "style.json",
+  "size": [1920, 1080],
+  "fps": 60,
+  "beatsPerBar": 4,
+  "scenes": [
+    {"id": "hook", "label": "솔뫼 양조장", "minBars": 2, "maxBars": 2, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "intro", "cues": [
+      {"beat": 0.5, "from": "start", "sfx": "carve dur=2b"},
+      {"beat": 2.5, "from": "start", "sfx": "carve dur=2b"},
+      {"beat": 4.5, "from": "start", "sfx": "carve dur=1b"},
+      {"beat": 5.25, "from": "start", "sfx": "carve dur=1.5b"},
+      {"beat": 6.75, "from": "start", "sfx": "timpani"}
+    ]},
+    {"id": "craft", "label": "쌀을 씻고, 누룩을 빚고", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "groove", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "woodblock"},
+      {"beat": 0.25, "from": "start", "sfx": "carve dur=1b gain=-3"},
+      {"beat": 2.25, "from": "start", "sfx": "woodblock"},
+      {"beat": 2.25, "from": "start", "sfx": "carve dur=1b gain=-3"},
+      {"beat": 4.25, "from": "start", "sfx": "woodblock"},
+      {"beat": 4.25, "from": "start", "sfx": "carve dur=1b gain=-3"}
+    ]},
+    {"id": "jar", "label": "항아리 속에서", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "breakdown", "cues": [
+      {"beat": 0.75, "from": "start", "sfx": "carve dur=1b"},
+      {"beat": 2, "from": "start", "sfx": "carve dur=1.5b"},
+      {"beat": 4, "from": "start", "sfx": "plink"},
+      {"beat": 5.5, "from": "start", "sfx": "plink"}
+    ]},
+    {"id": "village", "label": "백 년째, 같은 자리", "minBars": 2, "maxBars": 2, "priority": 3, "optional": true, "inBeats": 7, "outBeats": 1, "in": "cut", "music": "drop", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "carve dur=2b"},
+      {"beat": 2, "from": "start", "sfx": "carve dur=1b"},
+      {"beat": 3, "from": "start", "sfx": "woodblock"}
+    ]},
+    {"id": "end", "label": "깎아 새긴 손맛, 백 년", "minBars": 2, "maxBars": 3, "priority": 1, "inBeats": 7, "outBeats": 0, "in": "cut", "music": "outro", "cues": [
+      {"beat": 0.25, "from": "start", "sfx": "peel dur=3b"},
+      {"beat": 4, "from": "start", "sfx": "stamp"},
+      {"beat": 4, "from": "start", "sfx": "timpani"}
+    ]}
+  ],
+  "cuts": {
+    "short": {
+      "seconds": 15,
+      "label": "15 s",
+      "narration": false,
+      "exclude": [
+        "jar",
+        "village"
+      ],
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "craft": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 2
+        }
+      }
+    },
+    "30": {
+      "seconds": 30,
+      "label": "30 s",
+      "scenes": {
+        "hook": {
+          "bars": 2
+        },
+        "craft": {
+          "bars": 3
+        },
+        "jar": {
+          "bars": 2
+        },
+        "village": {
+          "bars": 2
+        },
+        "end": {
+          "bars": 3
+        }
+      }
+    }
+  },
+  "poster": 4.6,
+  "captions": {
+    "enabled": false
+  }
+}

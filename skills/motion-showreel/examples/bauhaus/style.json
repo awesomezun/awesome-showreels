@@ -1,0 +1,169 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "design students",
+  "title": "조형 연구소 여름 학교",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (조형 연구소 여름 학교, a two-week summer workshop in basic form and the poster (fictional workshop)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "조형 연구소 여름 학교, a two-week summer workshop in basic form and the poster (fictional workshop)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "geometric",
+  "ordered",
+  "playful",
+  "bold",
+  "crisp"
+ ],
+ "rationale": {
+  "palette": "Constructivist print: cream paper #EFE8D8 with a faint 120-pixel module grid, and three primaries plus black, red #D7263D, blue #1B4F9C, yellow #F2C230 and ink #161616, each printed by multiply a few pixels out of register so overlaps darken like overprinted plates.",
+  "type": "Gothic A1 Black, a heavy grotesque, for the words, each letter rising out of its own module; Do Hyeon for dates and small lines.",
+  "motion": "One action per beat, in whole modules: shapes roll, drop and slide two modules at a time, bars turn a quarter about a corner, a triangle flips, cards flip in a diagonal wave; everything lands exactly on the grid and the end freezes into a poster whose quarter keeps turning.",
+  "sound": "Dark synth at 128 BPM in A dorian, kept minimal: a pad, saw plucks, a rolling saw bass, four-on-the-floor; a woodblock click for every move, claves for the words, a recorded concert bass drum (VCSL, CC0) under the end.",
+  "visuals": "All code: shapes are circles, rectangles, triangles and quarter arcs positioned in module units and stepped with eased beat-by-beat paths; every ink is drawn with multiply and its own small offset.",
+  "narration": "Not recommended: the grid speaks."
+ },
+ "palette": {
+  "bg": "#EFE8D8",
+  "bg2": "#E4DCC8",
+  "surface": "#FFFFFF",
+  "ink": "#161616",
+  "ink2": "#2E2E2E",
+  "muted": "#5A5650",
+  "accent": "#D7263D",
+  "accent2": "#1B4F9C",
+  "accent3": "#F2C230",
+  "ok": "#1B4F9C",
+  "warn": "#F2C230",
+  "deny": "#D7263D",
+  "accentInk": "#B01E31",
+  "onAccent": "#FFFFFF",
+  "line": "#D9D0BC"
+ },
+ "fonts": {
+  "display": "\"Gothic A1\", sans-serif",
+  "sans": "\"Do Hyeon\", sans-serif",
+  "serif": "\"Gothic A1\", sans-serif",
+  "mono": "\"Do Hyeon\", sans-serif",
+  "cjk": "\"Gothic A1\", sans-serif",
+  "files": [
+   {
+    "family": "Gothic A1",
+    "path": "source/fonts/GothicA1-Black.woff2",
+    "weight": "900",
+    "style": "normal"
+   },
+   {
+    "family": "Do Hyeon",
+    "path": "source/fonts/DoHyeon-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#161616",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 3.0,
+   "z": 0.7
+  },
+  "overshoot": 0.0,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.02,
+  "vignette": {
+   "a": 0.08,
+   "color": "#5A4A30"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 128,
+  "key": "A",
+  "mode": "dorian",
+  "preset": "dark-synth",
+  "instruments": [
+   "pad",
+   "saw-pluck",
+   "saw-bass",
+   "kick",
+   "clap",
+   "hats"
+  ],
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.4,
+   "groove": 0.7,
+   "breakdown": 0.4,
+   "drop": 0.95,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

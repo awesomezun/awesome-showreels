@@ -1,0 +1,172 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "trailer",
+  "audience": "retro game players",
+  "title": "네온 하이웨이 1986",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (네온 하이웨이 1986, a retro arcade racing game (fictional game)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "네온 하이웨이 1986, a retro arcade racing game (fictional game)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "nostalgic",
+  "fast",
+  "neon",
+  "dreamy",
+  "cool"
+ ],
+ "rationale": {
+  "palette": "Outrun at night: a violet sky #0E0420 to #2D0B4E burning pink #FF4F9A at the horizon, a sun from yellow #FFE45C to magenta #FF2E88, a magenta grid #FF3CC8, cyan neon #3CF0FF, a red car #E8203C; chrome is a sky-to-ground gradient with a dark horizon line.",
+  "type": "Gugi, a heavy rounded display face, for the chrome title and the neon lines; Orbit, a geometric face, for the speed, the OSD and the small print.",
+  "motion": "Speed and tape: the grid and the road dashes rush at the camera in perspective, palms flick past, the car banks; the title slams down with a shake and a sheen; neon flickers; a VHS tracking band tears the picture sideways, the tape tears hard as the rival passes, and the reel ends with the CRT folding to a line.",
+  "sound": "A new synthwave preset at 96 BPM in A minor: a detuned poly pad, a running saw bass on eighths, bright sixteenth saw arpeggios, offbeat stabs, a saw lead, kick on every beat and a gated-reverb snare on two and four, toms for fills; whooshes for the passes, an impact for the title, a glitch for the tear.",
+  "visuals": "All code: a sun clipped into bands that thicken toward the horizon, wireframe mountains, a perspective grid whose rows scroll by 1/z, a road with dashes, palm silhouettes scaled by depth, a car drawn from behind, chrome and neon type, a VHS pass (a ghost, a tracking band and tears copied sideways from the frame, scanlines, PLAY and a counter).",
+  "narration": "Not recommended: the engine is the voice."
+ },
+ "palette": {
+  "bg": "#0E0420",
+  "bg2": "#2D0B4E",
+  "surface": "#22073A",
+  "ink": "#FFF4FF",
+  "ink2": "#E6D6F6",
+  "muted": "#B9A6CC",
+  "accent": "#FF3CC8",
+  "accent2": "#3CF0FF",
+  "accent3": "#FFE45C",
+  "ok": "#3CF0FF",
+  "warn": "#FFE45C",
+  "deny": "#E8203C",
+  "accentInk": "#D21FA4",
+  "onAccent": "#0E0420",
+  "line": "#3A1A5A"
+ },
+ "fonts": {
+  "display": "\"Gugi\", sans-serif",
+  "sans": "\"Orbit\", sans-serif",
+  "serif": "\"Gugi\", sans-serif",
+  "mono": "\"Orbit\", sans-serif",
+  "cjk": "\"Gugi\", sans-serif",
+  "files": [
+   {
+    "family": "Gugi",
+    "path": "source/fonts/Gugi-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Orbit",
+    "path": "source/fonts/Orbit-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "dark",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#FFF4FF",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "energetic",
+  "spring": {
+   "f": 2.6,
+   "z": 0.5
+  },
+  "overshoot": 0.1,
+  "ease": "outQuint",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "kinetic"
+  ]
+ },
+ "post": {
+  "grain": 0.05,
+  "vignette": {
+   "a": 0.35,
+   "color": "#05010C"
+  },
+  "bloom": 0.25
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "A",
+  "mode": "minor",
+  "preset": "synthwave",
+  "instruments": [
+   "pad",
+   "saw-pluck",
+   "saw-bass",
+   "stab",
+   "lead",
+   "kick",
+   "snare",
+   "hats",
+   "toms"
+  ],
+  "drums": "full",
+  "sfx": "digital",
+  "energy": {
+   "intro": 0.35,
+   "groove": 0.7,
+   "breakdown": 0.4,
+   "drop": 1.0,
+   "outro": 0.5
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

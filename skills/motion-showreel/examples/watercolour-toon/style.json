@@ -1,0 +1,175 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "children three to six and their parents",
+  "title": "비 오는 날의 밤톨이",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (비 오는 날의 밤톨이, a watercolour picture book about a little hedgehog who shares his leaf umbrella (fictional book)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "비 오는 날의 밤톨이, a watercolour picture book about a little hedgehog who shares his leaf umbrella (fictional book)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "warm",
+  "gentle",
+  "cute",
+  "rainy",
+  "kind"
+ ],
+ "rationale": {
+  "palette": "Cream paper #FBF6EC under everything; a grey-blue rainy sky and rain #7E9DB5; soft greens for hills and grass; a chestnut hedgehog #8B5A3C with a cream face; a pale lilac-grey bunny with pink ears; a leaf green #6BA34A; a rainbow at the end; brown brush-pen ink #4A3426.",
+  "type": "Hi Melody, a soft handwritten face, for the story lines, set with a little bleed; Gowun Dodum for the small print.",
+  "motion": "Acting first: the hedgehog waddles, squashes when a drop hits his nose, blinks and looks up, crouches before he pulls the leaf (anticipation) and springs up with it; the bunny shivers on twos, her ears droop and then spring up when the leaf covers her; both hop into the puddle with squash on landing; paint blooms in from a point; shapes boil slightly on twos.",
+  "sound": "Corporate at 96 BPM in G major on recorded instruments (VSCO 2 CE and VCSL, CC0): a soft violin bed, harp in broken eighths, a flute hook, cello pizzicato bass and a light shaker; a violin pizzicato for every raindrop on the leaf, a harp arpeggio as the title blooms, low pizzicato chords for the puddle hops.",
+  "visuals": "All code: washes are wobbly closed shapes in two uneven layers with a darker pigment edge and paper grain multiplied inside; lines are a brush pen; the landscape is painted once per weather and cached; paper grain is multiplied over the finished frame; characters are rigs posed from keyframes with breathing, blinking and a walk cycle on top.",
+  "narration": "Possible: a warm voice reading the two lines, but the reel works without it."
+ },
+ "palette": {
+  "bg": "#FBF6EC",
+  "bg2": "#F1E8D6",
+  "surface": "#FFFFFF",
+  "ink": "#4A3426",
+  "ink2": "#5C4434",
+  "muted": "#6E5A4A",
+  "accent": "#B0485E",
+  "accent2": "#4E6496",
+  "accent3": "#6BA34A",
+  "ok": "#6BA34A",
+  "warn": "#F2A65A",
+  "deny": "#D0543F",
+  "accentInk": "#B0485E",
+  "onAccent": "#FBF6EC",
+  "line": "#D9CDB8"
+ },
+ "fonts": {
+  "display": "\"Hi Melody\", cursive",
+  "sans": "\"Gowun Dodum\", sans-serif",
+  "serif": "\"Hi Melody\", cursive",
+  "mono": "\"Gowun Dodum\", sans-serif",
+  "cjk": "\"Hi Melody\", cursive",
+  "files": [
+   {
+    "family": "Hi Melody",
+    "path": "source/fonts/HiMelody-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Gowun Dodum",
+    "path": "source/fonts/GowunDodum-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#4A3426",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "calm",
+  "spring": {
+   "f": 2.0,
+   "z": 0.5
+  },
+  "overshoot": 0.15,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": true,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.0,
+  "vignette": {
+   "a": 0.12,
+   "color": "#6E5A4A"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 96,
+  "key": "G",
+  "mode": "major",
+  "preset": "corporate",
+  "instruments": [
+   "violins",
+   "concert-harp",
+   "cello-pizz",
+   "flute",
+   "shaker",
+   "kick"
+  ],
+  "roles": {
+   "bed": "violins",
+   "motion": "concert-harp",
+   "bass": "cello-pizz",
+   "motif": "flute"
+  },
+  "drums": "light",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.5,
+   "breakdown": 0.35,
+   "drop": 0.6,
+   "outro": 0.35
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}

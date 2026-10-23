@@ -1,0 +1,186 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "promo",
+  "audience": "families and craft lovers",
+  "title": "오림 공방",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (오림 공방, a New Year class in cutting patterns from folded hanji (fictional workshop)). Every decision below follows the brief and the style it names; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  {
+   "path": "source/BRIEF.md",
+   "kind": "markdown",
+   "notes": "오림 공방, a New Year class in cutting patterns from folded hanji (fictional workshop)"
+  },
+  {
+   "path": "source/fonts/",
+   "kind": "other",
+   "notes": "Korean OFL fonts, cut to the characters the reel shows"
+  }
+ ],
+ "mood": [
+  "festive",
+  "handmade",
+  "bright",
+  "clever",
+  "cheerful"
+ ],
+ "rationale": {
+  "palette": "Coloured hanji on a cream sheet #F1E9DA with fibres: festive red #C8372D for the main pattern, indigo #2E4677, pink #E06C8A and green #4E8F5A for the others, ink brown #3A2A22 for type; at night the red glows over a warm lamp #FFE296.",
+  "type": "Song Myung, a brushed serif, for the name and the line; Gowun Dodum, round and friendly, for the step labels.",
+  "motion": "The craft is the motion: three folds on the beat, each flap swinging over its crease and showing its back; scissors opening and closing along every outline with the piece falling away; the unfold, crease by crease, as the camera pulls back so the pattern blooms at once; finished sheets turn a little on the table.",
+  "sound": "Bright pop at 112 BPM in G major on a pentatonic scale (0 2 4 7 9) with recorded instruments (VCSL, CC0): a plucked zither (dan tranh) like a gayageum carries the arpeggios over a soft pad, recorded glockenspiel on top and a flute hook; paper flips for the folds, scissor snips for the cuts, a sparkle as the pattern opens.",
+  "visuals": "All code: a pattern is a set of holes in one eighth of the square, cut eight times by the square's symmetries into a cached sheet; folding is the reverse of unfolding, each flap being the sheet clipped to a half, quarter or eighth and squashed across its crease by cos θ (a reflection when folded); a shadow pass draws the same regions blurred and black.",
+  "narration": "Not recommended: the paper shows it."
+ },
+ "palette": {
+  "bg": "#F1E9DA",
+  "bg2": "#E6DCC8",
+  "surface": "#FFFFFF",
+  "ink": "#3A2A22",
+  "ink2": "#5A4638",
+  "muted": "#6E5A4C",
+  "accent": "#C8372D",
+  "accent2": "#2E4677",
+  "accent3": "#E06C8A",
+  "ok": "#4E8F5A",
+  "warn": "#F2B640",
+  "deny": "#C8372D",
+  "accentInk": "#A52A22",
+  "onAccent": "#FFFFFF",
+  "line": "#D8CCB6"
+ },
+ "fonts": {
+  "display": "\"Song Myung\", serif",
+  "sans": "\"Gowun Dodum\", sans-serif",
+  "serif": "\"Song Myung\", serif",
+  "mono": "\"Gowun Dodum\", sans-serif",
+  "cjk": "\"Song Myung\", serif",
+  "files": [
+   {
+    "family": "Song Myung",
+    "path": "source/fonts/SongMyung-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   },
+   {
+    "family": "Gowun Dodum",
+    "path": "source/fonts/GowunDodum-Regular.woff2",
+    "weight": "400",
+    "style": "normal"
+   }
+  ]
+ },
+ "type": {
+  "scale": [
+   22,
+   28,
+   36,
+   44,
+   56,
+   72,
+   92,
+   120,
+   156,
+   200
+  ],
+  "displayWeight": 700,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": {
+   "enabled": false,
+   "font": "sans",
+   "size": 40,
+   "fg": "#3A2A22",
+   "bg": "none",
+   "y": 960
+  },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": {
+   "f": 2.4,
+   "z": 0.55
+  },
+  "overshoot": 0.1,
+  "ease": "ioC",
+  "transitions": [
+   "cut"
+  ],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": [
+   "vector"
+  ],
+  "typeReveal": [
+   "revealLine"
+  ]
+ },
+ "post": {
+  "grain": 0.02,
+  "vignette": {
+   "a": 0.12,
+   "color": "#6A4A2A"
+  },
+  "bloom": 0.0
+ },
+ "sound": {
+  "bpm": 112,
+  "key": "G",
+  "mode": "major",
+  "scale": [
+   0,
+   2,
+   4,
+   7,
+   9
+  ],
+  "preset": "bright-pop",
+  "instruments": [
+   "pad",
+   "dan-tranh",
+   "real-glock",
+   "flute",
+   "bass",
+   "kick",
+   "clap",
+   "hats",
+   "shaker"
+  ],
+  "roles": {
+   "bed": "pad",
+   "motion": "dan-tranh",
+   "bass": "bass",
+   "top": "real-glock",
+   "motif": "flute"
+  },
+  "drums": "full",
+  "sfx": "organic",
+  "energy": {
+   "intro": 0.3,
+   "groove": 0.6,
+   "breakdown": 0.35,
+   "drop": 0.9,
+   "outro": 0.45
+  }
+ },
+ "narration": {
+  "recommended": false,
+  "voice": "Kore",
+  "styleTag": "[warm]",
+  "lang": "ko-KR"
+ },
+ "review": []
+}
