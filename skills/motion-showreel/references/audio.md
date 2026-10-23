@@ -1,7 +1,8 @@
 # Audio: music, SFX, mastering, sync
 
-The soundtrack is synthesized: numpy/scipy only, no samples, no network, deterministic (same inputs, same
-samples). It has three inputs: the tone (`P/style.json` `sound`), the time (`P/build/cut-<cut>.json` from
+The soundtrack is synthesized with numpy/scipy, deterministic (same inputs, same samples). Recorded instruments
+from two CC0 libraries are opt-in by name (section 1, "Recorded instruments"): they are fetched once into a local
+cache, and the rendered music is embedded in the reel, so a delivered file never needs them. It has three inputs: the tone (`P/style.json` `sound`), the time (`P/build/cut-<cut>.json` from
 `timing/plan_cut.py`) and the events (the cue list in that cut). Music and SFX share the one bar grid and cue
 list the visuals use. A longer cut of the same reel is the same song with more bars at the same BPM.
 
@@ -16,6 +17,7 @@ python3 $S/audio/synth.py list                                    # SFX names, a
 python3 $S/audio/synth.py sfx "pop:3 gap=0.2b" --out x.wav        # audition one cue spec (prints where the cue lands)
 python3 $S/audio/synth.py audition DIR [--families digital]       # every SFX as WAV + grid-<family>.png
 python3 $S/audio/synth.py loudness FILE...                        # integrated LUFS, LRA, true peak
+python3 $S/audio/samples.py list | fetch all | audition NAME x.wav # recorded instruments: state, download, listen
 ```
 
 `arrange.py` options: `--stems` (also `build/stems/<cut>-music.wav`, `-sfx.wav`), `--scale X` / `--warp "o:s,..."`
@@ -29,7 +31,7 @@ unknown SFX or has a bad parameter (everything else is still rendered; the sidec
 
 | Key | Values | Effect |
 |---|---|---|
-| `preset` | `bright-pop` `dark-synth` `ambient` `corporate` `lofi` `cinematic-lite` `chiptune` `swing` `dnb` `rock` | parameter bundle (section 2); a starting point, not a look |
+| `preset` | `bright-pop` `dark-synth` `ambient` `corporate` `lofi` `cinematic-lite` `chiptune` `swing` `dnb` `rock` `folk` `synthwave` `citypop` | parameter bundle (section 2); a starting point, not a look |
 | `bpm` | number | used by the planner; the cut's `bpm` is the authority (the arranger warns on a mismatch) |
 | `key` | `F`, `Bb`, `F#`, `D minor` | tonic; pitched SFX (pops, dings, chimes, beeps, blips, sparkles, stings) are in this key |
 | `mode` | `major` `minor` `dorian` `mixolydian` `lydian` `phrygian` | harmony tables; church modes are stacked inside their own scale (locrian -> phrygian) |
@@ -43,11 +45,29 @@ unknown SFX or has a bad parameter (everything else is still rendered; the sidec
 
 Instrument roles: bed = `pad` `strings` `epiano` `piano` `guitar` `ukulele` `koto` (strummed); motion = `pulse`
 `pluck`/`arp` `saw-pluck` `marimba` `guitar` `ukulele` `koto` `piano` `epiano` `strings` `bell`; bass = `tri-bass`
-`upright` `reese` `saw-bass` `bass` `sub`; top = `stab` `bell` `glass` `strings`; motif = `pulse-lead` `clarinet` `bell`
+`upright` `reese` `saw-bass` `bass` `sub` `slap`; top = `stab` `bell` `glass` `strings`; motif = `pulse-lead` `clarinet` `bell`
 `lead` `piano` `epiano` `marimba` (and `guitar` `ukulele` `koto` when pinned). Drums: `kick` `clap` `snare` `rim`
 `hats` `shaker` `toms` `ride` `brush`; texture `crackle`. Plucked strings are Karplus-Strong; chiptune voices are
 4-bit stepped (pulse, triangle, LFSR noise).
 A role whose instruments are all missing is silent (no bed = no sustained harmony; the arranger warns).
+
+**Recorded instruments** (`audio/samples.py`, `audio/samples.json`). Any role can also take a recorded instrument,
+and any cue can play one (`note:` below), by name: harpsichord, upright-piano, concert-harp, dan-tranh, kalimba,
+vibraphone, real-glock, xylophone, real-marimba, tubular-bells, hand-chimes, pipe-organ, organ-full, harmonica,
+tenor-sax, recorder, bowed-psaltery, trumpet, trumpet-stac, trombone, trombone-stac, tuba, french-horn, violins,
+violin-pizz, cellos, cello-pizz, solo-cello, solo-violin, bass-pizz, clarinet-real, flute, flute-stac, oboe (aliases
+such as `organ`, `harp`, `gayageum`, `pizz`, `brass`, `horn` resolve to them; `synth.py list` shows all). Seventeen
+recorded hits are SFX of their own (`gong` / `jing`, `anvil`, `woodblock`, `slapstick`, `cowbell`, `claves`,
+`frame-drum` / `buk`, `concert-bd`, `timpani`, `sus-cymbal` (end-anchored), `mark-tree`, `ratchet`, `flexatone`,
+`triangle`, `rope-snare`, `wine-glass`). A name that is already a synthesized instrument keeps meaning the synth, so
+older reels sound exactly as before. The files are pinned to a commit of each library in `samples.json`, fetched on
+first use with curl from raw.githubusercontent.com into `$MOTION_SHOWREEL_SAMPLES` (default
+`~/.cache/motion-showreel/samples`, about 175 MB for everything), mixed to mono, resampled to 48 kHz, trimmed to the
+attack, level-matched against the synthesized roles and stored as float16; a note is the nearest recorded pitch
+resampled to the target (soxr), looped with a crossfade when a sustained note outlasts its file. Needs the Python
+packages `soundfile` and `soxr`. Libraries, both CC0 1.0 (no attribution required, credited here): VCSL, the
+Versilian Community Sample Library (https://github.com/sgossner/VCSL), and VSCO 2 Community Edition
+(https://github.com/sgossner/VSCO-2-CE), by Versilian Studios.
 
 **`reel.config.json` `"audio"`** (optional, project-level): `preset`, `transitionSfx` (default true), `musicDb` /
 `sfxDb` (trim the music or SFX bus in dB), `seed` (default: hash of the title, so every cut shares one hook),
@@ -79,6 +99,9 @@ with `--tables`; `tone-and-manner.md` section 4 quotes them); those tables are t
 | sport, race, speed, broadcast graphics, energetic numbers | dnb | 170-178 | G, F, A minor | full (two-step, half-time drops) | digital | .5 .8 .45 1 .55 |
 | a band, a gig, guitars, festivals, anything loud (chosen by hand; the extractor never drafts it) | rock | 120-140 | E, A, D minor | full (backbeat) | organic | .5 .75 .45 1 .5 |
 | terminal tool with a playful theme (Catppuccin-like) | bright-pop or dark-synth by theme | 120-128 | major / mixolydian | full | digital | default |
+| folk tales, islands, walking, crafts, shadow plays, a warm acoustic story (chosen by hand) | folk | 92-116 | G, D major; pentatonic `scale` | light (brushes, shaker) | organic | .3 .55 .35 .8 .4 |
+| 1980s arcade, outrun, chrome and grids, VHS (chosen by hand) | synthwave | 90-110 | A, E minor | full (gated snare) | digital | .35 .7 .4 1 .5 |
+| 1980s city nights, anime openings, summer drives, maj7 nostalgia (chosen by hand) | citypop | 108-116 | F, Bb, Eb major | full | glassy | .35 .7 .4 1 .45 |
 
 - **Tempo** sets length arithmetic (`timing-and-length.md`); pick one the material can carry, then let bars decide
   length. Pace words map to BPM: calm 80-100, medium 100-118, energetic 118-130 (inside the preset's range).
@@ -102,6 +125,9 @@ with `--tables`; `tone-and-manner.md` section 4 quotes them); those tables are t
 | swing | I6 vi7 ii7 V7 (rhythm changes in drops) | - / piano comping on the Charleston rhythm (rootless) / walking upright bass with chromatic approach notes / - / clarinet | ride "ding ding-a", hat chick on 2+4, brushes, feathered kick | swung eighths (triplet), tape |
 | dnb | i9 VI7 iv9 v7, 2 bars per chord | pad only outside drops / - / reese + sub (long notes, half-time in drops) / offbeat stabs / - | two-step (kick 1 and the 'and' of 3, snare 2+4, ghosts), half-time drops | light swing, pre-drop gap |
 | rock | i VI III VII / i VII VI VII (power chords) | - / double-tracked overdriven guitar (`dist-guitar`): palm-muted eighths between open accents, one ringing chord a bar in intros and breakdowns, muted sixteenths into drops / round bass on eighths / - / - | backbeat (kick 1, the 'and' of 2 and 3, snare 2+4, eighth hats; drops ride open hats) | toms fill, pre-drop gap, short room |
+| folk | I V vi IV (two-feel) | soft pad or recorded strings / broken eighths (harp, guitar, dan-tranh) / two-feel bass (root on 1, fifth on 3, walk-ups) / - / flute or recorder | kick 1+3, brushed backbeat, shaker eighths (softened) | high shelf -4.5 dB at 4.2 kHz |
+| synthwave | i VI III VII | detuned poly pad / saw-pluck sixteenth arp / running saw bass on eighths / offbeat stabs / saw lead | kick on every beat, gated snare 2+4, eighth hats (sixteenths in drops), tom fills | ping-pong delay, long hall |
+| citypop | IVmaj7 V7 iii7 vi7 | FM electric piano / muted sixteenth cutting guitar (`cutting`) / slap bass: thumbed roots, popped octaves, ghost notes, the fifth before the bar line (`slap`) / recorded trumpet stabs on the 'and' of 2 and 4 / recorded tenor sax | kick 1 and the pushed 'and' of 2, snare 2+4, sixteenth hats | light sidechain, dotted-eighth delay |
 
 Case studies (where the material led, not presets to copy): K-BeautyGate (Korean consumer pitch, pastel app and
 plush mascots) -> bright-pop, F major, 120 BPM, glassy, music-led. FDDD / FlyGate (research repos, dark neon
@@ -214,6 +240,16 @@ runs for `dur`; `glitch pre=0.1s` straddles a cut.
 | `drawon` | span | rising tone + scratch: lines, routes, charts drawing on | draw, line, route |
 | `drone` | span | low tension drone on the key root (2 bars) | tension, hum |
 | `downlifter` | onset | falling noise sweep after a hit, into calm | downsweep, fall |
+| `note` | onset | notes of any instrument in the reel's key, synthesized or recorded: `note:<instrument> deg=2 oct=5` (diatonic degree) or `step=` (pentatonic) or `note=E4` / `m=64`; `dur=`, `vel=`, `chord` (a triad), `n=` notes `rise=` apart, `gap=` between them | tone, play |
+| `sing` | onset | a sung syllable from a formant voice: `sing:파 deg=4 oct=4 dur=0.5b` (a Hangul syllable, or la / na / oo); the vowel lands on the cue and the consonant leads in just ahead; extra keys pass through for the scenes | vox, voice, lyric |
+| `hush` | span | stop-time: the music bus drops to silence for `dur` (1 beat) with 4 ms edges; SFX still play | silence, stop-time, music-off |
+| `carve` | span | a V-gouge through wood: `n=` scrapes across `dur` | gouge, chisel-cut, scrape |
+| `engrave` | span | a burin ploughing copper: thin bright scrapes | burin, etch, scratch-fine |
+| `squeegee` | span | a squeegee pulled across a silkscreen (0.5 s) | pull-print, screen-pull, smear |
+| `snip` | onset | scissors through paper; `n=` snips `gap=` apart | scissors, cut-paper, shear |
+| `pen` | span | a fountain-pen nib on paper for `dur` (1 bar) | nib, pen-scratch, writing |
+| `peel` | span | a sheet peeled off a block (1 bar) | paper-peel, pull, lift |
+| `gong` `anvil` `woodblock` `wine-glass` ... | onset | the seventeen recorded hits (section 1); `vel=`, `pitch=`, `cut=` seconds | jing, buk, glass-tap ... |
 
 **Automatic transition SFX.** Each scene's `in` gets a sound on its boundary unless an authored transition,
 impact or build cue lies within 0.75 beat of it: `blobWipe` swish, `zoomInto` zoom, `whip` whip, `glitch`
@@ -359,5 +395,9 @@ S.spectrogram_png(x, "out.png", marks=[...], bars=[...]); S.spectrogram_grid(ite
   to the audio; it is what makes `verify_sync.py` precise.
 - **Every motion does not need a sound.** Too many cues turn into noise and mask the music; leave idle holds to
   the groove.
-- **No samples, no downloads.** Every sound is synthesized here; never paste audio from another project or the web
-  into a reel.
+- **Only the pinned libraries.** Recorded sound comes only through `samples.py` from the two CC0 libraries pinned in
+  `samples.json`; never paste audio from another project or the web into a reel.
+- **Same key, same timbre, weak sync.** A sustained or tremolo note in the bed's key (vibraphone, organ, a low marimba,
+  a chime under a pad) can make `verify_sync.py` lock one period late. Give sync-critical cues a sharp attack and a
+  timbre the bed does not use (glockenspiel, a staccato brass chord, a recorded hit), and keep long runs of sung or
+  played eighths from outweighing the beat (lower the voice, or put notes on the beat).

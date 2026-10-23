@@ -4480,7 +4480,7 @@ PALETTE_KEYS = ["bg", "bg2", "surface", "ink", "ink2", "muted", "accent", "accen
 ENUMS = {
     ("layout", "theme"): ("light", "dark"),
     ("motion", "pace"): ("calm", "medium", "energetic"),
-    ("sound", "preset"): ("bright-pop", "dark-synth", "ambient", "corporate", "lofi", "cinematic-lite", "chiptune", "swing", "dnb", "rock"),
+    ("sound", "preset"): ("bright-pop", "dark-synth", "ambient", "corporate", "lofi", "cinematic-lite", "chiptune", "swing", "dnb", "rock", "folk", "synthwave", "citypop"),
     ("sound", "drums"): ("none", "light", "full"),
     ("sound", "sfx"): ("glassy", "digital", "organic", "minimal"),
     ("sound", "mode"): ("major", "minor", "dorian", "mixolydian", "lydian", "phrygian", "aeolian", "ionian", "locrian"),   # as the schema; arrange.py plays them all

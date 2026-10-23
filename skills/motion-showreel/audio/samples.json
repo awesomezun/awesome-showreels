@@ -1,0 +1,965 @@
+{
+ "version": 1,
+ "libs": {
+  "vcsl": {
+   "repo": "sgossner/VCSL",
+   "sha": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+   "name": "VCSL (Versilian Community Sample Library)",
+   "licence": "CC0 1.0",
+   "url": "https://github.com/sgossner/VCSL"
+  },
+  "vsco": {
+   "repo": "sgossner/VSCO-2-CE",
+   "sha": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+   "name": "VSCO 2 Community Edition",
+   "licence": "CC0 1.0",
+   "url": "https://github.com/sgossner/VSCO-2-CE"
+  }
+ },
+ "instruments": {
+  "harpsichord": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "Flemish harpsichord, one manual (baroque motion, continuo)",
+   "keep": 4.0,
+   "rel": 0.1,
+   "files": [
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_A#1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_A#2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_A#4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_A#5_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_C#2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_C#3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_C#4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_C5_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_C6_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_D4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_D5_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_E2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_E3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_E4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_E5_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_F#1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_F#2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_F#3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_F#4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_F#5_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_G#1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_G#2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_G#3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_G#4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/High/HarpsiRH_High_Far_G#5_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_A#0_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_A#1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_A#2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_A#3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_A#4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_C1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_C2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_C3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_C4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_C5_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_D1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_D2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_D3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_D4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_E1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_E2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_E3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_E4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_F#0_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_F#1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_F#2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_F#3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_F#4_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_G#0_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_G#1_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_G#2_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_G#3_rr1.wav",
+    "Chordophones/Zithers/Harpsichord, Flemish/Sustains/Low/HarpsiRH_Low_Far_G#4_rr1.wav"
+   ],
+   "gain": 3.9
+  },
+  "upright-piano": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "upright piano played softly, felt-like (intimate keys)",
+   "keep": 5.0,
+   "rel": 0.25,
+   "files": [
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C0_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C1_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C2_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C3_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C4_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_C5_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_G0_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_G1_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_G2_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_G3_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_G4_vl1_rr1.wav",
+    "Chordophones/Zithers/Upright Piano, Yamaha/Sustains/Upright1_Sus_G5_vl1_rr1.wav"
+   ],
+   "gain": 3.5
+  },
+  "concert-harp": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "concert harp (storybook arpeggios, glissandi)",
+   "keep": 4.0,
+   "rel": 0.6,
+   "files": [
+    "Strings/Harp/KSHarp_A2_mf.wav",
+    "Strings/Harp/KSHarp_A4_mf.wav",
+    "Strings/Harp/KSHarp_A6_mf.wav",
+    "Strings/Harp/KSHarp_B1_mf.wav",
+    "Strings/Harp/KSHarp_B3_mf.wav",
+    "Strings/Harp/KSHarp_B5_mf.wav",
+    "Strings/Harp/KSHarp_B6_mf.wav",
+    "Strings/Harp/KSHarp_C3_mf.wav",
+    "Strings/Harp/KSHarp_C5_mf.wav",
+    "Strings/Harp/KSHarp_D2_mf.wav",
+    "Strings/Harp/KSHarp_D4_mf.wav",
+    "Strings/Harp/KSHarp_D6_mf.wav",
+    "Strings/Harp/KSHarp_D7_f.wav",
+    "Strings/Harp/KSHarp_E1_f.wav",
+    "Strings/Harp/KSHarp_E3_mf.wav",
+    "Strings/Harp/KSHarp_E5_mf.wav",
+    "Strings/Harp/KSHarp_F2_mf.wav",
+    "Strings/Harp/KSHarp_F4_mf.wav",
+    "Strings/Harp/KSHarp_F6_mf.wav",
+    "Strings/Harp/KSHarp_F7_f.wav",
+    "Strings/Harp/KSHarp_G1_mp.wav",
+    "Strings/Harp/KSHarp_G3_mf.wav",
+    "Strings/Harp/KSHarp_G5_mf.wav"
+   ],
+   "gain": 4.0
+  },
+  "dan-tranh": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "plucked long zither (gayageum-like colour; motion lines on a pentatonic scale)",
+   "keep": 3.5,
+   "rel": 0.4,
+   "files": [
+    "Chordophones/Zithers/Dan Tranh/Normal/B1_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/B2_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/B3_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/B4_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/C#2_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/C#3_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/C#4_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/D#2_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/D#3_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/D#4_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/F#2_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/F#3_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/F#4_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/G#2_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/G#3_f_1.wav",
+    "Chordophones/Zithers/Dan Tranh/Normal/G#4_f_1.wav"
+   ],
+   "gain": 3.5
+  },
+  "kalimba": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "kalimba (wet drops, music-box motion)",
+   "keep": 3.0,
+   "rel": 0.3,
+   "files": [
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_A#2_k8_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_A#3_k18_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_A#4_k2_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_B1_k13_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_B4_k23_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_C#2_k10_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_C#3_k16_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_C#4_k5_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_C#5_k24_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_C#6_k27_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_D#2_k14_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_D#3_k7_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_D#4_k20_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_D#4_k4_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_D4_k19_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_E5_k25_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_F#5_k1_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_F2_k9alt_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_F3_k17_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_F4_k21_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_F4_k3_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G#1_k11_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G#5_k26_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G1_k12_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G2_k15_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G3_k6_50_100_rr2.wav",
+    "Idiophones/Plucked Idiophones/Kalimba, Tanzania/MBira3_pluck_Main_G4_k22_50_100_rr2.wav"
+   ],
+   "gain": 3.5
+  },
+  "vibraphone": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "vibraphone, soft mallets (jazz comping, detective cues)",
+   "keep": 4.0,
+   "rel": 0.5,
+   "files": [
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_A2_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_A4_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_B3_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_C5_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_D4_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_E5_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_F2_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_F4_v1_rr1_Main.wav",
+    "Idiophones/Struck Idiophones/Vibraphone/Soft Mallets/Vibes_soft_G3_v1_rr1_Main.wav"
+   ],
+   "gain": 3.8
+  },
+  "real-glock": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "recorded glockenspiel (the synthesized \"glock\" alias stays the FM bell)",
+   "keep": 3.0,
+   "rel": 0.4,
+   "files": [
+    "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_C5_01.wav",
+    "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_C6_01.wav",
+    "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_C7_01.wav",
+    "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_G#6_01.wav",
+    "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_G4_01.wav",
+    "Idiophones/Struck Idiophones/Glockenspiel/glock_loud_G5_01.wav"
+   ],
+   "gain": 2.4
+  },
+  "xylophone": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "xylophone, medium mallets (cartoon, assembly steps)",
+   "keep": 2.0,
+   "rel": 0.2,
+   "files": [
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_C4_ff_01_far.wav",
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_C5_ff_01_far.wav",
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_C6_ff_01_far.wav",
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_C7_ff_01_far.wav",
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_G3_ff_01_far.wav",
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_G4_ff_01_far.wav",
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_G5_ff_01_far.wav",
+    "Idiophones/Struck Idiophones/Xylophone/Medium Mallets/Xylo_Medium_G6_ff_01_far.wav"
+   ],
+   "gain": 3.8
+  },
+  "real-marimba": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "recorded marimba (explainers; the synthesized \"marimba\" stays as it was)",
+   "keep": 3.0,
+   "rel": 0.3,
+   "files": [
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_B2_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_B4_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_C2_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_C4_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_C6_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_F1_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_F3_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_F5_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_G2_med_01.wav",
+    "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_G4_med_01.wav"
+   ],
+   "gain": 3.8
+  },
+  "tubular-bells": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "tubular bells (chimes, tolling)",
+   "keep": 6.0,
+   "rel": 1.5,
+   "files": [
+    "Idiophones/Struck Idiophones/Tubular Bells 1/chimes_A#3_ff_rr1.wav",
+    "Idiophones/Struck Idiophones/Tubular Bells 1/chimes_C3_f_rr1.wav",
+    "Idiophones/Struck Idiophones/Tubular Bells 1/chimes_D3_ff_rr1.wav",
+    "Idiophones/Struck Idiophones/Tubular Bells 1/chimes_G#3_ff_rr1.wav"
+   ],
+   "gain": 4.1
+  },
+  "hand-chimes": {
+   "lib": "vcsl",
+   "kind": "pluck",
+   "doc": "hand chimes (glassy, churchless bells)",
+   "keep": 5.0,
+   "rel": 1.2,
+   "files": [
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_A#3_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_A#5_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_A4_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_C3_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_C4_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_C5_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_C6_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_D3_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_D4_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_D5_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_E3_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_E4_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_E5_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_F#3_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_F#4_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_F#5_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_G#3_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_G#4_r01_main.wav",
+    "Idiophones/Struck Idiophones/Hand Chimes/sus_G#5_r01_main.wav"
+   ],
+   "gain": 4.5
+  },
+  "pipe-organ": {
+   "lib": "vcsl",
+   "kind": "sustain",
+   "doc": "pipe organ, quiet manual stop (bed)",
+   "keep": 6.0,
+   "rel": 0.35,
+   "files": [
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_A1_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_A2_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_A3_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_A4_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_A5_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_C1_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_C2_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_C3_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_C4_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_C5_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_C6_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_D#1_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_D#2_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_D#3_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_D#4_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_D#5_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_F#1_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_F#2_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_F#3_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_F#4_rr1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Quiet/NT5_Man3Quiet_F#5_rr1.wav"
+   ],
+   "gain": 1.9
+  },
+  "organ-full": {
+   "lib": "vcsl",
+   "kind": "sustain",
+   "doc": "pipe organ, open loud manual (big chords)",
+   "keep": 6.0,
+   "rel": 0.45,
+   "files": [
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_A1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_A2.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_A3.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_A4.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_A5.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C2.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C3.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C4.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C5.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_C6.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_D#1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_D#2.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_D#3.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_D#4.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_D#5.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_F#1.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_F#2.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_F#3.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_F#4.wav",
+    "Aerophones/Edge-blown Aerophones/Pipe Organ/Loud/Rode_Man3Open_F#5.wav"
+   ],
+   "gain": 2.1
+  },
+  "harmonica": {
+   "lib": "vcsl",
+   "kind": "sustain",
+   "doc": "blues harmonica (folk motif)",
+   "keep": 4.0,
+   "rel": 0.12,
+   "files": [
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C3.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C4.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C5.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_C6.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_E3.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_E4.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_E5.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_G4.wav",
+    "Aerophones/Free Aerophones/Harmonica-Hohner-Special20-C/Sustains/Normal/Hohner-Special20_Normal_G5.wav"
+   ],
+   "gain": 2.15
+  },
+  "tenor-sax": {
+   "lib": "vcsl",
+   "kind": "sustain",
+   "doc": "tenor saxophone (jazz and city-pop motif)",
+   "keep": 4.0,
+   "rel": 0.1,
+   "files": [
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_A#1_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_A#2_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_A#3_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_A#4_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_C2_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_C3_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_C4_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_C5_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_D2_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_D3_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_D4_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_D5_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_E2_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_E3_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_E4_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_E5_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_F#2_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_F#3_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_F#4_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_G#1_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_G#2_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_G#3_vl2_rr1.wav",
+    "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_G#4_vl2_rr1.wav"
+   ],
+   "gain": 2.3
+  },
+  "recorder": {
+   "lib": "vcsl",
+   "kind": "sustain",
+   "doc": "baroque alto recorder (early music, folk)",
+   "keep": 4.0,
+   "rel": 0.08,
+   "files": [
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_A#3_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_A#4_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_C4_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_C5_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_D4_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_D5_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_E4_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_E5_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_F#4_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_F3_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_G#3_rr1_Main.wav",
+    "Aerophones/Edge-blown Aerophones/Baroque Alto Recorder/Sustain/AltRecorder_Sus_G#4_rr1_Main.wav"
+   ],
+   "gain": 2.15
+  },
+  "bowed-psaltery": {
+   "lib": "vcsl",
+   "kind": "sustain",
+   "doc": "bowed psaltery (haegeum-like bowed colour)",
+   "keep": 4.0,
+   "rel": 0.3,
+   "files": [
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_A#3_Main_LongBow_rr2.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_A#4_Main_LongBow_rr2.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_C4_Main_LongBow_rr1.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_C5_Main_LongBow_rr1.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_D4_Main_LongBow_rr1.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_D5_Main_LongBow_rr2.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_E4_Main_LongBow_rr2.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_E5_Main_LongBow_rr2.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_F#4_Main_LongBow_rr1.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_F#5_Main_LongBow_rr2.wav",
+    "Chordophones/Zithers/Psaltery, Bowed and Plucked/LongBow/BowedPsaltery_G#4_Main_LongBow_rr1.wav"
+   ],
+   "gain": 2.5
+  },
+  "trumpet": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "trumpet, sustained (brass motif, fanfares)",
+   "keep": 4.0,
+   "rel": 0.1,
+   "files": [
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_A#3_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_A2_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_A4_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_C3_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_C5_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_D#3_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_D4_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_F2_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_F4_v1_rr1.wav",
+    "Brass/Trumpet/sus/Sum_SHTrumpet_sus_G3_v1_rr1.wav"
+   ],
+   "gain": 2.5
+  },
+  "trumpet-stac": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "trumpet, staccato (brass stabs)",
+   "keep": 1.5,
+   "rel": 0.06,
+   "files": [
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_A#3_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_A2_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_A4_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_C3_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_C5_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_D#3_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_D4_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_F2_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_F3_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_F4_v2_rr1.wav",
+    "Brass/Trumpet/stac/Sum_SHTrumpet_stac_G3_v2_rr1.wav"
+   ],
+   "gain": 3.5
+  },
+  "trombone": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "tenor trombone, sustained",
+   "keep": 4.0,
+   "rel": 0.12,
+   "files": [
+    "Brass/Tenor Trombone/sus/tenortbn_sus_A#0_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_A#1_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_C#1_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_C#3_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_C3_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_D#1_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_D#3_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_D2_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_F1_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_F2_v1_1.wav",
+    "Brass/Tenor Trombone/sus/tenortbn_sus_F3_v1_1.wav"
+   ],
+   "gain": 2.45
+  },
+  "trombone-stac": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "tenor trombone, staccato",
+   "keep": 1.5,
+   "rel": 0.06,
+   "files": [
+    "Brass/Tenor Trombone/stac/tenortbn_stac_A#0_v2_rr1.wav",
+    "Brass/Tenor Trombone/stac/tenortbn_stac_A#1_v2_rr1.wav",
+    "Brass/Tenor Trombone/stac/tenortbn_stac_A#2_v2_rr1.wav",
+    "Brass/Tenor Trombone/stac/tenortbn_stac_D3_v2_rr1.wav",
+    "Brass/Tenor Trombone/stac/tenortbn_stac_F1_v2_rr1.wav",
+    "Brass/Tenor Trombone/stac/tenortbn_stac_F2_v2_rr1.wav",
+    "Brass/Tenor Trombone/stac/tenortbn_stac_F3_v2_rr1.wav"
+   ],
+   "gain": 3.7
+  },
+  "tuba": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "tuba, staccato (oom-pah bass)",
+   "keep": 1.5,
+   "rel": 0.08,
+   "files": [
+    "Brass/Tuba/stac/Tuba3_stac_A#0_v1_rr1_Sum.wav",
+    "Brass/Tuba/stac/Tuba3_stac_A#1_v1_rr1_Sum.wav",
+    "Brass/Tuba/stac/Tuba3_stac_A#2_v1_rr1_Sum.wav",
+    "Brass/Tuba/stac/Tuba3_stac_D#1_v1_rr1_Sum.wav",
+    "Brass/Tuba/stac/Tuba3_stac_D2_v1_rr1_Sum.wav",
+    "Brass/Tuba/stac/Tuba3_stac_D3_v1_rr1_Sum.wav",
+    "Brass/Tuba/stac/Tuba3_stac_F1_v1_rr1_Sum.wav",
+    "Brass/Tuba/stac/Tuba3_stac_F2_v1_rr1_Sum.wav"
+   ],
+   "gain": 1.1
+  },
+  "french-horn": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "French horn, sustained (warm pads, calls)",
+   "keep": 4.0,
+   "rel": 0.25,
+   "files": [
+    "Brass/F Horn/sus/MOHorn_sus_A#1_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_A0_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_A2_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_C1_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_C3_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_D#1_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_D2_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_D4_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_F2_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_F4_v1_1.wav",
+    "Brass/F Horn/sus/MOHorn_sus_G1_v1_1.wav"
+   ],
+   "gain": 2.75
+  },
+  "violins": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "violin section, sustained with vibrato (bed)",
+   "keep": 5.0,
+   "rel": 0.35,
+   "files": [
+    "Strings/Violin Section/susVib/VlnEns_susVib_A2_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_A3_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_B2_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_B4_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_C4_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_D3_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_D5_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_E4_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_F#3_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_G2_v1.wav",
+    "Strings/Violin Section/susVib/VlnEns_susVib_G4_v1.wav"
+   ],
+   "gain": 2.1
+  },
+  "violin-pizz": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "violin section pizzicato (motion)",
+   "keep": 1.5,
+   "rel": 0.1,
+   "files": [
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_A2_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_A3_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_B2_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_B4_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_C4_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_D3_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_D5_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_E4_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_F#3_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_G2_v1_rr1.wav",
+    "Strings/Violin Section/Pizz/VlnEns_Pizz_G4_v1_rr1.wav"
+   ],
+   "gain": 3.5
+  },
+  "cellos": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "cello section, sustained (low bed)",
+   "keep": 5.0,
+   "rel": 0.35,
+   "files": [
+    "Strings/Cello Section/susvib/susvib_A2_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_B1_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_B3_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_C1_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_C3_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_D2_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_D4_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_E1_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_E3_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_F2_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_F4_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_G1_v1_1.wav",
+    "Strings/Cello Section/susvib/susvib_G3_v1_1.wav"
+   ],
+   "gain": 1.45
+  },
+  "cello-pizz": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "cello section pizzicato (bass, motion)",
+   "keep": 1.8,
+   "rel": 0.12,
+   "files": [
+    "Strings/Cello Section/pizzT/pizzT_A2_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_B1_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_B3_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_C1_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_C3_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_D2_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_D4_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_E1_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_E3_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_F2_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_F4_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_G1_v1_RR1.wav",
+    "Strings/Cello Section/pizzT/pizzT_G3_v1_RR1.wav"
+   ],
+   "gain": 1.35
+  },
+  "solo-cello": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "cello, expressive sustained line (motif)",
+   "keep": 5.0,
+   "rel": 0.3,
+   "files": [
+    "Strings/Cello Section/susvib/susvib_A2_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_B1_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_B3_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_C1_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_C3_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_D2_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_D4_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_E1_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_E3_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_F2_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_F4_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_G1_v3_1.wav",
+    "Strings/Cello Section/susvib/susvib_G3_v3_1.wav"
+   ],
+   "gain": 2.25
+  },
+  "solo-violin": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "solo violin with vibrato (motif)",
+   "keep": 4.0,
+   "rel": 0.25,
+   "files": [
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A3_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A4_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A5_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_A6_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C4_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C5_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C6_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_C7_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E4_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E5_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_E6_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G3_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G4_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G5_f.wav",
+    "Strings/Solo Violin/Arco Vib/LLVln_ArcoVib_G6_f.wav"
+   ],
+   "gain": 2.4
+  },
+  "bass-pizz": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "double bass pizzicato (recorded walking bass)",
+   "keep": 2.0,
+   "rel": 0.12,
+   "files": [
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_A#0_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_A1_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_B2_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_C#2_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_C1_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_D1_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_E0_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_E1_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_E2_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_F#0_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_F#1_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_G#1_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_G#2_v1_rr1.wav",
+    "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_G0_v1_rr1.wav"
+   ],
+   "gain": 1.45
+  },
+  "clarinet-real": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "recorded clarinet (the synthesized \"clarinet\" stays)",
+   "keep": 4.0,
+   "rel": 0.1,
+   "files": [
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_A#2_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_A#3_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_A#4_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_D2_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_D3_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_D4_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_D5_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_F#5_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_F2_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_F3_v1_rr1_sum.wav",
+    "Woodwinds/Clarinet/susLong/DCClar_susLong_F4_v1_rr1_sum.wav"
+   ],
+   "gain": 1.9
+  },
+  "flute": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "flute with vibrato (daegeum-like breathy lines, storybook motif)",
+   "keep": 4.0,
+   "rel": 0.12,
+   "files": [
+    "Woodwinds/Flute/susvib/LDFlute_susvib_A3_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_A4_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_A5_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_C3_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_C4_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_C5_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_C6_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_E3_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_E4_v1_1.wav",
+    "Woodwinds/Flute/susvib/LDFlute_susvib_E5_v1_1.wav"
+   ],
+   "gain": 2.0
+  },
+  "flute-stac": {
+   "lib": "vsco",
+   "kind": "pluck",
+   "doc": "flute, staccato",
+   "keep": 1.2,
+   "rel": 0.06,
+   "files": [
+    "Woodwinds/Flute/stac/LDFlute_stac_A3_v2_rr1.wav",
+    "Woodwinds/Flute/stac/LDFlute_stac_A4_v2_rr1.wav",
+    "Woodwinds/Flute/stac/LDFlute_stac_A5_v2_rr1.wav",
+    "Woodwinds/Flute/stac/LDFlute_stac_C4_v2_rr1.wav",
+    "Woodwinds/Flute/stac/LDFlute_stac_C5_v2_rr1.wav",
+    "Woodwinds/Flute/stac/LDFlute_stac_C6_v2_rr1.wav",
+    "Woodwinds/Flute/stac/LDFlute_stac_E4_v2_rr1.wav",
+    "Woodwinds/Flute/stac/LDFlute_stac_E5_v2_rr1.wav"
+   ],
+   "gain": 2.85
+  },
+  "oboe": {
+   "lib": "vsco",
+   "kind": "sustain",
+   "doc": "oboe with vibrato (pastoral motif)",
+   "keep": 4.0,
+   "rel": 0.1,
+   "files": [
+    "Woodwinds/Oboe/Vib/Oboe_Vib_A#2_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_A#3_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_A#4_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_D3_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_D4_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_D5_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_F3_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_F4_v1_Main.wav",
+    "Woodwinds/Oboe/Vib/Oboe_Vib_F5_v1_Main.wav"
+   ],
+   "gain": 2.15
+  }
+ },
+ "hits": {
+  "gong": {
+   "lib": "vcsl",
+   "doc": "gong (jing-like: stage starts, palace doors)",
+   "files": [
+    "Idiophones/Struck Idiophones/Gong 1/gong_f.wav",
+    "Idiophones/Struck Idiophones/Gong 1/gong_mf.wav"
+   ]
+  },
+  "anvil": {
+   "lib": "vcsl",
+   "doc": "anvil strike (forge, carving)",
+   "files": [
+    "Idiophones/Struck Idiophones/Anvil/Anvil_Hit1_v2_rr1_Mid.wav",
+    "Idiophones/Struck Idiophones/Anvil/Anvil_Hit2_v2_rr1_Mid.wav",
+    "Idiophones/Struck Idiophones/Anvil/Anvil_Hit3_v2_rr1_Mid.wav"
+   ]
+  },
+  "woodblock": {
+   "lib": "vcsl",
+   "doc": "woodblock click",
+   "files": [
+    "Idiophones/Struck Idiophones/Woodblock/wood_click3_vl2.wav",
+    "Idiophones/Struck Idiophones/Woodblock/wood_click_f_rr1.wav",
+    "Idiophones/Struck Idiophones/Woodblock/wood_click_f_rr2.wav"
+   ]
+  },
+  "slapstick": {
+   "lib": "vcsl",
+   "doc": "slapstick whip-crack (comedy hits)",
+   "files": [
+    "Idiophones/Struck Idiophones/Slapstick/slapstick_rr1.wav",
+    "Idiophones/Struck Idiophones/Slapstick/slapstick_rr2.wav",
+    "Idiophones/Struck Idiophones/Slapstick/slapstick_rr3.wav"
+   ]
+  },
+  "cowbell": {
+   "lib": "vcsl",
+   "doc": "cowbell",
+   "files": [
+    "Idiophones/Struck Idiophones/Cowbells/Cowbell1_Hit_v3_rr1_Mid.wav"
+   ]
+  },
+  "claves": {
+   "lib": "vcsl",
+   "doc": "claves click",
+   "files": [
+    "Idiophones/Struck Idiophones/Claves/Claves1_Hit_v2_rr1_Mid.wav",
+    "Idiophones/Struck Idiophones/Claves/Claves2_Hit_v2_rr1_Mid.wav"
+   ]
+  },
+  "frame-drum": {
+   "lib": "vcsl",
+   "doc": "frame drum (buk-like low hand drum)",
+   "files": [
+    "Membranophones/Struck Membranophones/Frame Drum/HDrumL_HitMuted_v3_rr1_Sum.wav",
+    "Membranophones/Struck Membranophones/Frame Drum/HDrumL_HitMuted_v3_rr2_Sum.wav",
+    "Membranophones/Struck Membranophones/Frame Drum/HDrumS_HitMuted_v3_rr1_Sum.wav",
+    "Membranophones/Struck Membranophones/Frame Drum/HDrumS_HitMuted_v3_rr2_Sum.wav"
+   ]
+  },
+  "concert-bd": {
+   "lib": "vcsl",
+   "doc": "concert bass drum (deep orchestral hit)",
+   "files": [
+    "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_hit_f.wav",
+    "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_hit_ff.wav"
+   ]
+  },
+  "timpani": {
+   "lib": "vcsl",
+   "doc": "timpani hit",
+   "files": [
+    "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani1_Hit_v3_rr3_Sum.wav",
+    "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani1_Hit_v4_rr1_Sum.wav",
+    "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani2_Hit_v4_rr1_Sum.wav",
+    "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani3_Hit_v4_rr1_Sum.wav",
+    "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani4_Hit_v4_rr1_Sum.wav",
+    "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani5_Hit_v4_rr1_Sum.wav"
+   ]
+  },
+  "sus-cymbal": {
+   "lib": "vcsl",
+   "doc": "suspended cymbal swell (1.5 s roll into a hit)",
+   "files": [
+    "Idiophones/Struck Idiophones/Suspended Cymbal 1/susCymb1_cresc_1.5s.wav"
+   ]
+  },
+  "mark-tree": {
+   "lib": "vcsl",
+   "doc": "mark tree run (magic, sparkle)",
+   "files": [
+    "Idiophones/Struck Idiophones/Mark Trees/Legacy/windchimes_asc1.wav"
+   ]
+  },
+  "ratchet": {
+   "lib": "vcsl",
+   "doc": "ratchet crank",
+   "files": [
+    "Idiophones/Struck Idiophones/Ratchet/Ratchet1_Crank_rr1_Mid.wav"
+   ]
+  },
+  "flexatone": {
+   "lib": "vcsl",
+   "doc": "flexatone wobble (cartoon boing)",
+   "files": [
+    "Idiophones/Struck Idiophones/Flexatone/flexatone1.wav"
+   ]
+  },
+  "triangle": {
+   "lib": "vcsl",
+   "doc": "triangle ding",
+   "files": [
+    "Idiophones/Struck Idiophones/Triangles/Legacy/1/triangle1_hit_mp.wav"
+   ]
+  },
+  "rope-snare": {
+   "lib": "vcsl",
+   "doc": "rope-tension field snare",
+   "files": [
+    "Membranophones/Struck Membranophones/Snare Drum, Rope Tension/Hi/RopeSnare_hi_sn_Main_vl3_rr1.wav"
+   ]
+  },
+  "wine-glass": {
+   "lib": "vcsl",
+   "doc": "struck wine glass (aha, sparkle)",
+   "files": [
+    "Idiophones/Friction Idiophones/Wine Glasses/Releases/Fast/glass1_D#4_Fast_1_Decay.wav",
+    "Idiophones/Friction Idiophones/Wine Glasses/Releases/Fast/glass2_F#4_Fast_1_Decay.wav",
+    "Idiophones/Friction Idiophones/Wine Glasses/Releases/Fast/glass3_A#4_Fast_1_Decay.wav",
+    "Idiophones/Friction Idiophones/Wine Glasses/Releases/Fast/glass4_D5_Fast_1_Decay.wav"
+   ]
+  }
+ }
+}

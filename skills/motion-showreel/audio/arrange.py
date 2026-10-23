@@ -290,6 +290,71 @@ PRESETS = {
         "levels": {"bed": 0.0, "bass": 0.9, "motion": 1.0, "top": 0.0, "motif": 0.0, "drums": 1.0},
         "lowcut": 0.2, "tape": False, "riser": "organic",
     },
+    "folk": {   # an acoustic band: strummed guitar, fingerpicked ukulele or harp, root-fifth bass, brushes, a harmonica hook
+        "bpm": 112, "key": "G", "mode": "major", "drums": "light", "sfx": "organic",
+        "energy": {"intro": 0.35, "groove": 0.65, "breakdown": 0.4, "drop": 0.9, "outro": 0.45},
+        "instruments": ["guitar", "ukulele", "harmonica", "upright", "kick", "brush", "shaker"],
+        "roles": {"bed": "guitar", "motion": "ukulele", "bass": "upright", "top": None, "motif": "harmonica"},
+        "chordBars": 1,
+        "prog": {"major": {"intro": ["I", "IV"], "groove": ["I", "V", "vi", "IV"], "breakdown": ["vi", "IV", "I", "V:sus4"],
+                           "drop": ["IV", "I", "V", "vi"], "outro": ["I"]},
+                 "minor": {"intro": ["i", "VI"], "groove": ["i", "VII", "VI", "VII"], "breakdown": ["VI", "III", "VII", "V"],
+                           "drop": ["VI", "VII", "i", "i"], "outro": ["i"]}},
+        "cadence": {"major": "V", "minor": "V"}, "final": {"major": "I", "minor": "i"},
+        "pad": {"cut": (900, 4200), "gain": 0.12, "atk": 0.2, "introAtk": 0.5},
+        "pluck": "mix", "bassPattern": "twofeel", "motionPattern": "broken8", "topPattern": None,
+        "arp": [0, 2, 1, 3, 0, 2, 1, 4],
+        "kit": {"kick": "soft", "clap": None, "snare": None, "hats": None, "rim": False, "shaker": True, "toms": False, "brush": True},
+        "grooves": "folk", "swing": 0.06, "dropGap": False, "fill": None,
+        "sidechain": {"bed": 0.0, "bass": 0.0, "motion": 0.0, "top": 0.0},
+        "delay": {"beats": 0.75, "fb": 0.2, "taps": 2}, "reverb": {"size": 1.6, "damp": 1.2, "ret": 0.35},
+        "levels": {"bed": 1.15, "bass": 1.05, "motion": 0.8, "top": 0.0, "motif": 1.0, "drums": 0.8},
+        "lowcut": 0.4, "tape": False, "riser": "organic", "hishelf": [4200, -4.5],
+    },
+    "citypop": {   # 1980s city pop: FM electric piano on major sevenths, slap bass, cutting guitar, recorded brass stabs, a tenor sax hook
+        "bpm": 112, "key": "F", "mode": "major", "drums": "full", "sfx": "glassy",
+        "energy": {"intro": 0.35, "groove": 0.7, "breakdown": 0.4, "drop": 1.0, "outro": 0.45},
+        "instruments": ["epiano", "guitar", "slap", "trumpet-stac", "tenor-sax", "kick", "snare", "hats"],
+        "roles": {"bed": "epiano", "motion": "guitar", "bass": "slap", "top": "trumpet-stac", "motif": "tenor-sax"},
+        "chordBars": 1,
+        "prog": {"major": {"intro": ["IV:maj7", "iii:m7"], "groove": ["IV:maj7", "V:7", "iii:m7", "vi:m7"],
+                           "breakdown": ["ii:m7", "iii:m7", "IV:maj7", "V:7sus4"],
+                           "drop": ["IV:maj7", "V:7", "iii:m7", "vi:m7"], "outro": ["IV:maj7", "I:maj9"]},
+                 "minor": {"intro": ["i:m9", "VI:maj7"], "groove": ["VI:maj7", "VII", "v:m7", "i:m7"],
+                           "breakdown": ["iv:m9", "v:m7", "VI:maj7", "VII:7sus4"],
+                           "drop": ["VI:maj7", "VII", "v:m7", "i:m7"], "outro": ["i:m9"]}},
+        "cadence": {"major": "V:7sus4", "minor": "VII"}, "final": {"major": "I:maj9", "minor": "i:m9"},
+        "pad": {"cut": (600, 4000), "gain": 0.1, "atk": 0.05, "introAtk": 0.4},
+        "pluck": "keys", "bassPattern": "slap", "motionPattern": "cutting", "topPattern": "stabs",
+        "arp": [0, 2, 4, 2, 1, 3, 5, 3],
+        "kit": {"kick": "punch", "clap": None, "snare": "tight", "hats": "bright", "rim": False, "shaker": False, "toms": False},
+        "grooves": "citypop", "swing": 0.0, "dropGap": False, "fill": "snare",
+        "sidechain": {"bed": 0.25, "bass": 0.2, "motion": 0.1, "top": 0.1},
+        "delay": {"beats": 0.75, "fb": 0.35, "taps": 4}, "reverb": {"size": 2.2, "damp": 1.2, "ret": 0.45},
+        "levels": {"bed": 1.0, "bass": 1.0, "motion": 0.9, "top": 0.9, "motif": 0.9, "drums": 1.0},
+        "lowcut": 0.4, "tape": False, "riser": "glassy",
+    },
+    "synthwave": {   # 1980s outrun: a detuned poly pad, a running saw bass on eighths, bright sixteenth arps, gated snare, a saw lead
+        "bpm": 96, "key": "A", "mode": "minor", "drums": "full", "sfx": "digital",
+        "energy": {"intro": 0.35, "groove": 0.7, "breakdown": 0.4, "drop": 1.0, "outro": 0.5},
+        "instruments": ["pad", "saw-pluck", "saw-bass", "stab", "lead", "kick", "snare", "hats", "toms"],
+        "roles": {"bed": "pad", "motion": "saw-pluck", "bass": "saw-bass", "top": "stab", "motif": "lead"},
+        "chordBars": 1,
+        "prog": {"minor": {"intro": ["i", "VI"], "groove": ["i", "VI", "III", "VII"], "breakdown": ["VI", "VII", "i", "i"],
+                           "drop": ["VI", "VII", "i", "i"], "outro": ["i"]},
+                 "major": {"intro": ["I", "vi"], "groove": ["I", "V", "vi", "IV"], "breakdown": ["IV", "V", "vi", "V"],
+                           "drop": ["IV", "V", "I", "I"], "outro": ["I"]}},
+        "cadence": {"minor": "VII", "major": "V"}, "final": {"minor": "i", "major": "I"},
+        "pad": {"cut": (600, 3600), "gain": 0.13, "atk": 0.1, "introAtk": 0.7},
+        "pluck": "saw", "bassPattern": "eighths", "motionPattern": "arp16", "topPattern": "stabs",
+        "arp": [0, 2, 4, 2, 1, 3, 5, 3],
+        "kit": {"kick": "punch", "clap": None, "snare": "gated", "hats": "bright", "rim": False, "shaker": False, "toms": True},
+        "grooves": "synthwave", "swing": 0.0, "dropGap": True, "fill": "toms",
+        "sidechain": {"bed": 0.45, "bass": 0.4, "motion": 0.2, "top": 0.2},
+        "delay": {"beats": 0.75, "fb": 0.45, "taps": 5}, "reverb": {"size": 2.8, "damp": 1.1, "ret": 0.5},
+        "levels": {"bed": 1.0, "bass": 1.0, "motion": 0.85, "top": 0.8, "motif": 0.9, "drums": 1.0},
+        "lowcut": 0.3, "tape": False, "riser": "digital",
+    },
 }
 
 # Drum grooves: 16 steps per bar; '.' rest, '1'-'9' velocity 0.1-0.9, 'x' 1.0. Keys: groove/drop x light/full.
@@ -333,6 +398,21 @@ GROOVES = {
         "full": {"kick": "x.....x.x.......", "snare": "....x.......x...", "hats": "7.5.7.5.7.5.7.5.", "ohats": "..............6."},
         "drop": {"kick": "x.....x.x.x.....", "snare": "....x.......x...", "ohats": "7.5.7.5.7.5.7.5."},
     },
+    "folk": {   # kick on 1 and 3, brushed backbeat, shaker eighths; drops add a pushed kick and the shaker on sixteenths
+        "light": {"kick": "x.......7.......", "brush": "....4.......4...", "shaker": "3.2.3.2.3.2.3.2."},
+        "full": {"kick": "x.......x.....5.", "brush": "....5.......5...", "shaker": "4.2.4.2.4.2.4.2."},
+        "drop": {"kick": "x.....5.x.....5.", "brush": "....6..2....6.3.", "shaker": "4232423242324232"},
+    },
+    "citypop": {   # kick on 1 and the pushed 'and' of 2, snare on 2 and 4, sixteenth hats with accents; drops push more
+        "light": {"kick": "x.......x.......", "snare": "....8.......8...", "hats": "5.3.5.3.5.3.5.3."},
+        "full": {"kick": "x.....x...x.....", "snare": "....x.......x...", "hats": "6.4.6.4.6.4.6.4.", "ohats": "..............5."},
+        "drop": {"kick": "x.....x...x...5.", "snare": "....x.......x..4", "hats": "6464646464646464", "ohats": "......5.......6."},
+    },
+    "synthwave": {   # kick on every beat, the gated snare on 2 and 4, straight eighth hats; drops add sixteenth hats
+        "light": {"kick": "x.......x.......", "snare": "....9.......9...", "hats": "..5...5...5...5."},
+        "full": {"kick": "x...x...x...x...", "snare": "....x.......x...", "hats": "6.4.6.4.6.4.6.4."},
+        "drop": {"kick": "x...x...x...x...", "snare": "....x.......x...", "hats": "6464646464646464", "ohats": "..............7."},
+    },
     "cine": {
         "light": {"toms": "x.......6.......", "kick": "x..............."},
         "full": {"toms": "x..6..6.x..6.6..", "kick": "x.......x.......", "snare": "........8.......", "hats": "..3...3...3...3."},
@@ -343,10 +423,24 @@ KIT_PIECES = ("kick", "clap", "snare", "rim", "hats", "ohats", "shaker", "toms",
 ROLE_CHOICES = {
     "bed": ("pad", "strings", "epiano", "piano", "guitar", "ukulele", "koto"),
     "motion": ("dist-guitar", "pulse", "pluck", "arp", "saw-pluck", "marimba", "guitar", "ukulele", "koto", "piano", "epiano", "strings", "bell", "glass"),
-    "bass": ("tri-bass", "upright", "reese", "saw-bass", "bass", "sub"),
+    "bass": ("tri-bass", "upright", "reese", "saw-bass", "bass", "sub", "slap"),
     "top": ("stab", "bell", "glass", "strings"),
     "motif": ("pulse-lead", "clarinet", "bell", "lead", "piano", "epiano", "marimba", "pluck", "glass"),
 }
+# recorded instruments (samples.py) join the end of each list, so a palette of synthesized instruments resolves as before
+for _role, _names in {
+    "bed": ("pipe-organ", "organ-full", "violins", "cellos", "upright-piano", "harpsichord", "concert-harp", "french-horn",
+            "bowed-psaltery", "recorder", "harmonica"),
+    "motion": ("harpsichord", "concert-harp", "dan-tranh", "kalimba", "vibraphone", "real-marimba", "xylophone", "real-glock",
+               "violin-pizz", "cello-pizz", "upright-piano", "trumpet-stac", "trombone-stac", "flute-stac", "hand-chimes"),
+    "bass": ("bass-pizz", "cello-pizz", "tuba"),
+    "top": ("real-glock", "tubular-bells", "hand-chimes", "vibraphone", "trumpet-stac"),
+    "motif": ("trumpet", "tenor-sax", "flute", "oboe", "clarinet-real", "solo-violin", "solo-cello", "harmonica", "recorder",
+              "bowed-psaltery", "french-horn", "trombone", "vibraphone", "real-glock", "kalimba", "concert-harp", "dan-tranh",
+              "upright-piano", "harpsichord", "xylophone", "tubular-bells"),
+}.items():
+    ROLE_CHOICES[_role] = ROLE_CHOICES[_role] + tuple(n for n in _names if n not in ROLE_CHOICES[_role])
+
 TRANSITION_SFX = {  # scene "in" -> (sfx spec, offset s from the boundary); anchors make each land on the bar line
     "blobWipe": ("swish", 0.0), "zoomInto": ("zoom", 0.0), "whip": ("whip", 0.0), "glitch": ("glitch pre=0.1s", 0.0),
     "flash": ("shimmer soft", 0.0), "strobe": ("strobe", 0.0), "match": ("air", 0.0), "impact": ("impact", 0.0),
@@ -988,6 +1082,9 @@ class Arranger:
 
     def motion_voice(self, inst, m, vel, step_dur, bright=1.0):
         m = self.snap(m)
+        if S.is_sampled(inst):
+            hold = step_dur * 0.9 if S.sample_kind(inst) == "sustain" else max(0.25, step_dur * 1.6)
+            return S.sampled(inst, m, hold, min(1.0, 0.45 + 0.5 * vel), seed=int(m))
         if inst == "dist-guitar":
             return S.dist_guitar([m, m + 7], step_dur, vel, mute=step_dur < 0.3, seed=int(m))
         if inst in ("guitar", "ukulele", "koto"):
@@ -1038,6 +1135,26 @@ class Arranger:
             if inst in (None,):
                 continue
             soft_keys = inst in ("epiano", "piano") and part in ("intro", "breakdown") and "pad" in self.s.palette
+            if S.sample_kind(inst) == "sustain":
+                # recorded sustained bed (organ, string section, horns, psaltery): the voicing held for the span,
+                # softer and darker in intros and breakdowns
+                vel = (0.4 if part in ("intro", "breakdown") else 0.55) + 0.35 * e
+                g = pp["gain"] * 0.9 * (0.85 if part == "intro" else 1.0)
+                for j, m in enumerate(notes):
+                    sig = S.sampled(inst, m, max(0.2, dur - 0.04), vel, seed=b.i * 7 + j)
+                    self.add("bed", sig, sp["t0"] + 0.012 * j, pan=-0.25 + 0.5 * j / max(1, len(notes) - 1), gain=g * 0.55 * self.lv["bed"], rev=0.4)
+                continue
+            if S.sample_kind(inst) == "pluck":
+                # recorded plucked / struck bed (harpsichord, harp, piano): a chord on each bar, a lighter one on beat 3
+                for bb in sp["bars"]:
+                    for j, m in enumerate(bb.voicing):
+                        vel = 0.5 + 0.25 * e
+                        self.add("bed", S.sampled(inst, m, bb.dur * 0.95, vel, seed=bb.i * 5 + j), self.swung(bb, 0) + 0.01 * j,
+                                 pan=-0.2 + 0.1 * j, gain=0.11 * self.lv["bed"], rev=0.3)
+                        if bb.beats >= 4 and part != "intro":
+                            self.add("bed", S.sampled(inst, m, bb.dur * 0.45, vel * 0.6, seed=bb.i * 5 + j + 1),
+                                     self.swung(bb, 8) + 0.008 * j, pan=-0.2 + 0.1 * j, gain=0.07 * self.lv["bed"], rev=0.3)
+                continue
             if inst == "pad" or soft_keys:          # keys beds open and break down on a soft pad when there is one
                 g = pp["gain"]
                 if part == "intro":
@@ -1098,6 +1215,8 @@ class Arranger:
         gl = self.lv["bass"]
 
         def voice(m, d, e):
+            if S.is_sampled(inst):
+                return S.sampled(inst, m, d, 0.6 + 0.35 * e, seed=int(m))
             if inst == "tri-bass":
                 return S.chip_tri(m, d)
             if inst == "sub":
@@ -1108,6 +1227,8 @@ class Arranger:
                 return S.reese(m, d, 0.6 + 0.5 * e)
             if inst == "saw-bass":
                 return S.bass_saw(m, d, 0.8 + 0.4 * e)
+            if inst == "slap":
+                return S.slap(m, d, 0.6 + 0.35 * e)
             return S.bass_round(m, d)
 
         # intro sub bed / breakdown drone: one sustained note per run of bars on the same root (no re-attack)
@@ -1203,6 +1324,33 @@ class Arranger:
                     self.add("bass", voice(note, 0.92 * bt, e) * v, b.t0 + q * bt + 0.004, gain=0.34 * gl)
                     if busy and q == 3 and S.seed_of(self.s.seed, b.i, "skip") % 2 == 0:   # a ghosted skip note
                         self.add("bass", voice(note, 0.25 * bt, e) * 0.45, b.t0 + q * bt + 2 * bt / 3, gain=0.34 * gl)
+            elif pat == "twofeel":
+                # folk / country two-feel: the root on 1, the fifth below on 3, a walk-up into the next chord when busy
+                idx = self.bars.index(b)
+                nxt = self.bars[idx + 1].bass if idx + 1 < len(self.bars) else root
+                for q in range(b.beats):
+                    if q % 2 == 0:
+                        note = root if q == 0 else root - 5
+                        self.add("bass", voice(note, 0.9 * bt * 1.6, e), b.t0 + q * bt + 0.004, gain=0.32 * (1.0 if q == 0 else 0.85) * gl)
+                    elif busy and q == b.beats - 1 and nxt != root:
+                        step = 2 if nxt > root else -1
+                        self.add("bass", voice(nxt - step, 0.45 * bt, e) * 0.8, b.t0 + q * bt + bt / 2, gain=0.3 * gl)
+            elif pat == "slap":
+                # city-pop slap line on sixteenths: thumbed roots, popped octaves, dead ghost notes and the fifth
+                # before the bar line; drops add a second pop and a lead-in to the next bar's root
+                idx = self.bars.index(b)
+                nxt = self.bars[idx + 1].bass if idx + 1 < len(self.bars) else root
+                seq = [(0, "thumb", 0, 1.0), (3, "pop", 12, 0.8), (6, "thumb", 0, 0.85), (7, "ghost", 0, 0.6), (8, "thumb", 0, 0.9),
+                       (10, "pop", 12, 0.75), (11, "ghost", 0, 0.5), (14, "thumb", 7, 0.8)]
+                if busy:
+                    seq += [(13, "pop", 12, 0.7), (15, "thumb", (nxt - 1 if nxt > root else nxt + 2) - root, 0.75)]
+                s16 = bt / 4
+                for st, kind, iv, v in seq:
+                    if st >= b.beats * 4:
+                        continue
+                    note, d = root + iv, {"thumb": 1.7 * s16, "pop": 0.12, "ghost": 0.05}[kind]
+                    sig = S.slap(note, d, 0.6 + 0.35 * e, kind) if inst == "slap" else voice(note, d, e)
+                    self.add("bass", sig * v, b.t0 + st * s16 + 0.003, gain=0.36 * gl)
             elif pat == "lofi":
                 seq = [(0, 6, 0, 1.0), (7, 2, 0, 0.6), (10, 5, 7, 0.85)] if b.beats >= 4 else [(0, 4 * b.beats - 1, 0, 1.0)]
                 for st, ln, iv, v in seq:
@@ -1305,6 +1453,26 @@ class Arranger:
                     self.add("motion", S.pluck(m, "bell" if inst in ("bell", "pluck", "arp") else "glass"),
                              b.t0 + i * b.beat / 2, pan=float(rng.uniform(-0.6, 0.6)), gain=0.07 * (0.6 + 0.4 * e) * gl,
                              rev=0.5, dly=0.6)
+            elif kind == "cutting":
+                # city-pop cutting guitar: muted sixteenth strums of the upper chord tones, accents on 2 and 4,
+                # down and up strokes alternating with the grid
+                hits = [(2, 0.5), (4, 1.0), (6, 0.55), (7, 0.4), (10, 0.5), (12, 1.0), (14, 0.6), (15, 0.45)]
+                if part == "drop":
+                    hits += [(0, 0.6), (9, 0.4)]
+                ch = [m + 12 if m < 60 else m for m in sorted(b.voicing)[-3:]]
+                s16 = b.beat / 4
+                for st, v in hits:
+                    if st >= b.beats * 4:
+                        continue
+                    order = ch if st % 2 == 0 else ch[::-1]
+                    sig = np.zeros(S.ns(0.16))
+                    for j, m in enumerate(order):
+                        y = S.ks(m, 0.14, bright=0.65, decay=0.985, pick=0.18, seed=st * 5 + j)
+                        y = y[:len(sig)] * np.exp(-S.tt(min(len(y), len(sig))) / 0.035)
+                        o = S.ns(0.005 * j)
+                        sig[o:o + len(y)] += y[:len(sig) - o]
+                    self.add("motion", sig * v * (0.8 + 0.25 * e), b.t0 + st * s16, pan=0.3 if st % 4 == 2 else -0.15,
+                             gain=0.085 * gl, rev=0.12, dly=0.0)
             elif kind == "comp":
                 hits = [(0, 6, 1.0), (7, 2, 0.55), (10, 3, 0.7)] if b.beats >= 4 else [(0, 4 * b.beats, 1.0)]
                 if part == "drop":
@@ -1387,6 +1555,23 @@ class Arranger:
             if b.part != "drop" or b.energy < 0.8:
                 continue
             tones = self.arp_tones(b)
+            if S.is_sampled(inst) and kind == "stabs":
+                # recorded brass stabs: the chord's upper three tones on the 'and' of 2 and the 'and' of 4
+                ch = [self.snap(m + 12 if m < 64 else m) for m in sorted(b.voicing)[-3:]]
+                for st in (6, 14):
+                    if st >= b.beats * 4:
+                        continue
+                    sig = sum(S.sampled(inst, m, b.beat * 0.4, 0.75, seed=st + j) for j, m in enumerate(ch))
+                    self.add("top", sig, b.t0 + st * b.beat / 4, pan=0.15, gain=0.09 * gl, rev=0.3, dly=0.1)
+                continue
+            if S.is_sampled(inst):
+                # recorded top layer: the arp's highest tones an octave up on beats 2 and 4 (bells, glock, chimes)
+                for q in range(1, b.beats, 2):
+                    m = self.snap(tones[(q * 3) % len(tones)] + 12)
+                    m = m if m <= 96 else m - 12
+                    self.add("top", S.sampled(inst, m, b.beat * 1.5, 0.6), b.t0 + q * b.beat, pan=0.35 if q % 4 == 1 else -0.35,
+                             gain=0.07 * gl, rev=0.35, dly=0.35)
+                continue
             if kind == "octave":
                 for i in range(b.beats * 2):
                     m = tones[(i * 3) % len(tones)] + 12
@@ -1446,7 +1631,12 @@ class Arranger:
                 m = self.snap(m)
                 v = vel0 + 0.05 * self.motif.index((st, deg)) if part == "intro" else vel0
                 kind = {"bell": "bell", "lead": "saw", "marimba": "marimba", "glass": "glass", "pluck": "bell"}.get(inst)
-                if inst == "pulse-lead":
+                if S.is_sampled(inst):
+                    low = S.sample_kind(inst) == "sustain" and inst in ("tenor-sax", "trombone", "solo-cello", "french-horn")
+                    hold = b.beat * (0.85 if S.sample_kind(inst) == "sustain" else 1.4)
+                    sig = S.sampled(inst, m - (12 if low else 0), hold, min(1.0, 0.55 + 0.4 * v), seed=int(m) + 3)
+                    g = 0.17 if S.sample_kind(inst) == "sustain" else 0.12
+                elif inst == "pulse-lead":
                     sig = S.chip_pulse(m, b.beat * 0.45, duty=0.5, vel=0.9, decay=1)
                     g = 0.16
                 elif inst in ("piano", "epiano"):
@@ -1812,6 +2002,12 @@ def render_cues(song: Song, arr: Arranger, cues, bad):
             continue
         if not np.all(np.isfinite(st)):
             st = np.nan_to_num(st)
+        if d.role == "control":     # hush: a stop-time window in the music, nothing to mix
+            arr.gaps.append((t_out, t_out + st.shape[1] / S.SR))
+            placed.append({"t": round(t_out, 6), "sceneT": round(c["t"], 6), "sfx": c["spec"], "name": c["name"], "control": True,
+                           "anchor": d.anchor, "role": d.role, "scene": c["scene"], "auto": c["auto"], "seed": c["seed"],
+                           "params": {k: v for k, v in c["params"].items() if v not in (None, [])}, "len": round(st.shape[1] / S.SR, 4)})
+            continue
         arr.mix.add("sfx", st, t_out, anchor=anc, sends={"srev": d.rev, "sdly": d.dly})
         if c["name"] in HEAVY_SFX:
             arr.heavy.append(t_out)
@@ -1847,6 +2043,10 @@ def mixdown(song: Song, arr: Arranger, want_music=True, want_sfx=True):
         if p.get("tape"):
             music = S.wow(music)
             music = S.lp(music, 5200)
+        if p.get("hishelf"):      # [corner Hz, dB]: a gentle high shelf for presets on bright acoustic instruments
+            f, db = p["hishelf"]
+            low = S.lp(music, float(f))
+            music = low + 10 ** (float(db) / 20) * (music - low)
         if song.crackle:
             cr = S.crackle(n, np.random.default_rng(S.seed_of(song.seed, "crackle")))
             music += S.pan2(cr, 0.0) * 0.5

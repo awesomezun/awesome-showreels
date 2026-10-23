@@ -413,6 +413,8 @@ def check(args):
                     fails.append(f"stale audio: cue {p['sfx']!r} at {p.get('sceneT')} s is not in the cut (re-run arrange.py)")
                     continue
                 seen.add((str(p["sfx"]), round(ts[j], 6)))
+                if p.get("control"):        # hush and other control cues shape the music; there is no sound to find
+                    continue
                 exp_t = W(ts[j])
             cues.append({"t": exp_t, "sfx": p["sfx"], "name": p["name"], "anchor": p["anchor"], "scene": p.get("scene"),
                          "auto": p.get("auto", False), "placed": p, "delta": float(p["t"]) - exp_t})

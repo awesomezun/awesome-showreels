@@ -466,6 +466,35 @@ def _bass_saw(m, d, bright):
     return _frozen(np.tanh(x * env * 1.4) * 0.8)
 
 
+def slap(m, d, vel=0.8, kind="thumb"):
+    """Slap bass (city pop, funk): kind "thumb" = the string struck by the thumb, a bright click and a growling body;
+    "pop" = the string snapped by a finger, brighter and more metallic with a longer top; "ghost" = a dead note, a
+    short thud and click. Additive strings with slightly stretched partials, each partial decaying faster than the one
+    below it. Cached (read-only)."""
+    return _slap(int(round(m)), round(float(d), 3), round(float(vel), 2), kind)
+
+
+@functools.lru_cache(maxsize=1024)
+def _slap(m, d, vel, kind):
+    f = float(mtof(m))
+    n = ns(d + 0.06)
+    t = tt(n)
+    rng = np.random.default_rng(m * 7 + len(kind))
+    nz = bp(rng.standard_normal(n), 1500, 6500)
+    if kind == "ghost":
+        y = np.sin(2 * np.pi * f * t) * np.exp(-t / 0.022) * 0.55 + nz * np.exp(-t / 0.005) * 0.25
+        return _frozen(fades(y * vel, 0.0005, 0.01))
+    pop = kind == "pop"
+    y = np.zeros(n)
+    for k in range(1, 13):
+        amp = (1.0 / k) * (1.5 if pop and k > 2 else 1.0)
+        dec = (1.1 if pop else 0.8) / (1 + (k - 1) * (0.45 if pop else 0.8))
+        y += amp * np.sin(2 * np.pi * f * k * t * (1 + 0.0006 * k * k)) * np.exp(-t / dec)
+    env = np.minimum(1, t / 0.0012) * np.where(t < d, 1.0, np.exp(-(t - d) / 0.03))
+    y = np.tanh(1.4 * (0.42 * y + nz * np.exp(-t / 0.004) * (0.7 if pop else 0.45)) * env) * 0.8
+    return _frozen(fades(y * (0.65 + 0.35 * vel), 0.0005, 0.02))
+
+
 def reese(m, d, move=1.0):
     """Reese bass: two saws detuned +-0.35 % beating against each other, an octave saw for edge, through a low-pass
     whose cutoff breathes (the moving 'neuro' growl), saturated over a clean sine sub. Cached (read-only)."""
@@ -549,7 +578,7 @@ def clap(kind="pop", var=0):
 
 @functools.lru_cache(maxsize=64)
 def snare(kind="tight", var=0):
-    """Snare: tight | lofi | big."""
+    """Snare: tight | lofi | big | gated."""
     rng = rng_of("snare", kind, var)
     n = ns(0.45 if kind == "big" else 0.25)
     t = tt(n)
@@ -558,6 +587,12 @@ def snare(kind="tight", var=0):
     y = tone + nz
     if kind == "lofi":
         y = lp(sat(y, 1.8), 5500)
+    if kind == "gated":      # the 1980s gated-reverb snare: a dense noise bloom held flat, then cut off hard
+        m = ns(0.34)
+        tg = tt(m)
+        tail = bp(rng.standard_normal(m), 700, 6500) * np.minimum(1, tg / 0.012) * np.where(tg < 0.27, 0.55, 0.55 * np.clip((0.34 - tg) / 0.07, 0, 1))
+        y = np.concatenate([y, np.zeros(max(0, m - n))])[:max(n, m)]
+        y[:m] += tail
     return _frozen(fades(y * 0.8, 0.0005, 0.02))
 
 
@@ -648,10 +683,44 @@ INSTRUMENT_ALIASES = {
 }
 
 
+# Recorded instruments (audio/samples.py: two CC0 libraries, fetched on first use). Their names never shadow a
+# synthesized instrument or alias, so a style that names only synthesized instruments sounds exactly as before.
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import samples as SM
+    for _k, _v in SM.docs().items():
+        INSTRUMENTS.setdefault(_k, _v)
+    for _a, _k in {"organ": "pipe-organ", "church-organ": "pipe-organ", "full-organ": "organ-full", "harp": "concert-harp",
+                   "gayageum": "dan-tranh", "zither": "dan-tranh", "haegeum": "bowed-psaltery", "erhu": "bowed-psaltery",
+                   "daegeum": "flute", "violin": "solo-violin", "cello": "solo-cello", "pizzicato": "violin-pizz",
+                   "pizz": "violin-pizz", "brass": "trumpet", "horn": "french-horn", "felt-piano": "upright-piano",
+                   "real-piano": "upright-piano", "tenorsax": "tenor-sax", "xylo": "xylophone", "tubular": "tubular-bells",
+                   "chimes": "hand-chimes", "vibraphone-real": "vibraphone", "tuba-stac": "tuba", "string-section": "violins",
+                   "cello-section": "cellos", "double-bass-pizz": "bass-pizz", "mbira": "kalimba"}.items():
+        if _a not in INSTRUMENT_ALIASES and _a not in INSTRUMENTS:
+            INSTRUMENT_ALIASES[_a] = _k
+except Exception:          # no samples.json / soxr: the synthesized instruments still work
+    SM = None
+
+
 def canonical_instrument(name: str) -> str | None:
     k = re.sub(r"[\s_]+", "-", str(name).strip().lower())
     k = INSTRUMENT_ALIASES.get(k, k)
     return k if k in INSTRUMENTS else None
+
+
+def is_sampled(name) -> bool:
+    return SM is not None and bool(name) and SM.is_instrument(str(name))
+
+
+def sample_kind(name):
+    """'pluck' (struck / plucked, rings until note-off) | 'sustain' (bowed / blown / organ, held) | None."""
+    return SM.kind(name) if is_sampled(name) else None
+
+
+def sampled(name, m, dur, vel=0.8, seed=0, rel=None):
+    """One note of a recorded instrument (mono at SR); see samples.note."""
+    return SM.note(name, m, dur, vel, seed, rel)
 
 
 
@@ -2082,6 +2151,325 @@ def _sfx_drone(c):
     y = sine(f, n) * 0.25 + lp(saw(f * 1.005, n), 300) * 0.08 + bp(c.rng.standard_normal(n), 200, 600) * 0.02
     env = np.minimum(1, p / 0.15) ** 0.7 * np.clip((1 - p) / 0.1, 0, 1)
     return y * env, 0
+
+
+# ───────────────────────────── craft and paper foley (woodcut, print, paper-cut) ─────────────────────────────
+def _scrape(c, d, bright=1.0, grain=1.0):
+    """A blade through wood or paper: band-passed noise with a fibre flutter, a bite at the start, a lift at the end."""
+    n = ns(d)
+    t = tt(n)
+    x = c.rng.standard_normal(n)
+    fl = 1 + 0.55 * grain * np.sign(np.sin(2 * np.pi * (38 + 25 * c.rng.random()) * t + c.rng.random() * 6))
+    env = np.minimum(1, t / 0.012) * np.exp(-t / (d * 0.9)) * (0.55 + 0.45 * np.sin(np.pi * np.clip(t / d, 0, 1)))
+    y = bp(x * fl, 1300 * bright, 5200 * bright, 2) * env
+    k = min(n, ns(0.01))
+    y[:k] += 0.5 * bp(c.rng.standard_normal(k), 2500, 7000) * np.exp(-np.arange(k) / (0.002 * SR))
+    return fades(y, 0.001, 0.02)
+
+
+@_register("carve", anchor="span", gain=0.26, rev=0.18, primary="dur", aliases=("gouge", "chisel-cut", "scrape"),
+           doc="V-gouge cuts through wood: n= scrapes across dur (1 beat), each 0.1-0.25 s with a bite at the start")
+def _sfx_carve(c):
+    d, n = c.time("dur", 1.0), int(c.num("n", 0) or 0)
+    if n <= 0:
+        n = max(1, int(round(d / 0.32)))
+    items = []
+    for i in range(n):
+        dd = float(c.rng.uniform(0.1, 0.24))
+        o = d * i / n + float(c.rng.uniform(0, 0.03))
+        items.append((o, _scrape(c, dd, bright=float(c.rng.uniform(0.85, 1.15))), float(c.rng.uniform(-0.3, 0.3))))
+    return _seq(items)
+
+
+@_register("engrave", anchor="span", gain=0.2, rev=0.22, primary="dur", aliases=("burin", "etch", "scratch-fine"),
+           doc="a burin ploughing copper: thin, bright metal scrapes across dur (1 beat), n= lines")
+def _sfx_engrave(c):
+    d, n = c.time("dur", 1.0), int(c.num("n", 0) or 0)
+    if n <= 0:
+        n = max(1, int(round(d / 0.28)))
+    items = []
+    for i in range(n):
+        dd = float(c.rng.uniform(0.12, 0.26))
+        y = _scrape(c, dd, bright=float(c.rng.uniform(1.9, 2.4)), grain=0.35)
+        tl = tt(len(y))
+        y = y + 0.08 * np.sin(2 * np.pi * float(c.rng.uniform(5200, 6800)) * tl) * np.exp(-tl / 0.05)
+        items.append((d * i / n + float(c.rng.uniform(0, 0.02)), y, float(c.rng.uniform(-0.25, 0.25))))
+    return _seq(items)
+
+
+@_register("squeegee", anchor="span", gain=0.3, rev=0.18, primary="dur", aliases=("pull-print", "screen-pull", "smear"),
+           doc="a squeegee pulled across a silkscreen: a rubbery drag through ink with a short squeak (dur 0.5 s)")
+def _sfx_squeegee(c):
+    d = c.time("dur", "0.5s")
+    n = ns(d)
+    t = tt(n)
+    env = np.minimum(1, t / 0.03) * np.where(t > d - 0.06, np.clip((d - t) / 0.06, 0, 1), 1)
+    drag = bp(c.rng.standard_normal(n), 250, 1800) * (0.7 + 0.3 * np.sin(2 * np.pi * 23 * t)) * env
+    sq_n = ns(min(0.16, d * 0.4))
+    st = tt(sq_n)
+    f = 950 + 380 * st / max(st[-1], 1e-6) + 40 * np.sin(2 * np.pi * 31 * st)
+    squeak = sine(f, sq_n) * np.sin(np.pi * st / st[-1]) ** 2 * 0.35
+    y = drag.copy()
+    k = int(n * 0.45)
+    y[k:k + sq_n] += squeak[: max(0, min(sq_n, n - k))]
+    return fades(y, 0.002, 0.02), 0
+
+
+@_register("snip", anchor="onset", gain=0.28, rev=0.12, primary="n", aliases=("scissors", "cut-paper", "shear"),
+           doc="scissors closing through paper: a metallic click with a short crisp shear; n= snips gap= apart (1/4 beat)")
+def _sfx_snip(c):
+    n, gap = max(1, int(c.num("n", 1))), c.time("gap", 0.25)
+    items = []
+    for i in range(n):
+        d = ns(0.09)
+        t = tt(d)
+        shear = bp(c.rng.standard_normal(d), 3000, 9000) * np.exp(-t / 0.025) * 0.8
+        f = float(c.rng.uniform(2600, 3400))
+        ring = (np.sin(2 * np.pi * f * t) + 0.5 * np.sin(2 * np.pi * f * 2.76 * t)) * np.exp(-t / 0.018) * 0.35
+        click = np.zeros(d)
+        click[:48] = c.rng.standard_normal(48) * np.exp(-np.arange(48) / 8.0)
+        items.append((i * gap, fades(shear + ring + click, 0.0005, 0.01), float(c.rng.uniform(-0.25, 0.25))))
+    return _seq(items)
+
+
+@_register("pen", anchor="span", gain=0.15, rev=0.2, primary="dur", aliases=("nib", "pen-scratch", "writing"),
+           doc="a fountain-pen nib on paper for dur (1 bar): a soft, grainy whisper that swells with the stroke and eases at the turns")
+def _sfx_pen(c):
+    d = c.time("dur", "1bar")
+    n = ns(d)
+    t = tt(n)
+    x = c.rng.standard_normal(n)
+    grain = 0.6 + 0.4 * np.abs(np.sin(2 * np.pi * (11 + 3 * np.sin(2 * np.pi * 0.7 * t)) * t))
+    speed = 0.55 + 0.45 * np.abs(np.sin(2 * np.pi * float(c.rng.uniform(0.6, 1.1)) * t + 1.0))
+    env = np.minimum(1, t / 0.06) * np.minimum(1, (d - t) / 0.12)
+    y = bp(x, 2200, 7000, 2) * grain * speed * env * 0.8 + bp(x, 600, 1500, 2) * speed * env * 0.2
+    return fades(y, 0.01, 0.05), 0
+
+
+@_register("hush", anchor="span", role="control", gain=0.0, rev=0.0, primary="dur", aliases=("silence", "stop-time", "music-off"),
+           doc="stop-time: the music bus is cut to digital silence for dur (1 beat) from the cue, with 4 ms edges; SFX still play")
+def _sfx_hush(c):
+    return np.zeros(max(1, ns(c.time("dur", 1.0)))), 0
+
+
+@_register("peel", anchor="span", gain=0.3, rev=0.2, primary="dur", aliases=("paper-peel", "pull", "lift"),
+           doc="a sheet peeled off a block or a table: paper crackle that rises and lets go (1 bar)")
+def _sfx_peel(c):
+    d = c.time("dur", "1bar")
+    n = ns(d)
+    t = tt(n)
+    x = c.rng.standard_normal(n)
+    crack = np.zeros(n)
+    k = int(d * 140)
+    for i in c.rng.integers(0, max(1, n - 400), size=k):
+        crack[i:i + 160] += c.rng.uniform(0.2, 1.0) * np.exp(-np.arange(min(160, n - i)) / 30.0)
+    env = np.clip(t / (0.75 * d), 0, 1) ** 1.5 * np.where(t > 0.85 * d, np.exp(-(t - 0.85 * d) / 0.05), 1)
+    y = (bp(x, 400, 2600) * 0.6 + bp(crack * c.rng.choice((-1, 1), n), 1500, 7000)) * env
+    return fades(y, 0.005, 0.03), 0
+
+
+# ───────────────────────────── recorded hits and in-key notes (samples.py) ─────────────────────────────
+MODE_SCALES = {"major": (0, 2, 4, 5, 7, 9, 11), "ionian": (0, 2, 4, 5, 7, 9, 11), "minor": (0, 2, 3, 5, 7, 8, 10),
+               "aeolian": (0, 2, 3, 5, 7, 8, 10), "dorian": (0, 2, 3, 5, 7, 9, 10), "mixolydian": (0, 2, 4, 5, 7, 9, 10),
+               "lydian": (0, 2, 4, 6, 7, 9, 11), "phrygian": (0, 1, 3, 5, 7, 8, 10)}
+
+
+def _deg_midi(c, deg, octave):
+    sc = MODE_SCALES.get(c.mode, MODE_SCALES["major"])
+    o, i = divmod(int(deg), len(sc))
+    return 12 * (int(octave) + 1) + c.key_pc + sc[i] + 12 * o
+
+
+def _note_pitches(c):
+    """MIDI pitches of a note cue, one list per note of the run: note=E4 | m=64 | deg=k (diatonic degree in the reel's
+    key and mode, oct=) | step=k (pentatonic step, like pop); n= notes rising rise= (degrees / steps / semitones);
+    chord = a triad on each note; pitch= shifts everything by semitones."""
+    p, n, rise, octv = c.params, max(1, int(c.num("n", 1))), c.num("rise", 1), c.num("oct", 5)
+    chord = c.flag("chord") or bool(p.get("chord"))
+    out = []
+    for i in range(n):
+        if p.get("deg") is not None:
+            d = int(float(p["deg"])) + int(i * rise)
+            ms = [_deg_midi(c, d + k, octv) for k in ((0, 2, 4) if chord else (0,))]
+        elif p.get("note") is not None or p.get("m") is not None:
+            m0 = float(note_midi(str(p["note"]))) if p.get("note") is not None else float(p["m"])
+            m0 += i * rise
+            ms = [m0, m0 + (4 if c.mode in MAJORISH else 3), m0 + 7] if chord else [m0]
+        else:
+            m0 = c.pent(int(c.num("step", 0)) + int(i * rise), int(octv))
+            ms = [m0, m0 + (4 if c.mode in MAJORISH else 3), m0 + 7] if chord else [m0]
+        out.append([float(m) + c.semis() for m in ms])
+    return out
+
+
+def _note_inst(c, default="real-marimba"):
+    for f in c.flags:
+        k = canonical_instrument(f)
+        if k:
+            return k
+    v = c.params.get("inst")
+    return canonical_instrument(v) if v else default
+
+
+@_register("note", gain=0.42, rev=0.3, dly=0.08, primary="dur", aliases=("tone", "play"),
+           doc="notes of any instrument in the reel's key: note:<instrument> deg=2 (diatonic degree, oct=5) | step=k "
+               "(pentatonic) | note=E4 | m=64; dur= (1 beat), vel=, chord (a triad), n= notes rise= apart, gap= between them")
+def _sfx_note(c):
+    inst = _note_inst(c)
+    d, vel, gap = c.time("dur", 1.0), c.num("vel", 0.8), c.time("gap", 0.25)
+    runs = _note_pitches(c)
+    items = []
+    for i, ms in enumerate(runs):
+        pan = float(c.params.get("pan", 0.0)) if len(runs) == 1 else -0.3 + 0.6 * i / (len(runs) - 1)
+        for j, m in enumerate(ms):
+            if is_sampled(inst):
+                y = sampled(inst, m, d, vel, seed=c.seed + i)
+            elif inst in ("piano", "epiano"):
+                y = (piano if inst == "piano" else epiano)(int(round(m)), d, vel)
+            elif inst in ("guitar", "ukulele", "koto"):
+                y = globals()[inst](int(round(m)), max(0.4, d), vel, seed=c.seed + i)
+            elif inst == "strings":
+                y = strings([int(round(m))], d, atk=0.05, rel=0.3, seed=c.seed + i)
+            else:
+                y = pluck(int(round(m)), inst if inst in ("marimba", "bell", "glass") else "bell")
+            items.append((i * gap + 0.006 * j, y * (0.7 if len(ms) > 1 else 1.0), pan))
+    return _seq(items)
+
+
+# ───────────────────────────── a singing voice (formant synthesis of Korean syllables) ─────────────────────────────
+# A Hangul syllable splits into initial, medial and final; the medial picks the vowel's formants (with a y- or w-glide),
+# the initial adds a short consonant before the vowel (a burst, hiss, breath or hum) and the final closes it (a nasal
+# hum, an l, or a stop). The vowel starts on the cue, so the consonant leads in just ahead of the beat, as singers do.
+_V = {"a": (900, 1300, 2900), "e": (620, 2100, 2900), "eo": (680, 1150, 2800), "o": (520, 950, 2800), "u": (380, 900, 2700),
+      "eu": (420, 1600, 2800), "i": (330, 2700, 3300)}
+# medial index -> (glide-from vowel or None, vowel)
+_MED = [(None, "a"), (None, "e"), ("i", "a"), ("i", "e"), (None, "eo"), (None, "e"), ("i", "eo"), ("i", "e"), (None, "o"), ("u", "a"),
+        ("u", "e"), ("u", "e"), ("i", "o"), (None, "u"), ("u", "eo"), ("u", "e"), ("u", "i"), ("i", "u"), (None, "eu"), ("eu", "i"), (None, "i")]
+# initial index -> consonant kind: (noise band lo, hi, burst s, hiss s, voiced hum s)
+_INI = ["k", "kk", "n", "t", "tt", "r", "m", "p", "pp", "s", "ss", "", "j", "jj", "ch", "kh", "th", "ph", "h"]
+_CONS = {"k": (1500, 3500, 0.010, 0.0, 0.0), "kk": (1500, 3500, 0.014, 0.0, 0.0), "kh": (1500, 3500, 0.010, 0.045, 0.0),
+         "t": (2500, 6000, 0.008, 0.0, 0.0), "tt": (2500, 6000, 0.012, 0.0, 0.0), "th": (2500, 6000, 0.008, 0.045, 0.0),
+         "p": (500, 2000, 0.008, 0.0, 0.015), "pp": (500, 2000, 0.012, 0.0, 0.0), "ph": (500, 2000, 0.008, 0.045, 0.0),
+         "s": (4500, 9500, 0.0, 0.075, 0.0), "ss": (4500, 9500, 0.0, 0.095, 0.0), "j": (3000, 7000, 0.008, 0.035, 0.0),
+         "jj": (3000, 7000, 0.012, 0.035, 0.0), "ch": (3000, 7000, 0.008, 0.06, 0.0), "h": (900, 5000, 0.0, 0.06, 0.0),
+         "n": (0, 0, 0.0, 0.0, 0.055), "m": (0, 0, 0.0, 0.0, 0.06), "r": (0, 0, 0.0, 0.0, 0.025), "": (0, 0, 0.0, 0.0, 0.0)}
+# final index -> kind
+_FIN = ["", "stop", "stop", "stop", "n", "n", "n", "stop", "l", "l", "l", "l", "l", "l", "l", "l", "m", "stop", "stop", "stop", "stop",
+        "ng", "stop", "stop", "stop", "stop", "stop", "stop"]
+_ROMAN_V = {"a": "a", "e": "e", "i": "i", "o": "o", "u": "u"}
+
+
+def _syllable(ch):
+    """'파' -> ('ph', (None, 'a'), ''); a Latin syllable like 'la' or 'na' -> its consonant and vowel."""
+    c = ord(ch[0]) if ch else 0
+    if 0xAC00 <= c <= 0xD7A3:
+        k = c - 0xAC00
+        return _INI[k // 588], _MED[(k % 588) // 28], _FIN[k % 28]
+    w = ch.lower()
+    v = next((_ROMAN_V[x] for x in w if x in _ROMAN_V), "a")
+    ini = {"l": "r", "n": "n", "m": "m", "d": "t", "b": "p", "s": "s", "h": "h"}.get(w[:1], "")
+    return ini, (None, v), ""
+
+
+def _formant(x, freqs, gains=(1.0, 0.55, 0.3, 0.15), bws=(90, 110, 160, 220)):
+    out = np.zeros_like(x)
+    for f, g, bw in zip(list(freqs) + [3900], gains, bws):
+        if f >= SR / 2 - 200:
+            continue
+        b, a = signal.iirpeak(f, f / bw, fs=SR)
+        out += g * signal.lfilter(b, a, x)
+    return out
+
+
+@functools.lru_cache(maxsize=512)
+def _sing(syl, m, dur, vel, seed):
+    ini, (glide, vow), fin = _syllable(syl)
+    bl, bh, burst, hiss, hum = _CONS.get(ini, _CONS[""])
+    pre = burst + hiss + hum
+    n_v = ns(dur + 0.09)
+    t = tt(n_v)
+    rng = np.random.default_rng(seed)
+    # pitch: a small scoop into the note, vibrato that grows after a quarter second, a little jitter
+    f0 = float(mtof(m))
+    semi = -0.5 * np.exp(-t / 0.035) + 0.32 * np.clip((t - 0.22) / 0.25, 0, 1) * np.sin(2 * np.pi * 5.6 * t)
+    jit = uniform_filter1d(rng.standard_normal(n_v), int(0.03 * SR)) * 0.6
+    f = f0 * 2 ** ((semi + jit * 0.05) / 12)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    src = np.zeros(n_v)
+    for k in range(1, int(5200 / (f0 * 1.03)) + 1):
+        src += np.sin(k * ph) / k ** 1.25
+    src += uniform_filter1d(rng.standard_normal(n_v), 2) * 0.05
+    va = _formant(src, _V[vow])
+    if glide:
+        vg = _formant(src, _V[glide])
+        w = np.clip(t / 0.09, 0, 1)
+        y = vg * (1 - w) + va * w if glide not in ("eu",) else va * (1 - np.clip(t / dur, 0, 1)) + _formant(src, _V["i"]) * np.clip(t / dur, 0, 1)
+        if glide == "eu":     # ㅢ: eu sliding to i over the note
+            y = _formant(src, _V["eu"]) * (1 - np.clip(t / (dur * 0.8), 0, 1)) + _formant(src, _V["i"]) * np.clip(t / (dur * 0.8), 0, 1)
+    else:
+        y = va
+    # the final: a nasal hum, an l, or a stop that cuts the vowel short
+    if fin in ("n", "m", "ng", "l"):
+        w = np.clip((t - dur * 0.62) / 0.05, 0, 1)
+        tail = _formant(src, {"n": (250, 1700, 2700), "m": (250, 1000, 2500), "ng": (250, 1300, 2600), "l": (350, 1150, 2600)}[fin]) * (0.55 if fin != "l" else 0.8)
+        if fin != "l":
+            tail = lp(tail, 900)
+        y = y * (1 - w) + tail * w
+    end = dur * (0.82 if fin == "stop" else 1.0)
+    env = np.minimum(1, t / 0.025) * np.where(t < end, 1.0, np.exp(-(t - end) / (0.012 if fin == "stop" else 0.06)))
+    y = y * env
+    y /= max(1e-6, np.abs(y).max())
+    # the initial consonant, ahead of the vowel
+    if pre > 0:
+        n_c = ns(pre)
+        tc = tt(n_c)
+        c = np.zeros(n_c)
+        if burst + hiss > 0:
+            nz = bp(rng.standard_normal(n_c), bl, bh)
+            c += nz * np.where(tc < burst, np.exp(-tc / 0.004) * 1.2, 0.35 * np.minimum(1, (tc - burst) / 0.01)) * (tc >= 0)
+            if ini == "h":
+                c = _formant(rng.standard_normal(n_c) * 0.3, _V[glide or vow]) * np.minimum(1, tc / 0.02)
+        if hum > 0:
+            hm = lp(np.sin(2 * np.pi * f0 * tc) + 0.3 * np.sin(4 * np.pi * f0 * tc), 700)
+            c[-ns(hum):] += hm[-ns(hum):] * 0.35 * np.minimum(1, tc[-ns(hum):] / 0.01 + 0.2)
+        c /= max(1.0, np.abs(c).max() / 0.5)
+        y = np.concatenate([c, y])
+    return _frozen(fades(y * (0.55 + 0.45 * vel), 0.001, 0.02)), pre
+
+
+@_register("sing", gain=0.34, rev=0.3, dly=0.1, primary="dur", aliases=("vox", "voice", "lyric"),
+           doc="a sung syllable: sing:<Hangul syllable or la/na/oo> deg=2 oct=4 (or step= / note= / m=), dur= (1 beat), vel=; "
+               "the vowel lands on the cue, the consonant leads in just ahead; other params are free for the scenes (line=, w=)")
+def _sfx_sing(c):
+    syl = next((f for f in c.flags if f), "la")
+    m = _note_pitches(c)[0][0]
+    y, pre = _sing(syl, round(float(m), 2), round(float(c.time("dur", 1.0)), 3), round(float(c.num("vel", 0.8)), 2), c.seed % 97)
+    return _seq([(-pre, y, float(c.params.get("pan", 0.0)))])
+
+
+def _hit_factory(name, anchor_peak=False):
+    def gen(c):
+        y = SM.hit(name, c.num("vel", 0.85), seed=c.seed, pitch=c.semis(), dur=c.time("cut", 1.0) if "cut" in c.params else None)
+        if anchor_peak:
+            env = uniform_filter1d(np.abs(y), int(0.02 * SR))
+            return y, int(np.argmax(env))
+        return y, 0
+    return gen
+
+
+if SM is not None:
+    _HIT_ALIASES = {"gong": ("jing", "tamtam"), "anvil": ("forge", "chisel"), "woodblock": ("wood", "temple-block"),
+                    "slapstick": ("whipcrack", "slap"), "cowbell": (), "claves": ("clave",), "frame-drum": ("buk", "hand-drum"),
+                    "concert-bd": ("bass-drum", "gran-cassa"), "timpani": ("timp", "kettle"), "sus-cymbal": ("cymbal-roll", "cymbal-swell"),
+                    "mark-tree": ("windchime", "wind-chime"), "ratchet": ("crank",), "flexatone": ("boing-flex", "wobble"),
+                    "triangle": ("tri-ding",), "rope-snare": ("field-snare",), "wine-glass": ("glass-tap", "aha")}
+    for _name, _doc in SM.hit_docs().items():
+        if _name in SFX or _name in SFX_ALIASES:
+            continue
+        _al = tuple(a for a in _HIT_ALIASES.get(_name, ()) if a not in SFX and a not in SFX_ALIASES)
+        _register(_name, anchor="end" if _name == "sus-cymbal" else "onset", role="accent",
+                  gain=0.32 if _name not in ("gong", "concert-bd", "timpani") else 0.42, rev=0.25, dly=0.0, primary="n",
+                  aliases=_al, doc=_doc + " (vel=, pitch=, cut= seconds)")(_hit_factory(_name, _name == "sus-cymbal"))
 
 
 def sfx_list(json_out=False):
