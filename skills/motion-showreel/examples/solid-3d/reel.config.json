@@ -1,0 +1,244 @@
+{
+ "title": "모노블록",
+ "style": "style.json",
+ "size": [
+  1920,
+  1080
+ ],
+ "fps": 60,
+ "beatsPerBar": 4,
+ "scenes": [
+  {
+   "id": "logo",
+   "label": "모노블록",
+   "minBars": 2,
+   "maxBars": 2,
+   "priority": 1,
+   "inBeats": 6,
+   "outBeats": 1,
+   "in": "cut",
+   "music": "intro",
+   "cues": [
+    {
+     "beat": 0,
+     "from": "start",
+     "sfx": "whoosh"
+    },
+    {
+     "beat": 0.75,
+     "from": "start",
+     "sfx": "pop:4 gap=0.25b"
+    },
+    {
+     "beat": 3.5,
+     "from": "start",
+     "sfx": "chime"
+    }
+   ]
+  },
+  {
+   "id": "hero",
+   "label": "알루미늄 한 덩어리",
+   "minBars": 2,
+   "maxBars": 3,
+   "priority": 1,
+   "inBeats": 6,
+   "outBeats": 1,
+   "in": "depthPush",
+   "music": "groove",
+   "cues": [
+    {
+     "beat": 1,
+     "from": "start",
+     "sfx": "swish"
+    },
+    {
+     "beat": 2,
+     "from": "start",
+     "sfx": "sparkle dur=2b"
+    }
+   ]
+  },
+  {
+   "id": "inside",
+   "label": "속을 열면",
+   "minBars": 2,
+   "maxBars": 3,
+   "priority": 1,
+   "inBeats": 7,
+   "outBeats": 1,
+   "in": "cube",
+   "music": "groove",
+   "cues": [
+    {
+     "beat": 0.5,
+     "from": "start",
+     "sfx": "whoosh"
+    },
+    {
+     "beat": 3,
+     "from": "start",
+     "sfx": "blip"
+    },
+    {
+     "beat": 4,
+     "from": "start",
+     "sfx": "blip"
+    },
+    {
+     "beat": 5,
+     "from": "start",
+     "sfx": "blip"
+    },
+    {
+     "beat": 6,
+     "from": "start",
+     "sfx": "blip"
+    }
+   ]
+  },
+  {
+   "id": "colors",
+   "label": "네 가지 색",
+   "minBars": 2,
+   "maxBars": 2,
+   "priority": 3,
+   "optional": true,
+   "inBeats": 6,
+   "outBeats": 1,
+   "in": "flipBoard",
+   "inParams": {
+    "from": "center"
+   },
+   "music": "breakdown",
+   "cues": [
+    {
+     "beat": 1,
+     "from": "start",
+     "sfx": "tick"
+    },
+    {
+     "beat": 2,
+     "from": "start",
+     "sfx": "tick"
+    },
+    {
+     "beat": 3,
+     "from": "start",
+     "sfx": "tick"
+    },
+    {
+     "beat": 4,
+     "from": "start",
+     "sfx": "ding"
+    }
+   ]
+  },
+  {
+   "id": "beat",
+   "label": "작아도, 크게",
+   "minBars": 3,
+   "maxBars": 3,
+   "priority": 3,
+   "optional": true,
+   "dark": true,
+   "inBeats": 4,
+   "outBeats": 1,
+   "in": "fold",
+   "music": "drop",
+   "cues": [
+    {
+     "beat": 0,
+     "from": "start",
+     "sfx": "impact"
+    },
+    {
+     "beat": 4,
+     "from": "start",
+     "sfx": "thud"
+    },
+    {
+     "beat": 8,
+     "from": "start",
+     "sfx": "thud"
+    }
+   ]
+  },
+  {
+   "id": "end",
+   "label": "모노블록",
+   "minBars": 2,
+   "maxBars": 3,
+   "priority": 1,
+   "inBeats": 5,
+   "outBeats": 0,
+   "in": "flip",
+   "music": "outro",
+   "cues": [
+    {
+     "beat": 0.5,
+     "from": "start",
+     "sfx": "shimmer soft"
+    },
+    {
+     "beat": 2,
+     "from": "start",
+     "sfx": "chime"
+    }
+   ]
+  }
+ ],
+ "cuts": {
+  "short": {
+   "seconds": 15,
+   "label": "15 s",
+   "narration": false,
+   "exclude": [
+    "colors",
+    "beat"
+   ],
+   "scenes": {
+    "logo": {
+     "bars": 2
+    },
+    "hero": {
+     "bars": 2
+    },
+    "inside": {
+     "bars": 2
+    },
+    "end": {
+     "bars": 2
+    }
+   }
+  },
+  "30": {
+   "seconds": 30,
+   "label": "30 s",
+   "scenes": {
+    "logo": {
+     "bars": 2
+    },
+    "hero": {
+     "bars": 3
+    },
+    "inside": {
+     "bars": 3
+    },
+    "colors": {
+     "bars": 2
+    },
+    "beat": {
+     "bars": 3
+    },
+    "end": {
+     "bars": 3
+    }
+   }
+  }
+ },
+ "poster": 5.6,
+ "captions": {
+  "enabled": false
+ }
+}

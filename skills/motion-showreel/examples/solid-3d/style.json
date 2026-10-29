@@ -1,0 +1,110 @@
+{
+ "$schema": "../../templates/style.schema.json",
+ "meta": {
+  "purpose": "launch",
+  "audience": "people choosing a small speaker for a desk or a bag",
+  "title": "모노블록",
+  "lang": "ko",
+  "reviewed": "Written by hand from source/BRIEF.md (모노블록, a palm-sized Bluetooth speaker (fictional)). Every decision below follows the brief; nothing is a preset.",
+  "draft": false
+ },
+ "source": [
+  { "path": "source/BRIEF.md", "kind": "markdown", "notes": "모노블록, a palm-sized aluminium Bluetooth speaker (fictional)" },
+  { "path": "source/fonts/", "kind": "other", "notes": "Pretendard Variable (OFL)" }
+ ],
+ "mood": ["tidy", "warm", "confident", "tactile", "precise"],
+ "rationale": {
+  "palette": "A bright product studio: a warm light-grey stage #ECEAE6 with a deeper floor tone #DEDBD5, graphite text #1C1E22, and one accent, vermilion #E0502D (the button, the status light, the brand word). The four finishes from the brief are the product colours: graphite #2E3136, sand #CDBFA8, sage #8FA392 and vermilion. The beat scene turns the lights down onto a night stage #121316 so the equaliser can glow.",
+  "type": "Pretendard Variable only: ExtraBold for the brand word (also extruded in 3D) and the lines, Medium for labels and the fine print, set on the left of a centred product.",
+  "motion": "A product reel in real 3D: the brand word flies in letter by letter from depth while the camera arcs in and focus pulls onto it; the speaker turns under a key light that sweeps across its aluminium; it comes apart along its depth into an exploded view with leader lines landing on beats; the four colours step past in a cover flow; on a night stage the equaliser and rings pulse on every beat. Springs settle with little overshoot; 3D transitions (depth push, cube, flip board, fold, flip) move from side to side of one object.",
+  "sound": "Bright pop at 128 BPM in E major (8 bars in 15 s, 16 in 30 s): pad, glass, bell, bass and a full kit; glassy SFX for the metal (whooshes on the turns, blips on each label, a shimmer at the end).",
+  "visuals": "Solid 3D (runtime g3.js): lit meshes with physical materials (anodised metal, clearcoat letters), soft shadows on a shadow-catcher floor, a mirror floor for the hero, depth of field, an exploded view, instanced equaliser bars. Copy, labels and leader lines are 2D on top.",
+  "narration": "Not recommended: a short launch reel whose labels carry the facts."
+ },
+ "palette": {
+  "bg": "#ECEAE6",
+  "bg2": "#DEDBD5",
+  "surface": "#F7F6F3",
+  "ink": "#1C1E22",
+  "ink2": "#43474E",
+  "muted": "#585D65",
+  "accent": "#E0502D",
+  "accent2": "#8FA392",
+  "accent3": "#CDBFA8",
+  "ok": "#3F8A5C",
+  "warn": "#A8700F",
+  "deny": "#B83E33",
+  "accentInk": "#B93A1B",
+  "onAccent": "#FFFFFF",
+  "line": "#D3CFC8"
+ },
+ "paletteAlt": {
+  "theme": "dark",
+  "bg": "#121316",
+  "bg2": "#1B1D21",
+  "surface": "#24272C",
+  "ink": "#F2F0EC",
+  "ink2": "#C3C5CA",
+  "muted": "#A4A8AF",
+  "accent": "#FF6A42",
+  "accent2": "#A9C2AC",
+  "accent3": "#E2D3B8",
+  "ok": "#6CC28A",
+  "warn": "#F2B84B",
+  "deny": "#E5635B",
+  "accentInk": "#FF8A69",
+  "onAccent": "#121316",
+  "line": "#2E3137"
+ },
+ "fonts": {
+  "display": "\"Pretendard Variable\", sans-serif",
+  "sans": "\"Pretendard Variable\", sans-serif",
+  "serif": "\"Pretendard Variable\", sans-serif",
+  "mono": "\"Pretendard Variable\", sans-serif",
+  "cjk": "\"Pretendard Variable\", sans-serif",
+  "files": [
+   { "family": "Pretendard Variable", "path": "source/fonts/PretendardVariable.woff2", "weight": "45 920", "style": "normal" }
+  ]
+ },
+ "type": {
+  "scale": [22, 28, 36, 44, 56, 72, 92, 120, 156, 200],
+  "displayWeight": 800,
+  "bodyWeight": 500,
+  "tracking": -0.02,
+  "trackingLabel": 0.12
+ },
+ "layout": {
+  "theme": "light",
+  "margin": 120,
+  "grid": 12,
+  "gutter": 24,
+  "baseline": 8,
+  "hud": false,
+  "captions": { "enabled": false, "font": "sans", "size": 40, "fg": "#1C1E22", "bg": "none", "y": 960 },
+  "radius": 16
+ },
+ "motion": {
+  "pace": "medium",
+  "spring": { "f": 2.2, "z": 0.7 },
+  "overshoot": 0.05,
+  "ease": "ioC",
+  "transitions": ["depthPush", "cube", "flipBoard", "fold", "flip"],
+  "characters": false,
+  "dataViz": false,
+  "visualSources": ["vector", "solid-3d"],
+  "typeReveal": ["revealLine", "kinetic"]
+ },
+ "post": { "grain": 0.012, "vignette": { "a": 0.08, "color": "#1C1E22" }, "bloom": 0.08 },
+ "sound": {
+  "bpm": 128,
+  "key": "E",
+  "mode": "major",
+  "preset": "bright-pop",
+  "instruments": ["pad", "glass", "bell", "bass", "kick", "clap", "hats"],
+  "drums": "full",
+  "sfx": "glassy",
+  "energy": { "intro": 0.35, "groove": 0.6, "breakdown": 0.4, "drop": 0.8, "outro": 0.45 }
+ },
+ "narration": { "recommended": false, "voice": "Kore", "styleTag": "[warm]", "lang": "ko-KR" },
+ "review": []
+}
