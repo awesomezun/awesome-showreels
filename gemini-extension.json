@@ -1,6 +1,6 @@
 {
   "name": "awesome-showreels",
-  "version": "1.2.0",
-  "description": "A motion-graphics showreel about anything (a repo, paper, brand, event or idea), styled by its own material (MP4 + single-file HTML).",
+  "version": "1.3.0",
+  "description": "A motion-graphics showreel about anything (a repo, paper, brand, event or idea), styled by its own material, in 2D and solid 3D (MP4 + single-file HTML).",
   "contextFileName": "GEMINI.md"
 }
