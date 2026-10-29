@@ -254,7 +254,8 @@ runs for `dur`; `glitch pre=0.1s` straddles a cut.
 **Automatic transition SFX.** Each scene's `in` gets a sound on its boundary unless an authored transition,
 impact or build cue lies within 0.75 beat of it: `blobWipe` swish, `zoomInto` zoom, `whip` whip, `glitch`
 glitch (`pre=0.1s`), `flash` soft shimmer, `strobe` strobe, `match` air, `impact` impact, `portalFlash` swell +
-reveal, `cut` nothing (the music downbeat carries it). Turn off with `"audio": {"transitionSfx": false}` or
+reveal, the 3D ones `cube` whoosh, `flip` flip, `flipBoard` whoosh, `fold` swish, `depthPush` zoom, `shatter` impact,
+`cut` nothing (the music downbeat carries it). Turn off with `"audio": {"transitionSfx": false}` or
 `--no-transition-sfx` when the compositor's transition windows are not centred on the bar line.
 
 **Recipes per moment** (cue in beats from the scene anchor; stagger `gap` = the animation's stagger):

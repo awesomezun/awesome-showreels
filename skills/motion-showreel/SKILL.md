@@ -1,11 +1,11 @@
 ---
 name: motion-showreel
 description: >-
-  Produce premium 2D motion-graphics showreels (an MP4 per cut plus a single-file HTML player) from any source
+  Produce premium 2D and 3D motion-graphics showreels (an MP4 per cut plus a single-file HTML player) from any source
   material: a GitHub repo or README, markdown, a paper or PDF, a slide deck, a website, a brand guide, screenshots.
   It derives the material's tone and manner into style.json; picks the visual carriers the story needs (code-drawn
-  vector always; mascot cutouts via GPT Image 2.5, macOS Vision and OpenCV; real app UI, terminal and CLI captures; PDF
-  figures, web shots, data viz); plans 15/30/60-s cuts on one fixed-BPM bar grid; synthesizes beat-synced music; adds
+  vector always; solid 3D with lit materials, extruded type and camera moves; mascot cutouts via GPT Image 2.5, macOS
+  Vision and OpenCV; real app UI, terminal and CLI captures; PDF figures, web shots, data viz); plans 15/30/60-s cuts on one fixed-BPM bar grid; synthesizes beat-synced music; adds
   optional Gemini TTS narration; and verifies sync, loudness and self-containment. Use for a showreel, sizzle reel,
   teaser, launch or pitch video, an explainer reel from a repo, paper or deck, "make a 30-second reel", to re-cut or
   lengthen such a reel at the same tempo, or 쇼릴, 모션그래픽, 홍보 영상. Not for making slide decks or static
@@ -14,8 +14,8 @@ description: >-
 
 # motion-showreel
 
-You are the motion designer and the producer. Every frame is code: a Canvas2D/WebGL2 runtime renders pure
-functions of time, so stills, the MP4 and the HTML player show identical pixels. Real captures, cutouts and data
+You are the motion designer and the producer. Every frame is code: a Canvas2D/WebGL2 runtime (with solid 3D on
+three.js through `G3`) renders pure functions of time, so stills, the MP4 and the HTML player show identical pixels. Real captures, cutouts and data
 are carriers inside that code-drawn world. `S` below is this skill's base directory (the folder holding this file);
 `P` is the reel project folder.
 
@@ -78,8 +78,10 @@ for paid generation); otherwise default to a 30-s and a 15-s cut, music-led unle
    wording and disclaimers into the storyboard. (`references/tone-and-manner.md`)
 2. **Visual carriers per scene.** Vector and kinetic type always. Then ask: what is the proof (real UI, terminal
    cast, figure, data), what is the face (mascot, logo, one giant number), where does it live (phone, terminal,
-   paper, browser)? Use `references/visual-sources.md` section 4. Mascot poses only extend the client's own mascot,
-   only with the user's consent (each image spends their ChatGPT quota): `tools/imagegen.md`.
+   paper, browser)? Use `references/visual-sources.md` section 4. Solid 3D when the claim is spatial or physical (a
+   product's form and finish, what is inside, a logo made of something, depth that orders a list):
+   `references/3d-motion.md`. Mascot poses only extend the client's own mascot, only with the user's consent (each
+   image spends their ChatGPT quota): `tools/imagegen.md`.
 3. **Narration on or off.** On for papers, docs, explainers, pitches and data-heavy claims; off for playful launch
    and brand teasers, 20-s-or-shorter cuts and muted autoplay. `style.narration.recommended` is a draft; ask the
    user when it matters. Real TTS is **BYOK**: the user's own Gemini API key, billed to them. Never look for a key
@@ -102,6 +104,7 @@ for paid generation); otherwise default to a 30-s and a 15-s cut, music-led unle
 | paper or PDF explainer | narration, capture §5, recipes 23, 27, 35 |
 | CLI tool or developer repo | capture §3, recipes 29, 36, timing §6 |
 | website or docs | capture §2, recipe 36 |
+| product, logo or anything spatial in 3D | 3d-motion, engine-api §6b, `examples/solid-3d` |
 | lengthen or re-cut a reel | "Extend to a longer cut" below, timing §6, storyboard §6 |
 | a reference video to match | storyboard §7 |
 
@@ -206,6 +209,8 @@ out.
   `style.paletteAlt` as `env.palette`.
 - Colours from `env.palette`, fonts from the style roles, springs and easing from `env.style.motion`, copy
   verbatim from STORYBOARD.md. Keep the HUD and caption bands free.
+- 3D (`G3`): build a stage once (`G3.stage(id, build)`), then set every animated property from `t` on every frame
+  and render into the scene's context; never accumulate state across frames (`references/3d-motion.md` section 2).
 
 ## Quality bar
 
@@ -252,6 +257,9 @@ out.
 - Codex image generation: `-i` is variadic, so put `--` before the prompt and close stdin with `</dev/null`.
 - AAC decodes about one frame longer than the cut; when muxing by hand use `ffmpeg ... -c copy -shortest`.
 - zsh: quote `yt-dlp` output templates; macOS: `sed -i ''`; check `ps` for background jobs before re-rendering.
+- 3D: inside `G3.stage(key, build)` use `s.get()`, not the outer `st` (not assigned yet); deformers and `G3.pose` read
+  the build-time shape, so never move a deformed mesh's vertices yourself; a `slab`'s front face sits at
+  depth / 2 + bevel; glass needs something behind it. Prove purity by rendering the same times in two orders.
 
 ## References (read on demand)
 
@@ -263,6 +271,7 @@ out.
 | `references/timing-and-length.md` | reel.config timing keys, the planner, elastic scenes, cues, 15/30/60 s, variants |
 | `references/engine-api.md` | writing scenes: globals, `env`, helpers, modules, gl.js, transitions, FX, HUD, captions |
 | `references/motion-recipes.md` | 36 tested recipes (characters, kinetic type, UI in a device, CLI shot, paper figure, web page...) |
+| `references/3d-motion.md` | solid 3D with `G3`: when 3D earns its place, the purity contract, stage/look/render, a technique catalogue (camera work, depth cues, materials, light, arrays, deformers, physics, product and logo moves, 3D transitions), recipes, costs |
 | `references/capture.md` | real UI, terminal casts (`term.js`), perspective panels (`quad.js`), PDF figures |
 | `references/imagery.md` | cutouts with Vision/OpenCV, blinks, products, photos, character motion |
 | `references/audio.md` | presets, instruments, SFX grammar, arrangement, mastering, sync verification |
@@ -297,7 +306,9 @@ the volume), `paper-organoid` (organoid study -> a lab notebook that keeps itsel
 behaviour -> tracks from above) and `paper-transformer` (Attention Is All You Need -> typeset like the paper,
 attention computed by a toy model). Explainers with 15, 30 and 60-second cuts: `explainer-llm` (how a language
 model picks the next word -> maths animation, words as arrows) and `explainer-sunlight` (from the Sun's core to
-breakfast -> flat vector). Their `short` cuts are the README's style wall.
+breakfast -> flat vector). Solid 3D: `solid-3d` (a palm-sized speaker -> type extruded from the reel's font, a
+turntable on a mirror floor, an exploded view with leader lines, a night-stage equaliser, the 3D transitions) is the
+reference for `G3`. Their `short` cuts are the README's style wall.
 
 The two first examples have their source, reviewed `style.json` with the extraction log, STORYBOARD, scenes and a
 built player in `dist/`. Re-plan before rendering (`build/` is generated): `python3 "$S/timing/plan_cut.py" --project

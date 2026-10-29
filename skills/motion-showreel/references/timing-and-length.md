@@ -53,7 +53,7 @@ Per scene (`scenes[]`, in story order):
 | `priority` | 2 | 1 = most important: kept and grown first (section 3) |
 | `optional` | false | enters a cut only when there is room (section 3) |
 | `inBeats` / `outBeats` | `min(beatsPerBar, minBars*beatsPerBar - out)` / 1 | fixed in-phase from the start / out-phase before the end; may be fractional |
-| `in` | `cut` | transition into this scene: `cut blobWipe zoomInto whip glitch flash strobe match impact portalFlash` (+ runtime extras `dissolve push`) |
+| `in` | `cut` | transition into this scene: `cut blobWipe zoomInto whip glitch flash strobe match impact portalFlash` (+ runtime extras `dissolve push`, and the 3D `cube flip flipBoard fold depthPush shatter`) |
 | `inParams` | `{}` | passed to the compositor (`preBeats`, `postBeats`, per-type keys) |
 | `inFallback` | none | extension: transition used when a predecessor-specific `in` (`zoomInto`, `match`, `portalFlash`) loses its authored predecessor in a cut |
 | `dark` | false | dark-mode scene (post, HUD, captions adapt) |

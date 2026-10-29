@@ -103,7 +103,7 @@ async function main() {
   const sizes = { js: 0, fonts: 0, images: 0, data: 0, audio: 0 };
 
   // code
-  const runtime = runtimeScripts().filter(f => fs.existsSync(path.join(RUNTIME, f)));
+  const runtime = runtimeScripts(proj).filter(f => fs.existsSync(path.join(RUNTIME, f)));
   const code = Object.fromEntries(runtime.map(f => [f, fs.readFileSync(path.join(RUNTIME, f), 'utf8')]));
   const modules = proj.moduleFiles.map(m => ({ name: m.name, code: fs.readFileSync(m.abs, 'utf8') }));
   const scenes = proj.sceneFiles.map(s => ({ id: s.id, code: fs.readFileSync(s.abs, 'utf8') }));
@@ -198,7 +198,7 @@ async function main() {
   const notes = fontNotes.length ? `\n<!--\n${fontNotes.map(n => '  ' + n).join('\n')}\n-->` : '';
   html = html.replace('<!--HEAD-->', () => `<meta name="generator" content="motion-showreel">\n<meta name="description" content="${escHtml(title)}: motion showreel (${proj.cuts.join(', ')})">${notes}`);
   html = html.replace('<script id="manifest">window.MANIFEST = null;</script>', () => `<script id="manifest">window.MANIFEST = ${jsonForScript(manifest)};</script>`);
-  html = html.replace(/<script src="([\w.-]+\.js)"( data-optional)?><\/script>/g, (m, f) => (code[f] !== undefined ? `<script>/* ${f} */\n${escScript(code[f])}\n</script>` : ''));
+  html = html.replace(/<script src="([\w./-]+\.js)"( data-optional)?><\/script>/g, (m, f) => (code[f] !== undefined ? `<script>/* ${f} */\n${escScript(code[f])}\n</script>` : ''));
   html = html.replace('<!--SCENES-->', () => [
     ...modules.map(m => `<script>/* modules/${m.name}.js */\n${escScript(m.code)}\n</script>`),
     ...scenes.map(s => `<script>/* scenes/${s.id}.js */\n${escScript(s.code)}\n</script>`)].join('\n'));

@@ -1284,6 +1284,7 @@ override with `inParams.preBeats/postBeats` or `pre/post` seconds). Scenes only 
 | `impact` | 0 / 0 | `zoom, shake, flash, color` | the incoming scene slams something on beat 0 |
 | `portalFlash` | 0.8 / 1.2 | `x, y, color` | the outgoing scene opens a window: `portal(t, env)` returns it, and the scene calls `env.portal?.(ctx, x, y, w, h, r)` to show the incoming scene through it before the burst |
 | `dissolve`, `push` | 0.5 / 0.5, 0.5 / 0 | `dir` (push) | quiet material only |
+| `cube`, `flip`, `flipBoard`, `fold`, `depthPush`, `shatter` | see engine-api §7 | `dir`, `cols`, `strips`, `x, y`... | 3D (g3.js): both frames as textures on geometry; recipes and pairing in `3d-motion.md` |
 
 ```js
 // A scene whose phone screen is the zoomInto / portalFlash window into the next scene.

@@ -179,6 +179,11 @@ dark (flagged for review).
 | strobe | rare: energetic, dark and technical at once |
 | impact | numbers that land (big claims) at medium or high energy |
 | portalFlash | playful, warm reveals (doors, portals) |
+| cube, flip | product and brand reels that are already 3D; one side to the next (feature to feature) |
+| flipBoard | lists, departures, scores, retro and editorial boards; scenes that change many items at once |
+| fold | paper, editorial, print and packaging material |
+| depthPush | calm product and UI reels: the old view steps back as the new one arrives |
+| shatter | rare: a breaking point, a glass or game climax at high energy |
 
 ### Sound (`sound.preset` is an instrument family for `audio/arrange.py`, not a visual style)
 

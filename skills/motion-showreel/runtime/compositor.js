@@ -27,7 +27,15 @@ const TRANS_DEF = {
   portalFlash: { pre: 0.8, post: 1.2 },// x, y (burst centre; else outgoing portal(t, env) rect centre), color
   dissolve: { pre: 0.5, post: 0.5 },  // extra: soft crossfade
   push: { pre: 0.5, post: 0 },        // extra: slide without blur; dir
+  // 3D (g3.js; without WebGL2 they fall back to push or dissolve)
+  cube: { pre: 0.5, post: 0.5 },      // dir, pull (camera pull-back mid-turn), bg
+  flip: { pre: 0.5, post: 0.5 },      // dir, pull, bg
+  flipBoard: { pre: 1, post: 1 },     // cols, rows, from: left|center|top|random, spread, lift
+  fold: { pre: 0.75, post: 0.25 },    // strips
+  depthPush: { pre: 0.5, post: 0.5 }, // depth, tilt, dim
+  shatter: { pre: 0.1, post: 1.4 },   // x, y (impact px), cols, rows, spread, dur
 };
+const FALLBACK_3D = { cube: 'push', flip: 'dissolve', flipBoard: 'dissolve', fold: 'push', depthPush: 'dissolve', shatter: 'dissolve' };
 
 // ───────── load ─────────
 async function loadAll(M) {
@@ -439,6 +447,12 @@ const TRANS = {
     if (t < tr.t0) glitchBlit(g, sceneBuf(tr.A, BUF.a, t), rm(t, tr.t0 - tr.pre, tr.t0) * amt, t);
     else glitchBlit(g, sceneBuf(tr.B, BUF.a, t), (1 - rm(t, tr.t0, tr.t0 + tr.post)) * amt, t);
   },
+  ...Object.fromEntries(Object.keys(FALLBACK_3D).map(type => [type, (g, tr, t) => {
+    const a = sceneBuf(tr.A, BUF.a, t), b = sceneBuf(tr.B, BUF.b, t);
+    if (typeof G3 !== 'undefined' && G3.ok && G3.transition(type, g, a, b, tr.k, tr.params)) return;
+    warnOnce('3d:' + type, `[reel] transition '${type}' needs g3.js and WebGL2; drawing ${FALLBACK_3D[type]}`);
+    TRANS[FALLBACK_3D[type]](g, tr, t);
+  }])),
   portalFlash(g, tr, t) {
     if (t < tr.t0) drawScene(tr.A, g, t, { portal: portalFn(tr.B, t) });
     else drawScene(tr.B, g, t);

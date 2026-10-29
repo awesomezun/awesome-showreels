@@ -29,12 +29,15 @@ from fractions import Fraction
 from pathlib import Path
 
 TRANSITIONS = ("cut", "blobWipe", "zoomInto", "whip", "glitch", "flash", "strobe", "match", "impact", "portalFlash",
-               "dissolve", "push")  # the last two are runtime extras
+               "dissolve", "push",  # runtime extras
+               "cube", "flip", "flipBoard", "fold", "depthPush", "shatter")  # 3D (runtime/g3.js; 2D fallback without WebGL2)
 PREV_SPECIFIC = frozenset({"zoomInto", "match", "portalFlash"})  # geometry belongs to one authored predecessor
 # Transition windows (beats before, after the bar line) as runtime/compositor.js TRANS_DEF draws them by default;
 # used only for a note when a window reaches past the out-phase / in-phase it borrows.
 TRANS_WINDOW = {"blobWipe": (1, 0), "zoomInto": (1, 0), "whip": (0.3, 0.3), "glitch": (0.2, 0.44),
-                "portalFlash": (0.8, 1.2), "dissolve": (0.5, 0.5), "push": (0.5, 0)}
+                "portalFlash": (0.8, 1.2), "dissolve": (0.5, 0.5), "push": (0.5, 0),
+                "cube": (0.5, 0.5), "flip": (0.5, 0.5), "flipBoard": (1, 1), "fold": (0.75, 0.25), "depthPush": (0.5, 0.5),
+                "shatter": (0.1, 1.4)}
 PARTS = ("intro", "groove", "breakdown", "drop", "outro")
 # start | holdStart | end are the contract anchors; holdBar / holdBeat (first scene bar / beat line at or after the
 # hold start, like runtime onBars / onBeats) and outStart (alias holdEnd) are extensions.

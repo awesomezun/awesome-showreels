@@ -4485,8 +4485,9 @@ ENUMS = {
     ("sound", "sfx"): ("glassy", "digital", "organic", "minimal"),
     ("sound", "mode"): ("major", "minor", "dorian", "mixolydian", "lydian", "phrygian", "aeolian", "ionian", "locrian"),   # as the schema; arrange.py plays them all
 }
-TRANSITION_NAMES = ("cut", "blobWipe", "zoomInto", "whip", "glitch", "flash", "strobe", "match", "impact", "portalFlash")
-VISUAL_SOURCES = ("vector", "mascot-cutouts", "app-ui", "terminal", "cli", "pdf-figures", "web-shots", "photos")
+TRANSITION_NAMES = ("cut", "blobWipe", "zoomInto", "whip", "glitch", "flash", "strobe", "match", "impact", "portalFlash",
+                    "cube", "flip", "flipBoard", "fold", "depthPush", "shatter")
+VISUAL_SOURCES = ("vector", "solid-3d", "mascot-cutouts", "app-ui", "terminal", "cli", "pdf-figures", "web-shots", "photos")
 
 
 def validate_style(obj):

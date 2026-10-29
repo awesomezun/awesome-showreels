@@ -51,7 +51,11 @@ export function fail(e) {
   console.error(e && e.friendly ? e.message : (e && (e.stack || e.message)) || e);
   process.exit(1);
 }
-const OPTIONAL_MODULES = new Set(['gl.js', 'quad.js', 'term.js']);
+const OPTIONAL_MODULES = new Set(['gl.js', 'vendor/three.min.js', 'g3.js', 'quad.js', 'term.js']);
+// solid 3D (three.js + g3.js) ships only with projects that use it: G3/THREE in scenes or modules, a 3D transition,
+// or reel.config "three": true
+const THREE_SCRIPTS = new Set(['vendor/three.min.js', 'g3.js']);
+export const TRANSITIONS_3D = new Set(['cube', 'flip', 'flipBoard', 'fold', 'depthPush', 'shatter']);
 export const IMAGE_EXT = { '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.svg': 'image/svg+xml', '.avif': 'image/avif' };
 const DATA_EXT = { '.json': 'json', '.cast': 'text', '.txt': 'text', '.csv': 'text', '.tsv': 'text', '.md': 'text', '.log': 'text', '.ansi': 'text' };
 export const MIME = {
@@ -265,9 +269,21 @@ export function loadProject(P, o = {}) {
     narration: fs.existsSync(narrationFile) ? readJSON(narrationFile) : null,
   };
 }
-const RUNTIME_SCRIPTS = ['engine.js', 'gl.js', 'quad.js', 'term.js', 'compositor.js'];
-export function runtimeScripts() {
-  return RUNTIME_SCRIPTS.filter(f => fs.existsSync(path.join(RUNTIME, f)) || !OPTIONAL_MODULES.has(f));
+const RUNTIME_SCRIPTS = ['engine.js', 'gl.js', 'vendor/three.min.js', 'g3.js', 'quad.js', 'term.js', 'compositor.js'];
+export function uses3D(proj) {
+  const cfg = proj.config || {};
+  if (cfg.three === true) return true;
+  if (cfg.three === false) return false;
+  const tr = x => typeof x === 'string' && TRANSITIONS_3D.has(x);
+  for (const s of cfg.scenes || []) if (tr(s.in) || tr(s.inFallback)) return true;
+  for (const f of [...(proj.moduleFiles || []), ...(proj.sceneFiles || [])]) {
+    if (/\b(G3|THREE)\b/.test(fs.readFileSync(f.abs, 'utf8'))) return true;
+  }
+  return false;
+}
+export function runtimeScripts(proj) {
+  const three = proj ? uses3D(proj) : true;
+  return RUNTIME_SCRIPTS.filter(f => (fs.existsSync(path.join(RUNTIME, f)) || !OPTIONAL_MODULES.has(f)) && (three || !THREE_SCRIPTS.has(f)));
 }
 // Dev manifest: same shape as the built one, with root-relative URLs served by devHandler.
 export function devManifest(proj, o = {}) {
@@ -297,6 +313,7 @@ export function devHandler(projectDir, o = {}) {
       // dev preview: dry-run mixes are fine (warned); headless renders (o.noAudio) never play audio, so skip the pick
       const proj = loadProject(P, { cuts: o.cuts, allowPlaceholder: true, skipAudio: o.noAudio ? () => true : undefined });
       state.extra = new Map();
+      state.three = uses3D(proj);
       const M = devManifest(proj, { ...o, extra: state.extra });
       let html = fs.readFileSync(path.join(RUNTIME, 'template.html'), 'utf8');
       if (p !== '/runtime/template.html') html = html.replace('<head>', '<head><base href="/runtime/">');
@@ -312,6 +329,9 @@ export function devHandler(projectDir, o = {}) {
       const name = p.slice(9);
       const f = path.join(RUNTIME, name);
       if (!f.startsWith(RUNTIME + path.sep)) return { status: 403, body: 'forbidden' };
+      if (THREE_SCRIPTS.has(name) && state.three === false) {
+        return { status: 200, type: MIME['.js'], body: `/* ${name}: this project does not use 3D */` };
+      }
       if (fs.existsSync(f) && fs.statSync(f).isFile()) return { status: 200, type: MIME[path.extname(f)] || 'application/octet-stream', file: f };
       if (OPTIONAL_MODULES.has(name)) return { status: 200, type: MIME['.js'], body: `/* optional module ${name} is not installed */` };
       return { status: 404, body: 'not found' };

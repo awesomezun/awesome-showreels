@@ -445,6 +445,8 @@ TRANSITION_SFX = {  # scene "in" -> (sfx spec, offset s from the boundary); anch
     "blobWipe": ("swish", 0.0), "zoomInto": ("zoom", 0.0), "whip": ("whip", 0.0), "glitch": ("glitch pre=0.1s", 0.0),
     "flash": ("shimmer soft", 0.0), "strobe": ("strobe", 0.0), "match": ("air", 0.0), "impact": ("impact", 0.0),
     "portalFlash": ("swell+reveal", 0.0), "cut": None,
+    "cube": ("whoosh", 0.0), "flip": ("flip", 0.0), "flipBoard": ("whoosh", 0.0), "fold": ("swish", 0.0),
+    "depthPush": ("zoom", 0.0), "shatter": ("impact", 0.0),
 }
 HEAVY_SFX = {"boom", "impact", "slam", "thud", "stamp", "door", "heartbeat"}   # bodies that collide with kick + bass
 NOTE_NAMES = ("C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B")

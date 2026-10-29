@@ -175,7 +175,7 @@
           "type": "array",
           "uniqueItems": true,
           "minItems": 1,
-          "items": { "enum": ["cut", "blobWipe", "zoomInto", "whip", "glitch", "flash", "strobe", "match", "impact", "portalFlash"] },
+          "items": { "enum": ["cut", "blobWipe", "zoomInto", "whip", "glitch", "flash", "strobe", "match", "impact", "portalFlash", "cube", "flip", "flipBoard", "fold", "depthPush", "shatter"] },
           "description": "Preferred compositor transitions, best first. Keep flashes <= 3 per second."
         },
         "characters": { "type": "boolean", "description": "Mascot/character cutouts carry part of the story." },
@@ -184,7 +184,7 @@
           "type": "array",
           "uniqueItems": true,
           "contains": { "const": "vector" },
-          "items": { "enum": ["vector", "mascot-cutouts", "app-ui", "terminal", "cli", "pdf-figures", "web-shots", "photos"] },
+          "items": { "enum": ["vector", "solid-3d", "mascot-cutouts", "app-ui", "terminal", "cli", "pdf-figures", "web-shots", "photos"] },
           "description": "Kinds of imagery to produce. 'vector' (code-drawn 2D) is always present; add others only when they serve the story."
         },
         "typeReveal": {

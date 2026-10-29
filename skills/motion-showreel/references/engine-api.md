@@ -1,9 +1,11 @@
 # Engine API (runtime/engine.js, gl.js, compositor.js)
 
 Everything a scene can call. Scenes are classic scripts; the runtime exposes globals by design.
-Load order (template.html and build.mjs): `engine.js`, `gl.js`, `quad.js`, `term.js`, `compositor.js`, then the
-project modules `P/modules/*.js` (file-name order), then `P/scenes/<id>.js` in reel.config order. Missing optional
-modules (gl, quad, term) are skipped without error.
+Load order (template.html and build.mjs): `engine.js`, `gl.js`, `vendor/three.min.js`, `g3.js`, `quad.js`,
+`term.js`, `compositor.js`, then the project modules `P/modules/*.js` (file-name order), then `P/scenes/<id>.js` in
+reel.config order. Missing optional modules (gl, quad, term) are skipped without error. three.js and `g3.js` load
+only for projects that use 3D: a scene or module mentions `G3` or `THREE`, a scene enters with a 3D transition, or
+reel.config sets `"three": true` (`"three": false` forces them off).
 
 **Project modules** (`P/modules/<name>.js`): code that several scenes share, owned by the integrator, not by a scene
 builder: a code-drawn cast that registers sprites in `IMG`/`META` from a `window.REEL_MODULES` loader
@@ -257,6 +259,73 @@ GL.drawCloud(cl, { cam: GL.camera({ yaw: lerp(-0.9, 0, m), pitch: lerp(0.55, 0.0
 GL.blit(ctx, { exposure: 1.4 });
 ```
 
+## 6b. g3.js: solid 3D (`G3`)
+
+Lit meshes, physical materials, soft shadows, image-based light, fog, depth of field, camera rigs, arrangements,
+deformers, extruded text, captures as cards, instancing, soft points and baked simulations on three.js 0.186
+(`G3.THREE`). Design guidance, the purity contract, the technique catalogue and recipes: `3d-motion.md`. All
+positions are world units (about metres); angles are radians except rig FOVs (degrees).
+
+```js
+const st = G3.stage('hero', s => { s.studio({ floor: 'shadow' }); s.add(G3.mesh(G3.geo.box(1, 1, 1, 0.08), G3.mat('plastic')), { name: 'box', pos: [0, 0.5, 0] }); });
+st.get('box').rotation.y = env.lt * 0.6;                       // set every animated property from t, every frame
+st.render(ctx, G3.rig.orbit({ target: [0, 0.4, 0], yaw: 0.4, dist: 5 }), { dof: { focus: [0, 0.5, 0], maxBlur: 10 } });
+```
+
+- Stage: `G3.stage(key, build(s), {tone: 'neutral'|'agx'|'aces'|'none', exposure, palette})` -> `st` (built once per
+  page; the build sees the scene's palette, `C2` for a dark scene on a light reel). `st.add(obj, {name, pos, rot,
+  scale})`, `st.get(name)`, `st.scene`, `st.camera`, `st.lights.{key, rim, hemi}`, `st.floor`.
+  `st.studio({bg = 'bg' (null = transparent), fog: {near, far} | {density}, env = true, envIntensity = 0.75, fill,
+  sky, ground, key: {dir, target, intensity = 2.4, color, soft = 5, size = 7, mapSize = 2048, shadow} | false, rim:
+  {color = 'accent', dir, intensity = 2.2} | true, floor: 'shadow'|'solid'|'grid'|'mirror'|false, floorY, floorColor,
+  shadowOpacity, reflect, gridColor})`.
+  `st.render(ctx, rig, {dof: {focus (distance | [x, y, z]), aperture = 1, maxBlur = 14, mode: 'tilt', center, width,
+  feather}, tone, exposure, alpha, rect})`; `st.project([x, y, z], obj?)` -> `[px, py, depth, visible]`.
+- Rigs (pure, `{pos, target, fov, roll, up?, ortho?, shift?}`): `G3.rig.orbit({target, yaw, pitch, dist, fov})`,
+  `dolly({from, to, target, p})`, `dollyZoom({target, dir, d0, d1, fov0, p})` (keeps d x tan(fov/2)),
+  `truck({x0, x1, p, dist, height})`, `panTilt({pos, yaw, pitch})`, `crane({target, h0, h1, dist0, dist1, yaw, p})`,
+  `arc({target, yaw0, yaw1, dist0, dist1, pitch0, pitch1, p})`, `flythrough(points, u, {lookAhead, closed})`,
+  `follow(pathFn, t, {lag, lead, offset, aim})`, `topDown({target, height, yaw})`, `lowAngle({target, dist, height})`,
+  `povWalk(t, {start, dir, speed, stepHz, bob, sway})`, `whip(p, {pos, yaw0, yaw1})`; modifiers `crashZoom(r, p,
+  {fov0, fov1})`, `dutch(r, roll)`, `dynamicFov(r, boost, add)`, `handheld(r, t, {amp, freq, roll, seed})`,
+  `shake(r, t, hits, {amp, freq, decay, rot})`, `blend(a, b, k)`; lenses `lens(mm)` -> FOV, `mm(fov)`,
+  `distForFov(h, fov, share)`. Orthographic: any rig with `ortho: halfHeight`. Lens shift: `shift: [x, y]` (NDC).
+- Geometry `G3.geo`: `box(w, h, d, radius, seg)`, `sphere(r)`, `cylinder(rt, rb, h)`, `cone(r, h)`, `torus(r, tube)`,
+  `knot(r, tube)`, `capsule(r, len)`, `plane(w, h, sx, sy)`, `disc(r)`, `ring(r0, r1)`, `ico(r, detail)`,
+  `lathe(profile)`, `tube(points, r)`, `roundRect(w, h, r)` (UV 0..1), `slab(w, h, d, r, bevel)` (front face at
+  d/2 + bevel), `morphPair(size, seg)`, `svg(svgOrPathD, {size, depth, bevel})`, `text(str, {size, depth = 0.25,
+  bevel = 0.02, fam = 'display', weight, ls, px = 220, letters})` -> `{geometry, width, height, letters?: [{ch,
+  geometry, offset}]}` (traced from the page's fonts, cached).
+- Materials `G3.mat(kind, {color = 'accent', ...})`: kinds `matte plastic satin metal chrome brushed glass crystal
+  iridescent clearcoat velvet wax neon toon wire basic xray`; colours are palette roles or CSS; any three.js material
+  property passes through (`roughness`, `metalness`, `transmission`, `ior`, `thickness`, `dispersion`, `iridescence`,
+  `clearcoat`, `sheen`, `anisotropy`, `emissive`, `emissiveIntensity`, `opacity`, `side: 'double'`, `map` (image or
+  canvas)); glass `{tint, absorb}`; neon `{emissive, base}`; xray `{power, base, additive}`.
+- Objects: `G3.mesh(geo, mat | [mats], {pos, rot, scale, name, shadow})`, `G3.card(src, {w, h, radius, depth, bevel,
+  edge, back, mat, dynamic, emissive, shadow})`, `G3.label(str, {h, px, color, bg, fam, weight, billboard})`,
+  `G3.instanced(geo, mat, n)` -> `inst.set(i, {pos, rot, scale, color})`, `G3.points(n, {size, color, additive,
+  soft})` -> `pts.set(i, [x, y, z], size, alpha, color)`, `pts.show(k)`, `G3.pivot(obj, at)`, `G3.pose(obj, {pos,
+  rot, scale}, base?)` (added on the build-time transform), `G3.explode(objs, k, {center, dist, stagger, from,
+  spin, dir})`.
+- Deformers (from the build-time geometry; normals recomputed): `G3.deform(mesh, (out, i, x, y, z) => {...})`,
+  `G3.deform.twist(m, angle, {y0, y1})`, `bend(m, angle)` (along x), `wave(m, t, {amp, freq, speed, axis})`,
+  `breathe(m, t, {amp, wobble, rate})`, `morph(m, k)` (with `geo.morphPair`), `flag(m, t, {amp, speed, droop})`,
+  `curl(m, k, {radius})`.
+- Arrangements (pure, `{pos, rot, ...}`): `G3.arrange.grid(i, cols, {rows, gap, plane})`, `gridWave(i, cols, t, {amp,
+  freq, speed, at})`, `ring(i, n, {r, phase, face})`, `carousel(i, n, t, {r, step, move})` (+ `front`), `helix(i, n, {r,
+  height, turns, phase})`, `sphere(i, n, r)`, `tunnel(i, n, t, {spacing, speed, near})`, `coverFlow(i, focus, {w, side,
+  gap, angle, push})`, `stack(i, n, {h, twist, gap})`, `delay(i, n, {step, from})` (seconds), `burst(i, n, k, {r, out,
+  lift})`, `kaleido(x, y, sectors)`.
+- Motions (pure): `G3.motion.float(t, {amp, rot, seed})`, `turntable(t, speed)`, `flip(p, {axis, lift})`, `spring(t,
+  {k, c, m})`, `wobble(t, {amp, f, d})`, `squash(s)`, `cubeRoll(t, {size, period, move})`, `followThrough(fn, t, {lag,
+  drag})`, `arc(from, to, p, h)`, `hinge(p, open, {anticipate, overshoot})`.
+- Simulations: `G3.sim.oscillator(t, {k, c, m, x0, v0})`, `bounce(t, {h0, g, e})` -> `{y, n, v}`, `pendulum(t, {amp,
+  period, damp})`, `domino(i, t, {delay, dur, fall})`, `ballistic(t, p0, v0, g)`; `G3.bake(key, {dur, dt, every,
+  init, step(state, dt, i), sample(state)})` -> `{at(t)}`; `G3.rng(seed)`; `G3.timeRemap(t, {at, hold, slow, ramp})`;
+  `G3.noise1(t, seed)`; `G3.pathAt(points, u, {closed})`.
+- Low level: `G3.THREE` (with `THREE.addons`), `G3.renderer()`, `G3.color(css | role)`, `G3.texture(src, {dynamic})`,
+  `G3.traceContours(alpha, w, h)`, `G3.textShapes(str, o)`, `G3.ok`.
+
 ## 7. Transitions (compositor)
 
 The incoming scene's `in` (+ `inParams`) runs in a window around its first bar line `[t0 - pre, t0 + post]`.
@@ -277,6 +346,15 @@ Defaults in beats; override with `inParams.preBeats/postBeats` (beats) or `pre/p
 | `portalFlash` | 0.8 / 1.2 | the outgoing scene shows the next one through `env.portal`, then a light burst | `x, y` burst centre (else `portal()` rect centre), `color` |
 | `dissolve` (extra) | 0.5 / 0.5 | soft crossfade | |
 | `push` (extra) | 0.5 / 0 | slide without blur | `dir` |
+| `cube` (3D) | 0.5 / 0.5 | both frames on two faces of a cube that turns a quarter, the camera pulling back mid-turn | `dir`, `pull = 0.35`, `bg` |
+| `flip` (3D) | 0.5 / 0.5 | the frame flips like a card to show the next on its back | `dir`, `pull = 0.45`, `bg` |
+| `flipBoard` (3D) | 1 / 1 | a grid of tiles flips in a wave from one side, the next scene on their backs | `cols = 12`, `rows`, `from: left\|center\|top\|random`, `spread`, `lift` |
+| `fold` (3D) | 0.75 / 0.25 | the frame folds like an accordion into the left edge, revealing the next | `strips = 6` |
+| `depthPush` (3D) | 0.5 / 0.5 | the frame recedes and tilts into depth while the next arrives from the front | `depth`, `tilt`, `dim` |
+| `shatter` (3D) | 0.1 / 1.4 | the frame breaks into shards that fly at the camera and fall, the next behind | `x, y` impact px, `cols`, `rows`, `spread`, `dur` |
+
+The 3D transitions draw with `g3.js` (any two scenes; light reels see a deep stage tone behind the turning frames,
+dark reels the night colour; `bg` overrides). Without WebGL2 they fall back to `push` (cube, fold) or `dissolve`.
 
 Geometry hand-offs: `zoomInto` and `portalFlash` read the outgoing scene's `portal(t, env)` rect (or `inParams.rect`
 / `x, y`), and pass `env.portal` to it so it can already show the next scene inside its screen, door or card.
@@ -295,7 +373,9 @@ at that rect, so the zoom lands on identical pixels, then animate from the rect 
 **`env.fx`** (reset every frame; take the max, multiply zoom; applied to the whole composed frame after the scene):
 `zoom` (multiplier), `shake` (px), `ca` (chroma split 0..1, ~12 px at 1), `flash` 0..1 + `flashColor` (light colours
 lift exposure, dark colours dip), `invert` 0..1, `hud` and `captions` (0..1 visibility), `bloom`, `vignette`,
-`grain` (override `style.post` for this frame), `dark` (0..1 override of the dark blend).
+`grain` (override `style.post` for this frame), `dark` (0..1 override of the dark blend). The compositor also draws
+the incoming scene during its transition window (negative `env.lt`): scale whole-frame requests by the scene's own
+visibility (`rm(env.lt, -0.05, 0.4)`), or a bloom meant for the next scene lifts the outgoing one.
 
 **Post** from `style.post`: `bloom` (soft highlight glow, Canvas2D), `vignette {a, color}`, `grain` (overlay
 alpha). Dark scenes in a light reel blend toward stronger vignette (>= 0.5, night colour), grain x1.5 and bloom
