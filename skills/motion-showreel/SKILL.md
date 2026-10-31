@@ -23,7 +23,9 @@ are carriers inside that code-drawn world. `S` below is this skill's base direct
 
 - **The material decides the look.** There are no presets. Palette, type, pace, transitions, sound and voice come
   from the source (`tools/extract_style.py` measures, you interpret). Two sources about the same subject must give
-  two different reels when their tone differs (compare `examples/playful-app` and `examples/research-cli`).
+  two different reels when their tone differs (compare `examples/playful-app` and `examples/research-cli`). Material
+  with no look of its own may borrow a design direction the user chooses (`references/design-library.md`); it fills
+  only the gaps.
 - **One sentence, one scene, one message.** Write them before any code. The scene becomes the poster frame, the
   message becomes the end card. Every scene serves the sentence; cut what does not.
 - **Prove, do not decorate.** Each scene has one hero carrier, and for claims it is the real thing: the app's own UI,
@@ -75,7 +77,11 @@ for paid generation); otherwise default to a 30-s and a 15-s cut, music-led unle
    the material yourself and overrule the draft wherever the evidence says otherwise (hex codes in prose or tables
    may describe other things than the project; the extractor flags accents that come only from text). Keep each
    `rationale` true, clear `review`, set `meta.draft` to `false`. Copy the source's exact copy, register, banned
-   wording and disclaimers into the storyboard. (`references/tone-and-manner.md`)
+   wording and disclaimers into the storyboard. (`references/tone-and-manner.md`) When the material has no look of
+   its own (the review list says no brand colour or no measured background; a text brief, a default-template paper,
+   a bare README) or the user names a look, shortlist two or three entries of the shiraki.design YAML Library with
+   `tools/design_library.py`, let the user choose, and merge the draft only where the material is silent. The YAML
+   text never goes into a committed file; cite the entry by number, title and link. (`references/design-library.md`)
 2. **Visual carriers per scene.** Vector and kinetic type always. Then ask: what is the proof (real UI, terminal
    cast, figure, data), what is the face (mascot, logo, one giant number), where does it live (phone, terminal,
    paper, browser)? Use `references/visual-sources.md` section 4. Solid 3D when the claim is spatial or physical (a
@@ -105,6 +111,7 @@ for paid generation); otherwise default to a 30-s and a 15-s cut, music-led unle
 | CLI tool or developer repo | capture §3, recipes 29, 36, timing §6 |
 | website or docs | capture §2, recipe 36 |
 | product, logo or anything spatial in 3D | 3d-motion, engine-api §6b, `examples/solid-3d` |
+| material with no look of its own, or a named look (isometric, editorial, glass, Memphis…) | design-library, tone-and-manner §5 |
 | lengthen or re-cut a reel | "Extend to a longer cut" below, timing §6, storyboard §6 |
 | a reference video to match | storyboard §7 |
 
@@ -120,6 +127,8 @@ cp "$S/templates/STORYBOARD.template.md" P/STORYBOARD.md       # + templates/nar
 python3 "$S/tools/extract_style.py" --source P/source [more files|dirs|urls] --project P --board
 python3 "$S/tools/extract_style.py" --validate P/style.json
 python3 "$S/tools/extract_style.py" --project P --board-only           # after editing style.json
+#    only when the material has no look or the user names one (references/design-library.md):
+python3 "$S/tools/design_library.py" index --category <name>           # then get <=3 ids, user picks, draft <id> --project P
 
 # 2. Storyboard + plan (STORYBOARD.md and reel.config.json per references/storyboard.md), then every cut
 python3 "$S/timing/plan_cut.py" --project P --cut 15,30 --strict        # read the table: grow/max/OVER, notes, WARN
@@ -260,6 +269,8 @@ out.
 - 3D: inside `G3.stage(key, build)` use `s.get()`, not the outer `st` (not assigned yet); deformers and `G3.pose` read
   the build-time shape, so never move a deformed mesh's vertices yourself; a `slab`'s front face sits at
   depth / 2 + bevel; glass needs something behind it. Prove purity by rendering the same times in two orders.
+- Design library: its terms forbid redistributing any YAML, mirroring the library and bulk downloads. Keep the cache
+  (`design_library.py where`) and `P/build/design-direction.*` out of every commit; rationale in your own words.
 
 ## References (read on demand)
 
@@ -272,6 +283,7 @@ out.
 | `references/engine-api.md` | writing scenes: globals, `env`, helpers, modules, gl.js, transitions, FX, HUD, captions |
 | `references/motion-recipes.md` | 36 tested recipes (characters, kinetic type, UI in a device, CLI shot, paper figure, web page...) |
 | `references/3d-motion.md` | solid 3D with `G3`: when 3D earns its place, the purity contract, stage/look/render, a technique catalogue (camera work, depth cues, materials, light, arrays, deformers, physics, product and logo moves, 3D transitions), recipes, costs |
+| `references/design-library.md` | borrowing a design direction (shiraki.design YAML Library) when the material has no look or the user names one: when, the library's terms, procedure, picking entries by category and purpose, YAML fields to style.json, motifs to motion |
 | `references/capture.md` | real UI, terminal casts (`term.js`), perspective panels (`quad.js`), PDF figures |
 | `references/imagery.md` | cutouts with Vision/OpenCV, blinks, products, photos, character motion |
 | `references/audio.md` | presets, instruments, SFX grammar, arrangement, mastering, sync verification |

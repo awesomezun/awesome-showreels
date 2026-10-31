@@ -17,7 +17,20 @@
         "purpose": { "type": "string", "description": "launch | pitch | paper | docs | tool | brand | portfolio | demo | explainer | general" },
         "audience": { "type": "string" },
         "title": { "type": "string" },
-        "hints": { "type": "object", "description": "User hints given to the extractor (purpose, audience, lang, theme, narration)." }
+        "hints": { "type": "object", "description": "User hints given to the extractor (purpose, audience, lang, theme, narration)." },
+        "direction": {
+          "type": "object",
+          "description": "Optional: a borrowed design direction for material with no look of its own (references/design-library.md). Cite it; never copy its text into the repo.",
+          "required": ["library", "id", "url"],
+          "properties": {
+            "library": { "type": "string", "description": "e.g. shiraki.design YAML Library" },
+            "id": { "type": "string" },
+            "title": { "type": "string" },
+            "url": { "type": "string" },
+            "why": { "type": "string", "description": "Why this entry fits the material, in one sentence." },
+            "approved": { "type": "boolean", "description": "true once the user chose or accepted it." }
+          }
+        }
       }
     },
     "source": {
@@ -31,7 +44,7 @@
         "properties": {
           "path": { "type": "string" },
           "url": { "type": "string" },
-          "kind": { "enum": ["readme", "markdown", "paper", "slides", "website", "repo", "images", "brand-guide", "other"] },
+          "kind": { "enum": ["readme", "markdown", "paper", "slides", "website", "repo", "images", "brand-guide", "design-library", "other"] },
           "notes": { "type": "string" }
         }
       }

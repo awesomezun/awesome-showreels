@@ -4,7 +4,9 @@ There are no style presets. Every reel takes its palette, type, motion, sound an
 from: a repo, README, docs site, paper, deck, brand guide, website, screenshots, or a mix. The result is one spec,
 `P/style.json` (schema: `templates/style.schema.json`), which every other part reads: the runtime (`env.style`,
 `env.palette`), scenes, timing (`sound.bpm`), audio (`sound.*`), narration (`narration.*`, `layout.captions`) and
-capture (`terminal`). Each decision in it carries a rationale that cites evidence from the material.
+capture (`terminal`). Each decision in it carries a rationale that cites evidence from the material. When the
+material has no look at all, a design direction the user chooses from a library fills the gaps
+(`references/design-library.md`); it is cited like any other source and never outranks the material.
 
 Contents: 1 workflow · 2 inventory · 3 measurements · 4 interpretation tables · 5 source kinds · 6 using the spec ·
 7 case studies · 8 pitfalls · 9 review checklist.
@@ -274,6 +276,12 @@ their signal.
   sources.
 - **Mixed sources.** Pass them all in one call. Exact tokens beat measured colours. The log shows which source each
   role came from.
+- **No look at all (a text brief, an outline document, a default-template paper, a README without logo or
+  screenshots).** The review list says "no brand/accent colour found" or "no measured background". Ask for one more
+  source first (the site, the logo, a screenshot). If there is none, or the user names a look, shortlist entries from
+  the shiraki.design YAML Library (`tools/design_library.py`, `references/design-library.md`), let the user choose,
+  and merge the draft where the material is silent; record it in `meta.direction` and `source` (`kind:
+  "design-library"`).
 
 ## 6. Using the spec
 
@@ -335,6 +343,8 @@ transitions. The extractor reproduces this from a README that names the theme or
 - **Third-party brands.** Logos and colours of tools or partners named in the material are not the reel's
   identity. Use them only for their own marks. The extractor warns when an accent sits within ΔE00 4 of a
   well-known brand colour that the material names.
+- **A borrowed direction is not evidence.** It never overrides measured or written brand values, and its YAML text
+  never appears in rationale, STORYBOARD or any committed file (the library's terms); cite the entry instead.
 - **Renderer chrome is not material.** The GitHub UI, a neutral markdown stylesheet, white PDF paper, browser
   defaults and slide placeholders are not the material's design.
 - **Contrast.** Pastel and neon accents usually fail as text; use `accentInk`. Keep `ink` ≥ 7:1 because video

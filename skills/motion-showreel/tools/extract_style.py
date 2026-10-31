@@ -3867,7 +3867,9 @@ def interpret(ctx: Ctx, hints):
         pal["accent"] = lab_to_hex(from_lch(Lc, 45, hue))
         pal_note["accent"] = "derived (no chromatic colour in the material)"
         pal_ev["accent"] = ""
-        review.append({"field": "palette.accent", "reason": "no brand/accent colour found in the material; derived from tone", "confidence": 0.3})
+        review.append({"field": "palette.accent", "reason": "no brand/accent colour found in the material; derived from tone. Add a "
+                       "source with colours (site, logo, screenshot), or let the user choose a design direction "
+                       "(references/design-library.md)", "confidence": 0.3})
     accL, accC, acc_hue = lch_of(hex_to_lab(pal["accent"]))
     off = (35, -35) if (ax["serious"] > 0.55 or ax["luxe"] > 0.5) else (150, 210) if (ax["technical"] > 0.55 and dark) else \
         (100, -100) if ax["playful"] > 0.55 else (60, -60)
