@@ -657,7 +657,7 @@ Eighty-nine example projects. Sixteen are real web apps live at toyz.kr, capture
 </tr>
 </table>
 
-<sub>Each loop is one moment of the reel at real speed, without sound. <b>▶ Play</b> opens the full reel in your browser with music, where you can switch between its lengths (the same file is in each folder's <code>dist/</code>: 1–5 MB, opens offline, number keys switch lengths). Projects and data are fictional and labelled as such on screen (the sixteen toyz.kr apps are real; the data they show is their own fictional sample data); the two explainers and the Transformer explainer cover real ideas, with toy models or rounded textbook values, and say so. The twenty-four style examples are fictional projects too (the city wall and gates in <code>ink-wash</code> are real); only the drawing styles come from the video, not its characters or frames. The twenty-four that follow the video’s styles borrow only the style from eight repositories (<a href="https://github.com/lemomo-ai/lemo-opuscar">lemo-opuscar</a>, <a href="https://github.com/Vincentwei1021/mg-styles-15">mg-styles-15</a>, <a href="https://github.com/mexicat/pdoom-video">pdoom-video</a>, <a href="https://github.com/JohnHeibel/PDoomVideo">PDoomVideo</a>, <a href="https://github.com/JohnHeibel/ClaudeAnimationBase">ClaudeAnimationBase</a>, <a href="https://github.com/yihui-dev/awesome-opus5-5-videos">awesome-opus5-5-videos</a>, <a href="https://github.com/athemeroy/awesome-claude-5-5-videos">awesome-claude-5-5-videos</a>, <a href="https://github.com/joeseesun/opus-video-prompts">opus-video-prompts</a>); every project is fictional, the recorded instruments are CC0 (VCSL and VSCO 2 Community Edition), and the lyrics and voice of 「파란 버스」 were made for this repository. <code>solid-3d</code> is fictional too; its 3D runs on three.js (MIT), and the 3D technique catalogue in the skill follows the categories of TakayuStudio's <a href="https://takayustudio.jp/3d-motion-reference/">3D Motion Reference</a> (no code taken).</sub>
+<sub>Each loop is one moment of the reel at real speed, without sound. <b>▶ Play</b> opens the full reel in your browser with music, where you can switch between its lengths (the same file is in each folder's <code>dist/</code>: 1–5 MB, opens offline, number keys switch lengths). Projects and data are fictional and labelled as such on screen (the sixteen toyz.kr apps are real; the data they show is their own fictional sample data); the two explainers and the Transformer explainer cover real ideas, with toy models or rounded textbook values, and say so. The twenty-four style examples are fictional projects too (the city wall and gates in <code>ink-wash</code> are real); only the drawing styles come from the video, not its characters or frames. The twenty-four that follow the video’s styles borrow only the style from eight repositories (<a href="https://github.com/lemomo-ai/lemo-opuscar">lemo-opuscar</a>, <a href="https://github.com/Vincentwei1021/mg-styles-15">mg-styles-15</a>, <a href="https://github.com/mexicat/pdoom-video">pdoom-video</a>, <a href="https://github.com/JohnHeibel/PDoomVideo">PDoomVideo</a>, <a href="https://github.com/JohnHeibel/ClaudeAnimationBase">ClaudeAnimationBase</a>, <a href="https://github.com/yihui-dev/awesome-opus5-5-videos">awesome-opus5-5-videos</a>, <a href="https://github.com/athemeroy/awesome-claude-5-5-videos">awesome-claude-5-5-videos</a>, <a href="https://github.com/joeseesun/opus-video-prompts">opus-video-prompts</a>); every project is fictional, the recorded instruments are CC0 (VCSL and VSCO 2 Community Edition), and the lyrics and voice of 「파란 버스」 were made for this repository. <code>solid-3d</code> is fictional too; its 3D runs on three.js (MIT), and the 3D technique catalogue in the skill follows the categories of TakayuStudio's <a href="https://takayustudio.jp/3d-motion-reference/">3D Motion Reference</a> (no code taken). Design directions for material without a look of its own come from the <a href="https://shiraki.design/en/library">shiraki.design YAML Library</a> by Shiraki, fetched on demand and never redistributed.</sub>
 
 <details>
 <summary><b>Style decisions per example</b></summary>
@@ -795,7 +795,7 @@ The method comes from four real projects made before this repo.
 
 ## Features
 
-<p align="center"><b>Style from your source</b><br/>Palette, type, pace and music are read from your material, with the evidence written down. No presets.</p>
+<p align="center"><b>Style from your source</b><br/>Palette, type, pace and music are read from your material, with the evidence written down. No presets. Material with no look of its own can borrow a design direction you choose.</p>
 <p align="center"><img src="assets/readme/feat-style.webp" width="100%" alt="A wall of all eighteen reels, each card painted in its own reviewed palette with its display face set in that face, its tempo and sound preset underneath; a light runs across the wall lifting each card in its own accent"/></p>
 
 <p align="center"><b>Real material, not decoration</b><br/>Your app's UI, your CLI's output, your paper's figures, your data. Code-drawn motion around it.</p>
@@ -954,6 +954,13 @@ Yes. Images become clean cutouts (macOS Vision or OpenCV) that blink, bounce and
 </details>
 
 <details>
+<summary><b>My material has no design. Where does the look come from?</b></summary>
+
+From its tone, or from a design direction you choose. When a brief, outline or paper has no colours or type of its own, the skill shortlists two or three looks from the <a href="https://shiraki.design/en/library">shiraki.design YAML Library</a> (256 slide and infographic designs in 15 categories), shows you their samples and lets you pick. Your material still wins wherever it says something. Entries are fetched one at a time into a cache on your machine, never copied into your project or this repository (the library's terms), and the reel credits the entry by number and link.
+
+</details>
+
+<details>
 <summary><b>What is the HTML file?</b></summary>
 
 The web version of the reel: one small file with every length and its music. Open it in any browser, even offline. Space plays and pauses, ← → step, number keys switch cuts, F is fullscreen.
@@ -967,6 +974,7 @@ The web version of the reel: one small file with every length and its music. Ope
 - **Planner:** `timing/plan_cut.py` lays every cut on one bar grid; longer cuts add scenes and holds.
 - **Audio:** `audio/synth.py`, `arrange.py`, `verify_sync.py` (numpy/scipy, no samples): presets from ambient to chiptune, swing and drum and bass; every cue checked against the picture, -14 LUFS.
 - **Captures:** `tools/capture_ui.mjs` (app UI), `capture_cli.py` (terminal), `pdf_figures.py` (paper figures), `prep_assets.py` + `lift.swift` (cutouts).
+- **Design directions:** `tools/design_library.py` lists the shiraki.design YAML Library, fetches up to three entries into a local cache and drafts palette roles with checked contrast, type, motifs and bans for `style.json`.
 - **Narration:** `narration/tts_gemini.py` with speech-to-text checks, ducking and captions.
 - **Big reels:** `templates/showreel-workflow.js` splits the work across many agents on Claude Code; other agents run the same steps in order.
 - **This page:** every preview was rendered by the skill from [`docs/readme-reel/`](docs/readme-reel/).

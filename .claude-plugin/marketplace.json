@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "awesome-showreels",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "description": "Premium 2D and 3D motion-graphics showreels from any source material: tone & manner derived from the source, real captures, solid 3D on three.js, Vision + OpenCV cutouts, beat-synced music, optional Gemini narration, any length at the same BPM. MP4 + single-file HTML.",
       "author": {
         "name": "AwesomeZun",

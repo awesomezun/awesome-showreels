@@ -1,6 +1,6 @@
 {
   "name": "awesome-showreels",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Turn any repo, README, paper, deck or website into a premium 2D and 3D motion-graphics showreel: style derived from the source, real app/terminal/PDF captures, solid 3D (lit materials, extruded type, exploded views, 3D transitions), Vision + OpenCV cutouts, beat-synced synthesized music, optional Gemini narration. Ships MP4 + a single-file HTML player.",
   "author": {
     "name": "AwesomeZun",

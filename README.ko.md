@@ -652,7 +652,7 @@ Claude Code, Codex CLI, Gemini CLI 등 어떤 코딩 에이전트에서도 쓰�
 </tr>
 </table>
 
-<sub>미리보기는 쇼릴의 한 장면을 실제 속도, 무음으로 보여 줍니다. <b>▶ 재생</b>을 누르면 브라우저에서 음악과 함께 전체 쇼릴이 열리고, 길이를 바꿔 볼 수 있습니다(같은 파일이 각 폴더의 <code>dist/</code>에 있습니다. 1–5MB이고 인터넷 없이 열리며 숫자 키로 길이를 바꿉니다). 프로젝트와 데이터는 가상이며 화면에도 그렇게 표시됩니다. toyz.kr의 앱 16개는 실제 앱이고, 화면 속 데이터는 앱에 들어 있는 가상의 예시 데이터입니다. 해설 두 편과 Transformer 해설은 실제 개념을 다루며, 토이 모델이나 반올림한 교과서 값을 쓴다고 화면에 밝힙니다. 그림체 예제 24개도 가상의 프로젝트이며(<code>ink-wash</code>의 한양도성과 성문은 실제입니다), 영상에서는 그림체만 참고했고 캐릭터나 화면은 가져오지 않았습니다. 그 뒤의 24개는 저장소 8곳(<a href="https://github.com/lemomo-ai/lemo-opuscar">lemo-opuscar</a>, <a href="https://github.com/Vincentwei1021/mg-styles-15">mg-styles-15</a>, <a href="https://github.com/mexicat/pdoom-video">pdoom-video</a>, <a href="https://github.com/JohnHeibel/PDoomVideo">PDoomVideo</a>, <a href="https://github.com/JohnHeibel/ClaudeAnimationBase">ClaudeAnimationBase</a>, <a href="https://github.com/yihui-dev/awesome-opus5-5-videos">awesome-opus5-5-videos</a>, <a href="https://github.com/athemeroy/awesome-claude-5-5-videos">awesome-claude-5-5-videos</a>, <a href="https://github.com/joeseesun/opus-video-prompts">opus-video-prompts</a>)에서 그림체만 참고했습니다. 모두 가상의 프로젝트이고, 녹음 악기는 CC0 음원(VCSL, VSCO 2 Community Edition)이며, 「파란 버스」의 가사와 목소리는 이 저장소에서 새로 만들었습니다. <code>solid-3d</code>도 가상의 프로젝트입니다. 이 예제의 3D는 three.js(MIT)로 그리며, 스킬의 3D 기법 목록은 TakayuStudio의 <a href="https://takayustudio.jp/3d-motion-reference/">3D 모션 레퍼런스</a> 분류를 따랐습니다(코드는 가져오지 않았습니다).</sub>
+<sub>미리보기는 쇼릴의 한 장면을 실제 속도, 무음으로 보여 줍니다. <b>▶ 재생</b>을 누르면 브라우저에서 음악과 함께 전체 쇼릴이 열리고, 길이를 바꿔 볼 수 있습니다(같은 파일이 각 폴더의 <code>dist/</code>에 있습니다. 1–5MB이고 인터넷 없이 열리며 숫자 키로 길이를 바꿉니다). 프로젝트와 데이터는 가상이며 화면에도 그렇게 표시됩니다. toyz.kr의 앱 16개는 실제 앱이고, 화면 속 데이터는 앱에 들어 있는 가상의 예시 데이터입니다. 해설 두 편과 Transformer 해설은 실제 개념을 다루며, 토이 모델이나 반올림한 교과서 값을 쓴다고 화면에 밝힙니다. 그림체 예제 24개도 가상의 프로젝트이며(<code>ink-wash</code>의 한양도성과 성문은 실제입니다), 영상에서는 그림체만 참고했고 캐릭터나 화면은 가져오지 않았습니다. 그 뒤의 24개는 저장소 8곳(<a href="https://github.com/lemomo-ai/lemo-opuscar">lemo-opuscar</a>, <a href="https://github.com/Vincentwei1021/mg-styles-15">mg-styles-15</a>, <a href="https://github.com/mexicat/pdoom-video">pdoom-video</a>, <a href="https://github.com/JohnHeibel/PDoomVideo">PDoomVideo</a>, <a href="https://github.com/JohnHeibel/ClaudeAnimationBase">ClaudeAnimationBase</a>, <a href="https://github.com/yihui-dev/awesome-opus5-5-videos">awesome-opus5-5-videos</a>, <a href="https://github.com/athemeroy/awesome-claude-5-5-videos">awesome-claude-5-5-videos</a>, <a href="https://github.com/joeseesun/opus-video-prompts">opus-video-prompts</a>)에서 그림체만 참고했습니다. 모두 가상의 프로젝트이고, 녹음 악기는 CC0 음원(VCSL, VSCO 2 Community Edition)이며, 「파란 버스」의 가사와 목소리는 이 저장소에서 새로 만들었습니다. <code>solid-3d</code>도 가상의 프로젝트입니다. 이 예제의 3D는 three.js(MIT)로 그리며, 스킬의 3D 기법 목록은 TakayuStudio의 <a href="https://takayustudio.jp/3d-motion-reference/">3D 모션 레퍼런스</a> 분류를 따랐습니다(코드는 가져오지 않았습니다). 자료에 디자인이 없을 때 쓰는 디자인 방향은 Shiraki의 <a href="https://shiraki.design/en/library">shiraki.design YAML 라이브러리</a>에서 필요할 때만 받아 오며, 재배포하지 않습니다.</sub>
 
 <details>
 <summary><b>예제별 스타일 결정</b></summary>
@@ -790,7 +790,7 @@ Claude Code, Codex CLI, Gemini CLI 등 어떤 코딩 에이전트에서도 쓰�
 
 ## 기능
 
-<p align="center"><b>원본에서 나오는 스타일</b><br/>팔레트, 서체, 속도, 음악을 자료에서 읽고 근거를 남깁니다. 프리셋은 없습니다.</p>
+<p align="center"><b>원본에서 나오는 스타일</b><br/>팔레트, 서체, 속도, 음악을 자료에서 읽고 근거를 남깁니다. 프리셋은 없습니다. 자료에 디자인이 없으면 직접 고른 디자인 방향을 빌려 올 수 있습니다.</p>
 <p align="center"><img src="assets/readme/feat-style.webp" width="100%" alt="A wall of all eighteen reels, each card painted in its own reviewed palette with its display face set in that face, its tempo and sound preset underneath; a light runs across the wall lifting each card in its own accent"/></p>
 
 <p align="center"><b>장식이 아닌 실제 자료</b><br/>앱 화면, CLI 출력, 논문 그림, 데이터를 그대로 쓰고 그 주위를 코드로 그린 모션이 감쌉니다.</p>
@@ -949,6 +949,13 @@ python3 -m pip install numpy scipy pillow opencv-python pymupdf fonttools brotli
 </details>
 
 <details>
+<summary><b>자료에 디자인이 없으면 모양은 어디서 오나요?</b></summary>
+
+자료의 톤에서 나오거나, 직접 고른 디자인 방향에서 옵니다. 기획서, 개요 문서, 논문처럼 고유한 색이나 서체가 없는 자료라면, 스킬이 <a href="https://shiraki.design/en/library">shiraki.design YAML 라이브러리</a>(15개 분류, 슬라이드·인포그래픽 디자인 256개)에서 두세 가지를 골라 샘플을 보여 드리고 선택을 받습니다. 자료에 정해진 것이 있으면 언제나 자료가 우선합니다. 항목은 하나씩 받아 내 컴퓨터의 캐시에만 두고, 프로젝트나 이 저장소에는 복사하지 않습니다(라이브러리 이용 약관). 쇼릴에는 항목 번호와 링크로 출처를 밝힙니다.
+
+</details>
+
+<details>
 <summary><b>HTML 파일은 무엇인가요?</b></summary>
 
 쇼릴의 웹 버전입니다. 모든 길이와 음악이 든 작은 파일 하나로, 아무 브라우저에서나 인터넷 없이 열립니다. 스페이스로 재생·정지, ← →로 한 프레임 이동, 숫자 키로 컷 전환, F로 전체 화면입니다.
@@ -962,6 +969,7 @@ python3 -m pip install numpy scipy pillow opencv-python pymupdf fonttools brotli
 - **계획:** `timing/plan_cut.py`가 모든 컷을 마디 그리드 하나에 놓고, 긴 컷에는 장면과 홀드를 더합니다.
 - **오디오:** `audio/synth.py`, `arrange.py`, `verify_sync.py`(numpy/scipy, 샘플 없음). 앰비언트부터 칩튠, 스윙, 드럼앤베이스까지 만들고, 모든 큐를 화면과 맞춰 검사하며 -14 LUFS로 맞춥니다.
 - **캡처:** `tools/capture_ui.mjs`(앱 화면), `capture_cli.py`(터미널), `pdf_figures.py`(논문 그림), `prep_assets.py` + `lift.swift`(컷아웃).
+- **디자인 방향:** `tools/design_library.py`가 shiraki.design YAML 라이브러리 목록을 보여 주고, 항목을 세 개까지 로컬 캐시에 받아, 대비를 확인한 팔레트 역할과 서체, 모티프, 금지 사항을 `style.json` 초안으로 만듭니다.
 - **내레이션:** `narration/tts_gemini.py`. 음성 인식 검증, 음악 낮추기, 자막.
 - **큰 쇼릴:** Claude Code에서는 `templates/showreel-workflow.js`로 여러 에이전트가 나눠 만들고, 다른 에이전트는 같은 단계를 차례로 진행합니다.
 - **이 페이지:** 모든 미리보기는 [`docs/readme-reel/`](docs/readme-reel/)에서 이 스킬로 렌더링했습니다.
