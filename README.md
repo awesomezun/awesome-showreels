@@ -3,7 +3,7 @@
   <a href="https://gitreels.com/awesomezun/awesome-showreels"><img src="https://gitreels.com/awesomezun/awesome-showreels.webp" alt="awesomezun/awesome-showreels in 15 seconds" width="100%"></a>
   <br>
   <a href="https://gitreels.com"><img src="https://gitreels.com/badge.svg" alt="Made with GitReels" height="24"></a>
-  <a href="https://gitreels.com/awesomezun/awesome-showreels"><img src="https://gitreels.com/api/badges/rotw/awesomezun/awesome-showreels.svg" alt="Reel of the Week #3 on GitReels" height="24"></a>
+  <a href="https://gitreels.com/awesomezun/awesome-showreels"><img src="https://gitreels.com/api/badges/rotw/awesomezun/awesome-showreels.svg" alt="Reel of the Week #1 on GitReels" height="24"></a>
 </p>
 <!-- gitreels:end -->
 
